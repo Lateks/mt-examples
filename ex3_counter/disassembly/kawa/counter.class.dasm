@@ -1,0 +1,289 @@
+Classfile /Users/tuuli/school/thesis_examples/ex4_shared_closure/temp$_39916801/counter.class
+  Last modified Mar 1, 2016; size 2009 bytes
+  MD5 checksum dcce7d43d3474b1458fa279bc08a237d
+  Compiled from "counter.scm"
+public class counter extends gnu.expr.ModuleBody implements java.lang.Runnable,gnu.expr.RunnableModule
+  minor version: 0
+  major version: 51
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+    #1 = Utf8               counter
+    #2 = Class              #1            // counter
+    #3 = Utf8               gnu/mapping/CallContext
+    #4 = Class              #3            // gnu/mapping/CallContext
+    #5 = Utf8               consumer
+    #6 = Utf8               Lgnu/lists/Consumer;
+    #7 = NameAndType        #5:#6         // consumer:Lgnu/lists/Consumer;
+    #8 = Fieldref           #4.#7         // gnu/mapping/CallContext.consumer:Lgnu/lists/Consumer;
+    #9 = Utf8               java/lang/Boolean
+   #10 = Class              #9            // java/lang/Boolean
+   #11 = Utf8               FALSE
+   #12 = Utf8               Ljava/lang/Boolean;
+   #13 = NameAndType        #11:#12       // FALSE:Ljava/lang/Boolean;
+   #14 = Fieldref           #10.#13       // java/lang/Boolean.FALSE:Ljava/lang/Boolean;
+   #15 = Utf8               increment$Mncounter
+   #16 = Utf8               Ljava/lang/Object;
+   #17 = NameAndType        #15:#16       // increment$Mncounter:Ljava/lang/Object;
+   #18 = Fieldref           #2.#17        // counter.increment$Mncounter:Ljava/lang/Object;
+   #19 = Utf8               get$Mncounter
+   #20 = NameAndType        #19:#16       // get$Mncounter:Ljava/lang/Object;
+   #21 = Fieldref           #2.#20        // counter.get$Mncounter:Ljava/lang/Object;
+   #22 = Utf8               initCounter
+   #23 = Utf8               ()V
+   #24 = NameAndType        #22:#23       // initCounter:()V
+   #25 = Methodref          #2.#24        // counter.initCounter:()V
+   #26 = Utf8               kawa/standard/Scheme
+   #27 = Class              #26           // kawa/standard/Scheme
+   #28 = Utf8               applyToArgs
+   #29 = Utf8               Lgnu/kawa/functions/ApplyToArgs;
+   #30 = NameAndType        #28:#29       // applyToArgs:Lgnu/kawa/functions/ApplyToArgs;
+   #31 = Fieldref           #27.#30       // kawa/standard/Scheme.applyToArgs:Lgnu/kawa/functions/ApplyToArgs;
+   #32 = Utf8               gnu/mapping/Procedure
+   #33 = Class              #32           // gnu/mapping/Procedure
+   #34 = Utf8               apply1
+   #35 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+   #36 = NameAndType        #34:#35       // apply1:(Ljava/lang/Object;)Ljava/lang/Object;
+   #37 = Methodref          #33.#36       // gnu/mapping/Procedure.apply1:(Ljava/lang/Object;)Ljava/lang/Object;
+   #38 = Utf8               kawa/lib/ports
+   #39 = Class              #38           // kawa/lib/ports
+   #40 = Utf8               display
+   #41 = Utf8               (Ljava/lang/Object;)V
+   #42 = NameAndType        #40:#41       // display:(Ljava/lang/Object;)V
+   #43 = Methodref          #39.#42       // kawa/lib/ports.display:(Ljava/lang/Object;)V
+   #44 = Utf8               check1
+   #45 = Utf8               (Ljava/lang/Object;Lgnu/mapping/CallContext;)V
+   #46 = NameAndType        #44:#45       // check1:(Ljava/lang/Object;Lgnu/mapping/CallContext;)V
+   #47 = Methodref          #33.#46       // gnu/mapping/Procedure.check1:(Ljava/lang/Object;Lgnu/mapping/CallContext;)V
+   #48 = Utf8               runUntilDone
+   #49 = NameAndType        #48:#23       // runUntilDone:()V
+   #50 = Methodref          #4.#49        // gnu/mapping/CallContext.runUntilDone:()V
+   #51 = Utf8               counter$frame
+   #52 = Class              #51           // counter$frame
+   #53 = Utf8               <init>
+   #54 = NameAndType        #53:#23       // "<init>":()V
+   #55 = Methodref          #52.#54       // counter$frame."<init>":()V
+   #56 = Utf8               Lit0
+   #57 = Utf8               Lgnu/math/IntNum;
+   #58 = NameAndType        #56:#57       // Lit0:Lgnu/math/IntNum;
+   #59 = Fieldref           #2.#58        // counter.Lit0:Lgnu/math/IntNum;
+   #60 = Utf8               c
+   #61 = NameAndType        #60:#57       // c:Lgnu/math/IntNum;
+   #62 = Fieldref           #52.#61       // counter$frame.c:Lgnu/math/IntNum;
+   #63 = Utf8               lambda$Fn1
+   #64 = Utf8               Lgnu/expr/ModuleMethod;
+   #65 = NameAndType        #63:#64       // lambda$Fn1:Lgnu/expr/ModuleMethod;
+   #66 = Fieldref           #52.#65       // counter$frame.lambda$Fn1:Lgnu/expr/ModuleMethod;
+   #67 = Utf8               lambda$Fn2
+   #68 = NameAndType        #67:#64       // lambda$Fn2:Lgnu/expr/ModuleMethod;
+   #69 = Fieldref           #52.#68       // counter$frame.lambda$Fn2:Lgnu/expr/ModuleMethod;
+   #70 = Utf8               registerEnvironment
+   #71 = NameAndType        #70:#23       // registerEnvironment:()V
+   #72 = Methodref          #27.#71       // kawa/standard/Scheme.registerEnvironment:()V
+   #73 = Utf8               gnu/expr/ModuleBody
+   #74 = Class              #73           // gnu/expr/ModuleBody
+   #75 = Methodref          #74.#54       // gnu/expr/ModuleBody."<init>":()V
+   #76 = Utf8               gnu/expr/ModuleInfo
+   #77 = Class              #76           // gnu/expr/ModuleInfo
+   #78 = Utf8               register
+   #79 = NameAndType        #78:#41       // register:(Ljava/lang/Object;)V
+   #80 = Methodref          #77.#79       // gnu/expr/ModuleInfo.register:(Ljava/lang/Object;)V
+   #81 = Methodref          #2.#54        // counter."<init>":()V
+   #82 = Utf8               $instance
+   #83 = Utf8               Lcounter;
+   #84 = NameAndType        #82:#83       // $instance:Lcounter;
+   #85 = Fieldref           #2.#84        // counter.$instance:Lcounter;
+   #86 = Utf8               gnu/math/IntNum
+   #87 = Class              #86           // gnu/math/IntNum
+   #88 = Utf8               valueOf
+   #89 = Utf8               (I)Lgnu/math/IntNum;
+   #90 = NameAndType        #88:#89       // valueOf:(I)Lgnu/math/IntNum;
+   #91 = Methodref          #87.#90       // gnu/math/IntNum.valueOf:(I)Lgnu/math/IntNum;
+   #92 = Utf8               [Ljava/lang/String;
+   #93 = Class              #92           // "[Ljava/lang/String;"
+   #94 = Utf8               gnu/expr/ApplicationMainSupport
+   #95 = Class              #94           // gnu/expr/ApplicationMainSupport
+   #96 = Utf8               processArgs
+   #97 = Utf8               ([Ljava/lang/String;)V
+   #98 = NameAndType        #96:#97       // processArgs:([Ljava/lang/String;)V
+   #99 = Methodref          #95.#98       // gnu/expr/ApplicationMainSupport.processArgs:([Ljava/lang/String;)V
+  #100 = Utf8               runAsMain
+  #101 = Utf8               (Lgnu/expr/RunnableModule;)V
+  #102 = NameAndType        #100:#101     // runAsMain:(Lgnu/expr/RunnableModule;)V
+  #103 = Methodref          #74.#102      // gnu/expr/ModuleBody.runAsMain:(Lgnu/expr/RunnableModule;)V
+  #104 = Utf8               java/lang/Runnable
+  #105 = Class              #104          // java/lang/Runnable
+  #106 = Utf8               gnu/expr/RunnableModule
+  #107 = Class              #106          // gnu/expr/RunnableModule
+  #108 = Utf8               run
+  #109 = Utf8               (Lgnu/mapping/CallContext;)V
+  #110 = Utf8               Code
+  #111 = Utf8               LineNumberTable
+  #112 = Utf8               LocalVariableTable
+  #113 = Utf8               this
+  #114 = Utf8               $ctx
+  #115 = Utf8               Lgnu/mapping/CallContext;
+  #116 = Utf8               $result
+  #117 = Utf8               $heapFrame
+  #118 = Utf8               Lcounter$frame;
+  #119 = Utf8               <clinit>
+  #120 = Utf8               main
+  #121 = Utf8               SourceFile
+  #122 = Utf8               counter.scm
+  #123 = Utf8               SourceDebugExtension
+  #124 = Utf8               InnerClasses
+{
+  static java.lang.Object increment$Mncounter;
+    descriptor: Ljava/lang/Object;
+    flags: ACC_STATIC
+
+  static java.lang.Object get$Mncounter;
+    descriptor: Ljava/lang/Object;
+    flags: ACC_STATIC
+
+  static final gnu.math.IntNum Lit0;
+    descriptor: Lgnu/math/IntNum;
+    flags: ACC_STATIC, ACC_FINAL
+
+  public static counter $instance;
+    descriptor: Lcounter;
+    flags: ACC_PUBLIC, ACC_STATIC
+
+  public final void run(gnu.mapping.CallContext);
+    descriptor: (Lgnu/mapping/CallContext;)V
+    flags: ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=3, locals=3, args_size=2
+         0: aload_1
+         1: getfield      #8                  // Field gnu/mapping/CallContext.consumer:Lgnu/lists/Consumer;
+         4: astore_2
+         5: getstatic     #14                 // Field java/lang/Boolean.FALSE:Ljava/lang/Boolean;
+         8: putstatic     #18                 // Field increment$Mncounter:Ljava/lang/Object;
+        11: getstatic     #14                 // Field java/lang/Boolean.FALSE:Ljava/lang/Boolean;
+        14: putstatic     #21                 // Field get$Mncounter:Ljava/lang/Object;
+        17: invokestatic  #25                 // Method initCounter:()V
+        20: getstatic     #31                 // Field kawa/standard/Scheme.applyToArgs:Lgnu/kawa/functions/ApplyToArgs;
+        23: getstatic     #21                 // Field get$Mncounter:Ljava/lang/Object;
+        26: invokevirtual #37                 // Method gnu/mapping/Procedure.apply1:(Ljava/lang/Object;)Ljava/lang/Object;
+        29: invokestatic  #43                 // Method kawa/lib/ports.display:(Ljava/lang/Object;)V
+        32: getstatic     #31                 // Field kawa/standard/Scheme.applyToArgs:Lgnu/kawa/functions/ApplyToArgs;
+        35: getstatic     #18                 // Field increment$Mncounter:Ljava/lang/Object;
+        38: aload_1
+        39: invokevirtual #47                 // Method gnu/mapping/Procedure.check1:(Ljava/lang/Object;Lgnu/mapping/CallContext;)V
+        42: aload_1
+        43: invokevirtual #50                 // Method gnu/mapping/CallContext.runUntilDone:()V
+        46: getstatic     #31                 // Field kawa/standard/Scheme.applyToArgs:Lgnu/kawa/functions/ApplyToArgs;
+        49: getstatic     #21                 // Field get$Mncounter:Ljava/lang/Object;
+        52: invokevirtual #37                 // Method gnu/mapping/Procedure.apply1:(Ljava/lang/Object;)Ljava/lang/Object;
+        55: invokestatic  #43                 // Method kawa/lib/ports.display:(Ljava/lang/Object;)V
+        58: getstatic     #31                 // Field kawa/standard/Scheme.applyToArgs:Lgnu/kawa/functions/ApplyToArgs;
+        61: getstatic     #18                 // Field increment$Mncounter:Ljava/lang/Object;
+        64: aload_1
+        65: invokevirtual #47                 // Method gnu/mapping/Procedure.check1:(Ljava/lang/Object;Lgnu/mapping/CallContext;)V
+        68: aload_1
+        69: invokevirtual #50                 // Method gnu/mapping/CallContext.runUntilDone:()V
+        72: getstatic     #31                 // Field kawa/standard/Scheme.applyToArgs:Lgnu/kawa/functions/ApplyToArgs;
+        75: getstatic     #18                 // Field increment$Mncounter:Ljava/lang/Object;
+        78: aload_1
+        79: invokevirtual #47                 // Method gnu/mapping/Procedure.check1:(Ljava/lang/Object;Lgnu/mapping/CallContext;)V
+        82: aload_1
+        83: invokevirtual #50                 // Method gnu/mapping/CallContext.runUntilDone:()V
+        86: getstatic     #31                 // Field kawa/standard/Scheme.applyToArgs:Lgnu/kawa/functions/ApplyToArgs;
+        89: getstatic     #21                 // Field get$Mncounter:Ljava/lang/Object;
+        92: invokevirtual #37                 // Method gnu/mapping/Procedure.apply1:(Ljava/lang/Object;)Ljava/lang/Object;
+        95: invokestatic  #43                 // Method kawa/lib/ports.display:(Ljava/lang/Object;)V
+        98: return
+      LineNumberTable:
+        line 1: 0
+        line 2: 11
+        line 4: 17
+        line 15: 17
+        line 16: 20
+        line 17: 32
+        line 18: 46
+        line 19: 58
+        line 20: 72
+        line 21: 86
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      98     0  this   Lcounter;
+            0      98     1  $ctx   Lgnu/mapping/CallContext;
+            0      98     2 $result   Lgnu/lists/Consumer;
+
+  static void initCounter();
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=0
+         0: new           #52                 // class counter$frame
+         3: dup
+         4: invokespecial #55                 // Method counter$frame."<init>":()V
+         7: astore_0
+         8: aload_0
+         9: getstatic     #59                 // Field Lit0:Lgnu/math/IntNum;
+        12: putfield      #62                 // Field counter$frame.c:Lgnu/math/IntNum;
+        15: aload_0
+        16: getfield      #66                 // Field counter$frame.lambda$Fn1:Lgnu/expr/ModuleMethod;
+        19: putstatic     #18                 // Field increment$Mncounter:Ljava/lang/Object;
+        22: aload_0
+        23: getfield      #69                 // Field counter$frame.lambda$Fn2:Lgnu/expr/ModuleMethod;
+        26: putstatic     #21                 // Field get$Mncounter:Ljava/lang/Object;
+        29: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 8
+        line 8: 15
+        line 12: 22
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            8      21     0 $heapFrame   Lcounter$frame;
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: invokestatic  #72                 // Method kawa/standard/Scheme.registerEnvironment:()V
+         3: iconst_0
+         4: invokestatic  #91                 // Method gnu/math/IntNum.valueOf:(I)Lgnu/math/IntNum;
+         7: putstatic     #59                 // Field Lit0:Lgnu/math/IntNum;
+        10: new           #2                  // class counter
+        13: dup
+        14: invokespecial #81                 // Method "<init>":()V
+        17: putstatic     #85                 // Field $instance:Lcounter;
+        20: return
+
+  public counter();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #75                 // Method gnu/expr/ModuleBody."<init>":()V
+         4: aload_0
+         5: invokestatic  #80                 // Method gnu/expr/ModuleInfo.register:(Ljava/lang/Object;)V
+         8: return
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #99                 // Method gnu/expr/ApplicationMainSupport.processArgs:([Ljava/lang/String;)V
+         4: getstatic     #85                 // Field $instance:Lcounter;
+         7: invokestatic  #103                // Method gnu/expr/ModuleBody.runAsMain:(Lgnu/expr/RunnableModule;)V
+        10: return
+}
+InnerClasses:
+     public #51= #52; //counter$frame=class counter$frame
+SourceFile: "counter.scm"
+SourceDebugExtension:
+  SMAP
+  counter.scm
+  Scheme
+  *S Scheme
+  *F
+  1 counter.scm
+  *L
+  1#1,21:1
+  *E

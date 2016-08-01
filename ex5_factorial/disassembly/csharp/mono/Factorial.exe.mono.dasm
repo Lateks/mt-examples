@@ -1,0 +1,92 @@
+.assembly extern System.Numerics
+{
+  .ver 4:0:0:0
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 ) // .z\V.4..
+}
+.assembly extern mscorlib
+{
+  .ver 4:0:0:0
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 ) // .z\V.4..
+}
+.assembly 'Factorial'
+{
+  .custom instance void class [mscorlib]System.Runtime.CompilerServices.RuntimeCompatibilityAttribute::'.ctor'() =  (
+		01 00 01 00 54 02 16 57 72 61 70 4E 6F 6E 45 78   // ....T..WrapNonEx
+		63 65 70 74 69 6F 6E 54 68 72 6F 77 73 01       ) // ceptionThrows.
+
+  .hash algorithm 0x00008004
+  .ver  0:0:0:0
+}
+.module Factorial.exe // GUID = {F52A2276-5903-4677-992A-12184AD0F03B}
+
+
+  .class public auto ansi beforefieldinit Factorial
+  	extends [mscorlib]System.Object
+  {
+
+    // method line 1
+    .method public hidebysig specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x2050
+	// Code size 7 (0x7)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void object::'.ctor'()
+	IL_0006:  ret 
+    } // end of method Factorial::.ctor
+
+    // method line 2
+    .method private static hidebysig 
+           default valuetype [System.Numerics]System.Numerics.BigInteger FactHelper (valuetype [System.Numerics]System.Numerics.BigInteger n, valuetype [System.Numerics]System.Numerics.BigInteger acc)  cil managed 
+    {
+        // Method begins at RVA 0x2058
+	// Code size 38 (0x26)
+	.maxstack 8
+	IL_0000:  ldarga.s 0
+	IL_0002:  call instance bool valuetype [System.Numerics]System.Numerics.BigInteger::get_IsZero()
+	IL_0007:  brfalse IL_000e
+
+	IL_000c:  ldarg.1 
+	IL_000d:  ret 
+	IL_000e:  ldarg.0 
+	IL_000f:  call valuetype [System.Numerics]System.Numerics.BigInteger valuetype [System.Numerics]System.Numerics.BigInteger::get_One()
+	IL_0014:  call valuetype [System.Numerics]System.Numerics.BigInteger valuetype [System.Numerics]System.Numerics.BigInteger::op_Subtraction(valuetype [System.Numerics]System.Numerics.BigInteger, valuetype [System.Numerics]System.Numerics.BigInteger)
+	IL_0019:  ldarg.1 
+	IL_001a:  ldarg.0 
+	IL_001b:  call valuetype [System.Numerics]System.Numerics.BigInteger valuetype [System.Numerics]System.Numerics.BigInteger::op_Multiply(valuetype [System.Numerics]System.Numerics.BigInteger, valuetype [System.Numerics]System.Numerics.BigInteger)
+	IL_0020:  call valuetype [System.Numerics]System.Numerics.BigInteger class Factorial::FactHelper(valuetype [System.Numerics]System.Numerics.BigInteger, valuetype [System.Numerics]System.Numerics.BigInteger)
+	IL_0025:  ret 
+    } // end of method Factorial::FactHelper
+
+    // method line 3
+    .method public static hidebysig 
+           default valuetype [System.Numerics]System.Numerics.BigInteger Fact (int32 n)  cil managed 
+    {
+        // Method begins at RVA 0x207f
+	// Code size 17 (0x11)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  newobj instance void valuetype [System.Numerics]System.Numerics.BigInteger::'.ctor'(int32)
+	IL_0006:  call valuetype [System.Numerics]System.Numerics.BigInteger valuetype [System.Numerics]System.Numerics.BigInteger::get_One()
+	IL_000b:  call valuetype [System.Numerics]System.Numerics.BigInteger class Factorial::FactHelper(valuetype [System.Numerics]System.Numerics.BigInteger, valuetype [System.Numerics]System.Numerics.BigInteger)
+	IL_0010:  ret 
+    } // end of method Factorial::Fact
+
+    // method line 4
+    .method public static hidebysig 
+           default void Main ()  cil managed 
+    {
+        // Method begins at RVA 0x2091
+	.entrypoint
+	// Code size 21 (0x15)
+	.maxstack 8
+	IL_0000:  ldc.i4 10000
+	IL_0005:  call valuetype [System.Numerics]System.Numerics.BigInteger class Factorial::Fact(int32)
+	IL_000a:  box [System.Numerics]System.Numerics.BigInteger
+	IL_000f:  call void class [mscorlib]System.Console::WriteLine(object)
+	IL_0014:  ret 
+    } // end of method Factorial::Main
+
+  } // end of class Factorial
+

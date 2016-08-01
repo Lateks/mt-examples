@@ -1,0 +1,149 @@
+Classfile /Users/tuuli/school/thesis_examples/ex8_top_level_first_class_functions/temp$_39916801/DoubleX$$anonfun$main$1.class
+  Last modified Jun 2, 2016; size 1096 bytes
+  MD5 checksum 3a79821578aa330ac884ea80e7e1bf44
+  Compiled from "DoubleX.scala"
+public final class DoubleX$$anonfun$main$1 extends scala.runtime.AbstractFunction1$mcII$sp implements scala.Serializable
+  minor version: 0
+  major version: 50
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               DoubleX$$anonfun$main$1
+   #2 = Class              #1             // DoubleX$$anonfun$main$1
+   #3 = Utf8               scala/runtime/AbstractFunction1$mcII$sp
+   #4 = Class              #3             // scala/runtime/AbstractFunction1$mcII$sp
+   #5 = Utf8               scala/Serializable
+   #6 = Class              #5             // scala/Serializable
+   #7 = Utf8               DoubleX.scala
+   #8 = Utf8               DoubleX$
+   #9 = Class              #8             // DoubleX$
+  #10 = Utf8               main
+  #11 = Utf8               ([Ljava/lang/String;)V
+  #12 = NameAndType        #10:#11        // main:([Ljava/lang/String;)V
+  #13 = Utf8               serialVersionUID
+  #14 = Utf8               J
+  #15 = Long               0l
+  #17 = Utf8               apply
+  #18 = Utf8               (I)I
+  #19 = Utf8               apply$mcII$sp
+  #20 = NameAndType        #19:#18        // apply$mcII$sp:(I)I
+  #21 = Methodref          #2.#20         // DoubleX$$anonfun$main$1.apply$mcII$sp:(I)I
+  #22 = Utf8               this
+  #23 = Utf8               LDoubleX$$anonfun$main$1;
+  #24 = Utf8               x
+  #25 = Utf8               I
+  #26 = Utf8               MODULE$
+  #27 = Utf8               LDoubleX$;
+  #28 = NameAndType        #26:#27        // MODULE$:LDoubleX$;
+  #29 = Fieldref           #9.#28         // DoubleX$.MODULE$:LDoubleX$;
+  #30 = Utf8               doubleX
+  #31 = NameAndType        #30:#18        // doubleX:(I)I
+  #32 = Methodref          #9.#31         // DoubleX$.doubleX:(I)I
+  #33 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #34 = Utf8               scala/runtime/BoxesRunTime
+  #35 = Class              #34            // scala/runtime/BoxesRunTime
+  #36 = Utf8               unboxToInt
+  #37 = Utf8               (Ljava/lang/Object;)I
+  #38 = NameAndType        #36:#37        // unboxToInt:(Ljava/lang/Object;)I
+  #39 = Methodref          #35.#38        // scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+  #40 = NameAndType        #17:#18        // apply:(I)I
+  #41 = Methodref          #2.#40         // DoubleX$$anonfun$main$1.apply:(I)I
+  #42 = Utf8               boxToInteger
+  #43 = Utf8               (I)Ljava/lang/Integer;
+  #44 = NameAndType        #42:#43        // boxToInteger:(I)Ljava/lang/Integer;
+  #45 = Methodref          #35.#44        // scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+  #46 = Utf8               v1
+  #47 = Utf8               Ljava/lang/Object;
+  #48 = Utf8               <init>
+  #49 = Utf8               ()V
+  #50 = NameAndType        #48:#49        // "<init>":()V
+  #51 = Methodref          #4.#50         // scala/runtime/AbstractFunction1$mcII$sp."<init>":()V
+  #52 = Utf8               ConstantValue
+  #53 = Utf8               Code
+  #54 = Utf8               LocalVariableTable
+  #55 = Utf8               LineNumberTable
+  #56 = Utf8               SourceFile
+  #57 = Utf8               EnclosingMethod
+  #58 = Utf8               InnerClasses
+  #59 = Utf8               ScalaInlineInfo
+  #60 = Utf8               Scala
+{
+  public static final long serialVersionUID;
+    descriptor: J
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: long 0l
+
+  public final int apply(int);
+    descriptor: (I)I
+    flags: ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: iload_1
+         2: invokevirtual #21                 // Method apply$mcII$sp:(I)I
+         5: ireturn
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       6     0  this   LDoubleX$$anonfun$main$1;
+            0       6     1     x   I
+      LineNumberTable:
+        line 3: 0
+
+  public int apply$mcII$sp(int);
+    descriptor: (I)I
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: getstatic     #29                 // Field DoubleX$.MODULE$:LDoubleX$;
+         3: iload_1
+         4: invokevirtual #32                 // Method DoubleX$.doubleX:(I)I
+         7: ireturn
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       8     0  this   LDoubleX$$anonfun$main$1;
+            0       8     1     x   I
+      LineNumberTable:
+        line 3: 0
+
+  public final java.lang.Object apply(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PUBLIC, ACC_FINAL, ACC_BRIDGE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: invokestatic  #39                 // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+         5: invokevirtual #41                 // Method apply:(I)I
+         8: invokestatic  #45                 // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+        11: areturn
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      12     0  this   LDoubleX$$anonfun$main$1;
+            0      12     1    v1   Ljava/lang/Object;
+      LineNumberTable:
+        line 3: 0
+
+  public DoubleX$$anonfun$main$1();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #51                 // Method scala/runtime/AbstractFunction1$mcII$sp."<init>":()V
+         4: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LDoubleX$$anonfun$main$1;
+      LineNumberTable:
+        line 3: 0
+}
+SourceFile: "DoubleX.scala"
+EnclosingMethod: #9.#12                 // DoubleX$.main
+InnerClasses:
+     public final #2; //class DoubleX$$anonfun$main$1
+Error: unknown attribute
+  ScalaInlineInfo: length = 0x18
+   01 01 00 04 00 30 00 31 01 00 13 00 12 01 00 11
+   00 12 01 00 11 00 21 01
+Error: unknown attribute
+  Scala: length = 0x0
+

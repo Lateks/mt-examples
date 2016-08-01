@@ -1,0 +1,252 @@
+Classfile /Users/tuuli/school/thesis_examples/ex3_mutual_recursion/temp$_39916801/mutual_recursion$_main.class
+  Last modified Feb 29, 2016; size 1446 bytes
+  MD5 checksum 4351f9ade973ccb0261fe82fe852148b
+  Compiled from "mutual_recursion.clj"
+public final class mutual_recursion$_main extends clojure.lang.AFunction
+  minor version: 0
+  major version: 49
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               mutual_recursion$_main
+   #2 = Class              #1             // mutual_recursion$_main
+   #3 = Utf8               clojure/lang/AFunction
+   #4 = Class              #3             // clojure/lang/AFunction
+   #5 = Utf8               mutual_recursion.clj
+   #6 = Utf8               <init>
+   #7 = Utf8               ()V
+   #8 = NameAndType        #6:#7          // "<init>":()V
+   #9 = Methodref          #4.#8          // clojure/lang/AFunction."<init>":()V
+  #10 = Utf8               invokeStatic
+  #11 = Utf8               ()Ljava/lang/Object;
+  #12 = Utf8               const__0
+  #13 = Utf8               Lclojure/lang/Var;
+  #14 = NameAndType        #12:#13        // const__0:Lclojure/lang/Var;
+  #15 = Fieldref           #2.#14         // mutual_recursion$_main.const__0:Lclojure/lang/Var;
+  #16 = Utf8               clojure/lang/Var
+  #17 = Class              #16            // clojure/lang/Var
+  #18 = Utf8               getRawRoot
+  #19 = NameAndType        #18:#11        // getRawRoot:()Ljava/lang/Object;
+  #20 = Methodref          #17.#19        // clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+  #21 = Utf8               clojure/lang/IFn
+  #22 = Class              #21            // clojure/lang/IFn
+  #23 = Utf8               const__1
+  #24 = NameAndType        #23:#13        // const__1:Lclojure/lang/Var;
+  #25 = Fieldref           #2.#24         // mutual_recursion$_main.const__1:Lclojure/lang/Var;
+  #26 = Utf8               const__2
+  #27 = Utf8               Ljava/lang/Object;
+  #28 = NameAndType        #26:#27        // const__2:Ljava/lang/Object;
+  #29 = Fieldref           #2.#28         // mutual_recursion$_main.const__2:Ljava/lang/Object;
+  #30 = Utf8               invoke
+  #31 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #32 = NameAndType        #30:#31        // invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+  #33 = InterfaceMethodref #22.#32        // clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+  #34 = Utf8               const__3
+  #35 = NameAndType        #34:#13        // const__3:Lclojure/lang/Var;
+  #36 = Fieldref           #2.#35         // mutual_recursion$_main.const__3:Lclojure/lang/Var;
+  #37 = Utf8               const__4
+  #38 = NameAndType        #37:#27        // const__4:Ljava/lang/Object;
+  #39 = Fieldref           #2.#38         // mutual_recursion$_main.const__4:Ljava/lang/Object;
+  #40 = Utf8               const__5
+  #41 = NameAndType        #40:#27        // const__5:Ljava/lang/Object;
+  #42 = Fieldref           #2.#41         // mutual_recursion$_main.const__5:Ljava/lang/Object;
+  #43 = NameAndType        #10:#11        // invokeStatic:()Ljava/lang/Object;
+  #44 = Methodref          #2.#43         // mutual_recursion$_main.invokeStatic:()Ljava/lang/Object;
+  #45 = Utf8               <clinit>
+  #46 = Utf8               clojure.core
+  #47 = String             #46            // clojure.core
+  #48 = Utf8               println
+  #49 = String             #48            // println
+  #50 = Utf8               clojure/lang/RT
+  #51 = Class              #50            // clojure/lang/RT
+  #52 = Utf8               var
+  #53 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+  #54 = NameAndType        #52:#53        // var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+  #55 = Methodref          #51.#54        // clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+  #56 = Utf8               mutual-recursion
+  #57 = String             #56            // mutual-recursion
+  #58 = Utf8               is-odd
+  #59 = String             #58            // is-odd
+  #60 = Long               10l
+  #62 = Utf8               java/lang/Long
+  #63 = Class              #62            // java/lang/Long
+  #64 = Utf8               valueOf
+  #65 = Utf8               (J)Ljava/lang/Long;
+  #66 = NameAndType        #64:#65        // valueOf:(J)Ljava/lang/Long;
+  #67 = Methodref          #63.#66        // java/lang/Long.valueOf:(J)Ljava/lang/Long;
+  #68 = Utf8               is-even
+  #69 = String             #68            // is-even
+  #70 = Long               9l
+  #72 = Long               2147483647l
+  #74 = Utf8               Code
+  #75 = Utf8               LineNumberTable
+  #76 = Utf8               SourceFile
+  #77 = Utf8               SourceDebugExtension
+{
+  public static final clojure.lang.Var const__0;
+    descriptor: Lclojure/lang/Var;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static final clojure.lang.Var const__1;
+    descriptor: Lclojure/lang/Var;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static final java.lang.Object const__2;
+    descriptor: Ljava/lang/Object;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static final clojure.lang.Var const__3;
+    descriptor: Lclojure/lang/Var;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static final java.lang.Object const__4;
+    descriptor: Ljava/lang/Object;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static final java.lang.Object const__5;
+    descriptor: Ljava/lang/Object;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public mutual_recursion$_main();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #9                  // Method clojure/lang/AFunction."<init>":()V
+         4: return
+      LineNumberTable:
+        line 19: 0
+
+  public static java.lang.Object invokeStatic();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=0, args_size=0
+         0: getstatic     #15                 // Field const__0:Lclojure/lang/Var;
+         3: invokevirtual #20                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+         6: checkcast     #22                 // class clojure/lang/IFn
+         9: getstatic     #25                 // Field const__1:Lclojure/lang/Var;
+        12: invokevirtual #20                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+        15: checkcast     #22                 // class clojure/lang/IFn
+        18: getstatic     #29                 // Field const__2:Ljava/lang/Object;
+        21: invokeinterface #33,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+        26: invokeinterface #33,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+        31: pop
+        32: getstatic     #15                 // Field const__0:Lclojure/lang/Var;
+        35: invokevirtual #20                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+        38: checkcast     #22                 // class clojure/lang/IFn
+        41: getstatic     #36                 // Field const__3:Lclojure/lang/Var;
+        44: invokevirtual #20                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+        47: checkcast     #22                 // class clojure/lang/IFn
+        50: getstatic     #29                 // Field const__2:Ljava/lang/Object;
+        53: invokeinterface #33,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+        58: invokeinterface #33,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+        63: pop
+        64: getstatic     #15                 // Field const__0:Lclojure/lang/Var;
+        67: invokevirtual #20                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+        70: checkcast     #22                 // class clojure/lang/IFn
+        73: getstatic     #25                 // Field const__1:Lclojure/lang/Var;
+        76: invokevirtual #20                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+        79: checkcast     #22                 // class clojure/lang/IFn
+        82: getstatic     #39                 // Field const__4:Ljava/lang/Object;
+        85: invokeinterface #33,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+        90: invokeinterface #33,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+        95: pop
+        96: getstatic     #15                 // Field const__0:Lclojure/lang/Var;
+        99: invokevirtual #20                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+       102: checkcast     #22                 // class clojure/lang/IFn
+       105: getstatic     #36                 // Field const__3:Lclojure/lang/Var;
+       108: invokevirtual #20                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+       111: checkcast     #22                 // class clojure/lang/IFn
+       114: getstatic     #39                 // Field const__4:Ljava/lang/Object;
+       117: invokeinterface #33,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+       122: invokeinterface #33,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+       127: pop
+       128: getstatic     #15                 // Field const__0:Lclojure/lang/Var;
+       131: invokevirtual #20                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+       134: checkcast     #22                 // class clojure/lang/IFn
+       137: getstatic     #25                 // Field const__1:Lclojure/lang/Var;
+       140: invokevirtual #20                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+       143: checkcast     #22                 // class clojure/lang/IFn
+       146: getstatic     #42                 // Field const__5:Ljava/lang/Object;
+       149: invokeinterface #33,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+       154: invokeinterface #33,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+       159: areturn
+      LineNumberTable:
+        line 19: 0
+        line 20: 6
+        line 20: 15
+        line 20: 21
+        line 20: 26
+        line 21: 38
+        line 21: 47
+        line 21: 53
+        line 21: 58
+        line 22: 70
+        line 22: 79
+        line 22: 85
+        line 22: 90
+        line 23: 102
+        line 23: 111
+        line 23: 117
+        line 23: 122
+        line 24: 134
+        line 24: 143
+        line 24: 149
+        line 24: 154
+
+  public java.lang.Object invoke();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: invokestatic  #44                 // Method invokeStatic:()Ljava/lang/Object;
+         3: areturn
+      LineNumberTable:
+        line 19: 0
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: ldc           #47                 // String clojure.core
+         2: ldc           #49                 // String println
+         4: invokestatic  #55                 // Method clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+         7: checkcast     #17                 // class clojure/lang/Var
+        10: putstatic     #15                 // Field const__0:Lclojure/lang/Var;
+        13: ldc           #57                 // String mutual-recursion
+        15: ldc           #59                 // String is-odd
+        17: invokestatic  #55                 // Method clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+        20: checkcast     #17                 // class clojure/lang/Var
+        23: putstatic     #25                 // Field const__1:Lclojure/lang/Var;
+        26: ldc2_w        #60                 // long 10l
+        29: invokestatic  #67                 // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+        32: putstatic     #29                 // Field const__2:Ljava/lang/Object;
+        35: ldc           #57                 // String mutual-recursion
+        37: ldc           #69                 // String is-even
+        39: invokestatic  #55                 // Method clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+        42: checkcast     #17                 // class clojure/lang/Var
+        45: putstatic     #36                 // Field const__3:Lclojure/lang/Var;
+        48: ldc2_w        #70                 // long 9l
+        51: invokestatic  #67                 // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+        54: putstatic     #39                 // Field const__4:Ljava/lang/Object;
+        57: ldc2_w        #72                 // long 2147483647l
+        60: invokestatic  #67                 // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+        63: putstatic     #42                 // Field const__5:Ljava/lang/Object;
+        66: return
+      LineNumberTable:
+        line 19: 0
+}
+SourceFile: "mutual_recursion.clj"
+SourceDebugExtension:
+  SMAP
+  mutual_recursion.java
+  Clojure
+  *S Clojure
+  *F
+  + 1 mutual_recursion.clj
+  mutual_recursion.clj
+  *L
+  17#1,8:17
+  *E

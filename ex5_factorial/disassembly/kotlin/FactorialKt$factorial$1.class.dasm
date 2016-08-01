@@ -1,0 +1,198 @@
+Classfile /Users/tuuli/school/thesis_examples/ex1_factorial/temp$_39916801/FactorialKt$factorial$1.class
+  Last modified Feb 17, 2016; size 1862 bytes
+  MD5 checksum e849690882d9125c4aa70f28dffed480
+  Compiled from "factorial.kt"
+final class FactorialKt$factorial$1 extends kotlin.jvm.internal.Lambda implements kotlin.jvm.functions.Function2<java.math.BigInteger, java.math.BigInteger, java.math.BigInteger>
+  minor version: 0
+  major version: 50
+  flags: ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               FactorialKt$factorial$1
+   #2 = Class              #1             // FactorialKt$factorial$1
+   #3 = Utf8               Lkotlin/jvm/internal/Lambda;Lkotlin/jvm/functions/Function2<Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;>;
+   #4 = Utf8               kotlin/jvm/internal/Lambda
+   #5 = Class              #4             // kotlin/jvm/internal/Lambda
+   #6 = Utf8               kotlin/jvm/functions/Function2
+   #7 = Class              #6             // kotlin/jvm/functions/Function2
+   #8 = Utf8               invoke
+   #9 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #10 = Utf8               java/math/BigInteger
+  #11 = Class              #10            // java/math/BigInteger
+  #12 = Utf8               (Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+  #13 = NameAndType        #8:#12         // invoke:(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+  #14 = Methodref          #2.#13         // FactorialKt$factorial$1.invoke:(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+  #15 = Utf8               Lorg/jetbrains/annotations/NotNull;
+  #16 = Utf8               n
+  #17 = String             #16            // n
+  #18 = Utf8               kotlin/jvm/internal/Intrinsics
+  #19 = Class              #18            // kotlin/jvm/internal/Intrinsics
+  #20 = Utf8               checkParameterIsNotNull
+  #21 = Utf8               (Ljava/lang/Object;Ljava/lang/String;)V
+  #22 = NameAndType        #20:#21        // checkParameterIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+  #23 = Methodref          #19.#22        // kotlin/jvm/internal/Intrinsics.checkParameterIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+  #24 = Utf8               acc
+  #25 = String             #24            // acc
+  #26 = Utf8               ZERO
+  #27 = Utf8               Ljava/math/BigInteger;
+  #28 = NameAndType        #26:#27        // ZERO:Ljava/math/BigInteger;
+  #29 = Fieldref           #11.#28        // java/math/BigInteger.ZERO:Ljava/math/BigInteger;
+  #30 = Utf8               areEqual
+  #31 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Z
+  #32 = NameAndType        #30:#31        // areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+  #33 = Methodref          #19.#32        // kotlin/jvm/internal/Intrinsics.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+  #34 = Utf8               ONE
+  #35 = NameAndType        #34:#27        // ONE:Ljava/math/BigInteger;
+  #36 = Fieldref           #11.#35        // java/math/BigInteger.ONE:Ljava/math/BigInteger;
+  #37 = Utf8               BigInteger.ONE
+  #38 = String             #37            // BigInteger.ONE
+  #39 = Utf8               checkExpressionValueIsNotNull
+  #40 = NameAndType        #39:#21        // checkExpressionValueIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+  #41 = Methodref          #19.#40        // kotlin/jvm/internal/Intrinsics.checkExpressionValueIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+  #42 = Utf8               kotlin/MathKt
+  #43 = Class              #42            // kotlin/MathKt
+  #44 = Utf8               minus
+  #45 = NameAndType        #44:#12        // minus:(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+  #46 = Methodref          #43.#45        // kotlin/MathKt.minus:(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+  #47 = Utf8               times
+  #48 = NameAndType        #47:#12        // times:(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+  #49 = Methodref          #43.#48        // kotlin/MathKt.times:(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+  #50 = Utf8               this
+  #51 = Utf8               LFactorialKt$factorial$1;
+  #52 = Utf8               <init>
+  #53 = Utf8               ()V
+  #54 = Utf8               (I)V
+  #55 = NameAndType        #52:#54        // "<init>":(I)V
+  #56 = Methodref          #5.#55         // kotlin/jvm/internal/Lambda."<init>":(I)V
+  #57 = Utf8               INSTANCE
+  #58 = Utf8               <clinit>
+  #59 = Utf8               Lkotlin/jvm/internal/KotlinSyntheticClass;
+  #60 = Utf8               version
+  #61 = Integer            1
+  #62 = Integer            0
+  #63 = Utf8               abiVersion
+  #64 = Integer            32
+  #65 = Utf8               Lkotlin/jvm/internal/KotlinFunction;
+  #66 = Utf8               data
+  #67 = Utf8               Q!!B#!i'!\tQ\"M3\rA!DE
+  #68 = Utf8               strings
+  #69 = Utf8               factorialHelper
+  #70 = Utf8               FactorialKt
+  #71 = Class              #70            // FactorialKt
+  #72 = Utf8               factorial
+  #73 = Utf8               (I)Ljava/math/BigInteger;
+  #74 = NameAndType        #72:#73        // factorial:(I)Ljava/math/BigInteger;
+  #75 = NameAndType        #52:#53        // "<init>":()V
+  #76 = Methodref          #2.#75         // FactorialKt$factorial$1."<init>":()V
+  #77 = NameAndType        #57:#51        // INSTANCE:LFactorialKt$factorial$1;
+  #78 = Fieldref           #2.#77         // FactorialKt$factorial$1.INSTANCE:LFactorialKt$factorial$1;
+  #79 = Utf8               factorial.kt
+  #80 = Utf8               Code
+  #81 = Utf8               LocalVariableTable
+  #82 = Utf8               LineNumberTable
+  #83 = Utf8               StackMapTable
+  #84 = Utf8               RuntimeInvisibleAnnotations
+  #85 = Utf8               RuntimeInvisibleParameterAnnotations
+  #86 = Utf8               Signature
+  #87 = Utf8               SourceFile
+  #88 = Utf8               EnclosingMethod
+  #89 = Utf8               InnerClasses
+  #90 = Utf8               RuntimeVisibleAnnotations
+{
+  public static final FactorialKt$factorial$1 INSTANCE;
+    descriptor: LFactorialKt$factorial$1;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public java.lang.Object invoke(java.lang.Object, java.lang.Object);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PUBLIC, ACC_BRIDGE, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: aload_1
+         2: checkcast     #11                 // class java/math/BigInteger
+         5: aload_2
+         6: checkcast     #11                 // class java/math/BigInteger
+         9: invokevirtual #14                 // Method invoke:(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+        12: areturn
+
+  public final java.math.BigInteger invoke(java.math.BigInteger, java.math.BigInteger);
+    descriptor: (Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    flags: ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=5, locals=3, args_size=3
+         0: aload_1
+         1: ldc           #17                 // String n
+         3: invokestatic  #23                 // Method kotlin/jvm/internal/Intrinsics.checkParameterIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+         6: aload_2
+         7: ldc           #25                 // String acc
+         9: invokestatic  #23                 // Method kotlin/jvm/internal/Intrinsics.checkParameterIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+        12: aload_1
+        13: getstatic     #29                 // Field java/math/BigInteger.ZERO:Ljava/math/BigInteger;
+        16: invokestatic  #33                 // Method kotlin/jvm/internal/Intrinsics.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+        19: ifeq          24
+        22: aload_2
+        23: areturn
+        24: aload_0
+        25: checkcast     #2                  // class FactorialKt$factorial$1
+        28: aload_1
+        29: getstatic     #36                 // Field java/math/BigInteger.ONE:Ljava/math/BigInteger;
+        32: dup
+        33: ldc           #38                 // String BigInteger.ONE
+        35: invokestatic  #41                 // Method kotlin/jvm/internal/Intrinsics.checkExpressionValueIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+        38: invokestatic  #46                 // Method kotlin/MathKt.minus:(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+        41: aload_2
+        42: aload_1
+        43: invokestatic  #49                 // Method kotlin/MathKt.times:(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+        46: astore_2
+        47: astore_1
+        48: pop
+        49: goto          0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      52     0  this   LFactorialKt$factorial$1;
+            0      52     1     n   Ljava/math/BigInteger;
+            0      52     2   acc   Ljava/math/BigInteger;
+      LineNumberTable:
+        line 10: 12
+        line 11: 22
+        line 13: 24
+      StackMapTable: number_of_entries = 2
+        frame_type = 0 /* same */
+        frame_type = 23 /* same */
+    RuntimeInvisibleAnnotations:
+      0: #15()
+    RuntimeInvisibleParameterAnnotations:
+      0:
+        0: #15()
+      1:
+        0: #15()
+
+  FactorialKt$factorial$1();
+    descriptor: ()V
+    flags:
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: iconst_2
+         2: invokespecial #56                 // Method kotlin/jvm/internal/Lambda."<init>":(I)V
+         5: return
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: new           #2                  // class FactorialKt$factorial$1
+         3: dup
+         4: invokespecial #76                 // Method "<init>":()V
+         7: putstatic     #78                 // Field INSTANCE:LFactorialKt$factorial$1;
+        10: return
+}
+Signature: #3                           // Lkotlin/jvm/internal/Lambda;Lkotlin/jvm/functions/Function2<Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;>;
+SourceFile: "factorial.kt"
+EnclosingMethod: #71.#74                // FactorialKt.factorial
+InnerClasses:
+     public static final #2; //class FactorialKt$factorial$1
+RuntimeVisibleAnnotations:
+  0: #59(#60=[I#61,I#62,I#61],#63=I#64)
+  1: #65(#60=[I#61,I#62,I#61],#63=I#64,#66=[s#67],#68=[s#69,s#27,s#16,s#24,s#8])

@@ -1,0 +1,123 @@
+// Input: Factorial.exe
+// Image type: EXE
+// Native code present: No
+// 32-bit only: No
+// Length of IL data: 3584
+
+// VS_VERSION_INFO:
+//    dwStrucVersion            : 1.0
+//    dwFileVersion             : 0.0.0.0
+//    dwProductVersion          : 0.0.0.0
+//    dwFileFlagsMask           : 0x0000003F
+//    dwFileFlags               : 0x00000000
+//    dwFileOS                  : 0x00000004
+//    dwFileType                : 0x00000001
+//    dwFileSubtype             : 0x00000000
+//    dwFileDate                : 0x0000000000000000
+//    Translation               : 0x04B00000
+//    FileDescription           : " "
+//    FileVersion               : "0.0.0.0"
+//    InternalName              : "Factorial.exe"
+//    LegalCopyright            : " "
+//    OriginalFilename          : "Factorial.exe"
+//    ProductVersion            : "0.0.0.0"
+//    Assembly Version          : "0.0.0.0"
+
+.assembly extern mscorlib
+{
+	.ver 4:0:0:0
+	.publickeytoken = (B7 7A 5C 56 19 34 E0 89)   // .z\V.4..
+}
+.assembly extern System.Numerics
+{
+	.ver 4:0:0:0
+	.publickeytoken = (B7 7A 5C 56 19 34 E0 89)   // .z\V.4..
+}
+.assembly Factorial
+{
+	.hash algorithm 0x00008004
+	.ver 0:0:0:0
+	.custom instance void [mscorlib]System.Runtime.CompilerServices.CompilationRelaxationsAttribute::.ctor(int32) = (01 00 08 00 00 00 00 00)   // ........
+	// CompilationRelaxations(8 /*0x00000008*/)
+	.custom instance void [mscorlib]System.Runtime.CompilerServices.RuntimeCompatibilityAttribute::.ctor() =
+		(01 00 01 00 54 02 16 57 72 61 70 4E 6F 6E 45 78   // ....T..WrapNonEx
+		 63 65 70 74 69 6F 6E 54 68 72 6F 77 73 01)  // ceptionThrows.
+	// RuntimeCompatibility(), WrapNonExceptionThrows=true
+}
+.module Factorial.exe
+// MVID: {E982CE58-B83F-4792-B110-91B824BEC112}
+.class public auto ansi beforefieldinit Factorial extends [mscorlib]System.Object
+{
+	.method private static hidebysig valuetype [System.Numerics]System.Numerics.BigInteger FactHelper(valuetype [System.Numerics]System.Numerics.BigInteger n, valuetype [System.Numerics]System.Numerics.BigInteger acc) cil managed 
+	{
+		// Start of method header: 2050
+		.maxstack  3
+		.locals    init (valuetype [System.Numerics]System.Numerics.BigInteger,
+		            bool)
+	?L205c:
+		nop
+		ldarga.s   0
+		call       instance bool [System.Numerics]System.Numerics.BigInteger::get_IsZero()
+		ldc.i4.0
+		ceq
+		stloc.1
+		ldloc.1
+		brtrue.s   ?L206f
+		ldarg.1
+		stloc.0
+		br.s       ?L2089
+	?L206f: 
+		ldarg.0
+		call       valuetype [System.Numerics]System.Numerics.BigInteger [System.Numerics]System.Numerics.BigInteger::get_One()
+		call       valuetype [System.Numerics]System.Numerics.BigInteger [System.Numerics]System.Numerics.BigInteger::op_Subtraction(valuetype [System.Numerics]System.Numerics.BigInteger, valuetype [System.Numerics]System.Numerics.BigInteger)
+		ldarg.1
+		ldarg.0
+		call       valuetype [System.Numerics]System.Numerics.BigInteger [System.Numerics]System.Numerics.BigInteger::op_Multiply(valuetype [System.Numerics]System.Numerics.BigInteger, valuetype [System.Numerics]System.Numerics.BigInteger)
+		call       valuetype [System.Numerics]System.Numerics.BigInteger Factorial::FactHelper(valuetype [System.Numerics]System.Numerics.BigInteger, valuetype [System.Numerics]System.Numerics.BigInteger)
+		stloc.0
+		br.s       ?L2089
+	?L2089:
+		ldloc.0
+		ret
+	}
+	.method public static hidebysig valuetype [System.Numerics]System.Numerics.BigInteger Fact(int32 n) cil managed 
+	{
+		// Start of method header: 208c
+		.maxstack  2
+		.locals    init (valuetype [System.Numerics]System.Numerics.BigInteger)
+	?L2098:
+		nop
+		ldarg.0
+		newobj     instance void [System.Numerics]System.Numerics.BigInteger::.ctor(int32)
+		call       valuetype [System.Numerics]System.Numerics.BigInteger [System.Numerics]System.Numerics.BigInteger::get_One()
+		call       valuetype [System.Numerics]System.Numerics.BigInteger Factorial::FactHelper(valuetype [System.Numerics]System.Numerics.BigInteger, valuetype [System.Numerics]System.Numerics.BigInteger)
+		stloc.0
+		br.s       ?L20ac
+	?L20ac:
+		ldloc.0
+		ret
+	}
+	.method public static hidebysig void Main() cil managed 
+	{
+		// Start of method header: 20ae
+		.entrypoint
+		.maxstack  8
+	?L20af:
+		nop
+		ldc.i4     10000
+		call       valuetype [System.Numerics]System.Numerics.BigInteger Factorial::Fact(int32)
+		box        class [System.Numerics]System.Numerics.BigInteger
+		call       void [mscorlib]System.Console::WriteLine(class System.Object)
+		nop
+		ret
+	}
+	.method public hidebysig specialname rtspecialname instance void .ctor() cil managed 
+	{
+		// Start of method header: 20c6
+		.maxstack  8
+	?L20c7:
+		ldarg.0
+		call       instance void [mscorlib]System.Object::.ctor()
+		ret
+	}
+}

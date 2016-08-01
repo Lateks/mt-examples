@@ -1,0 +1,119 @@
+.assembly extern mscorlib
+{
+  .ver 4:0:0:0
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 ) // .z\V.4..
+}
+.assembly 'SimpleClosure'
+{
+  .custom instance void class [mscorlib]System.Runtime.CompilerServices.RuntimeCompatibilityAttribute::'.ctor'() =  (
+		01 00 01 00 54 02 16 57 72 61 70 4E 6F 6E 45 78   // ....T..WrapNonEx
+		63 65 70 74 69 6F 6E 54 68 72 6F 77 73 01       ) // ceptionThrows.
+
+  .hash algorithm 0x00008004
+  .ver  0:0:0:0
+}
+.module SimpleClosure.exe // GUID = {600C3EB6-5428-4473-BDBF-C400261BA967}
+
+
+  .class public auto ansi beforefieldinit SimpleClosure
+  	extends [mscorlib]System.Object
+  {
+
+    // method line 1
+    .method public hidebysig specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x2050
+	// Code size 7 (0x7)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void object::'.ctor'()
+	IL_0006:  ret 
+    } // end of method SimpleClosure::.ctor
+
+    // method line 2
+    .method private static hidebysig 
+           default class [mscorlib]System.Func`2<int32, int32> Add (int32 x)  cil managed 
+    {
+        // Method begins at RVA 0x2058
+	// Code size 26 (0x1a)
+	.maxstack 2
+	.locals init (
+		class SimpleClosure/'<Add>c__AnonStorey0'	V_0)
+	IL_0000:  newobj instance void class SimpleClosure/'<Add>c__AnonStorey0'::'.ctor'()
+	IL_0005:  stloc.0 
+	IL_0006:  ldloc.0 
+	IL_0007:  ldarg.0 
+	IL_0008:  stfld int32 SimpleClosure/'<Add>c__AnonStorey0'::x
+	IL_000d:  ldloc.0 
+	IL_000e:  ldftn instance int32 class SimpleClosure/'<Add>c__AnonStorey0'::'<>m__0'(int32)
+	IL_0014:  newobj instance void class [mscorlib]System.Func`2<int32, int32>::'.ctor'(object, native int)
+	IL_0019:  ret 
+    } // end of method SimpleClosure::Add
+
+    // method line 3
+    .method public static hidebysig 
+           default void Main ()  cil managed 
+    {
+        // Method begins at RVA 0x2080
+	.entrypoint
+	// Code size 55 (0x37)
+	.maxstack 2
+	.locals init (
+		class [mscorlib]System.Func`2<int32, int32>	V_0)
+	IL_0000:  ldc.i4.5 
+	IL_0001:  call class [mscorlib]System.Func`2<int32,int32> class SimpleClosure::Add(int32)
+	IL_0006:  ldc.i4.4 
+	IL_0007:  callvirt instance !1 class [mscorlib]System.Func`2<int32, int32>::Invoke(!0)
+	IL_000c:  call void class [mscorlib]System.Console::WriteLine(int32)
+	IL_0011:  ldc.i4.s 0x0a
+	IL_0013:  call class [mscorlib]System.Func`2<int32,int32> class SimpleClosure::Add(int32)
+	IL_0018:  stloc.0 
+	IL_0019:  ldloc.0 
+	IL_001a:  ldc.i4.s 0x5a
+	IL_001c:  callvirt instance !1 class [mscorlib]System.Func`2<int32, int32>::Invoke(!0)
+	IL_0021:  call void class [mscorlib]System.Console::WriteLine(int32)
+	IL_0026:  ldloc.0 
+	IL_0027:  ldc.i4 999
+	IL_002c:  callvirt instance !1 class [mscorlib]System.Func`2<int32, int32>::Invoke(!0)
+	IL_0031:  call void class [mscorlib]System.Console::WriteLine(int32)
+	IL_0036:  ret 
+    } // end of method SimpleClosure::Main
+
+  .class nested private auto ansi sealed beforefieldinit '<Add>c__AnonStorey0'
+  	extends [mscorlib]System.Object
+  {
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .field  assembly  int32 x
+
+    // method line 4
+    .method public hidebysig specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x20c3
+	// Code size 7 (0x7)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void object::'.ctor'()
+	IL_0006:  ret 
+    } // end of method <Add>c__AnonStorey0::.ctor
+
+    // method line 5
+    .method assembly hidebysig 
+           instance default int32 '<>m__0' (int32 y)  cil managed 
+    {
+        // Method begins at RVA 0x20cb
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld int32 SimpleClosure/'<Add>c__AnonStorey0'::x
+	IL_0006:  ldarg.1 
+	IL_0007:  add 
+	IL_0008:  ret 
+    } // end of method <Add>c__AnonStorey0::<>m__0
+
+  } // end of class <Add>c__AnonStorey0
+
+  } // end of class SimpleClosure
+

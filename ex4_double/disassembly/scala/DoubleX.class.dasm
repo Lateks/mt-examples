@@ -1,0 +1,62 @@
+Classfile /Users/tuuli/school/thesis_examples/ex8_top_level_first_class_functions/temp$_39916801/DoubleX.class
+  Last modified Jun 2, 2016; size 678 bytes
+  MD5 checksum 3280f60dfa2ba53091412e76436943f6
+  Compiled from "DoubleX.scala"
+public final class DoubleX
+  minor version: 0
+  major version: 50
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               DoubleX
+   #2 = Class              #1             // DoubleX
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               DoubleX.scala
+   #6 = Utf8               Lscala/reflect/ScalaSignature;
+   #7 = Utf8               bytes
+   #8 = Utf8               5:Q!\t\tqR8vE2,LCaT-9usz5\t!AB\t!BAE_VG.-QCAa!\"AM\r\1\n=a!AB!osJ+g\rC!#=S:LGO!)AcC+!Q.Y5o)\t1/%+:LGC'1$becA=%QJ-\t?\tr!a\nbA)sK,g-$I\t11:j]T!!\t\t:AA|WO7f1Rf\t%J!A%sGC-K&Ay
+   #9 = Utf8               doubleX
+  #10 = Utf8               (I)I
+  #11 = Utf8               DoubleX$
+  #12 = Class              #11            // DoubleX$
+  #13 = Utf8               MODULE$
+  #14 = Utf8               LDoubleX$;
+  #15 = NameAndType        #13:#14        // MODULE$:LDoubleX$;
+  #16 = Fieldref           #12.#15        // DoubleX$.MODULE$:LDoubleX$;
+  #17 = NameAndType        #9:#10         // doubleX:(I)I
+  #18 = Methodref          #12.#17        // DoubleX$.doubleX:(I)I
+  #19 = Utf8               main
+  #20 = Utf8               ([Ljava/lang/String;)V
+  #21 = NameAndType        #19:#20        // main:([Ljava/lang/String;)V
+  #22 = Methodref          #12.#21        // DoubleX$.main:([Ljava/lang/String;)V
+  #23 = Utf8               Code
+  #24 = Utf8               SourceFile
+  #25 = Utf8               RuntimeVisibleAnnotations
+  #26 = Utf8               ScalaSig
+{
+  public static int doubleX(int);
+    descriptor: (I)I
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #16                 // Field DoubleX$.MODULE$:LDoubleX$;
+         3: iload_0
+         4: invokevirtual #18                 // Method DoubleX$.doubleX:(I)I
+         7: ireturn
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #16                 // Field DoubleX$.MODULE$:LDoubleX$;
+         3: aload_0
+         4: invokevirtual #22                 // Method DoubleX$.main:([Ljava/lang/String;)V
+         7: return
+}
+SourceFile: "DoubleX.scala"
+RuntimeVisibleAnnotations:
+  0: #6(#7=s#8)
+Error: unknown attribute
+  ScalaSig: length = 0x3
+   05 00 00

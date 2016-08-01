@@ -1,0 +1,246 @@
+Classfile /Users/tuuli/school/thesis_examples/ex2_closure/temp$_39916801/simple_closure$frame.class
+  Last modified Feb 18, 2016; size 1787 bytes
+  MD5 checksum 36ef18fa6e579553b92476286f29c326
+  Compiled from "simple_closure.scm"
+public class simple_closure$frame extends gnu.expr.ModuleBody
+  minor version: 0
+  major version: 51
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Utf8               simple_closure$frame
+   #2 = Class              #1             // simple_closure$frame
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               gnu/kawa/functions/AddOp
+   #6 = Class              #5             // gnu/kawa/functions/AddOp
+   #7 = Utf8               $Pl
+   #8 = Utf8               Lgnu/kawa/functions/AddOp;
+   #9 = NameAndType        #7:#8          // $Pl:Lgnu/kawa/functions/AddOp;
+  #10 = Fieldref           #6.#9          // gnu/kawa/functions/AddOp.$Pl:Lgnu/kawa/functions/AddOp;
+  #11 = Utf8               x
+  #12 = Utf8               Ljava/lang/Object;
+  #13 = NameAndType        #11:#12        // x:Ljava/lang/Object;
+  #14 = Fieldref           #2.#13         // simple_closure$frame.x:Ljava/lang/Object;
+  #15 = Utf8               gnu/mapping/Procedure
+  #16 = Class              #15            // gnu/mapping/Procedure
+  #17 = Utf8               apply2
+  #18 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #19 = NameAndType        #17:#18        // apply2:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #20 = Methodref          #16.#19        // gnu/mapping/Procedure.apply2:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #21 = Utf8               gnu/expr/ModuleBody
+  #22 = Class              #21            // gnu/expr/ModuleBody
+  #23 = Utf8               <init>
+  #24 = Utf8               ()V
+  #25 = NameAndType        #23:#24        // "<init>":()V
+  #26 = Methodref          #22.#25        // gnu/expr/ModuleBody."<init>":()V
+  #27 = Utf8               gnu/expr/ModuleMethod
+  #28 = Class              #27            // gnu/expr/ModuleMethod
+  #29 = Utf8               (Lgnu/expr/ModuleBody;ILjava/lang/Object;I)V
+  #30 = NameAndType        #23:#29        // "<init>":(Lgnu/expr/ModuleBody;ILjava/lang/Object;I)V
+  #31 = Methodref          #28.#30        // gnu/expr/ModuleMethod."<init>":(Lgnu/expr/ModuleBody;ILjava/lang/Object;I)V
+  #32 = Utf8               source-location
+  #33 = String             #32            // source-location
+  #34 = Utf8               simple_closure.scm:3
+  #35 = String             #34            // simple_closure.scm:3
+  #36 = Utf8               gnu/mapping/PropertySet
+  #37 = Class              #36            // gnu/mapping/PropertySet
+  #38 = Utf8               setProperty
+  #39 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)V
+  #40 = NameAndType        #38:#39        // setProperty:(Ljava/lang/Object;Ljava/lang/Object;)V
+  #41 = Methodref          #37.#40        // gnu/mapping/PropertySet.setProperty:(Ljava/lang/Object;Ljava/lang/Object;)V
+  #42 = Utf8               lambda$Fn1
+  #43 = Utf8               Lgnu/expr/ModuleMethod;
+  #44 = NameAndType        #42:#43        // lambda$Fn1:Lgnu/expr/ModuleMethod;
+  #45 = Fieldref           #2.#44         // simple_closure$frame.lambda$Fn1:Lgnu/expr/ModuleMethod;
+  #46 = Utf8               gnu/mapping/CallContext
+  #47 = Class              #46            // gnu/mapping/CallContext
+  #48 = Utf8               selector
+  #49 = Utf8               I
+  #50 = NameAndType        #48:#49        // selector:I
+  #51 = Fieldref           #28.#50        // gnu/expr/ModuleMethod.selector:I
+  #52 = Utf8               value1
+  #53 = NameAndType        #52:#12        // value1:Ljava/lang/Object;
+  #54 = Fieldref           #47.#53        // gnu/mapping/CallContext.value1:Ljava/lang/Object;
+  #55 = Utf8               proc
+  #56 = Utf8               Lgnu/mapping/Procedure;
+  #57 = NameAndType        #55:#56        // proc:Lgnu/mapping/Procedure;
+  #58 = Fieldref           #47.#57        // gnu/mapping/CallContext.proc:Lgnu/mapping/Procedure;
+  #59 = Utf8               pc
+  #60 = NameAndType        #59:#49        // pc:I
+  #61 = Fieldref           #47.#60        // gnu/mapping/CallContext.pc:I
+  #62 = Utf8               match1
+  #63 = Utf8               (Lgnu/expr/ModuleMethod;Ljava/lang/Object;Lgnu/mapping/CallContext;)I
+  #64 = NameAndType        #62:#63        // match1:(Lgnu/expr/ModuleMethod;Ljava/lang/Object;Lgnu/mapping/CallContext;)I
+  #65 = Methodref          #22.#64        // gnu/expr/ModuleBody.match1:(Lgnu/expr/ModuleMethod;Ljava/lang/Object;Lgnu/mapping/CallContext;)I
+  #66 = Utf8               applyError
+  #67 = NameAndType        #66:#24        // applyError:()V
+  #68 = Methodref          #28.#67        // gnu/expr/ModuleMethod.applyError:()V
+  #69 = Utf8               lambda1
+  #70 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #71 = NameAndType        #69:#70        // lambda1:(Ljava/lang/Object;)Ljava/lang/Object;
+  #72 = Methodref          #2.#71         // simple_closure$frame.lambda1:(Ljava/lang/Object;)Ljava/lang/Object;
+  #73 = Utf8               apply1
+  #74 = Utf8               (Lgnu/expr/ModuleMethod;Ljava/lang/Object;)Ljava/lang/Object;
+  #75 = NameAndType        #73:#74        // apply1:(Lgnu/expr/ModuleMethod;Ljava/lang/Object;)Ljava/lang/Object;
+  #76 = Methodref          #22.#75        // gnu/expr/ModuleBody.apply1:(Lgnu/expr/ModuleMethod;Ljava/lang/Object;)Ljava/lang/Object;
+  #77 = Utf8               Code
+  #78 = Utf8               LineNumberTable
+  #79 = Utf8               LocalVariableTable
+  #80 = Utf8               this
+  #81 = Utf8               Lsimple_closure$frame;
+  #82 = Utf8               y
+  #83 = Utf8               StackMapTable
+  #84 = Utf8               apply
+  #85 = Utf8               (Lgnu/mapping/CallContext;)V
+  #86 = Utf8               EnclosingMethod
+  #87 = Utf8               simple_closure
+  #88 = Class              #87            // simple_closure
+  #89 = Utf8               add
+  #90 = Utf8               (Ljava/lang/Object;)Lgnu/mapping/Procedure;
+  #91 = NameAndType        #89:#90        // add:(Ljava/lang/Object;)Lgnu/mapping/Procedure;
+  #92 = Utf8               SourceFile
+  #93 = Utf8               simple_closure.scm
+  #94 = Utf8               SourceDebugExtension
+  #95 = Utf8               InnerClasses
+{
+  java.lang.Object x;
+    descriptor: Ljava/lang/Object;
+    flags:
+
+  final gnu.expr.ModuleMethod lambda$Fn1;
+    descriptor: Lgnu/expr/ModuleMethod;
+    flags: ACC_FINAL
+
+  public simple_closure$frame();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=7, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #26                 // Method gnu/expr/ModuleBody."<init>":()V
+         4: aload_0
+         5: new           #28                 // class gnu/expr/ModuleMethod
+         8: dup
+         9: aload_0
+        10: iconst_1
+        11: aconst_null
+        12: sipush        4097
+        15: invokespecial #31                 // Method gnu/expr/ModuleMethod."<init>":(Lgnu/expr/ModuleBody;ILjava/lang/Object;I)V
+        18: dup
+        19: ldc           #33                 // String source-location
+        21: ldc           #35                 // String simple_closure.scm:3
+        23: invokevirtual #41                 // Method gnu/mapping/PropertySet.setProperty:(Ljava/lang/Object;Ljava/lang/Object;)V
+        26: putfield      #45                 // Field lambda$Fn1:Lgnu/expr/ModuleMethod;
+        29: return
+
+  java.lang.Object lambda1(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags:
+    Code:
+      stack=3, locals=2, args_size=2
+         0: getstatic     #10                 // Field gnu/kawa/functions/AddOp.$Pl:Lgnu/kawa/functions/AddOp;
+         3: aload_0
+         4: getfield      #14                 // Field x:Ljava/lang/Object;
+         7: aload_1
+         8: invokevirtual #20                 // Method gnu/mapping/Procedure.apply2:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        11: areturn
+      LineNumberTable:
+        line 3: 0
+        line 4: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      12     0  this   Lsimple_closure$frame;
+            0      11     1     y   Ljava/lang/Object;
+
+  public int match1(gnu.expr.ModuleMethod, java.lang.Object, gnu.mapping.CallContext);
+    descriptor: (Lgnu/expr/ModuleMethod;Ljava/lang/Object;Lgnu/mapping/CallContext;)I
+    flags: ACC_PUBLIC
+    Code:
+      stack=4, locals=4, args_size=4
+         0: aload_1
+         1: getfield      #51                 // Field gnu/expr/ModuleMethod.selector:I
+         4: iconst_1
+         5: if_icmpne     28
+         8: goto          11
+        11: aload_3
+        12: aload_2
+        13: putfield      #54                 // Field gnu/mapping/CallContext.value1:Ljava/lang/Object;
+        16: aload_3
+        17: aload_1
+        18: putfield      #58                 // Field gnu/mapping/CallContext.proc:Lgnu/mapping/Procedure;
+        21: aload_3
+        22: iconst_1
+        23: putfield      #61                 // Field gnu/mapping/CallContext.pc:I
+        26: iconst_0
+        27: ireturn
+        28: aload_0
+        29: aload_1
+        30: aload_2
+        31: aload_3
+        32: invokespecial #65                 // Method gnu/expr/ModuleBody.match1:(Lgnu/expr/ModuleMethod;Ljava/lang/Object;Lgnu/mapping/CallContext;)I
+        35: ireturn
+      StackMapTable: number_of_entries = 3
+        frame_type = 68 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 6 /* same */
+        frame_type = 16 /* same */
+      LineNumberTable:
+        line 3: 11
+
+  public void apply(gnu.mapping.CallContext);
+    descriptor: (Lgnu/mapping/CallContext;)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=2, args_size=2
+         0: aload_1
+         1: getfield      #61                 // Field gnu/mapping/CallContext.pc:I
+         4: pop
+         5: goto          8
+         8: invokestatic  #68                 // Method gnu/expr/ModuleMethod.applyError:()V
+        11: return
+      StackMapTable: number_of_entries = 2
+        frame_type = 68 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 3 /* same */
+
+  public java.lang.Object apply1(gnu.expr.ModuleMethod, java.lang.Object);
+    descriptor: (Lgnu/expr/ModuleMethod;Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_1
+         1: getfield      #51                 // Field gnu/expr/ModuleMethod.selector:I
+         4: iconst_1
+         5: if_icmpne     17
+         8: goto          11
+        11: aload_0
+        12: aload_2
+        13: invokevirtual #72                 // Method lambda1:(Ljava/lang/Object;)Ljava/lang/Object;
+        16: areturn
+        17: aload_0
+        18: aload_1
+        19: aload_2
+        20: invokespecial #76                 // Method gnu/expr/ModuleBody.apply1:(Lgnu/expr/ModuleMethod;Ljava/lang/Object;)Ljava/lang/Object;
+        23: areturn
+      StackMapTable: number_of_entries = 3
+        frame_type = 68 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 6 /* same */
+        frame_type = 5 /* same */
+      LineNumberTable:
+        line 3: 11
+}
+InnerClasses:
+     public #1= #2; //simple_closure$frame=class simple_closure$frame
+EnclosingMethod: #88.#91                // simple_closure.add
+SourceFile: "simple_closure.scm"
+SourceDebugExtension:
+  SMAP
+  simple_closure.scm
+  Scheme
+  *S Scheme
+  *F
+  1 simple_closure.scm
+  *L
+  3#1,2:3
+  *E

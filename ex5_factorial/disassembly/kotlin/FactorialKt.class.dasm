@@ -1,0 +1,173 @@
+Classfile /Users/tuuli/school/thesis_examples/ex1_factorial/temp$_39916801/FactorialKt.class
+  Last modified Feb 17, 2016; size 1758 bytes
+  MD5 checksum 02aef5683cf6905317f910ed2ce651cf
+  Compiled from "factorial.kt"
+public final class FactorialKt
+  minor version: 0
+  major version: 50
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               FactorialKt
+   #2 = Class              #1             // FactorialKt
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               factorial
+   #6 = Utf8               (I)Ljava/math/BigInteger;
+   #7 = Utf8               Lorg/jetbrains/annotations/NotNull;
+   #8 = Utf8               FactorialKt$factorial$1
+   #9 = Class              #8             // FactorialKt$factorial$1
+  #10 = Utf8               INSTANCE
+  #11 = Utf8               LFactorialKt$factorial$1;
+  #12 = NameAndType        #10:#11        // INSTANCE:LFactorialKt$factorial$1;
+  #13 = Fieldref           #9.#12         // FactorialKt$factorial$1.INSTANCE:LFactorialKt$factorial$1;
+  #14 = Utf8               java/math/BigInteger
+  #15 = Class              #14            // java/math/BigInteger
+  #16 = Utf8               valueOf
+  #17 = Utf8               (J)Ljava/math/BigInteger;
+  #18 = NameAndType        #16:#17        // valueOf:(J)Ljava/math/BigInteger;
+  #19 = Methodref          #15.#18        // java/math/BigInteger.valueOf:(J)Ljava/math/BigInteger;
+  #20 = Utf8               BigInteger.valueOf(n.toLong())
+  #21 = String             #20            // BigInteger.valueOf(n.toLong())
+  #22 = Utf8               kotlin/jvm/internal/Intrinsics
+  #23 = Class              #22            // kotlin/jvm/internal/Intrinsics
+  #24 = Utf8               checkExpressionValueIsNotNull
+  #25 = Utf8               (Ljava/lang/Object;Ljava/lang/String;)V
+  #26 = NameAndType        #24:#25        // checkExpressionValueIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+  #27 = Methodref          #23.#26        // kotlin/jvm/internal/Intrinsics.checkExpressionValueIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+  #28 = Utf8               ONE
+  #29 = Utf8               Ljava/math/BigInteger;
+  #30 = NameAndType        #28:#29        // ONE:Ljava/math/BigInteger;
+  #31 = Fieldref           #15.#30        // java/math/BigInteger.ONE:Ljava/math/BigInteger;
+  #32 = Utf8               BigInteger.ONE
+  #33 = String             #32            // BigInteger.ONE
+  #34 = Utf8               invoke
+  #35 = Utf8               (Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+  #36 = NameAndType        #34:#35        // invoke:(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+  #37 = Methodref          #9.#36         // FactorialKt$factorial$1.invoke:(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+  #38 = Utf8               factorialHelper$
+  #39 = Utf8               n
+  #40 = Utf8               I
+  #41 = Utf8               main
+  #42 = Utf8               ([Ljava/lang/String;)V
+  #43 = Utf8               args
+  #44 = String             #43            // args
+  #45 = Utf8               checkParameterIsNotNull
+  #46 = NameAndType        #45:#25        // checkParameterIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+  #47 = Methodref          #23.#46        // kotlin/jvm/internal/Intrinsics.checkParameterIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+  #48 = Utf8               java/lang/StringBuilder
+  #49 = Class              #48            // java/lang/StringBuilder
+  #50 = Utf8               <init>
+  #51 = Utf8               ()V
+  #52 = NameAndType        #50:#51        // "<init>":()V
+  #53 = Methodref          #49.#52        // java/lang/StringBuilder."<init>":()V
+  #54 = Utf8               Result =
+  #55 = String             #54            // Result =
+  #56 = Utf8               append
+  #57 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #58 = NameAndType        #56:#57        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #59 = Methodref          #49.#58        // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #60 = NameAndType        #5:#6          // factorial:(I)Ljava/math/BigInteger;
+  #61 = Methodref          #2.#60         // FactorialKt.factorial:(I)Ljava/math/BigInteger;
+  #62 = Utf8               (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  #63 = NameAndType        #56:#62        // append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  #64 = Methodref          #49.#63        // java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  #65 = Utf8               \n
+  #66 = String             #65            // \n
+  #67 = Utf8               toString
+  #68 = Utf8               ()Ljava/lang/String;
+  #69 = NameAndType        #67:#68        // toString:()Ljava/lang/String;
+  #70 = Methodref          #49.#69        // java/lang/StringBuilder.toString:()Ljava/lang/String;
+  #71 = Utf8               kotlin/io/ConsoleKt
+  #72 = Class              #71            // kotlin/io/ConsoleKt
+  #73 = Utf8               print
+  #74 = Utf8               (Ljava/lang/Object;)V
+  #75 = NameAndType        #73:#74        // print:(Ljava/lang/Object;)V
+  #76 = Methodref          #72.#75        // kotlin/io/ConsoleKt.print:(Ljava/lang/Object;)V
+  #77 = Utf8               [Ljava/lang/String;
+  #78 = Utf8               Lkotlin/jvm/internal/KotlinFileFacade;
+  #79 = Utf8               version
+  #80 = Integer            1
+  #81 = Integer            0
+  #82 = Utf8               abiVersion
+  #83 = Integer            32
+  #84 = Utf8               data
+  #85 = Utf8               !Q!)\tQ!)#!9QAG\ti'!\tQ\"M)QBEA2!\t5!BA1AB!U!6A
+  #86 = Utf8               strings
+  #87 = Utf8
+  #88 = Utf8               factorial.kt
+  #89 = Utf8               Code
+  #90 = Utf8               LocalVariableTable
+  #91 = Utf8               LineNumberTable
+  #92 = Utf8               RuntimeInvisibleAnnotations
+  #93 = Utf8               RuntimeInvisibleParameterAnnotations
+  #94 = Utf8               SourceFile
+  #95 = Utf8               InnerClasses
+  #96 = Utf8               RuntimeVisibleAnnotations
+{
+  public static final java.math.BigInteger factorial(int);
+    descriptor: (I)Ljava/math/BigInteger;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    Code:
+      stack=5, locals=2, args_size=1
+         0: getstatic     #13                 // Field FactorialKt$factorial$1.INSTANCE:LFactorialKt$factorial$1;
+         3: astore_1
+         4: aload_1
+         5: checkcast     #9                  // class FactorialKt$factorial$1
+         8: iload_0
+         9: i2l
+        10: invokestatic  #19                 // Method java/math/BigInteger.valueOf:(J)Ljava/math/BigInteger;
+        13: dup
+        14: ldc           #21                 // String BigInteger.valueOf(n.toLong())
+        16: invokestatic  #27                 // Method kotlin/jvm/internal/Intrinsics.checkExpressionValueIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+        19: getstatic     #31                 // Field java/math/BigInteger.ONE:Ljava/math/BigInteger;
+        22: dup
+        23: ldc           #33                 // String BigInteger.ONE
+        25: invokestatic  #27                 // Method kotlin/jvm/internal/Intrinsics.checkExpressionValueIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+        28: invokevirtual #37                 // Method FactorialKt$factorial$1.invoke:(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+        31: areturn
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            4      28     1 factorialHelper$   LFactorialKt$factorial$1;
+            0      32     0     n   I
+      LineNumberTable:
+        line 9: 0
+        line 16: 4
+    RuntimeInvisibleAnnotations:
+      0: #7()
+
+  public static final void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: ldc           #44                 // String args
+         3: invokestatic  #47                 // Method kotlin/jvm/internal/Intrinsics.checkParameterIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+         6: new           #49                 // class java/lang/StringBuilder
+         9: dup
+        10: invokespecial #53                 // Method java/lang/StringBuilder."<init>":()V
+        13: ldc           #55                 // String Result =
+        15: invokevirtual #59                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        18: sipush        10000
+        21: invokestatic  #61                 // Method factorial:(I)Ljava/math/BigInteger;
+        24: invokevirtual #64                 // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+        27: ldc           #66                 // String \n
+        29: invokevirtual #59                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        32: invokevirtual #70                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        35: invokestatic  #76                 // Method kotlin/io/ConsoleKt.print:(Ljava/lang/Object;)V
+        38: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      39     0  args   [Ljava/lang/String;
+      LineNumberTable:
+        line 20: 6
+        line 21: 38
+    RuntimeInvisibleParameterAnnotations:
+      0:
+        0: #7()
+}
+SourceFile: "factorial.kt"
+InnerClasses:
+     public static final #9; //class FactorialKt$factorial$1
+RuntimeVisibleAnnotations:
+  0: #78(#79=[I#80,I#81,I#80],#82=I#83,#84=[s#85],#86=[s#5,s#29,s#39,s#87,s#1,s#41,s#87,s#43,s#87,s#87,s#42])

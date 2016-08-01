@@ -1,0 +1,137 @@
+// Input: .\SimpleClosure.exe
+// Image type: EXE
+// Native code present: No
+// 32-bit only: No
+// Length of IL data: 3584
+
+// VS_VERSION_INFO:
+//    dwStrucVersion            : 1.0
+//    dwFileVersion             : 0.0.0.0
+//    dwProductVersion          : 0.0.0.0
+//    dwFileFlagsMask           : 0x0000003F
+//    dwFileFlags               : 0x00000000
+//    dwFileOS                  : 0x00000004
+//    dwFileType                : 0x00000001
+//    dwFileSubtype             : 0x00000000
+//    dwFileDate                : 0x0000000000000000
+//    Translation               : 0x04B00000
+//    FileDescription           : " "
+//    FileVersion               : "0.0.0.0"
+//    InternalName              : "SimpleClosure.exe"
+//    LegalCopyright            : " "
+//    OriginalFilename          : "SimpleClosure.exe"
+//    ProductVersion            : "0.0.0.0"
+//    Assembly Version          : "0.0.0.0"
+
+.assembly extern mscorlib
+{
+	.ver 4:0:0:0
+	.publickeytoken = (B7 7A 5C 56 19 34 E0 89)   // .z\V.4..
+}
+.assembly SimpleClosure
+{
+	.hash algorithm 0x00008004
+	.ver 0:0:0:0
+	.custom instance void [mscorlib]System.Runtime.CompilerServices.CompilationRelaxationsAttribute::.ctor(int32) = (01 00 08 00 00 00 00 00)   // ........
+	// CompilationRelaxations(8 /*0x00000008*/)
+	.custom instance void [mscorlib]System.Runtime.CompilerServices.RuntimeCompatibilityAttribute::.ctor() =
+		(01 00 01 00 54 02 16 57 72 61 70 4E 6F 6E 45 78   // ....T..WrapNonEx
+		 63 65 70 74 69 6F 6E 54 68 72 6F 77 73 01)  // ceptionThrows.
+	// RuntimeCompatibility(), WrapNonExceptionThrows=true
+}
+.module SimpleClosure.exe
+// MVID: {2F8DB9BD-48B8-4BFB-8E24-6BA1953DBB5F}
+.class public auto ansi beforefieldinit SimpleClosure extends [mscorlib]System.Object
+{
+.class nested private auto sealed ansi beforefieldinit '<>c__DisplayClass1' extends [mscorlib]System.Object
+{
+	.custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = (01 00 00 00)   // ....
+	// CompilerGenerated()
+	.field public int32 x
+	.method public hidebysig specialname rtspecialname instance void .ctor() cil managed 
+	{
+		// Start of method header: 2050
+		.maxstack  8
+	?L2051:
+		ldarg.0
+		call       instance void [mscorlib]System.Object::.ctor()
+		ret
+	}
+	.method public hidebysig instance int32 '<Add>b__0'(int32 y) cil managed 
+	{
+		// Start of method header: 2058
+		.maxstack  2
+		.locals    init (int32)
+	?L2064:
+		ldarg.0
+		ldfld      int32 SimpleClosure/'<>c__DisplayClass1'::x
+		ldarg.1
+		add
+		stloc.0
+		br.s       ?L206f
+	?L206f:
+		ldloc.0
+		ret
+	}
+}
+	.method private static hidebysig class [mscorlib]System.'Func`2'<int32, int32> Add(int32 x) cil managed 
+	{
+		// Start of method header: 2074
+		.maxstack  2
+		.locals    init (class SimpleClosure/'<>c__DisplayClass1',
+		            class [mscorlib]System.'Func`2'<int32, int32>)
+	?L2080:
+		newobj     instance void SimpleClosure/'<>c__DisplayClass1'::.ctor()
+		stloc.0
+		ldloc.0
+		ldarg.0
+		stfld      int32 SimpleClosure/'<>c__DisplayClass1'::x
+		nop
+		ldloc.0
+		ldftn      instance int32 SimpleClosure/'<>c__DisplayClass1'::'<Add>b__0'(int32)
+		newobj     instance void class [mscorlib]System.'Func`2'<int32, int32>::.ctor(class System.Object, native int)
+		stloc.1
+		br.s       ?L209d
+	?L209d:
+		ldloc.1
+		ret
+	}
+	.method public static hidebysig void Main() cil managed 
+	{
+		// Start of method header: 20a0
+		.entrypoint
+		.maxstack  2
+		.locals    init (class [mscorlib]System.'Func`2'<int32, int32>)
+	?L20ac:
+		nop
+		ldc.i4.5
+		call       class [mscorlib]System.'Func`2'<int32, int32> SimpleClosure::Add(int32)
+		ldc.i4.4
+		callvirt   instance !1 class [mscorlib]System.'Func`2'<int32, int32>::Invoke(!0)
+		call       void [mscorlib]System.Console::WriteLine(int32)
+		nop
+		ldc.i4.s   10
+		call       class [mscorlib]System.'Func`2'<int32, int32> SimpleClosure::Add(int32)
+		stloc.0
+		ldloc.0
+		ldc.i4.s   90
+		callvirt   instance !1 class [mscorlib]System.'Func`2'<int32, int32>::Invoke(!0)
+		call       void [mscorlib]System.Console::WriteLine(int32)
+		nop
+		ldloc.0
+		ldc.i4     999
+		callvirt   instance !1 class [mscorlib]System.'Func`2'<int32, int32>::Invoke(!0)
+		call       void [mscorlib]System.Console::WriteLine(int32)
+		nop
+		ret
+	}
+	.method public hidebysig specialname rtspecialname instance void .ctor() cil managed 
+	{
+		// Start of method header: 20e7
+		.maxstack  8
+	?L20e8:
+		ldarg.0
+		call       instance void [mscorlib]System.Object::.ctor()
+		ret
+	}
+}

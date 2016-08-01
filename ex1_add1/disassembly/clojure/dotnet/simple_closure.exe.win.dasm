@@ -1,0 +1,326 @@
+// Input: .\simple_closure.exe
+// Image type: EXE
+// Native code present: No
+// 32-bit only: No
+// Length of IL data: 4096
+
+// VS_VERSION_INFO:
+//    dwStrucVersion            : 1.0
+//    dwFileVersion             : 0.0.0.0
+//    dwProductVersion          : 0.0.0.0
+//    dwFileFlagsMask           : 0x0000003F
+//    dwFileFlags               : 0x00000000
+//    dwFileOS                  : 0x00000004
+//    dwFileType                : 0x00000001
+//    dwFileSubtype             : 0x00000000
+//    dwFileDate                : 0x0000000000000000
+//    Translation               : 0x04B0007F
+//    Comments                  : " "
+//    CompanyName               : " "
+//    FileDescription           : " "
+//    FileVersion               : "0.0.0.0"
+//    InternalName              : "simple_closure.exe"
+//    LegalCopyright            : " "
+//    LegalTrademarks           : " "
+//    OriginalFilename          : "simple_closure.exe"
+//    ProductName               : " "
+//    ProductVersion            : " "
+
+.assembly extern mscorlib
+{
+	.ver 4:0:0:0
+	.publickeytoken = (B7 7A 5C 56 19 34 E0 89)   // .z\V.4..
+}
+.assembly extern Clojure
+{
+	.ver 1:7:0:0
+	.publickeytoken = (CF 3C AE CD 32 7A 2F A9)   // .<..2z/.
+}
+.assembly simple_closure
+{
+	.hash algorithm 0x00008004
+	.ver 0:0:0:0
+	.custom instance void [mscorlib]System.Security.SecurityTransparentAttribute::.ctor() = (01 00 00 00)   // ....
+	// SecurityTransparent()
+	.custom instance void [mscorlib]System.Security.SecurityRulesAttribute::.ctor(valuetype [mscorlib]System.Security.SecurityRuleSet) = (01 00 01 00 00)   // .....
+	// SecurityRules(?)
+}
+.module simple_closure
+// MVID: {AEE3D0AA-FED6-48B4-A3E9-B17CFE1B4761}
+.class public auto ansi simple_closure extends [mscorlib]System.Object
+{
+	.field private static initonly class [Clojure]clojure.lang.Var GetType__var
+	.field private static initonly class [Clojure]clojure.lang.Var ToString__var
+	.field private static initonly class [Clojure]clojure.lang.Var Equals__var
+	.field private static initonly class [Clojure]clojure.lang.Var GetHashCode__var
+	.field private static initonly class [Clojure]clojure.lang.Var Finalize__var
+	.field private static initonly class [Clojure]clojure.lang.Var MemberwiseClone__var
+	.field private static initonly class [Clojure]clojure.lang.Var main__var
+	.method compilercontrolled static specialname rtspecialname void .cctor() cil managed 
+	{
+		// Start of method header: 2050
+		.maxstack  2
+		.locals    init ()
+	?L205c:
+		ldstr      "simple-closure"
+		ldstr      "-GetType"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.Var::internPrivate(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var simple_closure::GetType__var
+		ldstr      "simple-closure"
+		ldstr      "-ToString"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.Var::internPrivate(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var simple_closure::ToString__var
+		ldstr      "simple-closure"
+		ldstr      "-Equals"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.Var::internPrivate(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var simple_closure::Equals__var
+		ldstr      "simple-closure"
+		ldstr      "-GetHashCode"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.Var::internPrivate(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var simple_closure::GetHashCode__var
+		ldstr      "simple-closure"
+		ldstr      "-Finalize"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.Var::internPrivate(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var simple_closure::Finalize__var
+		ldstr      "simple-closure"
+		ldstr      "-MemberwiseClone"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.Var::internPrivate(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var simple_closure::MemberwiseClone__var
+		ldstr      "simple-closure"
+		ldstr      "-main"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.Var::internPrivate(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var simple_closure::main__var
+		ldstr      "clojure.core"
+		ldstr      "load"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		ldstr      "/simple_closure"
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		pop
+		ret
+	}
+	.method public specialname rtspecialname instance void .ctor() cil managed 
+	{
+		// Start of method header: 2104
+		.maxstack  2
+		.locals    init (class System.Object,
+		            class System.Object)
+	?L2110:
+		ldarg.0
+		call       instance void [mscorlib]System.Object::.ctor()
+		ret
+	}
+	.method public virtual instance class [mscorlib]System.Type GetType() cil managed 
+	{
+		// Start of method header: 2118
+		.maxstack  5
+		.locals    init ()
+	?L2124:
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure::GetType__var
+		dup
+		call       instance bool [Clojure]clojure.lang.Var::get_isBound()
+		brfalse.s  ?L2138
+		call       instance class System.Object [Clojure]clojure.lang.Var::get()
+		br.s       ?L213a
+	?L2138:
+		pop
+		ldnull
+	?L213a:
+		dup
+		brfalse.s  ?L214f
+		castclass  class [Clojure]clojure.lang.IFn
+		ldarg.0
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		castclass  class [mscorlib]System.Type
+		br.s       ?L2156
+	?L214f:
+		pop
+		ldarg.0
+		call       instance class [mscorlib]System.Type [mscorlib]System.Object::GetType()
+	?L2156:
+		ret
+	}
+	.method public virtual instance class System.String ToString() cil managed 
+	{
+		// Start of method header: 2158
+		.maxstack  5
+		.locals    init ()
+	?L2164:
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure::ToString__var
+		dup
+		call       instance bool [Clojure]clojure.lang.Var::get_isBound()
+		brfalse.s  ?L2178
+		call       instance class System.Object [Clojure]clojure.lang.Var::get()
+		br.s       ?L217a
+	?L2178:
+		pop
+		ldnull
+	?L217a:
+		dup
+		brfalse.s  ?L218f
+		castclass  class [Clojure]clojure.lang.IFn
+		ldarg.0
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		castclass  class [mscorlib]System.String
+		br.s       ?L2196
+	?L218f:
+		pop
+		ldarg.0
+		call       instance class System.String [mscorlib]System.Object::ToString()
+	?L2196:
+		ret
+	}
+	.method public virtual instance bool Equals(class System.Object) cil managed 
+	{
+		// Start of method header: 2198
+		.maxstack  7
+		.locals    init ()
+	?L21a4:
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure::Equals__var
+		dup
+		call       instance bool [Clojure]clojure.lang.Var::get_isBound()
+		brfalse.s  ?L21b8
+		call       instance class System.Object [Clojure]clojure.lang.Var::get()
+		br.s       ?L21ba
+	?L21b8:
+		pop
+		ldnull
+	?L21ba:
+		dup
+		brfalse.s  ?L21d0
+		castclass  class [Clojure]clojure.lang.IFn
+		ldarg.0
+		ldarg.1
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object, class System.Object)
+		unbox.any  class [mscorlib]System.Boolean
+		br.s       ?L21d8
+	?L21d0:
+		pop
+		ldarg.0
+		ldarg.1
+		call       instance bool [mscorlib]System.Object::Equals(class System.Object)
+	?L21d8:
+		ret
+	}
+	.method public virtual instance int32 GetHashCode() cil managed 
+	{
+		// Start of method header: 21dc
+		.maxstack  5
+		.locals    init ()
+	?L21e8:
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure::GetHashCode__var
+		dup
+		call       instance bool [Clojure]clojure.lang.Var::get_isBound()
+		brfalse.s  ?L21fc
+		call       instance class System.Object [Clojure]clojure.lang.Var::get()
+		br.s       ?L21fe
+	?L21fc:
+		pop
+		ldnull
+	?L21fe:
+		dup
+		brfalse.s  ?L2213
+		castclass  class [Clojure]clojure.lang.IFn
+		ldarg.0
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		unbox.any  class [mscorlib]System.Int32
+		br.s       ?L221a
+	?L2213:
+		pop
+		ldarg.0
+		call       instance int32 [mscorlib]System.Object::GetHashCode()
+	?L221a:
+		ret
+	}
+	.method public virtual instance void Finalize() cil managed 
+	{
+		// Start of method header: 221c
+		.maxstack  5
+		.locals    init ()
+	?L2228:
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure::Finalize__var
+		dup
+		call       instance bool [Clojure]clojure.lang.Var::get_isBound()
+		brfalse.s  ?L223c
+		call       instance class System.Object [Clojure]clojure.lang.Var::get()
+		br.s       ?L223e
+	?L223c:
+		pop
+		ldnull
+	?L223e:
+		dup
+		brfalse.s  ?L224f
+		castclass  class [Clojure]clojure.lang.IFn
+		ldarg.0
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		pop
+		br.s       ?L2256
+	?L224f:
+		pop
+		ldarg.0
+		call       instance void [mscorlib]System.Object::Finalize()
+	?L2256:
+		ret
+	}
+	.method public virtual instance class System.Object MemberwiseClone() cil managed 
+	{
+		// Start of method header: 2258
+		.maxstack  5
+		.locals    init ()
+	?L2264:
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure::MemberwiseClone__var
+		dup
+		call       instance bool [Clojure]clojure.lang.Var::get_isBound()
+		brfalse.s  ?L2278
+		call       instance class System.Object [Clojure]clojure.lang.Var::get()
+		br.s       ?L227a
+	?L2278:
+		pop
+		ldnull
+	?L227a:
+		dup
+		brfalse.s  ?L228f
+		castclass  class [Clojure]clojure.lang.IFn
+		ldarg.0
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		castclass  class [mscorlib]System.Object
+		br.s       ?L2296
+	?L228f:
+		pop
+		ldarg.0
+		call       instance class System.Object [mscorlib]System.Object::MemberwiseClone()
+	?L2296:
+		ret
+	}
+	.method public static void Main(class System.String[]) cil managed 
+	{
+		// Start of method header: 2298
+		.entrypoint
+		.maxstack  6
+		.locals    init ()
+	?L22a4:
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure::main__var
+		dup
+		call       instance bool [Clojure]clojure.lang.Var::get_isBound()
+		brfalse.s  ?L22b8
+		call       instance class System.Object [Clojure]clojure.lang.Var::get()
+		br.s       ?L22ba
+	?L22b8:
+		pop
+		ldnull
+	?L22ba:
+		dup
+		brfalse.s  ?L22d0
+		castclass  class [Clojure]clojure.lang.IFn
+		ldarg.0
+		call       class [Clojure]clojure.lang.ISeq [Clojure]clojure.lang.RT::seq(class System.Object)
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::applyTo(class [Clojure]clojure.lang.ISeq)
+		pop
+		br.s       ?L22db
+	?L22d0:
+		ldstr      "simple-closure.-main"
+		newobj     instance void [mscorlib]System.NotImplementedException::.ctor(class System.String)
+		throw
+	?L22db:
+		ret
+	}
+}

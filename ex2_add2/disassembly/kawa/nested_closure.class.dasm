@@ -1,0 +1,246 @@
+Classfile /Users/tuuli/school/thesis_examples/ex9_nested_closure/temp$_39916801/nested_closure.class
+  Last modified Jun 2, 2016; size 1895 bytes
+  MD5 checksum 9cdeecc1d9cb63bf567a5c0b4ea19be9
+  Compiled from "nested_closure.scm"
+public class nested_closure extends gnu.expr.ModuleBody implements java.lang.Runnable,gnu.expr.RunnableModule
+  minor version: 0
+  major version: 51
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+    #1 = Utf8               nested_closure
+    #2 = Class              #1            // nested_closure
+    #3 = Utf8               gnu/mapping/CallContext
+    #4 = Class              #3            // gnu/mapping/CallContext
+    #5 = Utf8               consumer
+    #6 = Utf8               Lgnu/lists/Consumer;
+    #7 = NameAndType        #5:#6         // consumer:Lgnu/lists/Consumer;
+    #8 = Fieldref           #4.#7         // gnu/mapping/CallContext.consumer:Lgnu/lists/Consumer;
+    #9 = Utf8               kawa/standard/Scheme
+   #10 = Class              #9            // kawa/standard/Scheme
+   #11 = Utf8               applyToArgs
+   #12 = Utf8               Lgnu/kawa/functions/ApplyToArgs;
+   #13 = NameAndType        #11:#12       // applyToArgs:Lgnu/kawa/functions/ApplyToArgs;
+   #14 = Fieldref           #10.#13       // kawa/standard/Scheme.applyToArgs:Lgnu/kawa/functions/ApplyToArgs;
+   #15 = Utf8               Lit0
+   #16 = Utf8               Lgnu/math/IntNum;
+   #17 = NameAndType        #15:#16       // Lit0:Lgnu/math/IntNum;
+   #18 = Fieldref           #2.#17        // nested_closure.Lit0:Lgnu/math/IntNum;
+   #19 = Utf8               add
+   #20 = Utf8               (Ljava/lang/Object;)Lgnu/mapping/Procedure;
+   #21 = NameAndType        #19:#20       // add:(Ljava/lang/Object;)Lgnu/mapping/Procedure;
+   #22 = Methodref          #2.#21        // nested_closure.add:(Ljava/lang/Object;)Lgnu/mapping/Procedure;
+   #23 = Utf8               Lit1
+   #24 = NameAndType        #23:#16       // Lit1:Lgnu/math/IntNum;
+   #25 = Fieldref           #2.#24        // nested_closure.Lit1:Lgnu/math/IntNum;
+   #26 = Utf8               gnu/mapping/Procedure
+   #27 = Class              #26           // gnu/mapping/Procedure
+   #28 = Utf8               apply1
+   #29 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+   #30 = NameAndType        #28:#29       // apply1:(Ljava/lang/Object;)Ljava/lang/Object;
+   #31 = Methodref          #27.#30       // gnu/mapping/Procedure.apply1:(Ljava/lang/Object;)Ljava/lang/Object;
+   #32 = Utf8               Lit2
+   #33 = NameAndType        #32:#16       // Lit2:Lgnu/math/IntNum;
+   #34 = Fieldref           #2.#33        // nested_closure.Lit2:Lgnu/math/IntNum;
+   #35 = Utf8               apply2
+   #36 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #37 = NameAndType        #35:#36       // apply2:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #38 = Methodref          #27.#37       // gnu/mapping/Procedure.apply2:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #39 = Utf8               kawa/lib/ports
+   #40 = Class              #39           // kawa/lib/ports
+   #41 = Utf8               display
+   #42 = Utf8               (Ljava/lang/Object;)V
+   #43 = NameAndType        #41:#42       // display:(Ljava/lang/Object;)V
+   #44 = Methodref          #40.#43       // kawa/lib/ports.display:(Ljava/lang/Object;)V
+   #45 = Utf8               java/lang/Object
+   #46 = Class              #45           // java/lang/Object
+   #47 = Utf8               nested_closure$frame
+   #48 = Class              #47           // nested_closure$frame
+   #49 = Utf8               <init>
+   #50 = Utf8               ()V
+   #51 = NameAndType        #49:#50       // "<init>":()V
+   #52 = Methodref          #48.#51       // nested_closure$frame."<init>":()V
+   #53 = Utf8               x
+   #54 = Utf8               Ljava/lang/Object;
+   #55 = NameAndType        #53:#54       // x:Ljava/lang/Object;
+   #56 = Fieldref           #48.#55       // nested_closure$frame.x:Ljava/lang/Object;
+   #57 = Utf8               lambda$Fn1
+   #58 = Utf8               Lgnu/expr/ModuleMethod;
+   #59 = NameAndType        #57:#58       // lambda$Fn1:Lgnu/expr/ModuleMethod;
+   #60 = Fieldref           #48.#59       // nested_closure$frame.lambda$Fn1:Lgnu/expr/ModuleMethod;
+   #61 = Utf8               registerEnvironment
+   #62 = NameAndType        #61:#50       // registerEnvironment:()V
+   #63 = Methodref          #10.#62       // kawa/standard/Scheme.registerEnvironment:()V
+   #64 = Utf8               gnu/expr/ModuleBody
+   #65 = Class              #64           // gnu/expr/ModuleBody
+   #66 = Methodref          #65.#51       // gnu/expr/ModuleBody."<init>":()V
+   #67 = Utf8               gnu/expr/ModuleInfo
+   #68 = Class              #67           // gnu/expr/ModuleInfo
+   #69 = Utf8               register
+   #70 = NameAndType        #69:#42       // register:(Ljava/lang/Object;)V
+   #71 = Methodref          #68.#70       // gnu/expr/ModuleInfo.register:(Ljava/lang/Object;)V
+   #72 = Methodref          #2.#51        // nested_closure."<init>":()V
+   #73 = Utf8               $instance
+   #74 = Utf8               Lnested_closure;
+   #75 = NameAndType        #73:#74       // $instance:Lnested_closure;
+   #76 = Fieldref           #2.#75        // nested_closure.$instance:Lnested_closure;
+   #77 = Utf8               gnu/math/IntNum
+   #78 = Class              #77           // gnu/math/IntNum
+   #79 = Utf8               valueOf
+   #80 = Utf8               (I)Lgnu/math/IntNum;
+   #81 = NameAndType        #79:#80       // valueOf:(I)Lgnu/math/IntNum;
+   #82 = Methodref          #78.#81       // gnu/math/IntNum.valueOf:(I)Lgnu/math/IntNum;
+   #83 = Utf8               [Ljava/lang/String;
+   #84 = Class              #83           // "[Ljava/lang/String;"
+   #85 = Utf8               gnu/expr/ApplicationMainSupport
+   #86 = Class              #85           // gnu/expr/ApplicationMainSupport
+   #87 = Utf8               processArgs
+   #88 = Utf8               ([Ljava/lang/String;)V
+   #89 = NameAndType        #87:#88       // processArgs:([Ljava/lang/String;)V
+   #90 = Methodref          #86.#89       // gnu/expr/ApplicationMainSupport.processArgs:([Ljava/lang/String;)V
+   #91 = Utf8               runAsMain
+   #92 = Utf8               (Lgnu/expr/RunnableModule;)V
+   #93 = NameAndType        #91:#92       // runAsMain:(Lgnu/expr/RunnableModule;)V
+   #94 = Methodref          #65.#93       // gnu/expr/ModuleBody.runAsMain:(Lgnu/expr/RunnableModule;)V
+   #95 = Utf8               java/lang/Runnable
+   #96 = Class              #95           // java/lang/Runnable
+   #97 = Utf8               gnu/expr/RunnableModule
+   #98 = Class              #97           // gnu/expr/RunnableModule
+   #99 = Utf8               run
+  #100 = Utf8               (Lgnu/mapping/CallContext;)V
+  #101 = Utf8               Code
+  #102 = Utf8               LineNumberTable
+  #103 = Utf8               LocalVariableTable
+  #104 = Utf8               this
+  #105 = Utf8               $ctx
+  #106 = Utf8               Lgnu/mapping/CallContext;
+  #107 = Utf8               $result
+  #108 = Utf8               $heapFrame
+  #109 = Utf8               Lnested_closure$frame;
+  #110 = Utf8               <clinit>
+  #111 = Utf8               main
+  #112 = Utf8               SourceFile
+  #113 = Utf8               nested_closure.scm
+  #114 = Utf8               SourceDebugExtension
+  #115 = Utf8               InnerClasses
+{
+  static final gnu.math.IntNum Lit0;
+    descriptor: Lgnu/math/IntNum;
+    flags: ACC_STATIC, ACC_FINAL
+
+  static final gnu.math.IntNum Lit1;
+    descriptor: Lgnu/math/IntNum;
+    flags: ACC_STATIC, ACC_FINAL
+
+  static final gnu.math.IntNum Lit2;
+    descriptor: Lgnu/math/IntNum;
+    flags: ACC_STATIC, ACC_FINAL
+
+  public static nested_closure $instance;
+    descriptor: Lnested_closure;
+    flags: ACC_PUBLIC, ACC_STATIC
+
+  public final void run(gnu.mapping.CallContext);
+    descriptor: (Lgnu/mapping/CallContext;)V
+    flags: ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=3, locals=3, args_size=2
+         0: aload_1
+         1: getfield      #8                  // Field gnu/mapping/CallContext.consumer:Lgnu/lists/Consumer;
+         4: astore_2
+         5: getstatic     #14                 // Field kawa/standard/Scheme.applyToArgs:Lgnu/kawa/functions/ApplyToArgs;
+         8: getstatic     #18                 // Field Lit0:Lgnu/math/IntNum;
+        11: invokestatic  #22                 // Method add:(Ljava/lang/Object;)Lgnu/mapping/Procedure;
+        14: getstatic     #25                 // Field Lit1:Lgnu/math/IntNum;
+        17: invokevirtual #31                 // Method gnu/mapping/Procedure.apply1:(Ljava/lang/Object;)Ljava/lang/Object;
+        20: getstatic     #34                 // Field Lit2:Lgnu/math/IntNum;
+        23: invokevirtual #38                 // Method gnu/mapping/Procedure.apply2:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        26: invokestatic  #44                 // Method kawa/lib/ports.display:(Ljava/lang/Object;)V
+        29: return
+      LineNumberTable:
+        line 1: 0
+        line 7: 5
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      29     0  this   Lnested_closure;
+            0      29     1  $ctx   Lgnu/mapping/CallContext;
+            0      29     2 $result   Lgnu/lists/Consumer;
+
+  static gnu.mapping.Procedure add(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Lgnu/mapping/Procedure;
+    flags: ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: new           #48                 // class nested_closure$frame
+         3: dup
+         4: invokespecial #52                 // Method nested_closure$frame."<init>":()V
+         7: astore_1
+         8: aload_1
+         9: aload_0
+        10: putfield      #56                 // Field nested_closure$frame.x:Ljava/lang/Object;
+        13: aload_1
+        14: getfield      #60                 // Field nested_closure$frame.lambda$Fn1:Lgnu/expr/ModuleMethod;
+        17: areturn
+      LineNumberTable:
+        line 2: 0
+        line 3: 13
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      17     0     x   Ljava/lang/Object;
+            8       9     1 $heapFrame   Lnested_closure$frame;
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: invokestatic  #63                 // Method kawa/standard/Scheme.registerEnvironment:()V
+         3: iconst_3
+         4: invokestatic  #82                 // Method gnu/math/IntNum.valueOf:(I)Lgnu/math/IntNum;
+         7: putstatic     #34                 // Field Lit2:Lgnu/math/IntNum;
+        10: iconst_4
+        11: invokestatic  #82                 // Method gnu/math/IntNum.valueOf:(I)Lgnu/math/IntNum;
+        14: putstatic     #25                 // Field Lit1:Lgnu/math/IntNum;
+        17: iconst_5
+        18: invokestatic  #82                 // Method gnu/math/IntNum.valueOf:(I)Lgnu/math/IntNum;
+        21: putstatic     #18                 // Field Lit0:Lgnu/math/IntNum;
+        24: new           #2                  // class nested_closure
+        27: dup
+        28: invokespecial #72                 // Method "<init>":()V
+        31: putstatic     #76                 // Field $instance:Lnested_closure;
+        34: return
+
+  public nested_closure();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #66                 // Method gnu/expr/ModuleBody."<init>":()V
+         4: aload_0
+         5: invokestatic  #71                 // Method gnu/expr/ModuleInfo.register:(Ljava/lang/Object;)V
+         8: return
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #90                 // Method gnu/expr/ApplicationMainSupport.processArgs:([Ljava/lang/String;)V
+         4: getstatic     #76                 // Field $instance:Lnested_closure;
+         7: invokestatic  #94                 // Method gnu/expr/ModuleBody.runAsMain:(Lgnu/expr/RunnableModule;)V
+        10: return
+}
+InnerClasses:
+     public #47= #48; //nested_closure$frame=class nested_closure$frame
+SourceFile: "nested_closure.scm"
+SourceDebugExtension:
+  SMAP
+  nested_closure.scm
+  Scheme
+  *S Scheme
+  *F
+  1 nested_closure.scm
+  *L
+  1#1,7:1
+  *E

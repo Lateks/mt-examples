@@ -1,0 +1,359 @@
+Classfile /Users/tuuli/school/thesis_examples/ex3_mutual_recursion/temp$_39916801/mutual_recursion.class
+  Last modified Feb 29, 2016; size 2438 bytes
+  MD5 checksum f4598695b7b88531a614505878563777
+  Compiled from "mutual_recursion.scm"
+public class mutual_recursion extends gnu.expr.ModuleBody implements java.lang.Runnable,gnu.expr.RunnableModule
+  minor version: 0
+  major version: 51
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+    #1 = Utf8               mutual_recursion
+    #2 = Class              #1            // mutual_recursion
+    #3 = Utf8               gnu/mapping/CallContext
+    #4 = Class              #3            // gnu/mapping/CallContext
+    #5 = Utf8               consumer
+    #6 = Utf8               Lgnu/lists/Consumer;
+    #7 = NameAndType        #5:#6         // consumer:Lgnu/lists/Consumer;
+    #8 = Fieldref           #4.#7         // gnu/mapping/CallContext.consumer:Lgnu/lists/Consumer;
+    #9 = Utf8               Lit0
+   #10 = Utf8               Lgnu/math/IntNum;
+   #11 = NameAndType        #9:#10        // Lit0:Lgnu/math/IntNum;
+   #12 = Fieldref           #2.#11        // mutual_recursion.Lit0:Lgnu/math/IntNum;
+   #13 = Utf8               isOdd
+   #14 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+   #15 = NameAndType        #13:#14       // isOdd:(Ljava/lang/Object;)Ljava/lang/Object;
+   #16 = Methodref          #2.#15        // mutual_recursion.isOdd:(Ljava/lang/Object;)Ljava/lang/Object;
+   #17 = Utf8               kawa/lib/ports
+   #18 = Class              #17           // kawa/lib/ports
+   #19 = Utf8               display
+   #20 = Utf8               (Ljava/lang/Object;)V
+   #21 = NameAndType        #19:#20       // display:(Ljava/lang/Object;)V
+   #22 = Methodref          #18.#21       // kawa/lib/ports.display:(Ljava/lang/Object;)V
+   #23 = Utf8               isEven
+   #24 = NameAndType        #23:#14       // isEven:(Ljava/lang/Object;)Ljava/lang/Object;
+   #25 = Methodref          #2.#24        // mutual_recursion.isEven:(Ljava/lang/Object;)Ljava/lang/Object;
+   #26 = Utf8               Lit1
+   #27 = NameAndType        #26:#10       // Lit1:Lgnu/math/IntNum;
+   #28 = Fieldref           #2.#27        // mutual_recursion.Lit1:Lgnu/math/IntNum;
+   #29 = Utf8               java/lang/Object
+   #30 = Class              #29           // java/lang/Object
+   #31 = Utf8               java/lang/Number
+   #32 = Class              #31           // java/lang/Number
+   #33 = Utf8               gnu/mapping/Promise
+   #34 = Class              #33           // gnu/mapping/Promise
+   #35 = Utf8               force
+   #36 = Utf8               (Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+   #37 = NameAndType        #35:#36       // force:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+   #38 = Methodref          #34.#37       // gnu/mapping/Promise.force:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+   #39 = Utf8               java/lang/ClassCastException
+   #40 = Class              #39           // java/lang/ClassCastException
+   #41 = Utf8               gnu/mapping/WrongType
+   #42 = Class              #41           // gnu/mapping/WrongType
+   #43 = Utf8               zero?
+   #44 = String             #43           // zero?
+   #45 = Utf8               <init>
+   #46 = Utf8               (Ljava/lang/ClassCastException;Ljava/lang/String;ILjava/lang/Object;)V
+   #47 = NameAndType        #45:#46       // "<init>":(Ljava/lang/ClassCastException;Ljava/lang/String;ILjava/lang/Object;)V
+   #48 = Methodref          #42.#47       // gnu/mapping/WrongType."<init>":(Ljava/lang/ClassCastException;Ljava/lang/String;ILjava/lang/Object;)V
+   #49 = Utf8               kawa/lib/numbers
+   #50 = Class              #49           // kawa/lib/numbers
+   #51 = Utf8               isZero
+   #52 = Utf8               (Ljava/lang/Number;)Z
+   #53 = NameAndType        #51:#52       // isZero:(Ljava/lang/Number;)Z
+   #54 = Methodref          #50.#53       // kawa/lib/numbers.isZero:(Ljava/lang/Number;)Z
+   #55 = Utf8               java/lang/Boolean
+   #56 = Class              #55           // java/lang/Boolean
+   #57 = Utf8               FALSE
+   #58 = Utf8               Ljava/lang/Boolean;
+   #59 = NameAndType        #57:#58       // FALSE:Ljava/lang/Boolean;
+   #60 = Fieldref           #56.#59       // java/lang/Boolean.FALSE:Ljava/lang/Boolean;
+   #61 = Utf8               gnu/kawa/functions/AddOp
+   #62 = Class              #61           // gnu/kawa/functions/AddOp
+   #63 = Utf8               $Mn
+   #64 = Utf8               Lgnu/kawa/functions/AddOp;
+   #65 = NameAndType        #63:#64       // $Mn:Lgnu/kawa/functions/AddOp;
+   #66 = Fieldref           #62.#65       // gnu/kawa/functions/AddOp.$Mn:Lgnu/kawa/functions/AddOp;
+   #67 = Utf8               Lit2
+   #68 = NameAndType        #67:#10       // Lit2:Lgnu/math/IntNum;
+   #69 = Fieldref           #2.#68        // mutual_recursion.Lit2:Lgnu/math/IntNum;
+   #70 = Utf8               gnu/mapping/Procedure
+   #71 = Class              #70           // gnu/mapping/Procedure
+   #72 = Utf8               apply2
+   #73 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #74 = NameAndType        #72:#73       // apply2:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #75 = Methodref          #71.#74       // gnu/mapping/Procedure.apply2:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #76 = Utf8               TRUE
+   #77 = NameAndType        #76:#58       // TRUE:Ljava/lang/Boolean;
+   #78 = Fieldref           #56.#77       // java/lang/Boolean.TRUE:Ljava/lang/Boolean;
+   #79 = Utf8               kawa/standard/Scheme
+   #80 = Class              #79           // kawa/standard/Scheme
+   #81 = Utf8               registerEnvironment
+   #82 = Utf8               ()V
+   #83 = NameAndType        #81:#82       // registerEnvironment:()V
+   #84 = Methodref          #80.#83       // kawa/standard/Scheme.registerEnvironment:()V
+   #85 = Utf8               gnu/expr/ModuleBody
+   #86 = Class              #85           // gnu/expr/ModuleBody
+   #87 = NameAndType        #45:#82       // "<init>":()V
+   #88 = Methodref          #86.#87       // gnu/expr/ModuleBody."<init>":()V
+   #89 = Utf8               gnu/expr/ModuleInfo
+   #90 = Class              #89           // gnu/expr/ModuleInfo
+   #91 = Utf8               register
+   #92 = NameAndType        #91:#20       // register:(Ljava/lang/Object;)V
+   #93 = Methodref          #90.#92       // gnu/expr/ModuleInfo.register:(Ljava/lang/Object;)V
+   #94 = Methodref          #2.#87        // mutual_recursion."<init>":()V
+   #95 = Utf8               $instance
+   #96 = Utf8               Lmutual_recursion;
+   #97 = NameAndType        #95:#96       // $instance:Lmutual_recursion;
+   #98 = Fieldref           #2.#97        // mutual_recursion.$instance:Lmutual_recursion;
+   #99 = Utf8               gnu/math/IntNum
+  #100 = Class              #99           // gnu/math/IntNum
+  #101 = Utf8               valueOf
+  #102 = Utf8               (I)Lgnu/math/IntNum;
+  #103 = NameAndType        #101:#102     // valueOf:(I)Lgnu/math/IntNum;
+  #104 = Methodref          #100.#103     // gnu/math/IntNum.valueOf:(I)Lgnu/math/IntNum;
+  #105 = Utf8               [Ljava/lang/String;
+  #106 = Class              #105          // "[Ljava/lang/String;"
+  #107 = Utf8               gnu/expr/ApplicationMainSupport
+  #108 = Class              #107          // gnu/expr/ApplicationMainSupport
+  #109 = Utf8               processArgs
+  #110 = Utf8               ([Ljava/lang/String;)V
+  #111 = NameAndType        #109:#110     // processArgs:([Ljava/lang/String;)V
+  #112 = Methodref          #108.#111     // gnu/expr/ApplicationMainSupport.processArgs:([Ljava/lang/String;)V
+  #113 = Utf8               runAsMain
+  #114 = Utf8               (Lgnu/expr/RunnableModule;)V
+  #115 = NameAndType        #113:#114     // runAsMain:(Lgnu/expr/RunnableModule;)V
+  #116 = Methodref          #86.#115      // gnu/expr/ModuleBody.runAsMain:(Lgnu/expr/RunnableModule;)V
+  #117 = Utf8               java/lang/Runnable
+  #118 = Class              #117          // java/lang/Runnable
+  #119 = Utf8               gnu/expr/RunnableModule
+  #120 = Class              #119          // gnu/expr/RunnableModule
+  #121 = Utf8               run
+  #122 = Utf8               (Lgnu/mapping/CallContext;)V
+  #123 = Utf8               Code
+  #124 = Utf8               LineNumberTable
+  #125 = Utf8               LocalVariableTable
+  #126 = Utf8               this
+  #127 = Utf8               $ctx
+  #128 = Utf8               Lgnu/mapping/CallContext;
+  #129 = Utf8               $result
+  #130 = Utf8               StackMapTable
+  #131 = Utf8               x
+  #132 = Utf8               Ljava/lang/Object;
+  #133 = Utf8               <clinit>
+  #134 = Utf8               main
+  #135 = Utf8               SourceFile
+  #136 = Utf8               mutual_recursion.scm
+  #137 = Utf8               SourceDebugExtension
+{
+  static final gnu.math.IntNum Lit0;
+    descriptor: Lgnu/math/IntNum;
+    flags: ACC_STATIC, ACC_FINAL
+
+  static final gnu.math.IntNum Lit1;
+    descriptor: Lgnu/math/IntNum;
+    flags: ACC_STATIC, ACC_FINAL
+
+  static final gnu.math.IntNum Lit2;
+    descriptor: Lgnu/math/IntNum;
+    flags: ACC_STATIC, ACC_FINAL
+
+  public static mutual_recursion $instance;
+    descriptor: Lmutual_recursion;
+    flags: ACC_PUBLIC, ACC_STATIC
+
+  public final void run(gnu.mapping.CallContext);
+    descriptor: (Lgnu/mapping/CallContext;)V
+    flags: ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=1, locals=3, args_size=2
+         0: aload_1
+         1: getfield      #8                  // Field gnu/mapping/CallContext.consumer:Lgnu/lists/Consumer;
+         4: astore_2
+         5: getstatic     #12                 // Field Lit0:Lgnu/math/IntNum;
+         8: invokestatic  #16                 // Method isOdd:(Ljava/lang/Object;)Ljava/lang/Object;
+        11: invokestatic  #22                 // Method kawa/lib/ports.display:(Ljava/lang/Object;)V
+        14: getstatic     #12                 // Field Lit0:Lgnu/math/IntNum;
+        17: invokestatic  #25                 // Method isEven:(Ljava/lang/Object;)Ljava/lang/Object;
+        20: invokestatic  #22                 // Method kawa/lib/ports.display:(Ljava/lang/Object;)V
+        23: getstatic     #28                 // Field Lit1:Lgnu/math/IntNum;
+        26: invokestatic  #16                 // Method isOdd:(Ljava/lang/Object;)Ljava/lang/Object;
+        29: invokestatic  #22                 // Method kawa/lib/ports.display:(Ljava/lang/Object;)V
+        32: getstatic     #28                 // Field Lit1:Lgnu/math/IntNum;
+        35: invokestatic  #25                 // Method isEven:(Ljava/lang/Object;)Ljava/lang/Object;
+        38: invokestatic  #22                 // Method kawa/lib/ports.display:(Ljava/lang/Object;)V
+        41: return
+      LineNumberTable:
+        line 1: 0
+        line 7: 5
+        line 13: 5
+        line 14: 14
+        line 15: 23
+        line 16: 32
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      41     0  this   Lmutual_recursion;
+            0      41     1  $ctx   Lgnu/mapping/CallContext;
+            0      41     2 $result   Lgnu/lists/Consumer;
+
+  static java.lang.Object isOdd(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_STATIC
+    Code:
+      stack=6, locals=2, args_size=1
+         0: aload_0
+         1: ldc           #32                 // class java/lang/Number
+         3: invokestatic  #38                 // Method gnu/mapping/Promise.force:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+         6: dup
+         7: astore_1
+         8: checkcast     #32                 // class java/lang/Number
+        11: invokestatic  #54                 // Method kawa/lib/numbers.isZero:(Ljava/lang/Number;)Z
+        14: ifeq          23
+        17: getstatic     #60                 // Field java/lang/Boolean.FALSE:Ljava/lang/Boolean;
+        20: goto          36
+        23: getstatic     #66                 // Field gnu/kawa/functions/AddOp.$Mn:Lgnu/kawa/functions/AddOp;
+        26: aload_0
+        27: getstatic     #69                 // Field Lit2:Lgnu/math/IntNum;
+        30: invokevirtual #75                 // Method gnu/mapping/Procedure.apply2:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        33: invokestatic  #25                 // Method isEven:(Ljava/lang/Object;)Ljava/lang/Object;
+        36: areturn
+        37: new           #42                 // class gnu/mapping/WrongType
+        40: dup_x1
+        41: swap
+        42: ldc           #44                 // String zero?
+        44: iconst_1
+        45: aload_1
+        46: invokespecial #48                 // Method gnu/mapping/WrongType."<init>":(Ljava/lang/ClassCastException;Ljava/lang/String;ILjava/lang/Object;)V
+        49: athrow
+      Exception table:
+         from    to  target type
+             8    11    37   Class java/lang/ClassCastException
+      StackMapTable: number_of_entries = 5
+        frame_type = 255 /* full_frame */
+          offset_delta = 11
+          locals = [ class java/lang/Object ]
+          stack = [ class java/lang/Number ]
+        frame_type = 5 /* same */
+        frame_type = 5 /* same */
+        frame_type = 76 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Object ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 0
+          locals = [ class java/lang/Object, class java/lang/Object ]
+          stack = [ class java/lang/ClassCastException ]
+      LineNumberTable:
+        line 2: 0
+        line 3: 0
+        line 5: 23
+        line 3: 37
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      36     0     x   Ljava/lang/Object;
+
+  static java.lang.Object isEven(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_STATIC
+    Code:
+      stack=6, locals=2, args_size=1
+         0: aload_0
+         1: ldc           #32                 // class java/lang/Number
+         3: invokestatic  #38                 // Method gnu/mapping/Promise.force:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+         6: dup
+         7: astore_1
+         8: checkcast     #32                 // class java/lang/Number
+        11: invokestatic  #54                 // Method kawa/lib/numbers.isZero:(Ljava/lang/Number;)Z
+        14: ifeq          23
+        17: getstatic     #78                 // Field java/lang/Boolean.TRUE:Ljava/lang/Boolean;
+        20: goto          36
+        23: getstatic     #66                 // Field gnu/kawa/functions/AddOp.$Mn:Lgnu/kawa/functions/AddOp;
+        26: aload_0
+        27: getstatic     #69                 // Field Lit2:Lgnu/math/IntNum;
+        30: invokevirtual #75                 // Method gnu/mapping/Procedure.apply2:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        33: invokestatic  #16                 // Method isOdd:(Ljava/lang/Object;)Ljava/lang/Object;
+        36: areturn
+        37: new           #42                 // class gnu/mapping/WrongType
+        40: dup_x1
+        41: swap
+        42: ldc           #44                 // String zero?
+        44: iconst_1
+        45: aload_1
+        46: invokespecial #48                 // Method gnu/mapping/WrongType."<init>":(Ljava/lang/ClassCastException;Ljava/lang/String;ILjava/lang/Object;)V
+        49: athrow
+      Exception table:
+         from    to  target type
+             8    11    37   Class java/lang/ClassCastException
+      StackMapTable: number_of_entries = 5
+        frame_type = 255 /* full_frame */
+          offset_delta = 11
+          locals = [ class java/lang/Object ]
+          stack = [ class java/lang/Number ]
+        frame_type = 5 /* same */
+        frame_type = 5 /* same */
+        frame_type = 76 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Object ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 0
+          locals = [ class java/lang/Object, class java/lang/Object ]
+          stack = [ class java/lang/ClassCastException ]
+      LineNumberTable:
+        line 8: 0
+        line 9: 0
+        line 11: 23
+        line 9: 37
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      36     0     x   Ljava/lang/Object;
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: invokestatic  #84                 // Method kawa/standard/Scheme.registerEnvironment:()V
+         3: iconst_1
+         4: invokestatic  #104                // Method gnu/math/IntNum.valueOf:(I)Lgnu/math/IntNum;
+         7: putstatic     #69                 // Field Lit2:Lgnu/math/IntNum;
+        10: bipush        9
+        12: invokestatic  #104                // Method gnu/math/IntNum.valueOf:(I)Lgnu/math/IntNum;
+        15: putstatic     #28                 // Field Lit1:Lgnu/math/IntNum;
+        18: bipush        10
+        20: invokestatic  #104                // Method gnu/math/IntNum.valueOf:(I)Lgnu/math/IntNum;
+        23: putstatic     #12                 // Field Lit0:Lgnu/math/IntNum;
+        26: new           #2                  // class mutual_recursion
+        29: dup
+        30: invokespecial #94                 // Method "<init>":()V
+        33: putstatic     #98                 // Field $instance:Lmutual_recursion;
+        36: return
+
+  public mutual_recursion();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #88                 // Method gnu/expr/ModuleBody."<init>":()V
+         4: aload_0
+         5: invokestatic  #93                 // Method gnu/expr/ModuleInfo.register:(Ljava/lang/Object;)V
+         8: return
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #112                // Method gnu/expr/ApplicationMainSupport.processArgs:([Ljava/lang/String;)V
+         4: getstatic     #98                 // Field $instance:Lmutual_recursion;
+         7: invokestatic  #116                // Method gnu/expr/ModuleBody.runAsMain:(Lgnu/expr/RunnableModule;)V
+        10: return
+}
+SourceFile: "mutual_recursion.scm"
+SourceDebugExtension:
+  SMAP
+  mutual_recursion.scm
+  Scheme
+  *S Scheme
+  *F
+  1 mutual_recursion.scm
+  *L
+  1#1,16:1
+  *E

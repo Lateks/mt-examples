@@ -1,0 +1,75 @@
+Classfile /Users/tuuli/school/thesis_examples/ex3_mutual_recursion/temp$_39916801/MutualRecursion.class
+  Last modified Feb 29, 2016; size 826 bytes
+  MD5 checksum 31622f705bdcfc152b63abbe7d85d978
+  Compiled from "MutualRecursion.scala"
+public final class MutualRecursion
+  minor version: 0
+  major version: 50
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               MutualRecursion
+   #2 = Class              #1             // MutualRecursion
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               MutualRecursion.scala
+   #6 = Utf8               Lscala/reflect/ScalaSignature;
+   #7 = Utf8               bytes
+   #8 = Utf8               Q:Q!\t\tq\"T;ukd'+Z2veNLwN9A(Z7qift4\t\riA\tA\t!V$X/7SK,(o]5p]NqA\t9i)1oY1mC&q:L(+4\tE9A\n\rqJg.;?))\"\t)B7bS:$\"AF\r-9B\r\r)f.;\tiA\txm\tqqBA\r\t%O]1z!\ty\"EA%D!J,G-4\n\r\"#AB*ue&twM\"!)aeCO)n](eIRf\t%J!A\t{w\3b]\")A&\na[\ta]%q:$\"B\tAB5tZ,g)g!)A\ra[
+   #9 = Utf8               isEven
+  #10 = Utf8               (I)Z
+  #11 = Utf8               MutualRecursion$
+  #12 = Class              #11            // MutualRecursion$
+  #13 = Utf8               MODULE$
+  #14 = Utf8               LMutualRecursion$;
+  #15 = NameAndType        #13:#14        // MODULE$:LMutualRecursion$;
+  #16 = Fieldref           #12.#15        // MutualRecursion$.MODULE$:LMutualRecursion$;
+  #17 = NameAndType        #9:#10         // isEven:(I)Z
+  #18 = Methodref          #12.#17        // MutualRecursion$.isEven:(I)Z
+  #19 = Utf8               isOdd
+  #20 = NameAndType        #19:#10        // isOdd:(I)Z
+  #21 = Methodref          #12.#20        // MutualRecursion$.isOdd:(I)Z
+  #22 = Utf8               main
+  #23 = Utf8               ([Ljava/lang/String;)V
+  #24 = NameAndType        #22:#23        // main:([Ljava/lang/String;)V
+  #25 = Methodref          #12.#24        // MutualRecursion$.main:([Ljava/lang/String;)V
+  #26 = Utf8               Code
+  #27 = Utf8               SourceFile
+  #28 = Utf8               RuntimeVisibleAnnotations
+  #29 = Utf8               ScalaSig
+{
+  public static boolean isEven(int);
+    descriptor: (I)Z
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #16                 // Field MutualRecursion$.MODULE$:LMutualRecursion$;
+         3: iload_0
+         4: invokevirtual #18                 // Method MutualRecursion$.isEven:(I)Z
+         7: ireturn
+
+  public static boolean isOdd(int);
+    descriptor: (I)Z
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #16                 // Field MutualRecursion$.MODULE$:LMutualRecursion$;
+         3: iload_0
+         4: invokevirtual #21                 // Method MutualRecursion$.isOdd:(I)Z
+         7: ireturn
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #16                 // Field MutualRecursion$.MODULE$:LMutualRecursion$;
+         3: aload_0
+         4: invokevirtual #25                 // Method MutualRecursion$.main:([Ljava/lang/String;)V
+         7: return
+}
+SourceFile: "MutualRecursion.scala"
+RuntimeVisibleAnnotations:
+  0: #6(#7=s#8)
+Error: unknown attribute
+  ScalaSig: length = 0x3
+   05 00 00

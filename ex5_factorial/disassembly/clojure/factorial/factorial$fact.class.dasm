@@ -1,0 +1,145 @@
+Classfile /Users/tuuli/school/thesis_examples/ex1_factorial/temp$_39916801/factorial$fact.class
+  Last modified Feb 17, 2016; size 952 bytes
+  MD5 checksum 2b1db7131ed5f2822edf3717f5da747d
+  Compiled from "factorial.clj"
+public final class factorial$fact extends clojure.lang.AFunction
+  minor version: 0
+  major version: 49
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               factorial$fact
+   #2 = Class              #1             // factorial$fact
+   #3 = Utf8               clojure/lang/AFunction
+   #4 = Class              #3             // clojure/lang/AFunction
+   #5 = Utf8               factorial.clj
+   #6 = Utf8               <init>
+   #7 = Utf8               ()V
+   #8 = NameAndType        #6:#7          // "<init>":()V
+   #9 = Methodref          #4.#8          // clojure/lang/AFunction."<init>":()V
+  #10 = Utf8               invokeStatic
+  #11 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #12 = Utf8               clojure/lang/RT
+  #13 = Class              #12            // clojure/lang/RT
+  #14 = Utf8               box
+  #15 = Utf8               (J)Ljava/lang/Number;
+  #16 = NameAndType        #14:#15        // box:(J)Ljava/lang/Number;
+  #17 = Methodref          #13.#16        // clojure/lang/RT.box:(J)Ljava/lang/Number;
+  #18 = Utf8               clojure/lang/Numbers
+  #19 = Class              #18            // clojure/lang/Numbers
+  #20 = Utf8               isZero
+  #21 = Utf8               (Ljava/lang/Object;)Z
+  #22 = NameAndType        #20:#21        // isZero:(Ljava/lang/Object;)Z
+  #23 = Methodref          #19.#22        // clojure/lang/Numbers.isZero:(Ljava/lang/Object;)Z
+  #24 = Utf8               minus
+  #25 = Utf8               (Ljava/lang/Object;J)Ljava/lang/Number;
+  #26 = NameAndType        #24:#25        // minus:(Ljava/lang/Object;J)Ljava/lang/Number;
+  #27 = Methodref          #19.#26        // clojure/lang/Numbers.minus:(Ljava/lang/Object;J)Ljava/lang/Number;
+  #28 = Utf8               multiplyP
+  #29 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Number;
+  #30 = NameAndType        #28:#29        // multiplyP:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Number;
+  #31 = Methodref          #19.#30        // clojure/lang/Numbers.multiplyP:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Number;
+  #32 = Utf8               n
+  #33 = Utf8               Ljava/lang/Object;
+  #34 = Utf8               acc
+  #35 = Utf8               invoke
+  #36 = NameAndType        #10:#11        // invokeStatic:(Ljava/lang/Object;)Ljava/lang/Object;
+  #37 = Methodref          #2.#36         // factorial$fact.invokeStatic:(Ljava/lang/Object;)Ljava/lang/Object;
+  #38 = Utf8               <clinit>
+  #39 = Utf8               Code
+  #40 = Utf8               LineNumberTable
+  #41 = Utf8               LocalVariableTable
+  #42 = Utf8               SourceFile
+  #43 = Utf8               SourceDebugExtension
+{
+  public factorial$fact();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #9                  // Method clojure/lang/AFunction."<init>":()V
+         4: return
+      LineNumberTable:
+        line 25: 0
+
+  public static java.lang.Object invokeStatic(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=3, args_size=1
+         0: aload_0
+         1: aconst_null
+         2: astore_0
+         3: astore_1
+         4: lconst_1
+         5: invokestatic  #17                 // Method clojure/lang/RT.box:(J)Ljava/lang/Number;
+         8: astore_2
+         9: aload_1
+        10: invokestatic  #23                 // Method clojure/lang/Numbers.isZero:(Ljava/lang/Object;)Z
+        13: ifeq          23
+        16: aload_2
+        17: aconst_null
+        18: astore_2
+        19: goto          42
+        22: pop
+        23: aload_1
+        24: lconst_1
+        25: invokestatic  #27                 // Method clojure/lang/Numbers.minus:(Ljava/lang/Object;J)Ljava/lang/Number;
+        28: aload_2
+        29: aconst_null
+        30: astore_2
+        31: aload_1
+        32: aconst_null
+        33: astore_1
+        34: invokestatic  #31                 // Method clojure/lang/Numbers.multiplyP:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Number;
+        37: astore_2
+        38: astore_1
+        39: goto          9
+        42: areturn
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            4      38     1     n   Ljava/lang/Object;
+            9      33     2   acc   Ljava/lang/Object;
+            0      42     0     n   Ljava/lang/Object;
+      LineNumberTable:
+        line 25: 0
+        line 0: 5
+        line 27: 9
+        line 27: 10
+        line 29: 25
+        line 29: 34
+
+  public java.lang.Object invoke(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_1
+         1: aconst_null
+         2: astore_1
+         3: invokestatic  #37                 // Method invokeStatic:(Ljava/lang/Object;)Ljava/lang/Object;
+         6: areturn
+      LineNumberTable:
+        line 25: 3
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=0, locals=0, args_size=0
+         0: return
+      LineNumberTable:
+        line 25: 0
+}
+SourceFile: "factorial.clj"
+SourceDebugExtension:
+  SMAP
+  factorial.java
+  Clojure
+  *S Clojure
+  *F
+  + 1 factorial.clj
+  factorial.clj
+  *L
+  23#1,7:23
+  *E

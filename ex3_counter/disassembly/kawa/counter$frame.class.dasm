@@ -1,0 +1,292 @@
+Classfile /Users/tuuli/school/thesis_examples/ex4_shared_closure/temp$_39916801/counter$frame.class
+  Last modified Mar 1, 2016; size 1761 bytes
+  MD5 checksum 1cc0e985b75215dae63264ca29cee50b
+  Compiled from "counter.scm"
+public class counter$frame extends gnu.expr.ModuleBody
+  minor version: 0
+  major version: 51
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Utf8               counter$frame
+   #2 = Class              #1             // counter$frame
+   #3 = Utf8               c
+   #4 = Utf8               Lgnu/math/IntNum;
+   #5 = NameAndType        #3:#4          // c:Lgnu/math/IntNum;
+   #6 = Fieldref           #2.#5          // counter$frame.c:Lgnu/math/IntNum;
+   #7 = Utf8               gnu/math/IntNum
+   #8 = Class              #7             // gnu/math/IntNum
+   #9 = Utf8               add
+  #10 = Utf8               (Lgnu/math/IntNum;I)Lgnu/math/IntNum;
+  #11 = NameAndType        #9:#10         // add:(Lgnu/math/IntNum;I)Lgnu/math/IntNum;
+  #12 = Methodref          #8.#11         // gnu/math/IntNum.add:(Lgnu/math/IntNum;I)Lgnu/math/IntNum;
+  #13 = Utf8               gnu/expr/ModuleBody
+  #14 = Class              #13            // gnu/expr/ModuleBody
+  #15 = Utf8               <init>
+  #16 = Utf8               ()V
+  #17 = NameAndType        #15:#16        // "<init>":()V
+  #18 = Methodref          #14.#17        // gnu/expr/ModuleBody."<init>":()V
+  #19 = Utf8               gnu/expr/ModuleMethod
+  #20 = Class              #19            // gnu/expr/ModuleMethod
+  #21 = Utf8               (Lgnu/expr/ModuleBody;ILjava/lang/Object;I)V
+  #22 = NameAndType        #15:#21        // "<init>":(Lgnu/expr/ModuleBody;ILjava/lang/Object;I)V
+  #23 = Methodref          #20.#22        // gnu/expr/ModuleMethod."<init>":(Lgnu/expr/ModuleBody;ILjava/lang/Object;I)V
+  #24 = Utf8               source-location
+  #25 = String             #24            // source-location
+  #26 = Utf8               counter.scm:9
+  #27 = String             #26            // counter.scm:9
+  #28 = Utf8               gnu/mapping/PropertySet
+  #29 = Class              #28            // gnu/mapping/PropertySet
+  #30 = Utf8               setProperty
+  #31 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)V
+  #32 = NameAndType        #30:#31        // setProperty:(Ljava/lang/Object;Ljava/lang/Object;)V
+  #33 = Methodref          #29.#32        // gnu/mapping/PropertySet.setProperty:(Ljava/lang/Object;Ljava/lang/Object;)V
+  #34 = Utf8               lambda$Fn1
+  #35 = Utf8               Lgnu/expr/ModuleMethod;
+  #36 = NameAndType        #34:#35        // lambda$Fn1:Lgnu/expr/ModuleMethod;
+  #37 = Fieldref           #2.#36         // counter$frame.lambda$Fn1:Lgnu/expr/ModuleMethod;
+  #38 = Utf8               counter.scm:13
+  #39 = String             #38            // counter.scm:13
+  #40 = Utf8               lambda$Fn2
+  #41 = NameAndType        #40:#35        // lambda$Fn2:Lgnu/expr/ModuleMethod;
+  #42 = Fieldref           #2.#41         // counter$frame.lambda$Fn2:Lgnu/expr/ModuleMethod;
+  #43 = Utf8               gnu/mapping/CallContext
+  #44 = Class              #43            // gnu/mapping/CallContext
+  #45 = Utf8               selector
+  #46 = Utf8               I
+  #47 = NameAndType        #45:#46        // selector:I
+  #48 = Fieldref           #20.#47        // gnu/expr/ModuleMethod.selector:I
+  #49 = Utf8               proc
+  #50 = Utf8               Lgnu/mapping/Procedure;
+  #51 = NameAndType        #49:#50        // proc:Lgnu/mapping/Procedure;
+  #52 = Fieldref           #44.#51        // gnu/mapping/CallContext.proc:Lgnu/mapping/Procedure;
+  #53 = Utf8               pc
+  #54 = NameAndType        #53:#46        // pc:I
+  #55 = Fieldref           #44.#54        // gnu/mapping/CallContext.pc:I
+  #56 = Utf8               match0
+  #57 = Utf8               (Lgnu/expr/ModuleMethod;Lgnu/mapping/CallContext;)I
+  #58 = NameAndType        #56:#57        // match0:(Lgnu/expr/ModuleMethod;Lgnu/mapping/CallContext;)I
+  #59 = Methodref          #14.#58        // gnu/expr/ModuleBody.match0:(Lgnu/expr/ModuleMethod;Lgnu/mapping/CallContext;)I
+  #60 = Utf8               applyError
+  #61 = NameAndType        #60:#16        // applyError:()V
+  #62 = Methodref          #20.#61        // gnu/expr/ModuleMethod.applyError:()V
+  #63 = Utf8               lambda1
+  #64 = NameAndType        #63:#16        // lambda1:()V
+  #65 = Methodref          #2.#64         // counter$frame.lambda1:()V
+  #66 = Utf8               gnu/mapping/Values
+  #67 = Class              #66            // gnu/mapping/Values
+  #68 = Utf8               empty
+  #69 = Utf8               Lgnu/mapping/Values;
+  #70 = NameAndType        #68:#69        // empty:Lgnu/mapping/Values;
+  #71 = Fieldref           #67.#70        // gnu/mapping/Values.empty:Lgnu/mapping/Values;
+  #72 = Utf8               lambda2
+  #73 = Utf8               ()Lgnu/math/IntNum;
+  #74 = NameAndType        #72:#73        // lambda2:()Lgnu/math/IntNum;
+  #75 = Methodref          #2.#74         // counter$frame.lambda2:()Lgnu/math/IntNum;
+  #76 = Utf8               apply0
+  #77 = Utf8               (Lgnu/expr/ModuleMethod;)Ljava/lang/Object;
+  #78 = NameAndType        #76:#77        // apply0:(Lgnu/expr/ModuleMethod;)Ljava/lang/Object;
+  #79 = Methodref          #14.#78        // gnu/expr/ModuleBody.apply0:(Lgnu/expr/ModuleMethod;)Ljava/lang/Object;
+  #80 = Utf8               Code
+  #81 = Utf8               LineNumberTable
+  #82 = Utf8               LocalVariableTable
+  #83 = Utf8               this
+  #84 = Utf8               Lcounter$frame;
+  #85 = Utf8               StackMapTable
+  #86 = Utf8               apply
+  #87 = Utf8               (Lgnu/mapping/CallContext;)V
+  #88 = Utf8               EnclosingMethod
+  #89 = Utf8               counter
+  #90 = Class              #89            // counter
+  #91 = Utf8               initCounter
+  #92 = NameAndType        #91:#16        // initCounter:()V
+  #93 = Utf8               SourceFile
+  #94 = Utf8               counter.scm
+  #95 = Utf8               SourceDebugExtension
+  #96 = Utf8               InnerClasses
+{
+  gnu.math.IntNum c;
+    descriptor: Lgnu/math/IntNum;
+    flags:
+
+  final gnu.expr.ModuleMethod lambda$Fn1;
+    descriptor: Lgnu/expr/ModuleMethod;
+    flags: ACC_FINAL
+
+  final gnu.expr.ModuleMethod lambda$Fn2;
+    descriptor: Lgnu/expr/ModuleMethod;
+    flags: ACC_FINAL
+
+  public counter$frame();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=7, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #18                 // Method gnu/expr/ModuleBody."<init>":()V
+         4: aload_0
+         5: new           #20                 // class gnu/expr/ModuleMethod
+         8: dup
+         9: aload_0
+        10: iconst_1
+        11: aconst_null
+        12: iconst_0
+        13: invokespecial #23                 // Method gnu/expr/ModuleMethod."<init>":(Lgnu/expr/ModuleBody;ILjava/lang/Object;I)V
+        16: dup
+        17: ldc           #25                 // String source-location
+        19: ldc           #27                 // String counter.scm:9
+        21: invokevirtual #33                 // Method gnu/mapping/PropertySet.setProperty:(Ljava/lang/Object;Ljava/lang/Object;)V
+        24: putfield      #37                 // Field lambda$Fn1:Lgnu/expr/ModuleMethod;
+        27: aload_0
+        28: new           #20                 // class gnu/expr/ModuleMethod
+        31: dup
+        32: aload_0
+        33: iconst_2
+        34: aconst_null
+        35: iconst_0
+        36: invokespecial #23                 // Method gnu/expr/ModuleMethod."<init>":(Lgnu/expr/ModuleBody;ILjava/lang/Object;I)V
+        39: dup
+        40: ldc           #25                 // String source-location
+        42: ldc           #39                 // String counter.scm:13
+        44: invokevirtual #33                 // Method gnu/mapping/PropertySet.setProperty:(Ljava/lang/Object;Ljava/lang/Object;)V
+        47: putfield      #42                 // Field lambda$Fn2:Lgnu/expr/ModuleMethod;
+        50: return
+
+  void lambda1();
+    descriptor: ()V
+    flags:
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: aload_0
+         2: getfield      #6                  // Field c:Lgnu/math/IntNum;
+         5: iconst_1
+         6: invokestatic  #12                 // Method gnu/math/IntNum.add:(Lgnu/math/IntNum;I)Lgnu/math/IntNum;
+         9: putfield      #6                  // Field c:Lgnu/math/IntNum;
+        12: return
+      LineNumberTable:
+        line 9: 0
+        line 10: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      13     0  this   Lcounter$frame;
+
+  gnu.math.IntNum lambda2();
+    descriptor: ()Lgnu/math/IntNum;
+    flags:
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #6                  // Field c:Lgnu/math/IntNum;
+         4: areturn
+      LineNumberTable:
+        line 13: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcounter$frame;
+
+  public int match0(gnu.expr.ModuleMethod, gnu.mapping.CallContext);
+    descriptor: (Lgnu/expr/ModuleMethod;Lgnu/mapping/CallContext;)I
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_1
+         1: getfield      #48                 // Field gnu/expr/ModuleMethod.selector:I
+         4: tableswitch   { // 1 to 2
+                       1: 40
+                       2: 28
+                 default: 52
+            }
+        28: aload_2
+        29: aload_1
+        30: putfield      #52                 // Field gnu/mapping/CallContext.proc:Lgnu/mapping/Procedure;
+        33: aload_2
+        34: iconst_0
+        35: putfield      #55                 // Field gnu/mapping/CallContext.pc:I
+        38: iconst_0
+        39: ireturn
+        40: aload_2
+        41: aload_1
+        42: putfield      #52                 // Field gnu/mapping/CallContext.proc:Lgnu/mapping/Procedure;
+        45: aload_2
+        46: iconst_0
+        47: putfield      #55                 // Field gnu/mapping/CallContext.pc:I
+        50: iconst_0
+        51: ireturn
+        52: aload_0
+        53: aload_1
+        54: aload_2
+        55: invokespecial #59                 // Method gnu/expr/ModuleBody.match0:(Lgnu/expr/ModuleMethod;Lgnu/mapping/CallContext;)I
+        58: ireturn
+      StackMapTable: number_of_entries = 4
+        frame_type = 68 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 23 /* same */
+        frame_type = 11 /* same */
+        frame_type = 11 /* same */
+      LineNumberTable:
+        line 13: 28
+        line 9: 40
+
+  public void apply(gnu.mapping.CallContext);
+    descriptor: (Lgnu/mapping/CallContext;)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=2, args_size=2
+         0: aload_1
+         1: getfield      #55                 // Field gnu/mapping/CallContext.pc:I
+         4: pop
+         5: goto          8
+         8: invokestatic  #62                 // Method gnu/expr/ModuleMethod.applyError:()V
+        11: return
+      StackMapTable: number_of_entries = 2
+        frame_type = 68 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 3 /* same */
+
+  public java.lang.Object apply0(gnu.expr.ModuleMethod);
+    descriptor: (Lgnu/expr/ModuleMethod;)Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_1
+         1: getfield      #48                 // Field gnu/expr/ModuleMethod.selector:I
+         4: tableswitch   { // 1 to 2
+                       1: 28
+                       2: 36
+                 default: 41
+            }
+        28: aload_0
+        29: invokevirtual #65                 // Method lambda1:()V
+        32: getstatic     #71                 // Field gnu/mapping/Values.empty:Lgnu/mapping/Values;
+        35: areturn
+        36: aload_0
+        37: invokevirtual #75                 // Method lambda2:()Lgnu/math/IntNum;
+        40: areturn
+        41: aload_0
+        42: aload_1
+        43: invokespecial #79                 // Method gnu/expr/ModuleBody.apply0:(Lgnu/expr/ModuleMethod;)Ljava/lang/Object;
+        46: areturn
+      StackMapTable: number_of_entries = 4
+        frame_type = 68 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 23 /* same */
+        frame_type = 7 /* same */
+        frame_type = 4 /* same */
+      LineNumberTable:
+        line 9: 28
+        line 13: 36
+}
+InnerClasses:
+     public #1= #2; //counter$frame=class counter$frame
+EnclosingMethod: #90.#92                // counter.initCounter
+SourceFile: "counter.scm"
+SourceDebugExtension:
+  SMAP
+  counter.scm
+  Scheme
+  *S Scheme
+  *F
+  1 counter.scm
+  *L
+  9#1,5:9
+  *E

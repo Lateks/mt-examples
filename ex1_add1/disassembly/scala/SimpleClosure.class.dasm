@@ -1,0 +1,65 @@
+Classfile /Users/tuuli/school/thesis_examples/ex2_closure/temp$_39916801/SimpleClosure.class
+  Last modified Feb 18, 2016; size 828 bytes
+  MD5 checksum 027f4ef1cc1126ec3d3f590e8cf97066
+  Compiled from "SimpleClosure.scala"
+public final class SimpleClosure
+  minor version: 0
+  major version: 50
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               SimpleClosure
+   #2 = Class              #1             // SimpleClosure
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               SimpleClosure.scala
+   #6 = Utf8               Lscala/reflect/ScalaSignature;
+   #7 = Utf8               bytes
+   #8 = Utf8               A:Q!\t\tQbU5na2,7\t\8tkJ,'\"Aq*W;z}\rCa!I!!D*j[BdWm7pgVXmA1BD)\tQ\"AtGd-\t1I\=SKDQ!EI\taP5oSRtD#A\tQ9AA\t5N-e\"aC\naa!B+oSRDQAG\nAm\tA!:hgB1\nua!!B!seLCA#\tY%\"1K]3eKL!a\t\rM#(/8h\t\tCC'q%AbI$\"\t-I3fKU1BR;oGRLwN\-aBA\r\rIe_\raKq
+   #9 = Utf8               add
+  #10 = Utf8               (I)Lscala/Function1;
+  #11 = Utf8               SimpleClosure$
+  #12 = Class              #11            // SimpleClosure$
+  #13 = Utf8               MODULE$
+  #14 = Utf8               LSimpleClosure$;
+  #15 = NameAndType        #13:#14        // MODULE$:LSimpleClosure$;
+  #16 = Fieldref           #12.#15        // SimpleClosure$.MODULE$:LSimpleClosure$;
+  #17 = NameAndType        #9:#10         // add:(I)Lscala/Function1;
+  #18 = Methodref          #12.#17        // SimpleClosure$.add:(I)Lscala/Function1;
+  #19 = Utf8               main
+  #20 = Utf8               ([Ljava/lang/String;)V
+  #21 = NameAndType        #19:#20        // main:([Ljava/lang/String;)V
+  #22 = Methodref          #12.#21        // SimpleClosure$.main:([Ljava/lang/String;)V
+  #23 = Utf8               Code
+  #24 = Utf8               Signature
+  #25 = Utf8               (I)Lscala/Function1<Ljava/lang/Object;Ljava/lang/Object;>;
+  #26 = Utf8               SourceFile
+  #27 = Utf8               RuntimeVisibleAnnotations
+  #28 = Utf8               ScalaSig
+{
+  public static scala.Function1<java.lang.Object, java.lang.Object> add(int);
+    descriptor: (I)Lscala/Function1;
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #16                 // Field SimpleClosure$.MODULE$:LSimpleClosure$;
+         3: iload_0
+         4: invokevirtual #18                 // Method SimpleClosure$.add:(I)Lscala/Function1;
+         7: areturn
+    Signature: #25                          // (I)Lscala/Function1<Ljava/lang/Object;Ljava/lang/Object;>;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #16                 // Field SimpleClosure$.MODULE$:LSimpleClosure$;
+         3: aload_0
+         4: invokevirtual #22                 // Method SimpleClosure$.main:([Ljava/lang/String;)V
+         7: return
+}
+SourceFile: "SimpleClosure.scala"
+RuntimeVisibleAnnotations:
+  0: #6(#7=s#8)
+Error: unknown attribute
+  ScalaSig: length = 0x3
+   05 00 00

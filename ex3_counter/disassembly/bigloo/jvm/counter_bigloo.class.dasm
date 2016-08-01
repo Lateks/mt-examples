@@ -1,0 +1,922 @@
+Classfile /Users/tuuli/school/thesis_examples/ex4_shared_closure/temp$_39916801/counter_bigloo.class
+  Last modified Mar 1, 2016; size 5267 bytes
+  MD5 checksum a3ed0aa6bd3e2fade41f2f8e63e67f5c
+  Compiled from "counter_bigloo.scm"
+public class counter_bigloo extends bigloo.procedure implements java.io.Serializable
+  minor version: 3
+  major version: 45
+  flags: ACC_PUBLIC
+Constant pool:
+    #1 = Utf8               counter_bigloo
+    #2 = Class              #1            // counter_bigloo
+    #3 = Utf8               bigloo/procedure
+    #4 = Class              #3            // bigloo/procedure
+    #5 = Utf8               java/io/Serializable
+    #6 = Class              #5            // java/io/Serializable
+    #7 = Utf8               __the_module_name__
+    #8 = Utf8               Ljava/lang/String;
+    #9 = NameAndType        #7:#8         // __the_module_name__:Ljava/lang/String;
+   #10 = Fieldref           #2.#9         // counter_bigloo.__the_module_name__:Ljava/lang/String;
+   #11 = Utf8               __cnst
+   #12 = Utf8               [Ljava/lang/Object;
+   #13 = NameAndType        #11:#12       // __cnst:[Ljava/lang/Object;
+   #14 = Fieldref           #2.#13        // counter_bigloo.__cnst:[Ljava/lang/Object;
+   #15 = Utf8               BGl_requirezd2initializa7ationz75zzcounterz00
+   #16 = Utf8               Ljava/lang/Object;
+   #17 = NameAndType        #15:#16       // BGl_requirezd2initializa7ationz75zzcounterz00:Ljava/lang/Object;
+   #18 = Fieldref           #2.#17        // counter_bigloo.BGl_requirezd2initializa7ationz75zzcounterz00:Ljava/lang/Object;
+   #19 = Utf8               BgL_incrementzd2counterzd2
+   #20 = NameAndType        #19:#16       // BgL_incrementzd2counterzd2:Ljava/lang/Object;
+   #21 = Fieldref           #2.#20        // counter_bigloo.BgL_incrementzd2counterzd2:Ljava/lang/Object;
+   #22 = Utf8               BgL_mainzd2envzd2
+   #23 = Utf8               Lbigloo/procedure;
+   #24 = NameAndType        #22:#23       // BgL_mainzd2envzd2:Lbigloo/procedure;
+   #25 = Fieldref           #2.#24        // counter_bigloo.BgL_mainzd2envzd2:Lbigloo/procedure;
+   #26 = Utf8               BgL_getzd2counterzd2
+   #27 = NameAndType        #26:#16       // BgL_getzd2counterzd2:Ljava/lang/Object;
+   #28 = Fieldref           #2.#27        // counter_bigloo.BgL_getzd2counterzd2:Ljava/lang/Object;
+   #29 = Utf8               string1035
+   #30 = Utf8               [B
+   #31 = NameAndType        #29:#30       // string1035:[B
+   #32 = Fieldref           #2.#31        // counter_bigloo.string1035:[B
+   #33 = Utf8               string1036
+   #34 = NameAndType        #33:#30       // string1036:[B
+   #35 = Fieldref           #2.#34        // counter_bigloo.string1036:[B
+   #36 = Utf8               string1037
+   #37 = NameAndType        #36:#30       // string1037:[B
+   #38 = Fieldref           #2.#37        // counter_bigloo.string1037:[B
+   #39 = Utf8               string1038
+   #40 = NameAndType        #39:#30       // string1038:[B
+   #41 = Fieldref           #2.#40        // counter_bigloo.string1038:[B
+   #42 = Utf8               string1039
+   #43 = NameAndType        #42:#30       // string1039:[B
+   #44 = Fieldref           #2.#43        // counter_bigloo.string1039:[B
+   #45 = Utf8               SourceFile
+   #46 = Utf8               counter_bigloo.scm
+   #47 = Utf8               main
+   #48 = Utf8               ([Ljava/lang/String;)V
+   #49 = Utf8               java/lang/Throwable
+   #50 = Class              #49           // java/lang/Throwable
+   #51 = Utf8               listargv
+   #52 = Utf8               ([Ljava/lang/String;)Ljava/lang/Object;
+   #53 = Utf8               bigloo/foreign
+   #54 = Class              #53           // bigloo/foreign
+   #55 = NameAndType        #51:#52       // listargv:([Ljava/lang/String;)Ljava/lang/Object;
+   #56 = Methodref          #54.#55       // bigloo/foreign.listargv:([Ljava/lang/String;)Ljava/lang/Object;
+   #57 = Utf8               bigloo_main
+   #58 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+   #59 = NameAndType        #57:#58       // bigloo_main:(Ljava/lang/Object;)Ljava/lang/Object;
+   #60 = Methodref          #2.#59        // counter_bigloo.bigloo_main:(Ljava/lang/Object;)Ljava/lang/Object;
+   #61 = Utf8               internalerror
+   #62 = Utf8               (Ljava/lang/Throwable;)V
+   #63 = NameAndType        #61:#62       // internalerror:(Ljava/lang/Throwable;)V
+   #64 = Methodref          #54.#63       // bigloo/foreign.internalerror:(Ljava/lang/Throwable;)V
+   #65 = Utf8               Code
+   #66 = Utf8               LineNumberTable
+   #67 = Utf8               <init>
+   #68 = Utf8               ()V
+   #69 = NameAndType        #67:#68       // "<init>":()V
+   #70 = Methodref          #4.#69        // bigloo/procedure."<init>":()V
+   #71 = Utf8               funcall0
+   #72 = Utf8               ()Ljava/lang/Object;
+   #73 = Utf8               index
+   #74 = Utf8               I
+   #75 = NameAndType        #73:#74       // index:I
+   #76 = Fieldref           #4.#75        // bigloo/procedure.index:I
+   #77 = NameAndType        #71:#72       // funcall0:()Ljava/lang/Object;
+   #78 = Methodref          #4.#77        // bigloo/procedure.funcall0:()Ljava/lang/Object;
+   #79 = Utf8               BgL_z62zc3anonymousza31011ze3ze1
+   #80 = Utf8               (Lbigloo/procedure;)Ljava/lang/Object;
+   #81 = NameAndType        #79:#80       // BgL_z62zc3anonymousza31011ze3ze1:(Lbigloo/procedure;)Ljava/lang/Object;
+   #82 = Methodref          #2.#81        // counter_bigloo.BgL_z62zc3anonymousza31011ze3ze1:(Lbigloo/procedure;)Ljava/lang/Object;
+   #83 = Utf8               BgL_z62zc3anonymousza31014ze3ze1
+   #84 = NameAndType        #83:#80       // BgL_z62zc3anonymousza31014ze3ze1:(Lbigloo/procedure;)Ljava/lang/Object;
+   #85 = Methodref          #2.#84        // counter_bigloo.BgL_z62zc3anonymousza31014ze3ze1:(Lbigloo/procedure;)Ljava/lang/Object;
+   #86 = Utf8               funcall1
+   #87 = NameAndType        #86:#58       // funcall1:(Ljava/lang/Object;)Ljava/lang/Object;
+   #88 = Methodref          #4.#87        // bigloo/procedure.funcall1:(Ljava/lang/Object;)Ljava/lang/Object;
+   #89 = Utf8               BgL_z62mainz62
+   #90 = Utf8               (Lbigloo/procedure;Ljava/lang/Object;)Ljava/lang/Object;
+   #91 = NameAndType        #89:#90       // BgL_z62mainz62:(Lbigloo/procedure;Ljava/lang/Object;)Ljava/lang/Object;
+   #92 = Methodref          #2.#91        // counter_bigloo.BgL_z62mainz62:(Lbigloo/procedure;Ljava/lang/Object;)Ljava/lang/Object;
+   #93 = Utf8               apply
+   #94 = NameAndType        #93:#58       // apply:(Ljava/lang/Object;)Ljava/lang/Object;
+   #95 = Methodref          #4.#94        // bigloo/procedure.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+   #96 = Utf8               bigloo/pair
+   #97 = Class              #96           // bigloo/pair
+   #98 = Utf8               car
+   #99 = NameAndType        #98:#16       // car:Ljava/lang/Object;
+  #100 = Fieldref           #97.#99       // bigloo/pair.car:Ljava/lang/Object;
+  #101 = Utf8               <clinit>
+  #102 = Utf8               counter
+  #103 = String             #102          // counter
+  #104 = Utf8               java/lang/Object
+  #105 = Class              #104          // java/lang/Object
+  #106 = Utf8               (funcall increment-counter increment-counter) (funcall get-counter get-counter)
+  #107 = String             #106          // (funcall increment-counter increment-counter) (funcall get-counter get-counter)
+  #108 = Utf8               jstring_to_bstring
+  #109 = Utf8               (Ljava/lang/String;)[B
+  #110 = NameAndType        #108:#109     // jstring_to_bstring:(Ljava/lang/String;)[B
+  #111 = Methodref          #54.#110      // bigloo/foreign.jstring_to_bstring:(Ljava/lang/String;)[B
+  #112 = Utf8               pair
+  #113 = String             #112          // pair
+  #114 = Utf8               &main
+  #115 = String             #114          // &main
+  #116 = Utf8               /Users/tuuli/school/thesis_examples/ex4_shared_closure/temp$_39916801/counter_bigloo.scm
+  #117 = String             #116          // /Users/tuuli/school/thesis_examples/ex4_shared_closure/temp$_39916801/counter_bigloo.scm
+  #118 = Utf8               main:Wrong number of arguments
+  #119 = String             #118          // main:Wrong number of arguments
+  #120 = Methodref          #2.#69        // counter_bigloo."<init>":()V
+  #121 = Utf8               arity
+  #122 = NameAndType        #121:#74      // arity:I
+  #123 = Fieldref           #4.#122       // bigloo/procedure.arity:I
+  #124 = Utf8               bigloo_dlopen_init
+  #125 = Utf8               BgL_modulezd2initializa7ationz75
+  #126 = Utf8               (I[B)Ljava/lang/Object;
+  #127 = NameAndType        #125:#126     // BgL_modulezd2initializa7ationz75:(I[B)Ljava/lang/Object;
+  #128 = Methodref          #2.#127       // counter_bigloo.BgL_modulezd2initializa7ationz75:(I[B)Ljava/lang/Object;
+  #129 = Integer            334838117
+  #130 = Utf8               BgL_bitzd2andzd2
+  #131 = Utf8               (II)I
+  #132 = Utf8               bigloo/runtime/Llib/bit
+  #133 = Class              #132          // bigloo/runtime/Llib/bit
+  #134 = NameAndType        #130:#131     // BgL_bitzd2andzd2:(II)I
+  #135 = Methodref          #133.#134     // bigloo/runtime/Llib/bit.BgL_bitzd2andzd2:(II)I
+  #136 = Utf8               BINT
+  #137 = Utf8               (I)Lbigloo/bint;
+  #138 = NameAndType        #136:#137     // BINT:(I)Lbigloo/bint;
+  #139 = Methodref          #54.#138      // bigloo/foreign.BINT:(I)Lbigloo/bint;
+  #140 = Utf8               value
+  #141 = Utf8               bigloo/bint
+  #142 = Class              #141          // bigloo/bint
+  #143 = NameAndType        #140:#74      // value:I
+  #144 = Fieldref           #142.#143     // bigloo/bint.value:I
+  #145 = Utf8               BgL_zd3fxzd3
+  #146 = Utf8               (II)Z
+  #147 = Utf8               bigloo/runtime/Ieee/fixnum
+  #148 = Class              #147          // bigloo/runtime/Ieee/fixnum
+  #149 = NameAndType        #145:#146     // BgL_zd3fxzd3:(II)Z
+  #150 = Methodref          #148.#149     // bigloo/runtime/Ieee/fixnum.BgL_zd3fxzd3:(II)Z
+  #151 = Utf8               BgL_modulezd2initzd2errorz00
+  #152 = Utf8               ([B[B)Ljava/lang/Object;
+  #153 = Utf8               bigloo/runtime/Llib/error
+  #154 = Class              #153          // bigloo/runtime/Llib/error
+  #155 = NameAndType        #151:#152     // BgL_modulezd2initzd2errorz00:([B[B)Ljava/lang/Object;
+  #156 = Methodref          #154.#155     // bigloo/runtime/Llib/error.BgL_modulezd2initzd2errorz00:([B[B)Ljava/lang/Object;
+  #157 = Utf8               unspecified
+  #158 = Utf8               Lbigloo/unspecified;
+  #159 = Utf8               bigloo/unspecified
+  #160 = Class              #159          // bigloo/unspecified
+  #161 = NameAndType        #157:#158     // unspecified:Lbigloo/unspecified;
+  #162 = Fieldref           #160.#161     // bigloo/unspecified.unspecified:Lbigloo/unspecified;
+  #163 = Utf8               faux
+  #164 = Utf8               Lbigloo/bbool;
+  #165 = Utf8               bigloo/bbool
+  #166 = Class              #165          // bigloo/bbool
+  #167 = NameAndType        #163:#164     // faux:Lbigloo/bbool;
+  #168 = Fieldref           #166.#167     // bigloo/bbool.faux:Lbigloo/bbool;
+  #169 = Utf8               BgL_libraryzd2moduleszd2initz00
+  #170 = NameAndType        #169:#72      // BgL_libraryzd2moduleszd2initz00:()Ljava/lang/Object;
+  #171 = Methodref          #2.#170       // counter_bigloo.BgL_libraryzd2moduleszd2initz00:()Ljava/lang/Object;
+  #172 = Utf8               BgL_cnstzd2initzd2
+  #173 = NameAndType        #172:#72      // BgL_cnstzd2initzd2:()Ljava/lang/Object;
+  #174 = Methodref          #2.#173       // counter_bigloo.BgL_cnstzd2initzd2:()Ljava/lang/Object;
+  #175 = Utf8               BgL_objectzd2initzd2
+  #176 = NameAndType        #175:#72      // BgL_objectzd2initzd2:()Ljava/lang/Object;
+  #177 = Methodref          #2.#176       // counter_bigloo.BgL_objectzd2initzd2:()Ljava/lang/Object;
+  #178 = Utf8               BgL_genericzd2initzd2
+  #179 = NameAndType        #178:#72      // BgL_genericzd2initzd2:()Ljava/lang/Object;
+  #180 = Methodref          #2.#179       // counter_bigloo.BgL_genericzd2initzd2:()Ljava/lang/Object;
+  #181 = Utf8               BgL_methodzd2initzd2
+  #182 = NameAndType        #181:#72      // BgL_methodzd2initzd2:()Ljava/lang/Object;
+  #183 = Methodref          #2.#182       // counter_bigloo.BgL_methodzd2initzd2:()Ljava/lang/Object;
+  #184 = Utf8               BgL_toplevelzd2initzd2
+  #185 = NameAndType        #184:#72      // BgL_toplevelzd2initzd2:()Ljava/lang/Object;
+  #186 = Methodref          #2.#185       // counter_bigloo.BgL_toplevelzd2initzd2:()Ljava/lang/Object;
+  #187 = Utf8               BgL_bigloozd2initializa7edz12z67
+  #188 = Utf8               bigloo/runtime/Llib/param
+  #189 = Class              #188          // bigloo/runtime/Llib/param
+  #190 = NameAndType        #187:#72      // BgL_bigloozd2initializa7edz12z67:()Ljava/lang/Object;
+  #191 = Methodref          #189.#190     // bigloo/runtime/Llib/param.BgL_bigloozd2initializa7edz12z67:()Ljava/lang/Object;
+  #192 = Utf8               (Lbigloo/pair;)Ljava/lang/Object;
+  #193 = NameAndType        #47:#192      // main:(Lbigloo/pair;)Ljava/lang/Object;
+  #194 = Methodref          #2.#193       // counter_bigloo.main:(Lbigloo/pair;)Ljava/lang/Object;
+  #195 = Utf8               BIGLOO_EXIT
+  #196 = NameAndType        #195:#58      // BIGLOO_EXIT:(Ljava/lang/Object;)Ljava/lang/Object;
+  #197 = Methodref          #54.#196      // bigloo/foreign.BIGLOO_EXIT:(Ljava/lang/Object;)Ljava/lang/Object;
+  #198 = Methodref          #154.#127     // bigloo/runtime/Llib/error.BgL_modulezd2initializa7ationz75:(I[B)Ljava/lang/Object;
+  #199 = Utf8               bigloo/runtime/Ieee/output
+  #200 = Class              #199          // bigloo/runtime/Ieee/output
+  #201 = Methodref          #200.#127     // bigloo/runtime/Ieee/output.BgL_modulezd2initializa7ationz75:(I[B)Ljava/lang/Object;
+  #202 = Utf8               bigloo/runtime/Read/reader
+  #203 = Class              #202          // bigloo/runtime/Read/reader
+  #204 = Methodref          #203.#127     // bigloo/runtime/Read/reader.BgL_modulezd2initializa7ationz75:(I[B)Ljava/lang/Object;
+  #205 = Utf8               bigloo/runtime/Ieee/number
+  #206 = Class              #205          // bigloo/runtime/Ieee/number
+  #207 = Methodref          #206.#127     // bigloo/runtime/Ieee/number.BgL_modulezd2initializa7ationz75:(I[B)Ljava/lang/Object;
+  #208 = Utf8               bgl_open_input_string
+  #209 = Utf8               ([BI)Lbigloo/input_port;
+  #210 = NameAndType        #208:#209     // bgl_open_input_string:([BI)Lbigloo/input_port;
+  #211 = Methodref          #54.#210      // bigloo/foreign.bgl_open_input_string:([BI)Lbigloo/input_port;
+  #212 = Utf8               read
+  #213 = Utf8               (Lbigloo/input_port;Ljava/lang/Object;)Ljava/lang/Object;
+  #214 = NameAndType        #212:#213     // read:(Lbigloo/input_port;Ljava/lang/Object;)Ljava/lang/Object;
+  #215 = Methodref          #203.#214     // bigloo/runtime/Read/reader.read:(Lbigloo/input_port;Ljava/lang/Object;)Ljava/lang/Object;
+  #216 = Utf8               BFALSE
+  #217 = NameAndType        #216:#164     // BFALSE:Lbigloo/bbool;
+  #218 = Fieldref           #54.#217      // bigloo/foreign.BFALSE:Lbigloo/bbool;
+  #219 = Utf8               BgL_initzd2counterzd2
+  #220 = Utf8               ()Lbigloo/unspecified;
+  #221 = Utf8               bigloo/cell
+  #222 = Class              #221          // bigloo/cell
+  #223 = Utf8               (Ljava/lang/Object;)V
+  #224 = NameAndType        #67:#223      // "<init>":(Ljava/lang/Object;)V
+  #225 = Methodref          #222.#224     // bigloo/cell."<init>":(Ljava/lang/Object;)V
+  #226 = Utf8               env
+  #227 = NameAndType        #226:#12      // env:[Ljava/lang/Object;
+  #228 = Fieldref           #4.#227       // bigloo/procedure.env:[Ljava/lang/Object;
+  #229 = Fieldref           #222.#99      // bigloo/cell.car:Ljava/lang/Object;
+  #230 = Utf8               nil
+  #231 = Utf8               Lbigloo/nil;
+  #232 = Utf8               bigloo/nil
+  #233 = Class              #232          // bigloo/nil
+  #234 = NameAndType        #230:#231     // nil:Lbigloo/nil;
+  #235 = Fieldref           #233.#234     // bigloo/nil.nil:Lbigloo/nil;
+  #236 = Utf8               MAKE_PAIR
+  #237 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Lbigloo/pair;
+  #238 = NameAndType        #236:#237     // MAKE_PAIR:(Ljava/lang/Object;Ljava/lang/Object;)Lbigloo/pair;
+  #239 = Methodref          #54.#238      // bigloo/foreign.MAKE_PAIR:(Ljava/lang/Object;Ljava/lang/Object;)Lbigloo/pair;
+  #240 = Utf8               BgL_zb2zb2
+  #241 = NameAndType        #240:#58      // BgL_zb2zb2:(Ljava/lang/Object;)Ljava/lang/Object;
+  #242 = Methodref          #206.#241     // bigloo/runtime/Ieee/number.BgL_zb2zb2:(Ljava/lang/Object;)Ljava/lang/Object;
+  #243 = NameAndType        #219:#220     // BgL_initzd2counterzd2:()Lbigloo/unspecified;
+  #244 = Methodref          #2.#243       // counter_bigloo.BgL_initzd2counterzd2:()Lbigloo/unspecified;
+  #245 = Utf8               PROCEDURE_CORRECT_ARITYP
+  #246 = Utf8               (Lbigloo/procedure;I)Z
+  #247 = NameAndType        #245:#246     // PROCEDURE_CORRECT_ARITYP:(Lbigloo/procedure;I)Z
+  #248 = Methodref          #54.#247      // bigloo/foreign.PROCEDURE_CORRECT_ARITYP:(Lbigloo/procedure;I)Z
+  #249 = Utf8               print
+  #250 = NameAndType        #249:#58      // print:(Ljava/lang/Object;)Ljava/lang/Object;
+  #251 = Methodref          #200.#250     // bigloo/runtime/Ieee/output.print:(Ljava/lang/Object;)Ljava/lang/Object;
+  #252 = Utf8               fail
+  #253 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/RuntimeException;
+  #254 = NameAndType        #252:#253     // fail:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/RuntimeException;
+  #255 = Methodref          #54.#254      // bigloo/foreign.fail:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/RuntimeException;
+  #256 = Utf8               BgL_typezd2errorzd2
+  #257 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #258 = NameAndType        #256:#257     // BgL_typezd2errorzd2:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #259 = Methodref          #154.#258     // bigloo/runtime/Llib/error.BgL_typezd2errorzd2:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #260 = Utf8               SourceDebugExtension
+{
+  public static java.lang.String __the_module_name__;
+    descriptor: Ljava/lang/String;
+    flags: ACC_PUBLIC, ACC_STATIC
+
+  private static java.lang.Object[] __cnst;
+    descriptor: [Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+
+  private static java.lang.Object BGl_requirezd2initializa7ationz75zzcounterz00;
+    descriptor: Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+
+  private static java.lang.Object BgL_incrementzd2counterzd2;
+    descriptor: Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+
+  public static bigloo.procedure BgL_mainzd2envzd2;
+    descriptor: Lbigloo/procedure;
+    flags: ACC_PUBLIC, ACC_STATIC
+
+  private static java.lang.Object BgL_getzd2counterzd2;
+    descriptor: Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+
+  private static byte[] string1035;
+    descriptor: [B
+    flags: ACC_PRIVATE, ACC_STATIC
+
+  private static byte[] string1036;
+    descriptor: [B
+    flags: ACC_PRIVATE, ACC_STATIC
+
+  private static byte[] string1037;
+    descriptor: [B
+    flags: ACC_PRIVATE, ACC_STATIC
+
+  private static byte[] string1038;
+    descriptor: [B
+    flags: ACC_PRIVATE, ACC_STATIC
+
+  private static byte[] string1039;
+    descriptor: [B
+    flags: ACC_PRIVATE, ACC_STATIC
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #56                 // Method bigloo/foreign.listargv:([Ljava/lang/String;)Ljava/lang/Object;
+         4: invokestatic  #60                 // Method bigloo_main:(Ljava/lang/Object;)Ljava/lang/Object;
+         7: pop
+         8: return
+         9: invokestatic  #64                 // Method bigloo/foreign.internalerror:(Ljava/lang/Throwable;)V
+        12: return
+      Exception table:
+         from    to  target type
+             0     9     9   Class java/lang/Throwable
+      LineNumberTable:
+        line 0: 0
+
+  public counter_bigloo();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #70                 // Method bigloo/procedure."<init>":()V
+         4: return
+      LineNumberTable:
+        line 0: 0
+
+  public java.lang.Object funcall0();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #76                 // Field bigloo/procedure.index:I
+         4: tableswitch   { // 0 to 2
+                       0: 32
+                       1: 37
+                       2: 45
+                 default: 32
+            }
+        32: aload_0
+        33: invokespecial #78                 // Method bigloo/procedure.funcall0:()Ljava/lang/Object;
+        36: areturn
+        // increment-counter
+        37: aload_0
+        38: checkcast     #4                  // class bigloo/procedure
+        41: invokestatic  #82                 // Method BgL_z62zc3anonymousza31011ze3ze1:(Lbigloo/procedure;)Ljava/lang/Object;
+        44: areturn
+        // get-counter
+        45: aload_0
+        46: checkcast     #4                  // class bigloo/procedure
+        49: invokestatic  #85                 // Method BgL_z62zc3anonymousza31014ze3ze1:(Lbigloo/procedure;)Ljava/lang/Object;
+        52: areturn
+      LineNumberTable:
+        line 0: 0
+
+  public java.lang.Object funcall1(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: getfield      #76                 // Field bigloo/procedure.index:I
+         4: tableswitch   { // 0 to 2
+                       0: 38
+                       1: 32
+                       2: 32
+                 default: 32
+            }
+        32: aload_0
+        33: aload_1
+        34: invokespecial #88                 // Method bigloo/procedure.funcall1:(Ljava/lang/Object;)Ljava/lang/Object;
+        37: areturn
+        38: aload_0
+        39: checkcast     #4                  // class bigloo/procedure
+        42: aload_1
+        43: invokestatic  #92                 // Method BgL_z62mainz62:(Lbigloo/procedure;Ljava/lang/Object;)Ljava/lang/Object;
+        46: areturn
+      LineNumberTable:
+        line 0: 0
+
+  public java.lang.Object apply(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_0
+         2: getfield      #76                 // Field bigloo/procedure.index:I
+         5: tableswitch   { // 0 to 2
+                       0: 37
+                       1: 48
+                       2: 52
+                 default: 32
+            }
+        32: aload_1
+        33: invokespecial #95                 // Method bigloo/procedure.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+        36: areturn
+        37: aload_1
+        38: checkcast     #97                 // class bigloo/pair
+        41: getfield      #100                // Field bigloo/pair.car:Ljava/lang/Object;
+        44: invokestatic  #92                 // Method BgL_z62mainz62:(Lbigloo/procedure;Ljava/lang/Object;)Ljava/lang/Object;
+        47: areturn
+        48: invokestatic  #82                 // Method BgL_z62zc3anonymousza31011ze3ze1:(Lbigloo/procedure;)Ljava/lang/Object;
+        51: areturn
+        52: invokestatic  #85                 // Method BgL_z62zc3anonymousza31014ze3ze1:(Lbigloo/procedure;)Ljava/lang/Object;
+        55: areturn
+      LineNumberTable:
+        line 0: 0
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=0, args_size=0
+         0: ldc           #103                // String counter
+         2: putstatic     #10                 // Field __the_module_name__:Ljava/lang/String;
+         5: iconst_2
+         6: anewarray     #105                // class java/lang/Object
+         9: putstatic     #14                 // Field __cnst:[Ljava/lang/Object;
+        12: ldc           #107                // String (funcall increment-counter increment-counter) (funcall get-counter get-counter)
+        14: invokestatic  #111                // Method bigloo/foreign.jstring_to_bstring:(Ljava/lang/String;)[B
+        17: putstatic     #44                 // Field string1039:[B
+        20: ldc           #113                // String pair
+        22: invokestatic  #111                // Method bigloo/foreign.jstring_to_bstring:(Ljava/lang/String;)[B
+        25: putstatic     #41                 // Field string1038:[B
+        28: ldc           #115                // String &main
+        30: invokestatic  #111                // Method bigloo/foreign.jstring_to_bstring:(Ljava/lang/String;)[B
+        33: putstatic     #38                 // Field string1037:[B
+        36: ldc           #117                // String /Users/tuuli/school/thesis_examples/ex4_shared_closure/temp$_39916801/counter_bigloo.scm
+        38: invokestatic  #111                // Method bigloo/foreign.jstring_to_bstring:(Ljava/lang/String;)[B
+        41: putstatic     #35                 // Field string1036:[B
+        44: ldc           #119                // String main:Wrong number of arguments
+        46: invokestatic  #111                // Method bigloo/foreign.jstring_to_bstring:(Ljava/lang/String;)[B
+        49: putstatic     #32                 // Field string1035:[B
+        52: new           #2                  // class counter_bigloo
+        55: dup
+        56: invokespecial #120                // Method "<init>":()V
+        59: dup
+        60: iconst_0
+        61: putfield      #76                 // Field bigloo/procedure.index:I
+        64: dup
+        65: iconst_1
+        66: putfield      #123                // Field bigloo/procedure.arity:I
+        69: putstatic     #25                 // Field BgL_mainzd2envzd2:Lbigloo/procedure;
+        72: return
+      LineNumberTable:
+        line 0: 0
+
+  public static void bigloo_dlopen_init();
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: iconst_0
+         1: aconst_null
+         2: invokestatic  #128                // Method BgL_modulezd2initializa7ationz75:(I[B)Ljava/lang/Object;
+         5: pop
+         6: return
+      LineNumberTable:
+        line 0: 0
+
+  public static java.lang.Object BgL_modulezd2initializa7ationz75(int, byte[]);
+    descriptor: (I[B)Ljava/lang/Object;
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: iload_0
+         1: ldc           #129                // int 334838117
+         3: invokestatic  #135                // Method bigloo/runtime/Llib/bit.BgL_bitzd2andzd2:(II)I
+         6: invokestatic  #139                // Method bigloo/foreign.BINT:(I)Lbigloo/bint;
+         9: getfield      #144                // Field bigloo/bint.value:I
+        12: iload_0
+        13: invokestatic  #150                // Method bigloo/runtime/Ieee/fixnum.BgL_zd3fxzd3:(II)Z
+        16: ifne          67
+        19: ldc           #103                // String counter
+        21: invokestatic  #111                // Method bigloo/foreign.jstring_to_bstring:(Ljava/lang/String;)[B
+        24: aload_1
+        25: invokestatic  #156                // Method bigloo/runtime/Llib/error.BgL_modulezd2initzd2errorz00:([B[B)Ljava/lang/Object;
+        28: pop
+        29: getstatic     #162                // Field bigloo/unspecified.unspecified:Lbigloo/unspecified;
+        32: areturn
+        33: getstatic     #168                // Field bigloo/bbool.faux:Lbigloo/bbool;
+        36: putstatic     #18                 // Field BGl_requirezd2initializa7ationz75zzcounterz00:Ljava/lang/Object;
+        39: invokestatic  #171                // Method BgL_libraryzd2moduleszd2initz00:()Ljava/lang/Object;
+        42: pop
+        43: invokestatic  #174                // Method BgL_cnstzd2initzd2:()Ljava/lang/Object;
+        46: pop
+        47: invokestatic  #177                // Method BgL_objectzd2initzd2:()Ljava/lang/Object;
+        50: pop
+        51: invokestatic  #180                // Method BgL_genericzd2initzd2:()Ljava/lang/Object;
+        54: pop
+        55: invokestatic  #183                // Method BgL_methodzd2initzd2:()Ljava/lang/Object;
+        58: pop
+        59: invokestatic  #186                // Method BgL_toplevelzd2initzd2:()Ljava/lang/Object;
+        62: pop
+        63: getstatic     #162                // Field bigloo/unspecified.unspecified:Lbigloo/unspecified;
+        66: areturn
+        67: getstatic     #18                 // Field BGl_requirezd2initializa7ationz75zzcounterz00:Ljava/lang/Object;
+        70: getstatic     #168                // Field bigloo/bbool.faux:Lbigloo/bbool;
+        73: if_acmpne     33
+        76: getstatic     #162                // Field bigloo/unspecified.unspecified:Lbigloo/unspecified;
+        79: areturn
+      LineNumberTable:
+        line 0: 0
+
+  public static java.lang.Object bigloo_main(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: iconst_0
+         1: ldc           #103                // String counter
+         3: invokestatic  #111                // Method bigloo/foreign.jstring_to_bstring:(Ljava/lang/String;)[B
+         6: invokestatic  #128                // Method BgL_modulezd2initializa7ationz75:(I[B)Ljava/lang/Object;
+         9: pop
+        10: invokestatic  #191                // Method bigloo/runtime/Llib/param.BgL_bigloozd2initializa7edz12z67:()Ljava/lang/Object;
+        13: pop
+        14: aload_0
+        15: checkcast     #97                 // class bigloo/pair
+        18: invokestatic  #194                // Method main:(Lbigloo/pair;)Ljava/lang/Object;
+        21: invokestatic  #197                // Method bigloo/foreign.BIGLOO_EXIT:(Ljava/lang/Object;)Ljava/lang/Object;
+        24: areturn
+      LineNumberTable:
+        line 0: 0
+
+  private static java.lang.Object BgL_libraryzd2moduleszd2initz00();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: iconst_0
+         1: ldc           #103                // String counter
+         3: invokestatic  #111                // Method bigloo/foreign.jstring_to_bstring:(Ljava/lang/String;)[B
+         6: invokestatic  #198                // Method bigloo/runtime/Llib/error.BgL_modulezd2initializa7ationz75:(I[B)Ljava/lang/Object;
+         9: pop
+        10: iconst_0
+        11: ldc           #103                // String counter
+        13: invokestatic  #111                // Method bigloo/foreign.jstring_to_bstring:(Ljava/lang/String;)[B
+        16: invokestatic  #201                // Method bigloo/runtime/Ieee/output.BgL_modulezd2initializa7ationz75:(I[B)Ljava/lang/Object;
+        19: pop
+        20: iconst_0
+        21: ldc           #103                // String counter
+        23: invokestatic  #111                // Method bigloo/foreign.jstring_to_bstring:(Ljava/lang/String;)[B
+        26: invokestatic  #204                // Method bigloo/runtime/Read/reader.BgL_modulezd2initializa7ationz75:(I[B)Ljava/lang/Object;
+        29: pop
+        30: iconst_0
+        31: ldc           #103                // String counter
+        33: invokestatic  #111                // Method bigloo/foreign.jstring_to_bstring:(Ljava/lang/String;)[B
+        36: invokestatic  #207                // Method bigloo/runtime/Ieee/number.BgL_modulezd2initializa7ationz75:(I[B)Ljava/lang/Object;
+        39: pop
+        40: getstatic     #162                // Field bigloo/unspecified.unspecified:Lbigloo/unspecified;
+        43: areturn
+      LineNumberTable:
+        line 0: 0
+
+  private static java.lang.Object BgL_cnstzd2initzd2();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=4, locals=2, args_size=0
+         0: getstatic     #44                 // Field string1039:[B
+         3: iconst_0
+         4: invokestatic  #211                // Method bigloo/foreign.bgl_open_input_string:([BI)Lbigloo/input_port;
+         7: astore_0
+         8: iconst_1
+         9: istore_1
+        10: iload_1
+        11: iconst_m1
+        12: if_icmpne     19
+        15: getstatic     #162                // Field bigloo/unspecified.unspecified:Lbigloo/unspecified;
+        18: areturn
+        19: getstatic     #14                 // Field __cnst:[Ljava/lang/Object;
+        22: iload_1
+        23: aload_0
+        24: getstatic     #168                // Field bigloo/bbool.faux:Lbigloo/bbool;
+        27: invokestatic  #215                // Method bigloo/runtime/Read/reader.read:(Lbigloo/input_port;Ljava/lang/Object;)Ljava/lang/Object;
+        30: aastore
+        31: iload_1
+        32: iconst_1
+        33: isub
+        34: istore_1
+        35: iload_1
+        36: iconst_m1
+        37: if_icmpne     19
+        40: getstatic     #162                // Field bigloo/unspecified.unspecified:Lbigloo/unspecified;
+        43: areturn
+      LineNumberTable:
+        line 0: 0
+
+  private static java.lang.Object BgL_toplevelzd2initzd2();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: getstatic     #218                // Field bigloo/foreign.BFALSE:Lbigloo/bbool;
+         3: putstatic     #21                 // Field BgL_incrementzd2counterzd2:Ljava/lang/Object;
+         6: getstatic     #218                // Field bigloo/foreign.BFALSE:Lbigloo/bbool;
+         9: putstatic     #28                 // Field BgL_getzd2counterzd2:Ljava/lang/Object;
+        12: getstatic     #162                // Field bigloo/unspecified.unspecified:Lbigloo/unspecified;
+        15: areturn
+      LineNumberTable:
+        line 0: 0
+
+  private static bigloo.unspecified BgL_initzd2counterzd2();
+    descriptor: ()Lbigloo/unspecified;
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=3, locals=3, args_size=0
+         0: new           #222                // class bigloo/cell
+         3: dup
+         4: iconst_0
+         5: invokestatic  #139                // Method bigloo/foreign.BINT:(I)Lbigloo/bint;
+         8: invokespecial #225                // Method bigloo/cell."<init>":(Ljava/lang/Object;)V
+        11: astore_0
+        12: new           #2                  // class counter_bigloo
+        15: dup
+        16: invokespecial #120                // Method "<init>":()V
+        19: dup
+        20: iconst_1
+        21: putfield      #76                 // Field bigloo/procedure.index:I
+        24: dup
+        25: iconst_0
+        26: putfield      #123                // Field bigloo/procedure.arity:I
+        29: dup
+        30: iconst_1
+        31: anewarray     #105                // class java/lang/Object
+        34: putfield      #228                // Field bigloo/procedure.env:[Ljava/lang/Object;
+        37: astore_1
+        38: aload_1
+        39: getfield      #228                // Field bigloo/procedure.env:[Ljava/lang/Object;
+        42: iconst_0
+        43: aload_0
+        44: aastore
+        45: aload_1
+        46: putstatic     #21                 // Field BgL_incrementzd2counterzd2:Ljava/lang/Object;
+        49: new           #2                  // class counter_bigloo
+        52: dup
+        53: invokespecial #120                // Method "<init>":()V
+        56: dup
+        57: iconst_2
+        58: putfield      #76                 // Field bigloo/procedure.index:I
+        61: dup
+        62: iconst_0
+        63: putfield      #123                // Field bigloo/procedure.arity:I
+        66: dup
+        67: iconst_1
+         // Uuden sulkeuman env-taulukon alustus.
+        68: anewarray     #105                // class java/lang/Object
+        71: putfield      #228                // Field bigloo/procedure.env:[Ljava/lang/Object;
+        74: astore_2
+        75: aload_2
+        76: getfield      #228                // Field bigloo/procedure.env:[Ljava/lang/Object;
+        79: iconst_0
+        80: aload_0
+        81: aastore
+        82: aload_2
+        83: putstatic     #28                 // Field BgL_getzd2counterzd2:Ljava/lang/Object;
+        86: getstatic     #162                // Field bigloo/unspecified.unspecified:Lbigloo/unspecified;
+        89: areturn
+      LineNumberTable:
+        line 0: 0
+
+  public static java.lang.Object main(bigloo.pair);
+    descriptor: (Lbigloo/pair;)Ljava/lang/Object;
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=7, args_size=1
+         0: invokestatic  #244                // Method BgL_initzd2counterzd2:()Lbigloo/unspecified;
+         3: pop
+         4: getstatic     #28                 // Field BgL_getzd2counterzd2:Ljava/lang/Object;
+         7: checkcast     #4                  // class bigloo/procedure
+        10: astore_1
+        11: aload_1
+        12: iconst_0
+        13: invokestatic  #248                // Method bigloo/foreign.PROCEDURE_CORRECT_ARITYP:(Lbigloo/procedure;I)Z
+        16: ifeq          270
+        19: getstatic     #28                 // Field BgL_getzd2counterzd2:Ljava/lang/Object;
+        22: checkcast     #4                  // class bigloo/procedure
+        25: invokevirtual #78                 // Method bigloo/procedure.funcall0:()Ljava/lang/Object;
+        28: getstatic     #235                // Field bigloo/nil.nil:Lbigloo/nil;
+        31: invokestatic  #239                // Method bigloo/foreign.MAKE_PAIR:(Ljava/lang/Object;Ljava/lang/Object;)Lbigloo/pair;
+        34: invokestatic  #251                // Method bigloo/runtime/Ieee/output.print:(Ljava/lang/Object;)Ljava/lang/Object;
+        37: pop
+        38: getstatic     #21                 // Field BgL_incrementzd2counterzd2:Ljava/lang/Object;
+        41: checkcast     #4                  // class bigloo/procedure
+        44: astore_2
+        45: aload_2
+        46: iconst_0
+        47: invokestatic  #248                // Method bigloo/foreign.PROCEDURE_CORRECT_ARITYP:(Lbigloo/procedure;I)Z
+        50: ifeq          254
+        53: getstatic     #21                 // Field BgL_incrementzd2counterzd2:Ljava/lang/Object;
+        56: checkcast     #4                  // class bigloo/procedure
+        59: invokevirtual #78                 // Method bigloo/procedure.funcall0:()Ljava/lang/Object;
+        62: pop
+        63: getstatic     #28                 // Field BgL_getzd2counterzd2:Ljava/lang/Object;
+        66: checkcast     #4                  // class bigloo/procedure
+        69: astore_3
+        70: aload_3
+        71: iconst_0
+        72: invokestatic  #248                // Method bigloo/foreign.PROCEDURE_CORRECT_ARITYP:(Lbigloo/procedure;I)Z
+        75: ifeq          238
+        78: getstatic     #28                 // Field BgL_getzd2counterzd2:Ljava/lang/Object;
+        81: checkcast     #4                  // class bigloo/procedure
+        84: invokevirtual #78                 // Method bigloo/procedure.funcall0:()Ljava/lang/Object;
+        87: getstatic     #235                // Field bigloo/nil.nil:Lbigloo/nil;
+        90: invokestatic  #239                // Method bigloo/foreign.MAKE_PAIR:(Ljava/lang/Object;Ljava/lang/Object;)Lbigloo/pair;
+        93: invokestatic  #251                // Method bigloo/runtime/Ieee/output.print:(Ljava/lang/Object;)Ljava/lang/Object;
+        96: pop
+        97: getstatic     #21                 // Field BgL_incrementzd2counterzd2:Ljava/lang/Object;
+       100: checkcast     #4                  // class bigloo/procedure
+       103: astore        4
+       105: aload         4
+       107: iconst_0
+       108: invokestatic  #248                // Method bigloo/foreign.PROCEDURE_CORRECT_ARITYP:(Lbigloo/procedure;I)Z
+       111: ifeq          221
+       114: getstatic     #21                 // Field BgL_incrementzd2counterzd2:Ljava/lang/Object;
+       117: checkcast     #4                  // class bigloo/procedure
+       120: invokevirtual #78                 // Method bigloo/procedure.funcall0:()Ljava/lang/Object;
+       123: pop
+       124: getstatic     #21                 // Field BgL_incrementzd2counterzd2:Ljava/lang/Object;
+       127: checkcast     #4                  // class bigloo/procedure
+       130: astore        5
+       132: aload         5
+       134: iconst_0
+       135: invokestatic  #248                // Method bigloo/foreign.PROCEDURE_CORRECT_ARITYP:(Lbigloo/procedure;I)Z
+       138: ifeq          204
+       141: getstatic     #21                 // Field BgL_incrementzd2counterzd2:Ljava/lang/Object;
+       144: checkcast     #4                  // class bigloo/procedure
+       147: invokevirtual #78                 // Method bigloo/procedure.funcall0:()Ljava/lang/Object;
+       150: pop
+       151: getstatic     #28                 // Field BgL_getzd2counterzd2:Ljava/lang/Object;
+       154: checkcast     #4                  // class bigloo/procedure
+       157: astore        6
+       159: aload         6
+       161: iconst_0
+       162: invokestatic  #248                // Method bigloo/foreign.PROCEDURE_CORRECT_ARITYP:(Lbigloo/procedure;I)Z
+       165: ifeq          187
+       168: getstatic     #28                 // Field BgL_getzd2counterzd2:Ljava/lang/Object;
+       171: checkcast     #4                  // class bigloo/procedure
+       174: invokevirtual #78                 // Method bigloo/procedure.funcall0:()Ljava/lang/Object;
+       177: getstatic     #235                // Field bigloo/nil.nil:Lbigloo/nil;
+       180: invokestatic  #239                // Method bigloo/foreign.MAKE_PAIR:(Ljava/lang/Object;Ljava/lang/Object;)Lbigloo/pair;
+       183: invokestatic  #251                // Method bigloo/runtime/Ieee/output.print:(Ljava/lang/Object;)Ljava/lang/Object;
+       186: areturn
+       187: getstatic     #32                 // Field string1035:[B
+       190: getstatic     #14                 // Field __cnst:[Ljava/lang/Object;
+       193: iconst_0
+       194: aaload
+       195: checkcast     #97                 // class bigloo/pair
+       198: aload         6
+       200: invokestatic  #255                // Method bigloo/foreign.fail:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/RuntimeException;
+       203: athrow
+       204: getstatic     #32                 // Field string1035:[B
+       207: getstatic     #14                 // Field __cnst:[Ljava/lang/Object;
+       210: iconst_1
+       211: aaload
+       212: checkcast     #97                 // class bigloo/pair
+       215: aload         5
+       217: invokestatic  #255                // Method bigloo/foreign.fail:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/RuntimeException;
+       220: athrow
+       221: getstatic     #32                 // Field string1035:[B
+       224: getstatic     #14                 // Field __cnst:[Ljava/lang/Object;
+       227: iconst_1
+       228: aaload
+       229: checkcast     #97                 // class bigloo/pair
+       232: aload         4
+       234: invokestatic  #255                // Method bigloo/foreign.fail:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/RuntimeException;
+       237: athrow
+       238: getstatic     #32                 // Field string1035:[B
+       241: getstatic     #14                 // Field __cnst:[Ljava/lang/Object;
+       244: iconst_0
+       245: aaload
+       246: checkcast     #97                 // class bigloo/pair
+       249: aload_3
+       250: invokestatic  #255                // Method bigloo/foreign.fail:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/RuntimeException;
+       253: athrow
+       254: getstatic     #32                 // Field string1035:[B
+       257: getstatic     #14                 // Field __cnst:[Ljava/lang/Object;
+       260: iconst_1
+       261: aaload
+       262: checkcast     #97                 // class bigloo/pair
+       265: aload_2
+       266: invokestatic  #255                // Method bigloo/foreign.fail:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/RuntimeException;
+       269: athrow
+       270: getstatic     #32                 // Field string1035:[B
+       273: getstatic     #14                 // Field __cnst:[Ljava/lang/Object;
+       276: iconst_0
+       277: aaload
+       278: checkcast     #97                 // class bigloo/pair
+       281: aload_1
+       282: invokestatic  #255                // Method bigloo/foreign.fail:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/RuntimeException;
+       285: athrow
+      LineNumberTable:
+        line 0: 0
+
+  private static java.lang.Object BgL_objectzd2initzd2();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: getstatic     #162                // Field bigloo/unspecified.unspecified:Lbigloo/unspecified;
+         3: areturn
+      LineNumberTable:
+        line 0: 0
+
+  private static java.lang.Object BgL_genericzd2initzd2();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: getstatic     #162                // Field bigloo/unspecified.unspecified:Lbigloo/unspecified;
+         3: areturn
+      LineNumberTable:
+        line 0: 0
+
+  private static java.lang.Object BgL_methodzd2initzd2();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: getstatic     #162                // Field bigloo/unspecified.unspecified:Lbigloo/unspecified;
+         3: areturn
+      LineNumberTable:
+        line 0: 0
+
+  private static java.lang.Object BgL_z62zc3anonymousza31014ze3ze1(bigloo.procedure);
+    descriptor: (Lbigloo/procedure;)Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #228                // Field bigloo/procedure.env:[Ljava/lang/Object;
+         4: iconst_0
+         5: aaload
+         6: checkcast     #222                // class bigloo/cell
+         9: getfield      #229                // Field bigloo/cell.car:Ljava/lang/Object;
+        12: areturn
+      LineNumberTable:
+        line 0: 0
+
+  private static java.lang.Object BgL_z62zc3anonymousza31011ze3ze1(bigloo.procedure);
+    descriptor: (Lbigloo/procedure;)Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=4, locals=2, args_size=1
+         0: aload_0
+         1: getfield      #228                // Field bigloo/procedure.env:[Ljava/lang/Object;
+         4: iconst_0
+         5: aaload
+         6: astore_1
+         7: aload_1
+         8: checkcast     #222                // class bigloo/cell
+        11: aload_1
+        12: checkcast     #222                // class bigloo/cell
+        15: getfield      #229                // Field bigloo/cell.car:Ljava/lang/Object;
+        18: iconst_1
+        19: invokestatic  #139                // Method bigloo/foreign.BINT:(I)Lbigloo/bint;
+        22: getstatic     #235                // Field bigloo/nil.nil:Lbigloo/nil;
+        25: invokestatic  #239                // Method bigloo/foreign.MAKE_PAIR:(Ljava/lang/Object;Ljava/lang/Object;)Lbigloo/pair;
+        28: invokestatic  #239                // Method bigloo/foreign.MAKE_PAIR:(Ljava/lang/Object;Ljava/lang/Object;)Lbigloo/pair;
+        31: invokestatic  #242                // Method bigloo/runtime/Ieee/number.BgL_zb2zb2:(Ljava/lang/Object;)Ljava/lang/Object;
+        34: putfield      #229                // Field bigloo/cell.car:Ljava/lang/Object;
+        37: getstatic     #162                // Field bigloo/unspecified.unspecified:Lbigloo/unspecified;
+        40: areturn
+      LineNumberTable:
+        line 0: 0
+
+  private static java.lang.Object BgL_z62mainz62(bigloo.procedure, java.lang.Object);
+    descriptor: (Lbigloo/procedure;Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=5, locals=2, args_size=2
+         0: aload_1
+         1: instanceof    #97                 // class bigloo/pair
+         4: ifeq          15
+         7: aload_1
+         8: checkcast     #97                 // class bigloo/pair
+        11: invokestatic  #194                // Method main:(Lbigloo/pair;)Ljava/lang/Object;
+        14: areturn
+        15: getstatic     #35                 // Field string1036:[B
+        18: sipush        303
+        21: invokestatic  #139                // Method bigloo/foreign.BINT:(I)Lbigloo/bint;
+        24: getstatic     #38                 // Field string1037:[B
+        27: getstatic     #41                 // Field string1038:[B
+        30: aload_1
+        31: invokestatic  #259                // Method bigloo/runtime/Llib/error.BgL_typezd2errorzd2:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        34: getstatic     #218                // Field bigloo/foreign.BFALSE:Lbigloo/bbool;
+        37: getstatic     #218                // Field bigloo/foreign.BFALSE:Lbigloo/bbool;
+        40: invokestatic  #255                // Method bigloo/foreign.fail:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/RuntimeException;
+        43: athrow
+      LineNumberTable:
+        line 0: 0
+}
+SourceDebugExtension:
+  SMAP
+  counter_bigloo.scm
+  Bigloo
+  *S Bigloo
+  *F
+  + 1 counter_bigloo.scm
+  counter_bigloo.scm
+  *L
+  1#1,0:1
+  *E
+SourceFile: "counter_bigloo.scm"

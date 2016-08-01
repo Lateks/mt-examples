@@ -1,0 +1,219 @@
+Classfile /Users/tuuli/school/thesis_examples/ex4_shared_closure/temp$_39916801/Counter.class
+  Last modified Mar 2, 2016; size 1651 bytes
+  MD5 checksum 457fd2cd49773ad3bfbef872bd61cbc7
+  Compiled from "Counter.java"
+public class Counter
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #16.#36        // java/lang/Object."<init>":()V
+   #2 = Class              #37            // Counter$IntRef
+   #3 = Methodref          #2.#38         // Counter$IntRef."<init>":(I)V
+   #4 = InvokeDynamic      #0:#43         // #0:getAsInt:(LCounter$IntRef;)Ljava/util/function/IntSupplier;
+   #5 = Fieldref           #15.#44        // Counter.getCounter:Ljava/util/function/IntSupplier;
+   #6 = InvokeDynamic      #1:#47         // #1:run:(LCounter$IntRef;)Ljava/lang/Runnable;
+   #7 = Fieldref           #15.#48        // Counter.incrementCounter:Ljava/lang/Runnable;
+   #8 = Methodref          #15.#49        // Counter.initCounter:()V
+   #9 = Fieldref           #50.#51        // java/lang/System.out:Ljava/io/PrintStream;
+  #10 = InterfaceMethodref #52.#53        // java/util/function/IntSupplier.getAsInt:()I
+  #11 = Methodref          #54.#55        // java/io/PrintStream.println:(I)V
+  #12 = InterfaceMethodref #56.#57        // java/lang/Runnable.run:()V
+  #13 = Methodref          #2.#58         // Counter$IntRef.get:()I
+  #14 = Methodref          #2.#59         // Counter$IntRef.set:(I)V
+  #15 = Class              #60            // Counter
+  #16 = Class              #61            // java/lang/Object
+  #17 = Utf8               IntRef
+  #18 = Utf8               InnerClasses
+  #19 = Utf8               getCounter
+  #20 = Utf8               Ljava/util/function/IntSupplier;
+  #21 = Utf8               incrementCounter
+  #22 = Utf8               Ljava/lang/Runnable;
+  #23 = Utf8               <init>
+  #24 = Utf8               ()V
+  #25 = Utf8               Code
+  #26 = Utf8               LineNumberTable
+  #27 = Utf8               initCounter
+  #28 = Utf8               main
+  #29 = Utf8               ([Ljava/lang/String;)V
+  #30 = Utf8               lambda$initCounter$1
+  #31 = Utf8               (LCounter$IntRef;)V
+  #32 = Utf8               lambda$initCounter$0
+  #33 = Utf8               (LCounter$IntRef;)I
+  #34 = Utf8               SourceFile
+  #35 = Utf8               Counter.java
+  #36 = NameAndType        #23:#24        // "<init>":()V
+  #37 = Utf8               Counter$IntRef
+  #38 = NameAndType        #23:#62        // "<init>":(I)V
+  #39 = Utf8               BootstrapMethods
+  #40 = MethodHandle       #6:#63         // invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #41 = MethodType         #64            //  ()I
+  #42 = MethodHandle       #6:#65         // invokestatic Counter.lambda$initCounter$0:(LCounter$IntRef;)I
+  #43 = NameAndType        #66:#67        // getAsInt:(LCounter$IntRef;)Ljava/util/function/IntSupplier;
+  #44 = NameAndType        #19:#20        // getCounter:Ljava/util/function/IntSupplier;
+  #45 = MethodType         #24            //  ()V
+  #46 = MethodHandle       #6:#68         // invokestatic Counter.lambda$initCounter$1:(LCounter$IntRef;)V
+  #47 = NameAndType        #69:#70        // run:(LCounter$IntRef;)Ljava/lang/Runnable;
+  #48 = NameAndType        #21:#22        // incrementCounter:Ljava/lang/Runnable;
+  #49 = NameAndType        #27:#24        // initCounter:()V
+  #50 = Class              #71            // java/lang/System
+  #51 = NameAndType        #72:#73        // out:Ljava/io/PrintStream;
+  #52 = Class              #74            // java/util/function/IntSupplier
+  #53 = NameAndType        #66:#64        // getAsInt:()I
+  #54 = Class              #75            // java/io/PrintStream
+  #55 = NameAndType        #76:#62        // println:(I)V
+  #56 = Class              #77            // java/lang/Runnable
+  #57 = NameAndType        #69:#24        // run:()V
+  #58 = NameAndType        #78:#64        // get:()I
+  #59 = NameAndType        #79:#62        // set:(I)V
+  #60 = Utf8               Counter
+  #61 = Utf8               java/lang/Object
+  #62 = Utf8               (I)V
+  #63 = Methodref          #80.#81        // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #64 = Utf8               ()I
+  #65 = Methodref          #15.#82        // Counter.lambda$initCounter$0:(LCounter$IntRef;)I
+  #66 = Utf8               getAsInt
+  #67 = Utf8               (LCounter$IntRef;)Ljava/util/function/IntSupplier;
+  #68 = Methodref          #15.#83        // Counter.lambda$initCounter$1:(LCounter$IntRef;)V
+  #69 = Utf8               run
+  #70 = Utf8               (LCounter$IntRef;)Ljava/lang/Runnable;
+  #71 = Utf8               java/lang/System
+  #72 = Utf8               out
+  #73 = Utf8               Ljava/io/PrintStream;
+  #74 = Utf8               java/util/function/IntSupplier
+  #75 = Utf8               java/io/PrintStream
+  #76 = Utf8               println
+  #77 = Utf8               java/lang/Runnable
+  #78 = Utf8               get
+  #79 = Utf8               set
+  #80 = Class              #84            // java/lang/invoke/LambdaMetafactory
+  #81 = NameAndType        #85:#88        // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #82 = NameAndType        #32:#33        // lambda$initCounter$0:(LCounter$IntRef;)I
+  #83 = NameAndType        #30:#31        // lambda$initCounter$1:(LCounter$IntRef;)V
+  #84 = Utf8               java/lang/invoke/LambdaMetafactory
+  #85 = Utf8               metafactory
+  #86 = Class              #90            // java/lang/invoke/MethodHandles$Lookup
+  #87 = Utf8               Lookup
+  #88 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #89 = Class              #91            // java/lang/invoke/MethodHandles
+  #90 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #91 = Utf8               java/lang/invoke/MethodHandles
+{
+  static java.util.function.IntSupplier getCounter;
+    descriptor: Ljava/util/function/IntSupplier;
+    flags: ACC_STATIC
+
+  static java.lang.Runnable incrementCounter;
+    descriptor: Ljava/lang/Runnable;
+    flags: ACC_STATIC
+
+  public Counter();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+
+  static void initCounter();
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=3, locals=1, args_size=0
+         0: new           #2                  // class Counter$IntRef
+         3: dup
+         4: iconst_0
+         5: invokespecial #3                  // Method Counter$IntRef."<init>":(I)V
+         8: astore_0
+         9: aload_0
+        10: invokedynamic #4,  0              // InvokeDynamic #0:getAsInt:(LCounter$IntRef;)Ljava/util/function/IntSupplier;
+        15: putstatic     #5                  // Field getCounter:Ljava/util/function/IntSupplier;
+        18: aload_0
+        19: invokedynamic #6,  0              // InvokeDynamic #1:run:(LCounter$IntRef;)Ljava/lang/Runnable;
+        24: putstatic     #7                  // Field incrementCounter:Ljava/lang/Runnable;
+        27: return
+      LineNumberTable:
+        line 8: 0
+        line 9: 9
+        line 10: 18
+        line 11: 27
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: invokestatic  #8                  // Method initCounter:()V
+         3: getstatic     #9                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         6: getstatic     #5                  // Field getCounter:Ljava/util/function/IntSupplier;
+         9: invokeinterface #10,  1           // InterfaceMethod java/util/function/IntSupplier.getAsInt:()I
+        14: invokevirtual #11                 // Method java/io/PrintStream.println:(I)V
+        17: getstatic     #7                  // Field incrementCounter:Ljava/lang/Runnable;
+        20: invokeinterface #12,  1           // InterfaceMethod java/lang/Runnable.run:()V
+        25: getstatic     #9                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        28: getstatic     #5                  // Field getCounter:Ljava/util/function/IntSupplier;
+        31: invokeinterface #10,  1           // InterfaceMethod java/util/function/IntSupplier.getAsInt:()I
+        36: invokevirtual #11                 // Method java/io/PrintStream.println:(I)V
+        39: getstatic     #7                  // Field incrementCounter:Ljava/lang/Runnable;
+        42: invokeinterface #12,  1           // InterfaceMethod java/lang/Runnable.run:()V
+        47: getstatic     #7                  // Field incrementCounter:Ljava/lang/Runnable;
+        50: invokeinterface #12,  1           // InterfaceMethod java/lang/Runnable.run:()V
+        55: getstatic     #9                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        58: getstatic     #5                  // Field getCounter:Ljava/util/function/IntSupplier;
+        61: invokeinterface #10,  1           // InterfaceMethod java/util/function/IntSupplier.getAsInt:()I
+        66: invokevirtual #11                 // Method java/io/PrintStream.println:(I)V
+        69: return
+      LineNumberTable:
+        line 14: 0
+        line 15: 3
+        line 16: 17
+        line 17: 25
+        line 18: 39
+        line 19: 47
+        line 20: 55
+        line 21: 69
+
+  private static void lambda$initCounter$1(Counter$IntRef);
+    descriptor: (LCounter$IntRef;)V
+    flags: ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: aload_0
+         2: invokevirtual #13                 // Method Counter$IntRef.get:()I
+         5: iconst_1
+         6: iadd
+         7: invokevirtual #14                 // Method Counter$IntRef.set:(I)V
+        10: return
+      LineNumberTable:
+        line 10: 0
+
+  private static int lambda$initCounter$0(Counter$IntRef);
+    descriptor: (LCounter$IntRef;)I
+    flags: ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #13                 // Method Counter$IntRef.get:()I
+         4: ireturn
+      LineNumberTable:
+        line 9: 0
+}
+SourceFile: "Counter.java"
+InnerClasses:
+     private static #17= #2 of #15; //IntRef=class Counter$IntRef of class Counter
+     public static final #87= #86 of #89; //Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #40 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #41 ()I
+      #42 invokestatic Counter.lambda$initCounter$0:(LCounter$IntRef;)I
+      #41 ()I
+  1: #40 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #45 ()V
+      #46 invokestatic Counter.lambda$initCounter$1:(LCounter$IntRef;)V
+      #45 ()V

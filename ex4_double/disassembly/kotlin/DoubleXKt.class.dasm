@@ -1,0 +1,293 @@
+Classfile /Users/tuuli/school/thesis_examples/ex8_top_level_first_class_functions/temp$_39916801/DoubleXKt.class
+  Last modified Jun 2, 2016; size 2810 bytes
+  MD5 checksum 383ec2a4acb154abec330ac40a14ab94
+  Compiled from "DoubleX.kt"
+public final class DoubleXKt
+  minor version: 0
+  major version: 50
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+    #1 = Utf8               DoubleXKt
+    #2 = Class              #1            // DoubleXKt
+    #3 = Utf8               java/lang/Object
+    #4 = Class              #3            // java/lang/Object
+    #5 = Utf8               double
+    #6 = Utf8               (I)I
+    #7 = Utf8               x
+    #8 = Utf8               I
+    #9 = Utf8               getDouble
+   #10 = Utf8               ()Lkotlin/jvm/functions/Function1;
+   #11 = Utf8               Lorg/jetbrains/annotations/NotNull;
+   #12 = Utf8               DoubleXKt$getDouble$1
+   #13 = Class              #12           // DoubleXKt$getDouble$1
+   #14 = Utf8               INSTANCE
+   #15 = Utf8               LDoubleXKt$getDouble$1;
+   #16 = NameAndType        #14:#15       // INSTANCE:LDoubleXKt$getDouble$1;
+   #17 = Fieldref           #13.#16       // DoubleXKt$getDouble$1.INSTANCE:LDoubleXKt$getDouble$1;
+   #18 = Utf8               kotlin/jvm/internal/Reflection
+   #19 = Class              #18           // kotlin/jvm/internal/Reflection
+   #20 = Utf8               function
+   #21 = Utf8               (Lkotlin/jvm/internal/FunctionReference;)Lkotlin/reflect/KFunction;
+   #22 = NameAndType        #20:#21       // function:(Lkotlin/jvm/internal/FunctionReference;)Lkotlin/reflect/KFunction;
+   #23 = Methodref          #19.#22       // kotlin/jvm/internal/Reflection.function:(Lkotlin/jvm/internal/FunctionReference;)Lkotlin/reflect/KFunction;
+   #24 = Utf8               kotlin/jvm/functions/Function1
+   #25 = Class              #24           // kotlin/jvm/functions/Function1
+   #26 = Utf8               main
+   #27 = Utf8               ([Ljava/lang/String;)V
+   #28 = Utf8               args
+   #29 = String             #28           // args
+   #30 = Utf8               kotlin/jvm/internal/Intrinsics
+   #31 = Class              #30           // kotlin/jvm/internal/Intrinsics
+   #32 = Utf8               checkParameterIsNotNull
+   #33 = Utf8               (Ljava/lang/Object;Ljava/lang/String;)V
+   #34 = NameAndType        #32:#33       // checkParameterIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+   #35 = Methodref          #31.#34       // kotlin/jvm/internal/Intrinsics.checkParameterIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+   #36 = Utf8               java/lang/Integer
+   #37 = Class              #36           // java/lang/Integer
+   #38 = Utf8               valueOf
+   #39 = Utf8               (I)Ljava/lang/Integer;
+   #40 = NameAndType        #38:#39       // valueOf:(I)Ljava/lang/Integer;
+   #41 = Methodref          #37.#40       // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+   #42 = Utf8               kotlin/collections/CollectionsKt
+   #43 = Class              #42           // kotlin/collections/CollectionsKt
+   #44 = Utf8               listOf
+   #45 = Utf8               ([Ljava/lang/Object;)Ljava/util/List;
+   #46 = NameAndType        #44:#45       // listOf:([Ljava/lang/Object;)Ljava/util/List;
+   #47 = Methodref          #43.#46       // kotlin/collections/CollectionsKt.listOf:([Ljava/lang/Object;)Ljava/util/List;
+   #48 = Utf8               java/lang/Iterable
+   #49 = Class              #48           // java/lang/Iterable
+   #50 = NameAndType        #9:#10        // getDouble:()Lkotlin/jvm/functions/Function1;
+   #51 = Methodref          #2.#50        // DoubleXKt.getDouble:()Lkotlin/jvm/functions/Function1;
+   #52 = Utf8               java/util/ArrayList
+   #53 = Class              #52           // java/util/ArrayList
+   #54 = Utf8               collectionSizeOrDefault
+   #55 = Utf8               (Ljava/lang/Iterable;I)I
+   #56 = NameAndType        #54:#55       // collectionSizeOrDefault:(Ljava/lang/Iterable;I)I
+   #57 = Methodref          #43.#56       // kotlin/collections/CollectionsKt.collectionSizeOrDefault:(Ljava/lang/Iterable;I)I
+   #58 = Utf8               <init>
+   #59 = Utf8               (I)V
+   #60 = NameAndType        #58:#59       // "<init>":(I)V
+   #61 = Methodref          #53.#60       // java/util/ArrayList."<init>":(I)V
+   #62 = Utf8               java/util/Collection
+   #63 = Class              #62           // java/util/Collection
+   #64 = Utf8               iterator
+   #65 = Utf8               ()Ljava/util/Iterator;
+   #66 = NameAndType        #64:#65       // iterator:()Ljava/util/Iterator;
+   #67 = InterfaceMethodref #49.#66       // java/lang/Iterable.iterator:()Ljava/util/Iterator;
+   #68 = Utf8               java/util/Iterator
+   #69 = Class              #68           // java/util/Iterator
+   #70 = Utf8               hasNext
+   #71 = Utf8               ()Z
+   #72 = NameAndType        #70:#71       // hasNext:()Z
+   #73 = InterfaceMethodref #69.#72       // java/util/Iterator.hasNext:()Z
+   #74 = Utf8               next
+   #75 = Utf8               ()Ljava/lang/Object;
+   #76 = NameAndType        #74:#75       // next:()Ljava/lang/Object;
+   #77 = InterfaceMethodref #69.#76       // java/util/Iterator.next:()Ljava/lang/Object;
+   #78 = Utf8               invoke
+   #79 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+   #80 = NameAndType        #78:#79       // invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+   #81 = InterfaceMethodref #25.#80       // kotlin/jvm/functions/Function1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+   #82 = Utf8               add
+   #83 = Utf8               (Ljava/lang/Object;)Z
+   #84 = NameAndType        #82:#83       // add:(Ljava/lang/Object;)Z
+   #85 = InterfaceMethodref #63.#84       // java/util/Collection.add:(Ljava/lang/Object;)Z
+   #86 = Utf8               java/util/List
+   #87 = Class              #86           // java/util/List
+   #88 = Utf8               kotlin/io/ConsoleKt
+   #89 = Class              #88           // kotlin/io/ConsoleKt
+   #90 = Utf8               println
+   #91 = Utf8               (Ljava/lang/Object;)V
+   #92 = NameAndType        #90:#91       // println:(Ljava/lang/Object;)V
+   #93 = Methodref          #89.#92       // kotlin/io/ConsoleKt.println:(Ljava/lang/Object;)V
+   #94 = Utf8               item$iv$iv
+   #95 = Utf8               Ljava/lang/Object;
+   #96 = Utf8               $receiver$iv$iv
+   #97 = Utf8               Ljava/lang/Iterable;
+   #98 = Utf8               destination$iv$iv
+   #99 = Utf8               Ljava/util/Collection;
+  #100 = Utf8               $i$f$mapTo
+  #101 = Utf8               $receiver$iv
+  #102 = Utf8               transform$iv
+  #103 = Utf8               Lkotlin/jvm/functions/Function1;
+  #104 = Utf8               $i$f$map
+  #105 = Utf8               [Ljava/lang/String;
+  #106 = Class              #105          // "[Ljava/lang/String;"
+  #107 = Utf8               Lkotlin/jvm/internal/KotlinFileFacade;
+  #108 = Utf8               version
+  #109 = Integer            1
+  #110 = Integer            0
+  #111 = Utf8               abiVersion
+  #112 = Integer            32
+  #113 = Utf8               data
+  #114 = Utf8               !Q!!!B\rQ!)#!9QAG\ti'!\tQ\"M)\rQRI!!C%\"M1!61A\rig\r!!QBAR'RAYVB
+  #115 = Utf8               strings
+  #116 = Utf8
+  #117 = Utf8               Lkotlin/Function1;
+  #118 = Utf8               DoubleX.kt
+  #119 = Utf8               Code
+  #120 = Utf8               LocalVariableTable
+  #121 = Utf8               LineNumberTable
+  #122 = Utf8               Signature
+  #123 = Utf8               ()Lkotlin/jvm/functions/Function1<Ljava/lang/Integer;Ljava/lang/Integer;>;
+  #124 = Utf8               RuntimeInvisibleAnnotations
+  #125 = Utf8               StackMapTable
+  #126 = Utf8               RuntimeInvisibleParameterAnnotations
+  #127 = Utf8               SourceFile
+  #128 = Utf8               SourceDebugExtension
+  #129 = Utf8               InnerClasses
+  #130 = Utf8               RuntimeVisibleAnnotations
+{
+  public static final int double(int);
+    descriptor: (I)I
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    Code:
+      stack=2, locals=1, args_size=1
+         0: iconst_2
+         1: iload_0
+         2: imul
+         3: ireturn
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0     x   I
+      LineNumberTable:
+        line 2: 0
+
+  public static final kotlin.jvm.functions.Function1<java.lang.Integer, java.lang.Integer> getDouble();
+    descriptor: ()Lkotlin/jvm/functions/Function1;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    Code:
+      stack=1, locals=0, args_size=0
+         0: getstatic     #17                 // Field DoubleXKt$getDouble$1.INSTANCE:LDoubleXKt$getDouble$1;
+         3: invokestatic  #23                 // Method kotlin/jvm/internal/Reflection.function:(Lkotlin/jvm/internal/FunctionReference;)Lkotlin/reflect/KFunction;
+         6: checkcast     #25                 // class kotlin/jvm/functions/Function1
+         9: areturn
+      LineNumberTable:
+        line 9: 0
+    Signature: #123                         // ()Lkotlin/jvm/functions/Function1<Ljava/lang/Integer;Ljava/lang/Integer;>;
+    RuntimeInvisibleAnnotations:
+      0: #11()
+
+  public static final void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    Code:
+      stack=4, locals=9, args_size=1
+         0: aload_0
+         1: ldc           #29                 // String args
+         3: invokestatic  #35                 // Method kotlin/jvm/internal/Intrinsics.checkParameterIsNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+         6: iconst_5
+         7: anewarray     #37                 // class java/lang/Integer
+        10: dup
+        11: iconst_0
+        12: iconst_1
+        13: invokestatic  #41                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        16: aastore
+        17: dup
+        18: iconst_1
+        19: iconst_2
+        20: invokestatic  #41                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        23: aastore
+        24: dup
+        25: iconst_2
+        26: iconst_3
+        27: invokestatic  #41                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        30: aastore
+        31: dup
+        32: iconst_3
+        33: iconst_4
+        34: invokestatic  #41                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        37: aastore
+        38: dup
+        39: iconst_4
+        40: iconst_5
+        41: invokestatic  #41                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        44: aastore
+        45: invokestatic  #47                 // Method kotlin/collections/CollectionsKt.listOf:([Ljava/lang/Object;)Ljava/util/List;
+        48: checkcast     #49                 // class java/lang/Iterable
+        51: astore_1
+        52: invokestatic  #51                 // Method getDouble:()Lkotlin/jvm/functions/Function1;
+        55: astore_2
+        56: nop
+        57: aload_1
+        58: astore_3
+        59: new           #53                 // class java/util/ArrayList
+        62: dup
+        63: aload_1
+        64: bipush        10
+        66: invokestatic  #57                 // Method kotlin/collections/CollectionsKt.collectionSizeOrDefault:(Ljava/lang/Iterable;I)I
+        69: invokespecial #61                 // Method java/util/ArrayList."<init>":(I)V
+        72: checkcast     #63                 // class java/util/Collection
+        75: astore        4
+        77: nop
+        78: aload_3
+        79: invokeinterface #67,  1           // InterfaceMethod java/lang/Iterable.iterator:()Ljava/util/Iterator;
+        84: astore        5
+        86: aload         5
+        88: invokeinterface #73,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+        93: ifeq          124
+        96: aload         5
+        98: invokeinterface #77,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+       103: astore        6
+       105: aload         4
+       107: aload_2
+       108: aload         6
+       110: invokeinterface #81,  2           // InterfaceMethod kotlin/jvm/functions/Function1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+       115: invokeinterface #85,  2           // InterfaceMethod java/util/Collection.add:(Ljava/lang/Object;)Z
+       120: pop
+       121: goto          86
+       124: aload         4
+       126: checkcast     #87                 // class java/util/List
+       129: invokestatic  #93                 // Method kotlin/io/ConsoleKt.println:(Ljava/lang/Object;)V
+       132: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           96      25     6 item$iv$iv   Ljava/lang/Object;
+           78      48     3 $receiver$iv$iv   Ljava/lang/Iterable;
+           78      48     4 destination$iv$iv   Ljava/util/Collection;
+           78      48     7 $i$f$mapTo   I
+           57      72     1 $receiver$iv   Ljava/lang/Iterable;
+           57      72     2 transform$iv   Lkotlin/jvm/functions/Function1;
+           57      72     8 $i$f$map   I
+            0     133     0  args   [Ljava/lang/String;
+      LineNumberTable:
+        line 13: 6
+        line 17: 57
+        line 18: 78
+        line 19: 105
+        line 18: 121
+        line 20: 124
+        line 13: 129
+        line 14: 132
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 86
+          locals = [ class "[Ljava/lang/String;", class java/lang/Iterable, class kotlin/jvm/functions/Function1, class java/lang/Iterable, class java/util/Collection, class java/util/Iterator ]
+          stack = []
+        frame_type = 37 /* same */
+    RuntimeInvisibleParameterAnnotations:
+      0:
+        0: #11()
+}
+SourceFile: "DoubleX.kt"
+SourceDebugExtension:
+  SMAP
+  DoubleX.kt
+  Kotlin
+  *S Kotlin
+  *F
+  + 1 DoubleX.kt
+  DoubleXKt
+  + 2 _Collections.kt
+  kotlin/collections/CollectionsKt___CollectionsKt
+  + 3 _Collections.kt
+  kotlin/collections/CollectionsKt
+  *L
+  1#1,16:1
+  1187#2:17
+  1248#3,3:18
+  *E
+InnerClasses:
+     public static final #13; //class DoubleXKt$getDouble$1
+RuntimeVisibleAnnotations:
+  0: #107(#108=[I#109,I#110,I#109],#111=I#112,#113=[s#114],#115=[s#5,s#116,s#7,s#1,s#9,s#117,s#26,s#116,s#28,s#116,s#116,s#27])

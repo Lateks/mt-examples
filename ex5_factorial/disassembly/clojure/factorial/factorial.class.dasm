@@ -1,0 +1,314 @@
+Classfile /Users/tuuli/school/thesis_examples/ex1_factorial/temp$_39916801/factorial.class
+  Last modified Feb 17, 2016; size 1803 bytes
+  MD5 checksum b37dde60920b479f81161e3aa0322b75
+public class factorial
+  minor version: 0
+  major version: 49
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+    #1 = Utf8               factorial
+    #2 = Class              #1            // factorial
+    #3 = Utf8               java/lang/Object
+    #4 = Class              #3            // java/lang/Object
+    #5 = Utf8               main__var
+    #6 = Utf8               Lclojure/lang/Var;
+    #7 = Utf8               equals__var
+    #8 = Utf8               toString__var
+    #9 = Utf8               hashCode__var
+   #10 = Utf8               clone__var
+   #11 = Utf8               <clinit>
+   #12 = Utf8               ()V
+   #13 = String             #1            // factorial
+   #14 = Utf8               -main
+   #15 = String             #14           // -main
+   #16 = Utf8               clojure/lang/Var
+   #17 = Class              #16           // clojure/lang/Var
+   #18 = Utf8               internPrivate
+   #19 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+   #20 = NameAndType        #18:#19       // internPrivate:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+   #21 = Methodref          #17.#20       // clojure/lang/Var.internPrivate:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+   #22 = NameAndType        #5:#6         // main__var:Lclojure/lang/Var;
+   #23 = Fieldref           #2.#22        // factorial.main__var:Lclojure/lang/Var;
+   #24 = Utf8               -equals
+   #25 = String             #24           // -equals
+   #26 = NameAndType        #7:#6         // equals__var:Lclojure/lang/Var;
+   #27 = Fieldref           #2.#26        // factorial.equals__var:Lclojure/lang/Var;
+   #28 = Utf8               -toString
+   #29 = String             #28           // -toString
+   #30 = NameAndType        #8:#6         // toString__var:Lclojure/lang/Var;
+   #31 = Fieldref           #2.#30        // factorial.toString__var:Lclojure/lang/Var;
+   #32 = Utf8               -hashCode
+   #33 = String             #32           // -hashCode
+   #34 = NameAndType        #9:#6         // hashCode__var:Lclojure/lang/Var;
+   #35 = Fieldref           #2.#34        // factorial.hashCode__var:Lclojure/lang/Var;
+   #36 = Utf8               -clone
+   #37 = String             #36           // -clone
+   #38 = NameAndType        #10:#6        // clone__var:Lclojure/lang/Var;
+   #39 = Fieldref           #2.#38        // factorial.clone__var:Lclojure/lang/Var;
+   #40 = Utf8               /factorial
+   #41 = String             #40           // /factorial
+   #42 = Utf8               clojure/lang/Util
+   #43 = Class              #42           // clojure/lang/Util
+   #44 = Utf8               loadWithClass
+   #45 = Utf8               (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+   #46 = NameAndType        #44:#45       // loadWithClass:(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+   #47 = Methodref          #43.#46       // clojure/lang/Util.loadWithClass:(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+   #48 = Utf8               <init>
+   #49 = NameAndType        #48:#12       // "<init>":()V
+   #50 = Methodref          #4.#49        // java/lang/Object."<init>":()V
+   #51 = Utf8               equals
+   #52 = Utf8               (Ljava/lang/Object;)Z
+   #53 = Utf8               isBound
+   #54 = Utf8               ()Z
+   #55 = NameAndType        #53:#54       // isBound:()Z
+   #56 = Methodref          #17.#55       // clojure/lang/Var.isBound:()Z
+   #57 = Utf8               get
+   #58 = Utf8               ()Ljava/lang/Object;
+   #59 = NameAndType        #57:#58       // get:()Ljava/lang/Object;
+   #60 = Methodref          #17.#59       // clojure/lang/Var.get:()Ljava/lang/Object;
+   #61 = Utf8               clojure/lang/IFn
+   #62 = Class              #61           // clojure/lang/IFn
+   #63 = Utf8               invoke
+   #64 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #65 = NameAndType        #63:#64       // invoke:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #66 = InterfaceMethodref #62.#65       // clojure/lang/IFn.invoke:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #67 = Utf8               java/lang/Boolean
+   #68 = Class              #67           // java/lang/Boolean
+   #69 = Utf8               booleanValue
+   #70 = NameAndType        #69:#54       // booleanValue:()Z
+   #71 = Methodref          #68.#70       // java/lang/Boolean.booleanValue:()Z
+   #72 = NameAndType        #51:#52       // equals:(Ljava/lang/Object;)Z
+   #73 = Methodref          #4.#72        // java/lang/Object.equals:(Ljava/lang/Object;)Z
+   #74 = Utf8               toString
+   #75 = Utf8               ()Ljava/lang/String;
+   #76 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+   #77 = NameAndType        #63:#76       // invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+   #78 = InterfaceMethodref #62.#77       // clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+   #79 = Utf8               java/lang/String
+   #80 = Class              #79           // java/lang/String
+   #81 = NameAndType        #74:#75       // toString:()Ljava/lang/String;
+   #82 = Methodref          #4.#81        // java/lang/Object.toString:()Ljava/lang/String;
+   #83 = Utf8               hashCode
+   #84 = Utf8               ()I
+   #85 = Utf8               java/lang/Number
+   #86 = Class              #85           // java/lang/Number
+   #87 = Utf8               intValue
+   #88 = NameAndType        #87:#84       // intValue:()I
+   #89 = Methodref          #86.#88       // java/lang/Number.intValue:()I
+   #90 = NameAndType        #83:#84       // hashCode:()I
+   #91 = Methodref          #4.#90        // java/lang/Object.hashCode:()I
+   #92 = Utf8               clone
+   #93 = NameAndType        #92:#58       // clone:()Ljava/lang/Object;
+   #94 = Methodref          #4.#93        // java/lang/Object.clone:()Ljava/lang/Object;
+   #95 = Utf8               main
+   #96 = Utf8               ([Ljava/lang/String;)V
+   #97 = Utf8               clojure/lang/RT
+   #98 = Class              #97           // clojure/lang/RT
+   #99 = Utf8               seq
+  #100 = Utf8               (Ljava/lang/Object;)Lclojure/lang/ISeq;
+  #101 = NameAndType        #99:#100      // seq:(Ljava/lang/Object;)Lclojure/lang/ISeq;
+  #102 = Methodref          #98.#101      // clojure/lang/RT.seq:(Ljava/lang/Object;)Lclojure/lang/ISeq;
+  #103 = Utf8               applyTo
+  #104 = Utf8               (Lclojure/lang/ISeq;)Ljava/lang/Object;
+  #105 = NameAndType        #103:#104     // applyTo:(Lclojure/lang/ISeq;)Ljava/lang/Object;
+  #106 = InterfaceMethodref #62.#105      // clojure/lang/IFn.applyTo:(Lclojure/lang/ISeq;)Ljava/lang/Object;
+  #107 = Utf8               java/lang/UnsupportedOperationException
+  #108 = Class              #107          // java/lang/UnsupportedOperationException
+  #109 = Utf8               factorial/-main not defined
+  #110 = String             #109          // factorial/-main not defined
+  #111 = Utf8               (Ljava/lang/String;)V
+  #112 = NameAndType        #48:#111      // "<init>":(Ljava/lang/String;)V
+  #113 = Methodref          #108.#112     // java/lang/UnsupportedOperationException."<init>":(Ljava/lang/String;)V
+  #114 = Utf8               Code
+{
+  private static final clojure.lang.Var main__var;
+    descriptor: Lclojure/lang/Var;
+    flags: ACC_PRIVATE, ACC_STATIC, ACC_FINAL
+
+  private static final clojure.lang.Var equals__var;
+    descriptor: Lclojure/lang/Var;
+    flags: ACC_PRIVATE, ACC_STATIC, ACC_FINAL
+
+  private static final clojure.lang.Var toString__var;
+    descriptor: Lclojure/lang/Var;
+    flags: ACC_PRIVATE, ACC_STATIC, ACC_FINAL
+
+  private static final clojure.lang.Var hashCode__var;
+    descriptor: Lclojure/lang/Var;
+    flags: ACC_PRIVATE, ACC_STATIC, ACC_FINAL
+
+  private static final clojure.lang.Var clone__var;
+    descriptor: Lclojure/lang/Var;
+    flags: ACC_PRIVATE, ACC_STATIC, ACC_FINAL
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: ldc           #13                 // String factorial
+         2: ldc           #15                 // String -main
+         4: invokestatic  #21                 // Method clojure/lang/Var.internPrivate:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+         7: putstatic     #23                 // Field main__var:Lclojure/lang/Var;
+        10: ldc           #13                 // String factorial
+        12: ldc           #25                 // String -equals
+        14: invokestatic  #21                 // Method clojure/lang/Var.internPrivate:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+        17: putstatic     #27                 // Field equals__var:Lclojure/lang/Var;
+        20: ldc           #13                 // String factorial
+        22: ldc           #29                 // String -toString
+        24: invokestatic  #21                 // Method clojure/lang/Var.internPrivate:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+        27: putstatic     #31                 // Field toString__var:Lclojure/lang/Var;
+        30: ldc           #13                 // String factorial
+        32: ldc           #33                 // String -hashCode
+        34: invokestatic  #21                 // Method clojure/lang/Var.internPrivate:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+        37: putstatic     #35                 // Field hashCode__var:Lclojure/lang/Var;
+        40: ldc           #13                 // String factorial
+        42: ldc           #37                 // String -clone
+        44: invokestatic  #21                 // Method clojure/lang/Var.internPrivate:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+        47: putstatic     #39                 // Field clone__var:Lclojure/lang/Var;
+        50: ldc           #41                 // String /factorial
+        52: ldc           #2                  // class factorial
+        54: invokestatic  #47                 // Method clojure/lang/Util.loadWithClass:(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+        57: pop
+        58: return
+
+  public factorial();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #50                 // Method java/lang/Object."<init>":()V
+         4: return
+
+  public boolean equals(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Z
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=2, args_size=2
+         0: getstatic     #27                 // Field equals__var:Lclojure/lang/Var;
+         3: dup
+         4: invokevirtual #56                 // Method clojure/lang/Var.isBound:()Z
+         7: ifeq          16
+        10: invokevirtual #60                 // Method clojure/lang/Var.get:()Ljava/lang/Object;
+        13: goto          18
+        16: pop
+        17: aconst_null
+        18: dup
+        19: ifnull        41
+        22: checkcast     #62                 // class clojure/lang/IFn
+        25: aload_0
+        26: aload_1
+        27: invokeinterface #66,  3           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        32: checkcast     #68                 // class java/lang/Boolean
+        35: invokevirtual #71                 // Method java/lang/Boolean.booleanValue:()Z
+        38: goto          47
+        41: pop
+        42: aload_0
+        43: aload_1
+        44: invokespecial #73                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+        47: ireturn
+
+  public java.lang.String toString();
+    descriptor: ()Ljava/lang/String;
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #31                 // Field toString__var:Lclojure/lang/Var;
+         3: dup
+         4: invokevirtual #56                 // Method clojure/lang/Var.isBound:()Z
+         7: ifeq          16
+        10: invokevirtual #60                 // Method clojure/lang/Var.get:()Ljava/lang/Object;
+        13: goto          18
+        16: pop
+        17: aconst_null
+        18: dup
+        19: ifnull        37
+        22: checkcast     #62                 // class clojure/lang/IFn
+        25: aload_0
+        26: invokeinterface #78,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+        31: checkcast     #80                 // class java/lang/String
+        34: goto          42
+        37: pop
+        38: aload_0
+        39: invokespecial #82                 // Method java/lang/Object.toString:()Ljava/lang/String;
+        42: areturn
+
+  public int hashCode();
+    descriptor: ()I
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #35                 // Field hashCode__var:Lclojure/lang/Var;
+         3: dup
+         4: invokevirtual #56                 // Method clojure/lang/Var.isBound:()Z
+         7: ifeq          16
+        10: invokevirtual #60                 // Method clojure/lang/Var.get:()Ljava/lang/Object;
+        13: goto          18
+        16: pop
+        17: aconst_null
+        18: dup
+        19: ifnull        40
+        22: checkcast     #62                 // class clojure/lang/IFn
+        25: aload_0
+        26: invokeinterface #78,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+        31: checkcast     #86                 // class java/lang/Number
+        34: invokevirtual #89                 // Method java/lang/Number.intValue:()I
+        37: goto          45
+        40: pop
+        41: aload_0
+        42: invokespecial #91                 // Method java/lang/Object.hashCode:()I
+        45: ireturn
+
+  public java.lang.Object clone();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #39                 // Field clone__var:Lclojure/lang/Var;
+         3: dup
+         4: invokevirtual #56                 // Method clojure/lang/Var.isBound:()Z
+         7: ifeq          16
+        10: invokevirtual #60                 // Method clojure/lang/Var.get:()Ljava/lang/Object;
+        13: goto          18
+        16: pop
+        17: aconst_null
+        18: dup
+        19: ifnull        34
+        22: checkcast     #62                 // class clojure/lang/IFn
+        25: aload_0
+        26: invokeinterface #78,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+        31: goto          39
+        34: pop
+        35: aload_0
+        36: invokespecial #94                 // Method java/lang/Object.clone:()Ljava/lang/Object;
+        39: areturn
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=1, args_size=1
+         0: getstatic     #23                 // Field main__var:Lclojure/lang/Var;
+         3: dup
+         4: invokevirtual #56                 // Method clojure/lang/Var.isBound:()Z
+         7: ifeq          16
+        10: invokevirtual #60                 // Method clojure/lang/Var.get:()Ljava/lang/Object;
+        13: goto          18
+        16: pop
+        17: aconst_null
+        18: dup
+        19: ifnull        38
+        22: checkcast     #62                 // class clojure/lang/IFn
+        25: aload_0
+        26: invokestatic  #102                // Method clojure/lang/RT.seq:(Ljava/lang/Object;)Lclojure/lang/ISeq;
+        29: invokeinterface #106,  2          // InterfaceMethod clojure/lang/IFn.applyTo:(Lclojure/lang/ISeq;)Ljava/lang/Object;
+        34: pop
+        35: goto          48
+        38: new           #108                // class java/lang/UnsupportedOperationException
+        41: dup
+        42: ldc           #110                // String factorial/-main not defined
+        44: invokespecial #113                // Method java/lang/UnsupportedOperationException."<init>":(Ljava/lang/String;)V
+        47: athrow
+        48: return
+}

@@ -1,0 +1,755 @@
+// Input: .\simple_closure.clj.dll
+// Image type: DLL
+// Native code present: No
+// 32-bit only: No
+// Length of IL data: 6656
+
+// VS_VERSION_INFO:
+//    dwStrucVersion            : 1.0
+//    dwFileVersion             : 0.0.0.0
+//    dwProductVersion          : 0.0.0.0
+//    dwFileFlagsMask           : 0x0000003F
+//    dwFileFlags               : 0x00000000
+//    dwFileOS                  : 0x00000004
+//    dwFileType                : 0x00000002
+//    dwFileSubtype             : 0x00000000
+//    dwFileDate                : 0x0000000000000000
+//    Translation               : 0x04B0007F
+//    Comments                  : " "
+//    CompanyName               : " "
+//    FileDescription           : " "
+//    FileVersion               : "0.0.0.0"
+//    InternalName              : "simple_closure.clj.dll"
+//    LegalCopyright            : " "
+//    LegalTrademarks           : " "
+//    OriginalFilename          : "simple_closure.clj.dll"
+//    ProductName               : " "
+//    ProductVersion            : " "
+
+.assembly extern mscorlib
+{
+	.ver 4:0:0:0
+	.publickeytoken = (B7 7A 5C 56 19 34 E0 89)   // .z\V.4..
+}
+.assembly extern Clojure
+{
+	.ver 1:7:0:0
+	.publickeytoken = (CF 3C AE CD 32 7A 2F A9)   // .<..2z/.
+}
+.assembly extern System
+{
+	.ver 4:0:0:0
+	.publickeytoken = (B7 7A 5C 56 19 34 E0 89)   // .z\V.4..
+}
+.assembly simple_closure.clj
+{
+	.hash algorithm 0x00008004
+	.ver 0:0:0:0
+	.custom instance void [mscorlib]System.Security.SecurityTransparentAttribute::.ctor() = (01 00 00 00)   // ....
+	// SecurityTransparent()
+	.custom instance void [mscorlib]System.Security.SecurityRulesAttribute::.ctor(valuetype [mscorlib]System.Security.SecurityRuleSet) = (01 00 01 00 00)   // .....
+	// SecurityRules(?)
+}
+.module simple_closure.clj
+// MVID: {569105A6-EEB0-48DD-8F44-8AD20B5CB22A}
+.class public auto ansi __Init__$simple_closure extends [mscorlib]System.Object
+{
+	.custom instance void [System]System.ComponentModel.DescriptionAttribute::.ctor(class System.String) =
+		(01 00 23 7B 3A 63 6C 6F 6A 75 72 65 2D 6E 61 6D   // ..#{:clojure-nam
+		 65 73 70 61 63 65 20 73 69 6D 70 6C 65 2D 63 6C   // espace simple-cl
+		 6F 73 75 72 65 7D 00 00)  // osure}..
+	// Description("{:clojure-namespace simple-closure}")
+	.field famorassem static class [Clojure]clojure.lang.Var const__0
+	.field famorassem static class [Clojure]clojure.lang.AFn const__1
+	.field famorassem static class [Clojure]clojure.lang.AFn const__2
+	.field famorassem static class [Clojure]clojure.lang.Var const__3
+	.field famorassem static class [Clojure]clojure.lang.Keyword const__4
+	.field famorassem static class System.Object const__5
+	.field famorassem static class [Clojure]clojure.lang.Keyword const__6
+	.field famorassem static class System.Object const__7
+	.field famorassem static class [Clojure]clojure.lang.Keyword const__8
+	.field famorassem static class System.Object const__9
+	.field famorassem static class [Clojure]clojure.lang.Keyword const__10
+	.field famorassem static class [Clojure]clojure.lang.Var const__11
+	.field famorassem static class System.Object const__12
+	.field famorassem static class System.Object const__13
+	.field famorassem static class System.Object const__14
+	.method public static void Initialize() cil managed 
+	{
+		// Start of method header: 252c
+		.maxstack  8
+		.locals    init ()
+	?L2538:
+		ldsfld     class [Clojure]clojure.lang.Var __Init__$simple_closure::const__0
+		call       instance class System.Object [Clojure]clojure.lang.Var::getRawRoot()
+		castclass  class [Clojure]clojure.lang.IFn
+		ldsfld     class [Clojure]clojure.lang.AFn __Init__$simple_closure::const__1
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		pop
+		newobj     instance void simple_closure$loading__5679__auto____17569__17573::.ctor()
+		castclass  class [Clojure]clojure.lang.IFn
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke()
+		pop
+		ldsfld     class [Clojure]clojure.lang.AFn __Init__$simple_closure::const__1
+		castclass  class [Clojure]clojure.lang.Symbol
+		ldsfld     class [Clojure]clojure.lang.AFn __Init__$simple_closure::const__2
+		castclass  class [mscorlib]System.Object
+		callvirt   instance bool [Clojure]clojure.lang.Symbol::Equals(class System.Object)
+		brfalse    ?L2586
+		ldnull
+		br         ?L2597
+	?L2586:
+		newobj     instance void simple_closure$fn__17576__17580::.ctor()
+		castclass  class [Clojure]clojure.lang.IFn
+		call       class System.Object [Clojure]clojure.lang.LockingTransaction::runInTransaction(class [Clojure]clojure.lang.IFn)
+		pop
+		ldnull
+	?L2597:
+		pop
+		ldsfld     class [Clojure]clojure.lang.Var __Init__$simple_closure::const__3
+		dup
+		ldc.i4.8
+		newarr     class [mscorlib]System.Object
+		dup
+		ldc.i4.0
+		ldsfld     class [Clojure]clojure.lang.Keyword __Init__$simple_closure::const__4
+		stelem.ref
+		dup
+		ldc.i4.1
+		ldsfld     class System.Object __Init__$simple_closure::const__5
+		stelem.ref
+		dup
+		ldc.i4.2
+		ldsfld     class [Clojure]clojure.lang.Keyword __Init__$simple_closure::const__6
+		stelem.ref
+		dup
+		ldc.i4.3
+		ldsfld     class System.Object __Init__$simple_closure::const__7
+		stelem.ref
+		dup
+		ldc.i4.4
+		ldsfld     class [Clojure]clojure.lang.Keyword __Init__$simple_closure::const__8
+		stelem.ref
+		dup
+		ldc.i4.5
+		ldsfld     class System.Object __Init__$simple_closure::const__9
+		stelem.ref
+		dup
+		ldc.i4.6
+		ldsfld     class [Clojure]clojure.lang.Keyword __Init__$simple_closure::const__10
+		stelem.ref
+		dup
+		ldc.i4.7
+		ldstr      "simple_closure.clj"
+		stelem.ref
+		call       class [Clojure]clojure.lang.IPersistentMap [Clojure]clojure.lang.RT::mapUniqueKeys(class System.Object[])
+		castclass  class [Clojure]clojure.lang.IPersistentMap
+		call       instance void [Clojure]clojure.lang.Var::setMeta(class [Clojure]clojure.lang.IPersistentMap)
+		dup
+		newobj     instance void simple_closure$add__17593::.ctor()
+		call       instance void [Clojure]clojure.lang.Var::bindRoot(class System.Object)
+		pop
+		ldsfld     class [Clojure]clojure.lang.Var __Init__$simple_closure::const__11
+		dup
+		ldc.i4.8
+		newarr     class [mscorlib]System.Object
+		dup
+		ldc.i4.0
+		ldsfld     class [Clojure]clojure.lang.Keyword __Init__$simple_closure::const__4
+		stelem.ref
+		dup
+		ldc.i4.1
+		ldsfld     class System.Object __Init__$simple_closure::const__12
+		stelem.ref
+		dup
+		ldc.i4.2
+		ldsfld     class [Clojure]clojure.lang.Keyword __Init__$simple_closure::const__6
+		stelem.ref
+		dup
+		ldc.i4.3
+		ldsfld     class System.Object __Init__$simple_closure::const__13
+		stelem.ref
+		dup
+		ldc.i4.4
+		ldsfld     class [Clojure]clojure.lang.Keyword __Init__$simple_closure::const__8
+		stelem.ref
+		dup
+		ldc.i4.5
+		ldsfld     class System.Object __Init__$simple_closure::const__14
+		stelem.ref
+		dup
+		ldc.i4.6
+		ldsfld     class [Clojure]clojure.lang.Keyword __Init__$simple_closure::const__10
+		stelem.ref
+		dup
+		ldc.i4.7
+		ldstr      "simple_closure.clj"
+		stelem.ref
+		call       class [Clojure]clojure.lang.IPersistentMap [Clojure]clojure.lang.RT::mapUniqueKeys(class System.Object[])
+		castclass  class [Clojure]clojure.lang.IPersistentMap
+		call       instance void [Clojure]clojure.lang.Var::setMeta(class [Clojure]clojure.lang.IPersistentMap)
+		dup
+		newobj     instance void simple_closure$_main__17599::.ctor()
+		call       instance void [Clojure]clojure.lang.Var::bindRoot(class System.Object)
+		pop
+		ret
+	}
+	.method private static void __static_ctor_helper_constants() cil managed 
+	{
+		// Start of method header: 2668
+		.maxstack  8
+		.locals    init ()
+	?L2674:
+		ldstr      "clojure.core"
+		ldstr      "in-ns"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var __Init__$simple_closure::const__0
+		ldnull
+		ldstr      "simple-closure"
+		call       class [Clojure]clojure.lang.Symbol [Clojure]clojure.lang.Symbol::intern(class System.String, class System.String)
+		castclass  class [Clojure]clojure.lang.AFn
+		stsfld     class [Clojure]clojure.lang.AFn __Init__$simple_closure::const__1
+		ldnull
+		ldstr      "clojure.core"
+		call       class [Clojure]clojure.lang.Symbol [Clojure]clojure.lang.Symbol::intern(class System.String, class System.String)
+		castclass  class [Clojure]clojure.lang.AFn
+		stsfld     class [Clojure]clojure.lang.AFn __Init__$simple_closure::const__2
+		ldstr      "simple-closure"
+		ldstr      "add"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var __Init__$simple_closure::const__3
+		ldnull
+		ldstr      "arglists"
+		call       class [Clojure]clojure.lang.Keyword [Clojure]clojure.lang.RT::keyword(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Keyword __Init__$simple_closure::const__4
+		ldc.i4.1
+		newarr     class [mscorlib]System.Object
+		dup
+		ldc.i4.0
+		ldc.i4.1
+		newarr     class [mscorlib]System.Object
+		dup
+		ldc.i4.0
+		ldnull
+		ldstr      "x"
+		call       class [Clojure]clojure.lang.Symbol [Clojure]clojure.lang.Symbol::intern(class System.String, class System.String)
+		stelem.ref
+		call       class [Clojure]clojure.lang.IPersistentVector [Clojure]clojure.lang.RT::vector(class System.Object[])
+		stelem.ref
+		call       class [Clojure]clojure.lang.IPersistentList [Clojure]clojure.lang.PersistentList::create(class [mscorlib]System.Collections.IList)
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object __Init__$simple_closure::const__5
+		ldnull
+		ldstr      "line"
+		call       class [Clojure]clojure.lang.Keyword [Clojure]clojure.lang.RT::keyword(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Keyword __Init__$simple_closure::const__6
+		ldc.i4.4
+		box        class [mscorlib]System.Int32
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object __Init__$simple_closure::const__7
+		ldnull
+		ldstr      "column"
+		call       class [Clojure]clojure.lang.Keyword [Clojure]clojure.lang.RT::keyword(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Keyword __Init__$simple_closure::const__8
+		ldc.i4.2
+		box        class [mscorlib]System.Int32
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object __Init__$simple_closure::const__9
+		ldnull
+		ldstr      "file"
+		call       class [Clojure]clojure.lang.Keyword [Clojure]clojure.lang.RT::keyword(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Keyword __Init__$simple_closure::const__10
+		ldstr      "simple-closure"
+		ldstr      "-main"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var __Init__$simple_closure::const__11
+		ldc.i4.1
+		newarr     class [mscorlib]System.Object
+		dup
+		ldc.i4.0
+		ldc.i4.0
+		newarr     class [mscorlib]System.Object
+		call       class [Clojure]clojure.lang.IPersistentVector [Clojure]clojure.lang.RT::vector(class System.Object[])
+		stelem.ref
+		call       class [Clojure]clojure.lang.IPersistentList [Clojure]clojure.lang.PersistentList::create(class [mscorlib]System.Collections.IList)
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object __Init__$simple_closure::const__12
+		ldc.i4.8
+		box        class [mscorlib]System.Int32
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object __Init__$simple_closure::const__13
+		ldc.i4.2
+		box        class [mscorlib]System.Int32
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object __Init__$simple_closure::const__14
+		ret
+	}
+	.method compilercontrolled static specialname rtspecialname void .cctor() cil managed 
+	{
+		// Start of method header: 27b0
+		.maxstack  2
+		.locals    init ()
+	?L27bc:
+		call       void [Clojure]clojure.lang.Compiler::PushNS()
+		call       void __Init__$simple_closure::__static_ctor_helper_constants()
+		leave      ?L27d1
+	?L27cb:
+		call       void [Clojure]clojure.lang.Var::popThreadBindings()
+		endfinally
+	?L27d1:
+		ret
+		.try ?L27bc to ?L27cb finally handler ?L27cb to ?L27d1
+	}
+}
+.class public auto serializable ansi simple_closure$loading__5679__auto____17569__17573 extends [Clojure]clojure.lang.AFunction
+{
+	.field famorassem static class System.Object const__0
+	.field famorassem static class [Clojure]clojure.lang.Var const__1
+	.field famorassem static class [Clojure]clojure.lang.AFn const__2
+	.method compilercontrolled static specialname rtspecialname void .cctor() cil managed 
+	{
+		// Start of method header: 2050
+		.maxstack  2
+		.locals    init ()
+	?L205c:
+		ldstr      "simple_closure"
+		call       class [mscorlib]System.Type [Clojure]clojure.lang.RT::classForName(class System.String)
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object simple_closure$loading__5679__auto____17569__17573::const__0
+		ldstr      "clojure.core"
+		ldstr      "refer"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var simple_closure$loading__5679__auto____17569__17573::const__1
+		ldnull
+		ldstr      "clojure.core"
+		call       class [Clojure]clojure.lang.Symbol [Clojure]clojure.lang.Symbol::intern(class System.String, class System.String)
+		castclass  class [Clojure]clojure.lang.AFn
+		stsfld     class [Clojure]clojure.lang.AFn simple_closure$loading__5679__auto____17569__17573::const__2
+		ret
+	}
+	.method public specialname rtspecialname instance void .ctor() cil managed 
+	{
+		// Start of method header: 209c
+		.maxstack  2
+		.locals    init ()
+	?L20a8:
+		ldarg.0
+		call       instance void [Clojure]clojure.lang.AFunction::.ctor()
+		ret
+	}
+	.method public virtual instance class System.Object invoke() cil managed 
+	{
+		// Start of method header: 20b0
+		.maxstack  5
+		.locals    init (class System.Object)
+	?L20bc:
+		ldsfld     class [Clojure]clojure.lang.PersistentArrayMap [Clojure]clojure.lang.PersistentArrayMap::EMPTY
+		castclass  class [Clojure]clojure.lang.Associative
+		call       void [Clojure]clojure.lang.Var::pushThreadBindings(class [Clojure]clojure.lang.Associative)
+		ldnull
+		pop
+	?L20cd:
+		ldsfld     class System.Object simple_closure$loading__5679__auto____17569__17573::const__0
+		pop
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure$loading__5679__auto____17569__17573::const__1
+		call       instance class System.Object [Clojure]clojure.lang.Var::getRawRoot()
+		castclass  class [Clojure]clojure.lang.IFn
+		ldsfld     class [Clojure]clojure.lang.AFn simple_closure$loading__5679__auto____17569__17573::const__2
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		stloc.0
+		leave      ?L20fa
+	?L20f2:
+		call       void [Clojure]clojure.lang.Var::popThreadBindings()
+		ldnull
+		pop
+		endfinally
+	?L20fa:
+		ldloc.0
+		ret
+		.try ?L20cd to ?L20f2 finally handler ?L20f2 to ?L20fa
+	}
+	.method public virtual instance bool HasArity(int32) cil managed 
+	{
+		// Start of method header: 210c
+		.maxstack  3
+		.locals    init ()
+	?L2118:
+		ldarg.1
+		ldc.i4.0
+		beq        ?L2121
+		ldc.i4.0
+		ret
+	?L2121:
+		ldc.i4.1
+		ret
+	}
+}
+.class public auto serializable ansi simple_closure$fn__17576__17580 extends [Clojure]clojure.lang.AFunction
+{
+	.field famorassem static class [Clojure]clojure.lang.Var const__0
+	.field famorassem static class [Clojure]clojure.lang.Var const__1
+	.field famorassem static class [Clojure]clojure.lang.Var const__2
+	.field famorassem static class [Clojure]clojure.lang.Var const__3
+	.field famorassem static class [Clojure]clojure.lang.AFn const__4
+	.method compilercontrolled static specialname rtspecialname void .cctor() cil managed 
+	{
+		// Start of method header: 2124
+		.maxstack  2
+		.locals    init ()
+	?L2130:
+		ldstr      "clojure.core"
+		ldstr      "commute"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var simple_closure$fn__17576__17580::const__0
+		ldstr      "clojure.core"
+		ldstr      "deref"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var simple_closure$fn__17576__17580::const__1
+		ldstr      "clojure.core"
+		ldstr      "*loaded-libs*"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var simple_closure$fn__17576__17580::const__2
+		ldstr      "clojure.core"
+		ldstr      "conj"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var simple_closure$fn__17576__17580::const__3
+		ldnull
+		ldstr      "simple-closure"
+		call       class [Clojure]clojure.lang.Symbol [Clojure]clojure.lang.Symbol::intern(class System.String, class System.String)
+		castclass  class [Clojure]clojure.lang.AFn
+		stsfld     class [Clojure]clojure.lang.AFn simple_closure$fn__17576__17580::const__4
+		ret
+	}
+	.method public specialname rtspecialname instance void .ctor() cil managed 
+	{
+		// Start of method header: 2198
+		.maxstack  2
+		.locals    init ()
+	?L21a4:
+		ldarg.0
+		call       instance void [Clojure]clojure.lang.AFunction::.ctor()
+		ret
+	}
+	.method public virtual instance class System.Object invoke() cil managed 
+	{
+		// Start of method header: 21ac
+		.maxstack  4
+		.locals    init ()
+	?L21b8:
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure$fn__17576__17580::const__0
+		call       instance class System.Object [Clojure]clojure.lang.Var::getRawRoot()
+		castclass  class [Clojure]clojure.lang.IFn
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure$fn__17576__17580::const__1
+		call       instance class System.Object [Clojure]clojure.lang.Var::getRawRoot()
+		castclass  class [Clojure]clojure.lang.IFn
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure$fn__17576__17580::const__2
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure$fn__17576__17580::const__3
+		call       instance class System.Object [Clojure]clojure.lang.Var::getRawRoot()
+		ldsfld     class [Clojure]clojure.lang.AFn simple_closure$fn__17576__17580::const__4
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object, class System.Object, class System.Object)
+		ret
+	}
+	.method public virtual instance bool HasArity(int32) cil managed 
+	{
+		// Start of method header: 21f8
+		.maxstack  3
+		.locals    init ()
+	?L2204:
+		ldarg.1
+		ldc.i4.0
+		beq        ?L220d
+		ldc.i4.0
+		ret
+	?L220d:
+		ldc.i4.1
+		ret
+	}
+}
+.class public auto serializable ansi simple_closure$addfn__17586__17590 extends [Clojure]clojure.lang.AFunction
+{
+	.field famorassem static class [Clojure]clojure.lang.Var const__0
+	.field public class System.Object x
+	.method compilercontrolled static specialname rtspecialname void .cctor() cil managed 
+	{
+		// Start of method header: 2210
+		.maxstack  2
+		.locals    init ()
+	?L221c:
+		ldstr      "clojure.core"
+		ldstr      "+"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var simple_closure$addfn__17586__17590::const__0
+		ret
+	}
+	.method public specialname rtspecialname instance void .ctor(class System.Object) cil managed 
+	{
+		// Start of method header: 2234
+		.maxstack  4
+		.locals    init ()
+	?L2240:
+		ldarg.0
+		call       instance void [Clojure]clojure.lang.AFunction::.ctor()
+		ldarg.0
+		ldarg.1
+		stfld      class System.Object simple_closure$addfn__17586__17590::x
+		ret
+	}
+	.method public virtual instance class System.Object invoke(class System.Object) cil managed 
+	{
+		// Start of method header: 2250
+		.maxstack  2
+		.locals    init ()
+	?L225c:
+		ldarg.0
+		ldfld      class System.Object simple_closure$addfn__17586__17590::x
+		castclass  class [mscorlib]System.Object
+		ldarg.1
+		castclass  class [mscorlib]System.Object
+		call       class System.Object [Clojure]clojure.lang.Numbers::add(class System.Object, class System.Object)
+		ret
+	}
+	.method public virtual instance bool HasArity(int32) cil managed 
+	{
+		// Start of method header: 2274
+		.maxstack  3
+		.locals    init ()
+	?L2280:
+		ldarg.1
+		ldc.i4.1
+		beq        ?L2289
+		ldc.i4.0
+		ret
+	?L2289:
+		ldc.i4.1
+		ret
+	}
+}
+.class public auto serializable ansi simple_closure$add__17593 extends [Clojure]clojure.lang.AFunction
+{
+	.method compilercontrolled static specialname rtspecialname void .cctor() cil managed 
+	{
+		// Start of method header: 228c
+		.maxstack  0
+		.locals    init ()
+	?L2298:
+		ret
+	}
+	.method public specialname rtspecialname instance void .ctor() cil managed 
+	{
+		// Start of method header: 229c
+		.maxstack  2
+		.locals    init ()
+	?L22a8:
+		ldarg.0
+		call       instance void [Clojure]clojure.lang.AFunction::.ctor()
+		ret
+	}
+    // Luo sulkeumaolion tyyppiä simple_closure$addfn__17586__17590
+	.method public virtual instance class System.Object invoke(class System.Object) cil managed 
+	{
+		// Start of method header: 22b0
+		.maxstack  2
+		.locals    init ()
+	?L22bc:
+		ldarg.1
+		newobj     instance void simple_closure$addfn__17586__17590::.ctor(class System.Object)
+		ret
+	}
+	.method public virtual instance bool HasArity(int32) cil managed 
+	{
+		// Start of method header: 22c4
+		.maxstack  3
+		.locals    init ()
+	?L22d0:
+		ldarg.1
+		ldc.i4.1
+		beq        ?L22d9
+		ldc.i4.0
+		ret
+	?L22d9:
+		ldc.i4.1
+		ret
+	}
+}
+.class public auto serializable ansi simple_closure$_main__17599 extends [Clojure]clojure.lang.AFunction
+{
+	.field famorassem static class [Clojure]clojure.lang.Var const__0
+	.field famorassem static class [Clojure]clojure.lang.Var const__1
+	.field famorassem static class System.Object const__2
+	.field famorassem static class System.Object const__3
+	.field famorassem static class [Clojure]clojure.lang.Var const__4
+	.field famorassem static class [Clojure]clojure.lang.Keyword const__5
+	.field famorassem static class System.Object const__6
+	.field famorassem static class [Clojure]clojure.lang.Keyword const__7
+	.field famorassem static class System.Object const__8
+	.field famorassem static class [Clojure]clojure.lang.Keyword const__9
+	.field famorassem static class System.Object const__10
+	.field famorassem static class System.Object const__11
+	.field famorassem static class System.Object const__12
+	.method compilercontrolled static specialname rtspecialname void .cctor() cil managed 
+	{
+		// Start of method header: 22dc
+		.maxstack  2
+		.locals    init ()
+	?L22e8:
+		ldstr      "clojure.core"
+		ldstr      "println"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var simple_closure$_main__17599::const__0
+		ldstr      "simple-closure"
+		ldstr      "add"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var simple_closure$_main__17599::const__1
+		ldc.i8     0x0000000000000005
+		box        class [mscorlib]System.Int64
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object simple_closure$_main__17599::const__2
+		ldc.i8     0x0000000000000004
+		box        class [mscorlib]System.Int64
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object simple_closure$_main__17599::const__3
+		ldstr      "simple-closure"
+		ldstr      "add10"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var simple_closure$_main__17599::const__4
+		ldnull
+		ldstr      "line"
+		call       class [Clojure]clojure.lang.Keyword [Clojure]clojure.lang.RT::keyword(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Keyword simple_closure$_main__17599::const__5
+		ldc.i4.s   10
+		box        class [mscorlib]System.Int32
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object simple_closure$_main__17599::const__6
+		ldnull
+		ldstr      "column"
+		call       class [Clojure]clojure.lang.Keyword [Clojure]clojure.lang.RT::keyword(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Keyword simple_closure$_main__17599::const__7
+		ldc.i4.4
+		box        class [mscorlib]System.Int32
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object simple_closure$_main__17599::const__8
+		ldnull
+		ldstr      "file"
+		call       class [Clojure]clojure.lang.Keyword [Clojure]clojure.lang.RT::keyword(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Keyword simple_closure$_main__17599::const__9
+		ldc.i8     0x000000000000000A
+		box        class [mscorlib]System.Int64
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object simple_closure$_main__17599::const__10
+		ldc.i8     0x000000000000005A
+		box        class [mscorlib]System.Int64
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object simple_closure$_main__17599::const__11
+		ldc.i8     0x00000000000003E7
+		box        class [mscorlib]System.Int64
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object simple_closure$_main__17599::const__12
+		ret
+	}
+	.method public specialname rtspecialname instance void .ctor() cil managed 
+	{
+		// Start of method header: 23f0
+		.maxstack  2
+		.locals    init ()
+	?L23fc:
+		ldarg.0
+		call       instance void [Clojure]clojure.lang.AFunction::.ctor()
+		ret
+	}
+	.method public virtual instance class System.Object invoke() cil managed 
+	{
+		// Start of method header: 2404
+		.maxstack  6
+		.locals    init ()
+	?L2410:
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure$_main__17599::const__0
+		call       instance class System.Object [Clojure]clojure.lang.Var::getRawRoot()
+		castclass  class [Clojure]clojure.lang.IFn
+
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure$_main__17599::const__1
+		call       instance class System.Object [Clojure]clojure.lang.Var::getRawRoot()
+		castclass  class [Clojure]clojure.lang.IFn
+		ldsfld     class System.Object simple_closure$_main__17599::const__2
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		castclass  class [Clojure]clojure.lang.IFn
+		ldsfld     class System.Object simple_closure$_main__17599::const__3
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		pop
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure$_main__17599::const__4
+		dup
+		ldc.i4.6
+		newarr     class [mscorlib]System.Object
+		dup
+		ldc.i4.0
+		ldsfld     class [Clojure]clojure.lang.Keyword simple_closure$_main__17599::const__5
+		stelem.ref
+		dup
+		ldc.i4.1
+		ldsfld     class System.Object simple_closure$_main__17599::const__6
+		stelem.ref
+		dup
+		ldc.i4.2
+		ldsfld     class [Clojure]clojure.lang.Keyword simple_closure$_main__17599::const__7
+		stelem.ref
+		dup
+		ldc.i4.3
+		ldsfld     class System.Object simple_closure$_main__17599::const__8
+		stelem.ref
+		dup
+		ldc.i4.4
+		ldsfld     class [Clojure]clojure.lang.Keyword simple_closure$_main__17599::const__9
+		stelem.ref
+		dup
+		ldc.i4.5
+		ldstr      "simple_closure.clj"
+		stelem.ref
+		call       class [Clojure]clojure.lang.IPersistentMap [Clojure]clojure.lang.RT::mapUniqueKeys(class System.Object[])
+		castclass  class [Clojure]clojure.lang.IPersistentMap
+		call       instance void [Clojure]clojure.lang.Var::setMeta(class [Clojure]clojure.lang.IPersistentMap)
+		dup
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure$_main__17599::const__1
+		call       instance class System.Object [Clojure]clojure.lang.Var::getRawRoot()
+		castclass  class [Clojure]clojure.lang.IFn
+		ldsfld     class System.Object simple_closure$_main__17599::const__10
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		call       instance void [Clojure]clojure.lang.Var::bindRoot(class System.Object)
+		pop
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure$_main__17599::const__0
+		call       instance class System.Object [Clojure]clojure.lang.Var::getRawRoot()
+		castclass  class [Clojure]clojure.lang.IFn
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure$_main__17599::const__4
+		call       instance class System.Object [Clojure]clojure.lang.Var::getRawRoot()
+		castclass  class [Clojure]clojure.lang.IFn
+		ldsfld     class System.Object simple_closure$_main__17599::const__11
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		pop
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure$_main__17599::const__0
+		call       instance class System.Object [Clojure]clojure.lang.Var::getRawRoot()
+		castclass  class [Clojure]clojure.lang.IFn
+		ldsfld     class [Clojure]clojure.lang.Var simple_closure$_main__17599::const__4
+		call       instance class System.Object [Clojure]clojure.lang.Var::getRawRoot()
+		castclass  class [Clojure]clojure.lang.IFn
+		ldsfld     class System.Object simple_closure$_main__17599::const__12
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		ret
+	}
+	.method public virtual instance bool HasArity(int32) cil managed 
+	{
+		// Start of method header: 2514
+		.maxstack  3
+		.locals    init ()
+	?L2520:
+		ldarg.1
+		ldc.i4.0
+		beq        ?L2529
+		ldc.i4.0
+		ret
+	?L2529:
+		ldc.i4.1
+		ret
+	}
+}

@@ -1,0 +1,231 @@
+Classfile /Users/tuuli/school/thesis_examples/ex4_shared_closure/temp$_39916801/counter$counter.class
+  Last modified Mar 1, 2016; size 1572 bytes
+  MD5 checksum 569f0108dc222c19e89b39d863936485
+  Compiled from "counter.clj"
+public final class counter$counter extends clojure.lang.AFunction
+  minor version: 0
+  major version: 49
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               counter$counter
+   #2 = Class              #1             // counter$counter
+   #3 = Utf8               clojure/lang/AFunction
+   #4 = Class              #3             // clojure/lang/AFunction
+   #5 = Utf8               counter.clj
+   #6 = Utf8               <init>
+   #7 = Utf8               ()V
+   #8 = NameAndType        #6:#7          // "<init>":()V
+   #9 = Methodref          #4.#8          // clojure/lang/AFunction."<init>":()V
+  #10 = Utf8               invokeStatic
+  #11 = Utf8               ()Ljava/lang/Object;
+  #12 = Utf8               const__0
+  #13 = Utf8               Lclojure/lang/Var;
+  #14 = NameAndType        #12:#13        // const__0:Lclojure/lang/Var;
+  #15 = Fieldref           #2.#14         // counter$counter.const__0:Lclojure/lang/Var;
+  #16 = Utf8               clojure/lang/Var
+  #17 = Class              #16            // clojure/lang/Var
+  #18 = Utf8               getRawRoot
+  #19 = NameAndType        #18:#11        // getRawRoot:()Ljava/lang/Object;
+  #20 = Methodref          #17.#19        // clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+  #21 = Utf8               clojure/lang/IFn
+  #22 = Class              #21            // clojure/lang/IFn
+  #23 = Utf8               const__1
+  #24 = Utf8               Ljava/lang/Object;
+  #25 = NameAndType        #23:#24        // const__1:Ljava/lang/Object;
+  #26 = Fieldref           #2.#25         // counter$counter.const__1:Ljava/lang/Object;
+  #27 = Utf8               invoke
+  #28 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #29 = NameAndType        #27:#28        // invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+  #30 = InterfaceMethodref #22.#29        // clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+  #31 = Utf8               counter$counter$increment_counter__9
+  #32 = Class              #31            // counter$counter$increment_counter__9
+  #33 = Utf8               (Ljava/lang/Object;)V
+  #34 = NameAndType        #6:#33         // "<init>":(Ljava/lang/Object;)V
+  #35 = Methodref          #32.#34        // counter$counter$increment_counter__9."<init>":(Ljava/lang/Object;)V
+  #36 = Utf8               counter$counter$get_counter__11
+  #37 = Class              #36            // counter$counter$get_counter__11
+  #38 = Methodref          #37.#34        // counter$counter$get_counter__11."<init>":(Ljava/lang/Object;)V
+  #39 = Utf8               java/lang/Object
+  #40 = Class              #39            // java/lang/Object
+  #41 = Utf8               const__2
+  #42 = Utf8               Lclojure/lang/Keyword;
+  #43 = NameAndType        #41:#42        // const__2:Lclojure/lang/Keyword;
+  #44 = Fieldref           #2.#43         // counter$counter.const__2:Lclojure/lang/Keyword;
+  #45 = Utf8               const__3
+  #46 = NameAndType        #45:#42        // const__3:Lclojure/lang/Keyword;
+  #47 = Fieldref           #2.#46         // counter$counter.const__3:Lclojure/lang/Keyword;
+  #48 = Utf8               clojure/lang/RT
+  #49 = Class              #48            // clojure/lang/RT
+  #50 = Utf8               mapUniqueKeys
+  #51 = Utf8               ([Ljava/lang/Object;)Lclojure/lang/IPersistentMap;
+  #52 = NameAndType        #50:#51        // mapUniqueKeys:([Ljava/lang/Object;)Lclojure/lang/IPersistentMap;
+  #53 = Methodref          #49.#52        // clojure/lang/RT.mapUniqueKeys:([Ljava/lang/Object;)Lclojure/lang/IPersistentMap;
+  #54 = Utf8               c
+  #55 = Utf8               increment_counter
+  #56 = Utf8               get_counter
+  #57 = NameAndType        #10:#11        // invokeStatic:()Ljava/lang/Object;
+  #58 = Methodref          #2.#57         // counter$counter.invokeStatic:()Ljava/lang/Object;
+  #59 = Utf8               <clinit>
+  #60 = Utf8               clojure.core
+  #61 = String             #60            // clojure.core
+  #62 = Utf8               atom
+  #63 = String             #62            // atom
+  #64 = Utf8               var
+  #65 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+  #66 = NameAndType        #64:#65        // var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+  #67 = Methodref          #49.#66        // clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+  #68 = Utf8               java/lang/Long
+  #69 = Class              #68            // java/lang/Long
+  #70 = Utf8               valueOf
+  #71 = Utf8               (J)Ljava/lang/Long;
+  #72 = NameAndType        #70:#71        // valueOf:(J)Ljava/lang/Long;
+  #73 = Methodref          #69.#72        // java/lang/Long.valueOf:(J)Ljava/lang/Long;
+  #74 = Utf8               increment-counter
+  #75 = String             #74            // increment-counter
+  #76 = Utf8               keyword
+  #77 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Keyword;
+  #78 = NameAndType        #76:#77        // keyword:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Keyword;
+  #79 = Methodref          #49.#78        // clojure/lang/RT.keyword:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Keyword;
+  #80 = Utf8               clojure/lang/Keyword
+  #81 = Class              #80            // clojure/lang/Keyword
+  #82 = Utf8               get-counter
+  #83 = String             #82            // get-counter
+  #84 = Utf8               Code
+  #85 = Utf8               LineNumberTable
+  #86 = Utf8               LocalVariableTable
+  #87 = Utf8               SourceFile
+  #88 = Utf8               SourceDebugExtension
+{
+  public static final clojure.lang.Var const__0;
+    descriptor: Lclojure/lang/Var;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static final java.lang.Object const__1;
+    descriptor: Ljava/lang/Object;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static final clojure.lang.Keyword const__2;
+    descriptor: Lclojure/lang/Keyword;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static final clojure.lang.Keyword const__3;
+    descriptor: Lclojure/lang/Keyword;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public counter$counter();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #9                  // Method clojure/lang/AFunction."<init>":()V
+         4: return
+      LineNumberTable:
+        line 4: 0
+
+  public static java.lang.Object invokeStatic();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=5, locals=3, args_size=0
+         0: getstatic     #15                 // Field const__0:Lclojure/lang/Var;
+         3: invokevirtual #20                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+         6: checkcast     #22                 // class clojure/lang/IFn
+         9: getstatic     #26                 // Field const__1:Ljava/lang/Object;
+        12: invokeinterface #30,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+        17: astore_0
+        18: new           #32                 // class counter$counter$increment_counter__9
+        21: dup
+        22: aload_0
+        23: invokespecial #35                 // Method counter$counter$increment_counter__9."<init>":(Ljava/lang/Object;)V
+        26: astore_1
+        27: new           #37                 // class counter$counter$get_counter__11
+        30: dup
+        31: aload_0
+        32: aconst_null
+        33: astore_0
+        34: invokespecial #38                 // Method counter$counter$get_counter__11."<init>":(Ljava/lang/Object;)V
+        37: astore_2
+        38: iconst_4
+        39: anewarray     #40                 // class java/lang/Object
+        42: dup
+        43: iconst_0
+        44: getstatic     #44                 // Field const__2:Lclojure/lang/Keyword;
+        47: aastore
+        48: dup
+        49: iconst_1
+        50: aload_1
+        51: aconst_null
+        52: astore_1
+        53: aastore
+        54: dup
+        55: iconst_2
+        56: getstatic     #47                 // Field const__3:Lclojure/lang/Keyword;
+        59: aastore
+        60: dup
+        61: iconst_3
+        62: aload_2
+        63: aconst_null
+        64: astore_2
+        65: aastore
+        66: invokestatic  #53                 // Method clojure/lang/RT.mapUniqueKeys:([Ljava/lang/Object;)Lclojure/lang/IPersistentMap;
+        69: areturn
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           18      51     0     c   Ljava/lang/Object;
+           27      42     1 increment_counter   Ljava/lang/Object;
+           38      31     2 get_counter   Ljava/lang/Object;
+      LineNumberTable:
+        line 4: 0
+        line 5: 6
+        line 5: 12
+
+  public java.lang.Object invoke();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: invokestatic  #58                 // Method invokeStatic:()Ljava/lang/Object;
+         3: areturn
+      LineNumberTable:
+        line 4: 0
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: ldc           #61                 // String clojure.core
+         2: ldc           #63                 // String atom
+         4: invokestatic  #67                 // Method clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+         7: checkcast     #17                 // class clojure/lang/Var
+        10: putstatic     #15                 // Field const__0:Lclojure/lang/Var;
+        13: lconst_0
+        14: invokestatic  #73                 // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+        17: putstatic     #26                 // Field const__1:Ljava/lang/Object;
+        20: aconst_null
+        21: ldc           #75                 // String increment-counter
+        23: invokestatic  #79                 // Method clojure/lang/RT.keyword:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Keyword;
+        26: checkcast     #81                 // class clojure/lang/Keyword
+        29: putstatic     #44                 // Field const__2:Lclojure/lang/Keyword;
+        32: aconst_null
+        33: ldc           #83                 // String get-counter
+        35: invokestatic  #79                 // Method clojure/lang/RT.keyword:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Keyword;
+        38: checkcast     #81                 // class clojure/lang/Keyword
+        41: putstatic     #47                 // Field const__3:Lclojure/lang/Keyword;
+        44: return
+      LineNumberTable:
+        line 4: 0
+}
+SourceFile: "counter.clj"
+SourceDebugExtension:
+  SMAP
+  counter.java
+  Clojure
+  *S Clojure
+  *F
+  + 1 counter.clj
+  counter.clj
+  *L
+  2#1,8:2
+  *E

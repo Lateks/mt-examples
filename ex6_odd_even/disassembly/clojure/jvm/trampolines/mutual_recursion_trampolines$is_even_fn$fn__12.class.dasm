@@ -1,0 +1,134 @@
+Classfile /Users/tuuli/school/thesis_examples/ex3_mutual_recursion/temp$_39916801/mutual_recursion_trampolines$is_even_fn$fn__12.class
+  Last modified Feb 29, 2016; size 1113 bytes
+  MD5 checksum c586d465a7602a1f984547699937460f
+  Compiled from "mutual_recursion_trampolines.clj"
+public final class mutual_recursion_trampolines$is_even_fn$fn__12 extends clojure.lang.AFunction
+  minor version: 0
+  major version: 49
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               mutual_recursion_trampolines$is_even_fn$fn__12
+   #2 = Class              #1             // mutual_recursion_trampolines$is_even_fn$fn__12
+   #3 = Utf8               clojure/lang/AFunction
+   #4 = Class              #3             // clojure/lang/AFunction
+   #5 = Utf8               mutual_recursion_trampolines.clj
+   #6 = Utf8               n
+   #7 = Utf8               Ljava/lang/Object;
+   #8 = Utf8               <init>
+   #9 = Utf8               (Ljava/lang/Object;)V
+  #10 = Utf8               ()V
+  #11 = NameAndType        #8:#10         // "<init>":()V
+  #12 = Methodref          #4.#11         // clojure/lang/AFunction."<init>":()V
+  #13 = NameAndType        #6:#7          // n:Ljava/lang/Object;
+  #14 = Fieldref           #2.#13         // mutual_recursion_trampolines$is_even_fn$fn__12.n:Ljava/lang/Object;
+  #15 = Utf8               invoke
+  #16 = Utf8               ()Ljava/lang/Object;
+  #17 = Utf8               const__0
+  #18 = Utf8               Lclojure/lang/Var;
+  #19 = NameAndType        #17:#18        // const__0:Lclojure/lang/Var;
+  #20 = Fieldref           #2.#19         // mutual_recursion_trampolines$is_even_fn$fn__12.const__0:Lclojure/lang/Var;
+  #21 = Utf8               clojure/lang/Var
+  #22 = Class              #21            // clojure/lang/Var
+  #23 = Utf8               getRawRoot
+  #24 = NameAndType        #23:#16        // getRawRoot:()Ljava/lang/Object;
+  #25 = Methodref          #22.#24        // clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+  #26 = Utf8               clojure/lang/IFn
+  #27 = Class              #26            // clojure/lang/IFn
+  #28 = Utf8               clojure/lang/Numbers
+  #29 = Class              #28            // clojure/lang/Numbers
+  #30 = Utf8               minus
+  #31 = Utf8               (Ljava/lang/Object;J)Ljava/lang/Number;
+  #32 = NameAndType        #30:#31        // minus:(Ljava/lang/Object;J)Ljava/lang/Number;
+  #33 = Methodref          #29.#32        // clojure/lang/Numbers.minus:(Ljava/lang/Object;J)Ljava/lang/Number;
+  #34 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #35 = NameAndType        #15:#34        // invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+  #36 = InterfaceMethodref #27.#35        // clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+  #37 = Utf8               this
+  #38 = Utf8               <clinit>
+  #39 = Utf8               mutual-recursion-trampolines
+  #40 = String             #39            // mutual-recursion-trampolines
+  #41 = Utf8               is-odd-fn
+  #42 = String             #41            // is-odd-fn
+  #43 = Utf8               clojure/lang/RT
+  #44 = Class              #43            // clojure/lang/RT
+  #45 = Utf8               var
+  #46 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+  #47 = NameAndType        #45:#46        // var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+  #48 = Methodref          #44.#47        // clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+  #49 = Utf8               Code
+  #50 = Utf8               LineNumberTable
+  #51 = Utf8               LocalVariableTable
+  #52 = Utf8               SourceFile
+  #53 = Utf8               SourceDebugExtension
+{
+  java.lang.Object n;
+    descriptor: Ljava/lang/Object;
+    flags:
+
+  public static final clojure.lang.Var const__0;
+    descriptor: Lclojure/lang/Var;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public mutual_recursion_trampolines$is_even_fn$fn__12(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: invokespecial #12                 // Method clojure/lang/AFunction."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #14                 // Field n:Ljava/lang/Object;
+         9: return
+      LineNumberTable:
+        line 16: 0
+
+  public java.lang.Object invoke();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=4, locals=1, args_size=1
+         0: getstatic     #20                 // Field const__0:Lclojure/lang/Var;
+         3: invokevirtual #25                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+         6: checkcast     #27                 // class clojure/lang/IFn
+         9: aload_0
+        10: getfield      #14                 // Field n:Ljava/lang/Object;
+        13: lconst_1
+        14: invokestatic  #33                 // Method clojure/lang/Numbers.minus:(Ljava/lang/Object;J)Ljava/lang/Number;
+        17: invokeinterface #36,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+        22: areturn
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      22     0  this   Ljava/lang/Object;
+      LineNumberTable:
+        line 16: 0
+        line 18: 6
+        line 18: 14
+        line 18: 17
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: ldc           #40                 // String mutual-recursion-trampolines
+         2: ldc           #42                 // String is-odd-fn
+         4: invokestatic  #48                 // Method clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+         7: checkcast     #22                 // class clojure/lang/Var
+        10: putstatic     #20                 // Field const__0:Lclojure/lang/Var;
+        13: return
+      LineNumberTable:
+        line 16: 0
+}
+SourceFile: "mutual_recursion_trampolines.clj"
+SourceDebugExtension:
+  SMAP
+  mutual_recursion_trampolines.java
+  Clojure
+  *S Clojure
+  *F
+  + 1 mutual_recursion_trampolines.clj
+  mutual_recursion_trampolines.clj
+  *L
+  12#1,7:12
+  *E

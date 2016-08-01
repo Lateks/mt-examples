@@ -1,0 +1,100 @@
+Classfile /Users/tuuli/school/thesis_examples/ex2_closure/temp$_39916801/simple_closure$add.class
+  Last modified Feb 18, 2016; size 689 bytes
+  MD5 checksum 5d48ea255ab2e569f94a91069a655667
+  Compiled from "simple_closure.clj"
+public final class simple_closure$add extends clojure.lang.AFunction
+  minor version: 0
+  major version: 49
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               simple_closure$add
+   #2 = Class              #1             // simple_closure$add
+   #3 = Utf8               clojure/lang/AFunction
+   #4 = Class              #3             // clojure/lang/AFunction
+   #5 = Utf8               simple_closure.clj
+   #6 = Utf8               <init>
+   #7 = Utf8               ()V
+   #8 = NameAndType        #6:#7          // "<init>":()V
+   #9 = Methodref          #4.#8          // clojure/lang/AFunction."<init>":()V
+  #10 = Utf8               invokeStatic
+  #11 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #12 = Utf8               simple_closure$add$fn__9
+  #13 = Class              #12            // simple_closure$add$fn__9
+  #14 = Utf8               (Ljava/lang/Object;)V
+  #15 = NameAndType        #6:#14         // "<init>":(Ljava/lang/Object;)V
+  #16 = Methodref          #13.#15        // simple_closure$add$fn__9."<init>":(Ljava/lang/Object;)V
+  #17 = Utf8               x
+  #18 = Utf8               Ljava/lang/Object;
+  #19 = Utf8               invoke
+  #20 = NameAndType        #10:#11        // invokeStatic:(Ljava/lang/Object;)Ljava/lang/Object;
+  #21 = Methodref          #2.#20         // simple_closure$add.invokeStatic:(Ljava/lang/Object;)Ljava/lang/Object;
+  #22 = Utf8               <clinit>
+  #23 = Utf8               Code
+  #24 = Utf8               LineNumberTable
+  #25 = Utf8               LocalVariableTable
+  #26 = Utf8               SourceFile
+  #27 = Utf8               SourceDebugExtension
+{
+  public simple_closure$add();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #9                  // Method clojure/lang/AFunction."<init>":()V
+         4: return
+      LineNumberTable:
+        line 4: 0
+
+  public static java.lang.Object invokeStatic(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=1, args_size=1
+         0: new           #13                 // class simple_closure$add$fn__9
+         3: dup
+         4: aload_0
+         5: aconst_null
+         6: astore_0
+         7: invokespecial #16                 // Method simple_closure$add$fn__9."<init>":(Ljava/lang/Object;)V
+        10: areturn
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      10     0     x   Ljava/lang/Object;
+      LineNumberTable:
+        line 4: 0
+
+  public java.lang.Object invoke(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_1
+         1: aconst_null
+         2: astore_1
+         3: invokestatic  #21                 // Method invokeStatic:(Ljava/lang/Object;)Ljava/lang/Object;
+         6: areturn
+      LineNumberTable:
+        line 4: 3
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=0, locals=0, args_size=0
+         0: return
+      LineNumberTable:
+        line 4: 0
+}
+SourceFile: "simple_closure.clj"
+SourceDebugExtension:
+  SMAP
+  simple_closure.java
+  Clojure
+  *S Clojure
+  *F
+  + 1 simple_closure.clj
+  simple_closure.clj
+  *L
+  2#1,5:2
+  *E

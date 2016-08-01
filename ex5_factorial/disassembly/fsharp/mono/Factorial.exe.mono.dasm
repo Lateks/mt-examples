@@ -1,0 +1,115 @@
+.assembly extern mscorlib
+{
+  .ver 4:0:0:0
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 ) // .z\V.4..
+}
+.assembly extern FSharp.Core
+{
+  .ver 4:4:0:0
+  .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A ) // .?_....:
+}
+.assembly extern System.Numerics
+{
+  .ver 4:0:0:0
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 ) // .z\V.4..
+}
+.assembly 'Factorial'
+{
+  .custom instance void class [FSharp.Core]Microsoft.FSharp.Core.FSharpInterfaceDataVersionAttribute::'.ctor'(int32, int32, int32) =  (
+		01 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 ) // ................
+
+  .hash algorithm 0x00008004
+  .ver  0:0:0:0
+}
+.mresource public 'FSharpSignatureData.Factorial'
+{
+}
+.mresource public 'FSharpOptimizationData.Factorial'
+{
+}
+.module Factorial.exe // GUID = {56C47691-88F3-BD20-A745-03839176C456}
+
+
+  .class public auto ansi abstract sealed Factorial
+  	extends [mscorlib]System.Object
+  {
+    .custom instance void class [FSharp.Core]Microsoft.FSharp.Core.CompilationMappingAttribute::'.ctor'(valuetype [FSharp.Core]Microsoft.FSharp.Core.SourceConstructFlags) =  (01 00 07 00 00 00 00 00 ) // ........
+
+
+    // method line 1
+    .method assembly static 
+           default valuetype [System.Numerics]System.Numerics.BigInteger factorialHelper@19 (valuetype [System.Numerics]System.Numerics.BigInteger n, valuetype [System.Numerics]System.Numerics.BigInteger acc)  cil managed 
+    {
+        // Method begins at RVA 0x2050
+	// Code size 35 (0x23)
+	.maxstack 8
+	IL_0000:  ldarga.s 0
+	IL_0002:  call instance bool valuetype [System.Numerics]System.Numerics.BigInteger::get_IsZero()
+	IL_0007:  brfalse.s IL_000b
+
+	IL_0009:  ldarg.1 
+	IL_000a:  ret 
+	IL_000b:  ldarg.0 
+	IL_000c:  call valuetype [System.Numerics]System.Numerics.BigInteger valuetype [System.Numerics]System.Numerics.BigInteger::get_One()
+	IL_0011:  call valuetype [System.Numerics]System.Numerics.BigInteger valuetype [System.Numerics]System.Numerics.BigInteger::op_Subtraction(valuetype [System.Numerics]System.Numerics.BigInteger, valuetype [System.Numerics]System.Numerics.BigInteger)
+	IL_0016:  ldarg.1 
+	IL_0017:  ldarg.0 
+	IL_0018:  call valuetype [System.Numerics]System.Numerics.BigInteger valuetype [System.Numerics]System.Numerics.BigInteger::op_Multiply(valuetype [System.Numerics]System.Numerics.BigInteger, valuetype [System.Numerics]System.Numerics.BigInteger)
+	IL_001d:  starg.s 1
+	IL_001f:  starg.s 0
+    // Hyppy takaisin zero?-tarkistukseen
+	IL_0021:  br.s IL_0000
+
+    } // end of method Factorial::factorialHelper@19
+
+    // method line 2
+    .method public static 
+           default valuetype [System.Numerics]System.Numerics.BigInteger factorial (int32 n)  cil managed 
+    {
+        // Method begins at RVA 0x2074
+	// Code size 17 (0x11)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  newobj instance void valuetype [System.Numerics]System.Numerics.BigInteger::'.ctor'(int32)
+	IL_0006:  call valuetype [System.Numerics]System.Numerics.BigInteger valuetype [System.Numerics]System.Numerics.BigInteger::get_One()
+	IL_000b:  call valuetype [System.Numerics]System.Numerics.BigInteger class Factorial::factorialHelper@19(valuetype [System.Numerics]System.Numerics.BigInteger, valuetype [System.Numerics]System.Numerics.BigInteger)
+	IL_0010:  ret 
+    } // end of method Factorial::factorial
+
+    // method line 3
+    .method public static 
+           default int32 main (string[] argv)  cil managed 
+    {
+        .custom instance void class [FSharp.Core]Microsoft.FSharp.Core.EntryPointAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x2088
+	.entrypoint
+	// Code size 40 (0x28)
+	.maxstack 4
+	.locals init (
+		class [FSharp.Core]Microsoft.FSharp.Core.PrintfFormat`4<class [FSharp.Core]Microsoft.FSharp.Core.FSharpFunc`2<valuetype [System.Numerics]System.Numerics.BigInteger, class [FSharp.Core]Microsoft.FSharp.Core.Unit>, class [mscorlib]System.IO.TextWriter, class [FSharp.Core]Microsoft.FSharp.Core.Unit, class [FSharp.Core]Microsoft.FSharp.Core.Unit>	V_0)
+	IL_0000:  ldstr "%A"
+	IL_0005:  newobj instance void class [FSharp.Core]Microsoft.FSharp.Core.PrintfFormat`5<class [FSharp.Core]Microsoft.FSharp.Core.FSharpFunc`2<valuetype [System.Numerics]System.Numerics.BigInteger, class [FSharp.Core]Microsoft.FSharp.Core.Unit>, class [mscorlib]System.IO.TextWriter, class [FSharp.Core]Microsoft.FSharp.Core.Unit, class [FSharp.Core]Microsoft.FSharp.Core.Unit, valuetype [System.Numerics]System.Numerics.BigInteger>::'.ctor'(string)
+	IL_000a:  stloc.0 
+	IL_000b:  call class [mscorlib]System.IO.TextWriter class [mscorlib]System.Console::get_Out()
+	IL_0010:  ldloc.0 
+	IL_0011:  call !!0 class [FSharp.Core]Microsoft.FSharp.Core.PrintfModule::PrintFormatLineToTextWriter<class [FSharp.Core]Microsoft.FSharp.Core.FSharpFunc`2<valuetype [System.Numerics]System.Numerics.BigInteger,class [FSharp.Core]Microsoft.FSharp.Core.Unit>> (class [mscorlib]System.IO.TextWriter, class [FSharp.Core]Microsoft.FSharp.Core.PrintfFormat`4<!!0,class [mscorlib]System.IO.TextWriter,class [FSharp.Core]Microsoft.FSharp.Core.Unit,class [FSharp.Core]Microsoft.FSharp.Core.Unit>)
+	IL_0016:  ldc.i4 10000
+	IL_001b:  call valuetype [System.Numerics]System.Numerics.BigInteger class Factorial::factorial(int32)
+	IL_0020:  callvirt instance !1 class [FSharp.Core]Microsoft.FSharp.Core.FSharpFunc`2<valuetype [System.Numerics]System.Numerics.BigInteger, class [FSharp.Core]Microsoft.FSharp.Core.Unit>::Invoke(!0)
+	IL_0025:  pop 
+	IL_0026:  ldc.i4.0 
+	IL_0027:  ret 
+    } // end of method Factorial::main
+
+  } // end of class Factorial
+
+.namespace '<StartupCode$Factorial>'
+{
+  .class private auto ansi abstract sealed $Factorial
+  	extends [mscorlib]System.Object
+  {
+
+  } // end of class <StartupCode$Factorial>.$Factorial
+}
+

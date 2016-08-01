@@ -1,0 +1,263 @@
+Classfile /Users/tuuli/school/thesis_examples/ex9_nested_closure/temp$_39916801/nested_closure$frame0.class
+  Last modified Jun 2, 2016; size 1890 bytes
+  MD5 checksum 3653af068555852fe7588fbd2639304f
+  Compiled from "nested_closure.scm"
+public class nested_closure$frame0 extends gnu.expr.ModuleBody
+  minor version: 0
+  major version: 51
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+    #1 = Utf8               nested_closure$frame0
+    #2 = Class              #1            // nested_closure$frame0
+    #3 = Utf8               java/lang/Object
+    #4 = Class              #3            // java/lang/Object
+    #5 = Utf8               gnu/kawa/functions/AddOp
+    #6 = Class              #5            // gnu/kawa/functions/AddOp
+    #7 = Utf8               $Pl
+    #8 = Utf8               Lgnu/kawa/functions/AddOp;
+    #9 = NameAndType        #7:#8         // $Pl:Lgnu/kawa/functions/AddOp;
+   #10 = Fieldref           #6.#9         // gnu/kawa/functions/AddOp.$Pl:Lgnu/kawa/functions/AddOp;
+   #11 = Utf8               staticLink
+   #12 = Utf8               Lnested_closure$frame;
+   #13 = NameAndType        #11:#12       // staticLink:Lnested_closure$frame;
+   #14 = Fieldref           #2.#13        // nested_closure$frame0.staticLink:Lnested_closure$frame;
+   #15 = Utf8               nested_closure$frame
+   #16 = Class              #15           // nested_closure$frame
+   #17 = Utf8               x
+   #18 = Utf8               Ljava/lang/Object;
+   #19 = NameAndType        #17:#18       // x:Ljava/lang/Object;
+   #20 = Fieldref           #16.#19       // nested_closure$frame.x:Ljava/lang/Object;
+   #21 = Utf8               y
+   #22 = NameAndType        #21:#18       // y:Ljava/lang/Object;
+   #23 = Fieldref           #2.#22        // nested_closure$frame0.y:Ljava/lang/Object;
+   #24 = Utf8               gnu/mapping/Procedure
+   #25 = Class              #24           // gnu/mapping/Procedure
+   #26 = Utf8               apply2
+   #27 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #28 = NameAndType        #26:#27       // apply2:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #29 = Methodref          #25.#28       // gnu/mapping/Procedure.apply2:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #30 = Utf8               gnu/expr/ModuleBody
+   #31 = Class              #30           // gnu/expr/ModuleBody
+   #32 = Utf8               <init>
+   #33 = Utf8               ()V
+   #34 = NameAndType        #32:#33       // "<init>":()V
+   #35 = Methodref          #31.#34       // gnu/expr/ModuleBody."<init>":()V
+   #36 = Utf8               gnu/expr/ModuleMethod
+   #37 = Class              #36           // gnu/expr/ModuleMethod
+   #38 = Utf8               (Lgnu/expr/ModuleBody;ILjava/lang/Object;I)V
+   #39 = NameAndType        #32:#38       // "<init>":(Lgnu/expr/ModuleBody;ILjava/lang/Object;I)V
+   #40 = Methodref          #37.#39       // gnu/expr/ModuleMethod."<init>":(Lgnu/expr/ModuleBody;ILjava/lang/Object;I)V
+   #41 = Utf8               source-location
+   #42 = String             #41           // source-location
+   #43 = Utf8               nested_closure.scm:4
+   #44 = String             #43           // nested_closure.scm:4
+   #45 = Utf8               gnu/mapping/PropertySet
+   #46 = Class              #45           // gnu/mapping/PropertySet
+   #47 = Utf8               setProperty
+   #48 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)V
+   #49 = NameAndType        #47:#48       // setProperty:(Ljava/lang/Object;Ljava/lang/Object;)V
+   #50 = Methodref          #46.#49       // gnu/mapping/PropertySet.setProperty:(Ljava/lang/Object;Ljava/lang/Object;)V
+   #51 = Utf8               lambda$Fn2
+   #52 = Utf8               Lgnu/expr/ModuleMethod;
+   #53 = NameAndType        #51:#52       // lambda$Fn2:Lgnu/expr/ModuleMethod;
+   #54 = Fieldref           #2.#53        // nested_closure$frame0.lambda$Fn2:Lgnu/expr/ModuleMethod;
+   #55 = Utf8               gnu/mapping/CallContext
+   #56 = Class              #55           // gnu/mapping/CallContext
+   #57 = Utf8               selector
+   #58 = Utf8               I
+   #59 = NameAndType        #57:#58       // selector:I
+   #60 = Fieldref           #37.#59       // gnu/expr/ModuleMethod.selector:I
+   #61 = Utf8               value1
+   #62 = NameAndType        #61:#18       // value1:Ljava/lang/Object;
+   #63 = Fieldref           #56.#62       // gnu/mapping/CallContext.value1:Ljava/lang/Object;
+   #64 = Utf8               proc
+   #65 = Utf8               Lgnu/mapping/Procedure;
+   #66 = NameAndType        #64:#65       // proc:Lgnu/mapping/Procedure;
+   #67 = Fieldref           #56.#66       // gnu/mapping/CallContext.proc:Lgnu/mapping/Procedure;
+   #68 = Utf8               pc
+   #69 = NameAndType        #68:#58       // pc:I
+   #70 = Fieldref           #56.#69       // gnu/mapping/CallContext.pc:I
+   #71 = Utf8               match1
+   #72 = Utf8               (Lgnu/expr/ModuleMethod;Ljava/lang/Object;Lgnu/mapping/CallContext;)I
+   #73 = NameAndType        #71:#72       // match1:(Lgnu/expr/ModuleMethod;Ljava/lang/Object;Lgnu/mapping/CallContext;)I
+   #74 = Methodref          #31.#73       // gnu/expr/ModuleBody.match1:(Lgnu/expr/ModuleMethod;Ljava/lang/Object;Lgnu/mapping/CallContext;)I
+   #75 = Utf8               applyError
+   #76 = NameAndType        #75:#33       // applyError:()V
+   #77 = Methodref          #37.#76       // gnu/expr/ModuleMethod.applyError:()V
+   #78 = Utf8               lambda2
+   #79 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+   #80 = NameAndType        #78:#79       // lambda2:(Ljava/lang/Object;)Ljava/lang/Object;
+   #81 = Methodref          #2.#80        // nested_closure$frame0.lambda2:(Ljava/lang/Object;)Ljava/lang/Object;
+   #82 = Utf8               apply1
+   #83 = Utf8               (Lgnu/expr/ModuleMethod;Ljava/lang/Object;)Ljava/lang/Object;
+   #84 = NameAndType        #82:#83       // apply1:(Lgnu/expr/ModuleMethod;Ljava/lang/Object;)Ljava/lang/Object;
+   #85 = Methodref          #31.#84       // gnu/expr/ModuleBody.apply1:(Lgnu/expr/ModuleMethod;Ljava/lang/Object;)Ljava/lang/Object;
+   #86 = Utf8               Code
+   #87 = Utf8               LineNumberTable
+   #88 = Utf8               LocalVariableTable
+   #89 = Utf8               this
+   #90 = Utf8               Lnested_closure$frame0;
+   #91 = Utf8               z
+   #92 = Utf8               StackMapTable
+   #93 = Utf8               apply
+   #94 = Utf8               (Lgnu/mapping/CallContext;)V
+   #95 = Utf8               EnclosingMethod
+   #96 = Utf8               lambda1
+   #97 = Utf8               (Ljava/lang/Object;)Lgnu/mapping/Procedure;
+   #98 = NameAndType        #96:#97       // lambda1:(Ljava/lang/Object;)Lgnu/mapping/Procedure;
+   #99 = Utf8               SourceFile
+  #100 = Utf8               nested_closure.scm
+  #101 = Utf8               SourceDebugExtension
+  #102 = Utf8               InnerClasses
+{
+  java.lang.Object y;
+    descriptor: Ljava/lang/Object;
+    flags:
+
+  nested_closure$frame staticLink;
+    descriptor: Lnested_closure$frame;
+    flags:
+
+  final gnu.expr.ModuleMethod lambda$Fn2;
+    descriptor: Lgnu/expr/ModuleMethod;
+    flags: ACC_FINAL
+
+  public nested_closure$frame0();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=7, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #35                 // Method gnu/expr/ModuleBody."<init>":()V
+         4: aload_0
+         5: new           #37                 // class gnu/expr/ModuleMethod
+         8: dup
+         9: aload_0
+        10: iconst_1
+        11: aconst_null
+        12: sipush        4097
+        15: invokespecial #40                 // Method gnu/expr/ModuleMethod."<init>":(Lgnu/expr/ModuleBody;ILjava/lang/Object;I)V
+        18: dup
+        19: ldc           #42                 // String source-location
+        21: ldc           #44                 // String nested_closure.scm:4
+        23: invokevirtual #50                 // Method gnu/mapping/PropertySet.setProperty:(Ljava/lang/Object;Ljava/lang/Object;)V
+        26: putfield      #54                 // Field lambda$Fn2:Lgnu/expr/ModuleMethod;
+        29: return
+
+  java.lang.Object lambda2(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags:
+    Code:
+      stack=4, locals=2, args_size=2
+         0: getstatic     #10                 // Field gnu/kawa/functions/AddOp.$Pl:Lgnu/kawa/functions/AddOp;
+         3: getstatic     #10                 // Field gnu/kawa/functions/AddOp.$Pl:Lgnu/kawa/functions/AddOp;
+         6: aload_0
+         7: getfield      #14                 // Field staticLink:Lnested_closure$frame;
+        10: getfield      #20                 // Field nested_closure$frame.x:Ljava/lang/Object;
+        13: aload_0
+        14: getfield      #23                 // Field y:Ljava/lang/Object;
+        17: invokevirtual #29                 // Method gnu/mapping/Procedure.apply2:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        20: aload_1
+        21: invokevirtual #29                 // Method gnu/mapping/Procedure.apply2:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        24: areturn
+      LineNumberTable:
+        line 4: 0
+        line 5: 6
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      25     0  this   Lnested_closure$frame0;
+            0      24     1     z   Ljava/lang/Object;
+
+  public int match1(gnu.expr.ModuleMethod, java.lang.Object, gnu.mapping.CallContext);
+    descriptor: (Lgnu/expr/ModuleMethod;Ljava/lang/Object;Lgnu/mapping/CallContext;)I
+    flags: ACC_PUBLIC
+    Code:
+      stack=4, locals=4, args_size=4
+         0: aload_1
+         1: getfield      #60                 // Field gnu/expr/ModuleMethod.selector:I
+         4: iconst_1
+         5: if_icmpne     28
+         8: goto          11
+        11: aload_3
+        12: aload_2
+        13: putfield      #63                 // Field gnu/mapping/CallContext.value1:Ljava/lang/Object;
+        16: aload_3
+        17: aload_1
+        18: putfield      #67                 // Field gnu/mapping/CallContext.proc:Lgnu/mapping/Procedure;
+        21: aload_3
+        22: iconst_1
+        23: putfield      #70                 // Field gnu/mapping/CallContext.pc:I
+        26: iconst_0
+        27: ireturn
+        28: aload_0
+        29: aload_1
+        30: aload_2
+        31: aload_3
+        32: invokespecial #74                 // Method gnu/expr/ModuleBody.match1:(Lgnu/expr/ModuleMethod;Ljava/lang/Object;Lgnu/mapping/CallContext;)I
+        35: ireturn
+      StackMapTable: number_of_entries = 3
+        frame_type = 68 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 6 /* same */
+        frame_type = 16 /* same */
+      LineNumberTable:
+        line 4: 11
+
+  public void apply(gnu.mapping.CallContext);
+    descriptor: (Lgnu/mapping/CallContext;)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=2, args_size=2
+         0: aload_1
+         1: getfield      #70                 // Field gnu/mapping/CallContext.pc:I
+         4: pop
+         5: goto          8
+         8: invokestatic  #77                 // Method gnu/expr/ModuleMethod.applyError:()V
+        11: return
+      StackMapTable: number_of_entries = 2
+        frame_type = 68 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 3 /* same */
+
+  public java.lang.Object apply1(gnu.expr.ModuleMethod, java.lang.Object);
+    descriptor: (Lgnu/expr/ModuleMethod;Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_1
+         1: getfield      #60                 // Field gnu/expr/ModuleMethod.selector:I
+         4: iconst_1
+         5: if_icmpne     17
+         8: goto          11
+        11: aload_0
+        12: aload_2
+        13: invokevirtual #81                 // Method lambda2:(Ljava/lang/Object;)Ljava/lang/Object;
+        16: areturn
+        17: aload_0
+        18: aload_1
+        19: aload_2
+        20: invokespecial #85                 // Method gnu/expr/ModuleBody.apply1:(Lgnu/expr/ModuleMethod;Ljava/lang/Object;)Ljava/lang/Object;
+        23: areturn
+      StackMapTable: number_of_entries = 3
+        frame_type = 68 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 6 /* same */
+        frame_type = 5 /* same */
+      LineNumberTable:
+        line 4: 11
+}
+InnerClasses:
+     public #1= #2; //nested_closure$frame0=class nested_closure$frame0
+     public #15= #16; //nested_closure$frame=class nested_closure$frame
+EnclosingMethod: #16.#98                // nested_closure$frame.lambda1
+SourceFile: "nested_closure.scm"
+SourceDebugExtension:
+  SMAP
+  nested_closure.scm
+  Scheme
+  *S Scheme
+  *F
+  1 nested_closure.scm
+  *L
+  4#1,2:4
+  *E

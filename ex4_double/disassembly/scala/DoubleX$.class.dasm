@@ -1,0 +1,178 @@
+Classfile /Users/tuuli/school/thesis_examples/ex8_top_level_first_class_functions/temp$_39916801/DoubleX$.class
+  Last modified Jun 2, 2016; size 1258 bytes
+  MD5 checksum 2bcd0f4eee68b5249950cf3ef420be0e
+  Compiled from "DoubleX.scala"
+public final class DoubleX$
+  minor version: 0
+  major version: 50
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               DoubleX$
+   #2 = Class              #1             // DoubleX$
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               DoubleX.scala
+   #6 = Utf8               MODULE$
+   #7 = Utf8               LDoubleX$;
+   #8 = Utf8               <clinit>
+   #9 = Utf8               ()V
+  #10 = Utf8               <init>
+  #11 = NameAndType        #10:#9         // "<init>":()V
+  #12 = Methodref          #2.#11         // DoubleX$."<init>":()V
+  #13 = Utf8               main
+  #14 = Utf8               ([Ljava/lang/String;)V
+  #15 = Utf8               scala/Predef$
+  #16 = Class              #15            // scala/Predef$
+  #17 = Utf8               Lscala/Predef$;
+  #18 = NameAndType        #6:#17         // MODULE$:Lscala/Predef$;
+  #19 = Fieldref           #16.#18        // scala/Predef$.MODULE$:Lscala/Predef$;
+  #20 = Utf8               scala/collection/immutable/List$
+  #21 = Class              #20            // scala/collection/immutable/List$
+  #22 = Utf8               Lscala/collection/immutable/List$;
+  #23 = NameAndType        #6:#22         // MODULE$:Lscala/collection/immutable/List$;
+  #24 = Fieldref           #21.#23        // scala/collection/immutable/List$.MODULE$:Lscala/collection/immutable/List$;
+  #25 = Utf8               wrapIntArray
+  #26 = Utf8               ([I)Lscala/collection/mutable/WrappedArray;
+  #27 = NameAndType        #25:#26        // wrapIntArray:([I)Lscala/collection/mutable/WrappedArray;
+  #28 = Methodref          #16.#27        // scala/Predef$.wrapIntArray:([I)Lscala/collection/mutable/WrappedArray;
+  #29 = Utf8               apply
+  #30 = Utf8               (Lscala/collection/Seq;)Lscala/collection/immutable/List;
+  #31 = NameAndType        #29:#30        // apply:(Lscala/collection/Seq;)Lscala/collection/immutable/List;
+  #32 = Methodref          #21.#31        // scala/collection/immutable/List$.apply:(Lscala/collection/Seq;)Lscala/collection/immutable/List;
+  #33 = Utf8               DoubleX$$anonfun$main$1
+  #34 = Class              #33            // DoubleX$$anonfun$main$1
+  #35 = Methodref          #34.#11        // DoubleX$$anonfun$main$1."<init>":()V
+  #36 = Utf8               canBuildFrom
+  #37 = Utf8               ()Lscala/collection/generic/CanBuildFrom;
+  #38 = NameAndType        #36:#37        // canBuildFrom:()Lscala/collection/generic/CanBuildFrom;
+  #39 = Methodref          #21.#38        // scala/collection/immutable/List$.canBuildFrom:()Lscala/collection/generic/CanBuildFrom;
+  #40 = Utf8               scala/collection/immutable/List
+  #41 = Class              #40            // scala/collection/immutable/List
+  #42 = Utf8               map
+  #43 = Utf8               (Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;
+  #44 = NameAndType        #42:#43        // map:(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;
+  #45 = Methodref          #41.#44        // scala/collection/immutable/List.map:(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;
+  #46 = Utf8               println
+  #47 = Utf8               (Ljava/lang/Object;)V
+  #48 = NameAndType        #46:#47        // println:(Ljava/lang/Object;)V
+  #49 = Methodref          #16.#48        // scala/Predef$.println:(Ljava/lang/Object;)V
+  #50 = Utf8               this
+  #51 = Utf8               args
+  #52 = Utf8               [Ljava/lang/String;
+  #53 = Utf8               doubleX
+  #54 = Utf8               (I)I
+  #55 = Utf8               x
+  #56 = Utf8               I
+  #57 = Methodref          #4.#11         // java/lang/Object."<init>":()V
+  #58 = NameAndType        #6:#7          // MODULE$:LDoubleX$;
+  #59 = Fieldref           #2.#58         // DoubleX$.MODULE$:LDoubleX$;
+  #60 = Utf8               Code
+  #61 = Utf8               LocalVariableTable
+  #62 = Utf8               LineNumberTable
+  #63 = Utf8               SourceFile
+  #64 = Utf8               InnerClasses
+  #65 = Utf8               ScalaInlineInfo
+  #66 = Utf8               Scala
+{
+  public static final DoubleX$ MODULE$;
+    descriptor: LDoubleX$;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: new           #2                  // class DoubleX$
+         3: invokespecial #12                 // Method "<init>":()V
+         6: return
+
+  public void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=7, locals=2, args_size=2
+         0: getstatic     #19                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+         3: getstatic     #24                 // Field scala/collection/immutable/List$.MODULE$:Lscala/collection/immutable/List$;
+         6: getstatic     #19                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+         9: iconst_5
+        10: newarray       int
+        12: dup
+        13: iconst_0
+        14: iconst_1
+        15: iastore
+        16: dup
+        17: iconst_1
+        18: iconst_2
+        19: iastore
+        20: dup
+        21: iconst_2
+        22: iconst_3
+        23: iastore
+        24: dup
+        25: iconst_3
+        26: iconst_4
+        27: iastore
+        28: dup
+        29: iconst_4
+        30: iconst_5
+        31: iastore
+        32: invokevirtual #28                 // Method scala/Predef$.wrapIntArray:([I)Lscala/collection/mutable/WrappedArray;
+        35: invokevirtual #32                 // Method scala/collection/immutable/List$.apply:(Lscala/collection/Seq;)Lscala/collection/immutable/List;
+        38: new           #34                 // class DoubleX$$anonfun$main$1
+        41: dup
+        42: invokespecial #35                 // Method DoubleX$$anonfun$main$1."<init>":()V
+        45: getstatic     #24                 // Field scala/collection/immutable/List$.MODULE$:Lscala/collection/immutable/List$;
+        48: invokevirtual #39                 // Method scala/collection/immutable/List$.canBuildFrom:()Lscala/collection/generic/CanBuildFrom;
+        51: invokevirtual #45                 // Method scala/collection/immutable/List.map:(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;
+        54: invokevirtual #49                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+        57: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      58     0  this   LDoubleX$;
+            0      58     1  args   [Ljava/lang/String;
+      LineNumberTable:
+        line 3: 0
+
+  public int doubleX(int);
+    descriptor: (I)I
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: iconst_2
+         1: iload_1
+         2: imul
+         3: ireturn
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0  this   LDoubleX$;
+            0       4     1     x   I
+      LineNumberTable:
+        line 7: 0
+
+  private DoubleX$();
+    descriptor: ()V
+    flags: ACC_PRIVATE
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #57                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: putstatic     #59                 // Field MODULE$:LDoubleX$;
+         8: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   LDoubleX$;
+      LineNumberTable:
+        line 9: 0
+}
+SourceFile: "DoubleX.scala"
+InnerClasses:
+     public final #34; //class DoubleX$$anonfun$main$1
+Error: unknown attribute
+  ScalaInlineInfo: length = 0x13
+   01 01 00 03 00 0A 00 09 01 00 35 00 36 01 00 0D
+   00 0E 01
+Error: unknown attribute
+  Scala: length = 0x0
+

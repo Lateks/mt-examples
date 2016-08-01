@@ -1,0 +1,296 @@
+Classfile /Users/tuuli/school/thesis_examples/ex1_factorial/temp$_39916801/factorial.class
+  Last modified Feb 17, 2016; size 2230 bytes
+  MD5 checksum f9af1faf259bab60e12cd38df13b163e
+  Compiled from "factorial.scm"
+public class factorial extends gnu.expr.ModuleBody implements java.lang.Runnable,gnu.expr.RunnableModule
+  minor version: 0
+  major version: 51
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+    #1 = Utf8               factorial
+    #2 = Class              #1            // factorial
+    #3 = Utf8               gnu/mapping/CallContext
+    #4 = Class              #3            // gnu/mapping/CallContext
+    #5 = Utf8               consumer
+    #6 = Utf8               Lgnu/lists/Consumer;
+    #7 = NameAndType        #5:#6         // consumer:Lgnu/lists/Consumer;
+    #8 = Fieldref           #4.#7         // gnu/mapping/CallContext.consumer:Lgnu/lists/Consumer;
+    #9 = Utf8               Lit0
+   #10 = Utf8               Lgnu/math/IntNum;
+   #11 = NameAndType        #9:#10        // Lit0:Lgnu/math/IntNum;
+   #12 = Fieldref           #2.#11        // factorial.Lit0:Lgnu/math/IntNum;
+   #13 = Utf8               fact
+   #14 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+   #15 = NameAndType        #13:#14       // fact:(Ljava/lang/Object;)Ljava/lang/Object;
+   #16 = Methodref          #2.#15        // factorial.fact:(Ljava/lang/Object;)Ljava/lang/Object;
+   #17 = Utf8               kawa/lib/ports
+   #18 = Class              #17           // kawa/lib/ports
+   #19 = Utf8               display
+   #20 = Utf8               (Ljava/lang/Object;)V
+   #21 = NameAndType        #19:#20       // display:(Ljava/lang/Object;)V
+   #22 = Methodref          #18.#21       // kawa/lib/ports.display:(Ljava/lang/Object;)V
+   #23 = Utf8               java/lang/Object
+   #24 = Class              #23           // java/lang/Object
+   #25 = Utf8               Lit1
+   #26 = NameAndType        #25:#10       // Lit1:Lgnu/math/IntNum;
+   #27 = Fieldref           #2.#26        // factorial.Lit1:Lgnu/math/IntNum;
+   #28 = Utf8               java/lang/Number
+   #29 = Class              #28           // java/lang/Number
+   #30 = Utf8               gnu/mapping/Promise
+   #31 = Class              #30           // gnu/mapping/Promise
+   #32 = Utf8               force
+   #33 = Utf8               (Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+   #34 = NameAndType        #32:#33       // force:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+   #35 = Methodref          #31.#34       // gnu/mapping/Promise.force:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+   #36 = Utf8               java/lang/ClassCastException
+   #37 = Class              #36           // java/lang/ClassCastException
+   #38 = Utf8               gnu/mapping/WrongType
+   #39 = Class              #38           // gnu/mapping/WrongType
+   #40 = Utf8               zero?
+   #41 = String             #40           // zero?
+   #42 = Utf8               <init>
+   #43 = Utf8               (Ljava/lang/ClassCastException;Ljava/lang/String;ILjava/lang/Object;)V
+   #44 = NameAndType        #42:#43       // "<init>":(Ljava/lang/ClassCastException;Ljava/lang/String;ILjava/lang/Object;)V
+   #45 = Methodref          #39.#44       // gnu/mapping/WrongType."<init>":(Ljava/lang/ClassCastException;Ljava/lang/String;ILjava/lang/Object;)V
+   #46 = Utf8               kawa/lib/numbers
+   #47 = Class              #46           // kawa/lib/numbers
+   #48 = Utf8               isZero
+   #49 = Utf8               (Ljava/lang/Number;)Z
+   #50 = NameAndType        #48:#49       // isZero:(Ljava/lang/Number;)Z
+   #51 = Methodref          #47.#50       // kawa/lib/numbers.isZero:(Ljava/lang/Number;)Z
+   #52 = Utf8               gnu/kawa/functions/AddOp
+   #53 = Class              #52           // gnu/kawa/functions/AddOp
+   #54 = Utf8               $Mn
+   #55 = Utf8               Lgnu/kawa/functions/AddOp;
+   #56 = NameAndType        #54:#55       // $Mn:Lgnu/kawa/functions/AddOp;
+   #57 = Fieldref           #53.#56       // gnu/kawa/functions/AddOp.$Mn:Lgnu/kawa/functions/AddOp;
+   #58 = Utf8               gnu/mapping/Procedure
+   #59 = Class              #58           // gnu/mapping/Procedure
+   #60 = Utf8               apply2
+   #61 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #62 = NameAndType        #60:#61       // apply2:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #63 = Methodref          #59.#62       // gnu/mapping/Procedure.apply2:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #64 = Utf8               gnu/kawa/functions/MultiplyOp
+   #65 = Class              #64           // gnu/kawa/functions/MultiplyOp
+   #66 = Utf8               $St
+   #67 = Utf8               Lgnu/kawa/functions/MultiplyOp;
+   #68 = NameAndType        #66:#67       // $St:Lgnu/kawa/functions/MultiplyOp;
+   #69 = Fieldref           #65.#68       // gnu/kawa/functions/MultiplyOp.$St:Lgnu/kawa/functions/MultiplyOp;
+   #70 = Utf8               kawa/standard/Scheme
+   #71 = Class              #70           // kawa/standard/Scheme
+   #72 = Utf8               registerEnvironment
+   #73 = Utf8               ()V
+   #74 = NameAndType        #72:#73       // registerEnvironment:()V
+   #75 = Methodref          #71.#74       // kawa/standard/Scheme.registerEnvironment:()V
+   #76 = Utf8               gnu/expr/ModuleBody
+   #77 = Class              #76           // gnu/expr/ModuleBody
+   #78 = NameAndType        #42:#73       // "<init>":()V
+   #79 = Methodref          #77.#78       // gnu/expr/ModuleBody."<init>":()V
+   #80 = Utf8               gnu/expr/ModuleInfo
+   #81 = Class              #80           // gnu/expr/ModuleInfo
+   #82 = Utf8               register
+   #83 = NameAndType        #82:#20       // register:(Ljava/lang/Object;)V
+   #84 = Methodref          #81.#83       // gnu/expr/ModuleInfo.register:(Ljava/lang/Object;)V
+   #85 = Methodref          #2.#78        // factorial."<init>":()V
+   #86 = Utf8               $instance
+   #87 = Utf8               Lfactorial;
+   #88 = NameAndType        #86:#87       // $instance:Lfactorial;
+   #89 = Fieldref           #2.#88        // factorial.$instance:Lfactorial;
+   #90 = Utf8               gnu/math/IntNum
+   #91 = Class              #90           // gnu/math/IntNum
+   #92 = Utf8               valueOf
+   #93 = Utf8               (I)Lgnu/math/IntNum;
+   #94 = NameAndType        #92:#93       // valueOf:(I)Lgnu/math/IntNum;
+   #95 = Methodref          #91.#94       // gnu/math/IntNum.valueOf:(I)Lgnu/math/IntNum;
+   #96 = Utf8               [Ljava/lang/String;
+   #97 = Class              #96           // "[Ljava/lang/String;"
+   #98 = Utf8               gnu/expr/ApplicationMainSupport
+   #99 = Class              #98           // gnu/expr/ApplicationMainSupport
+  #100 = Utf8               processArgs
+  #101 = Utf8               ([Ljava/lang/String;)V
+  #102 = NameAndType        #100:#101     // processArgs:([Ljava/lang/String;)V
+  #103 = Methodref          #99.#102      // gnu/expr/ApplicationMainSupport.processArgs:([Ljava/lang/String;)V
+  #104 = Utf8               runAsMain
+  #105 = Utf8               (Lgnu/expr/RunnableModule;)V
+  #106 = NameAndType        #104:#105     // runAsMain:(Lgnu/expr/RunnableModule;)V
+  #107 = Methodref          #77.#106      // gnu/expr/ModuleBody.runAsMain:(Lgnu/expr/RunnableModule;)V
+  #108 = Utf8               java/lang/Runnable
+  #109 = Class              #108          // java/lang/Runnable
+  #110 = Utf8               gnu/expr/RunnableModule
+  #111 = Class              #110          // gnu/expr/RunnableModule
+  #112 = Utf8               run
+  #113 = Utf8               (Lgnu/mapping/CallContext;)V
+  #114 = Utf8               Code
+  #115 = Utf8               LineNumberTable
+  #116 = Utf8               LocalVariableTable
+  #117 = Utf8               this
+  #118 = Utf8               $ctx
+  #119 = Utf8               Lgnu/mapping/CallContext;
+  #120 = Utf8               $result
+  #121 = Utf8               StackMapTable
+  #122 = Utf8               n
+  #123 = Utf8               Ljava/lang/Object;
+  #124 = Utf8               acc
+  #125 = Utf8               <clinit>
+  #126 = Utf8               main
+  #127 = Utf8               SourceFile
+  #128 = Utf8               factorial.scm
+  #129 = Utf8               SourceDebugExtension
+{
+  static final gnu.math.IntNum Lit0;
+    descriptor: Lgnu/math/IntNum;
+    flags: ACC_STATIC, ACC_FINAL
+
+  static final gnu.math.IntNum Lit1;
+    descriptor: Lgnu/math/IntNum;
+    flags: ACC_STATIC, ACC_FINAL
+
+  public static factorial $instance;
+    descriptor: Lfactorial;
+    flags: ACC_PUBLIC, ACC_STATIC
+
+  public final void run(gnu.mapping.CallContext);
+    descriptor: (Lgnu/mapping/CallContext;)V
+    flags: ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=1, locals=3, args_size=2
+         0: aload_1
+         1: getfield      #8                  // Field gnu/mapping/CallContext.consumer:Lgnu/lists/Consumer;
+         4: astore_2
+         5: getstatic     #12                 // Field Lit0:Lgnu/math/IntNum;
+         8: invokestatic  #16                 // Method fact:(Ljava/lang/Object;)Ljava/lang/Object;
+        11: invokestatic  #22                 // Method kawa/lib/ports.display:(Ljava/lang/Object;)V
+        14: return
+      LineNumberTable:
+        line 4: 0
+        line 13: 5
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      14     0  this   Lfactorial;
+            0      14     1  $ctx   Lgnu/mapping/CallContext;
+            0      14     2 $result   Lgnu/lists/Consumer;
+
+  static java.lang.Object fact(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_STATIC
+    Code:
+      stack=6, locals=4, args_size=1
+         0: aload_0
+         1: getstatic     #27                 // Field Lit1:Lgnu/math/IntNum;
+         4: astore_2
+         5: astore_1
+         6: aload_1
+         7: ldc           #29                 // class java/lang/Number
+         9: invokestatic  #35                 // Method gnu/mapping/Promise.force:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+        12: dup
+        13: astore_3
+        14: checkcast     #29                 // class java/lang/Number
+        17: invokestatic  #51                 // Method kawa/lib/numbers.isZero:(Ljava/lang/Number;)Z
+        20: ifeq          27
+        23: aload_2
+        24: goto          48
+        27: getstatic     #57                 // Field gnu/kawa/functions/AddOp.$Mn:Lgnu/kawa/functions/AddOp;
+        30: aload_1
+        31: getstatic     #27                 // Field Lit1:Lgnu/math/IntNum;
+        34: invokevirtual #63                 // Method gnu/mapping/Procedure.apply2:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        37: getstatic     #69                 // Field gnu/kawa/functions/MultiplyOp.$St:Lgnu/kawa/functions/MultiplyOp;
+        40: aload_2
+        41: aload_1
+        42: invokevirtual #63                 // Method gnu/mapping/Procedure.apply2:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        45: goto          4
+        48: areturn
+        49: new           #39                 // class gnu/mapping/WrongType
+        52: dup_x1
+        53: swap
+        54: ldc           #41                 // String zero?
+        56: iconst_1
+        57: aload_3
+        58: invokespecial #45                 // Method gnu/mapping/WrongType."<init>":(Ljava/lang/ClassCastException;Ljava/lang/String;ILjava/lang/Object;)V
+        61: athrow
+      Exception table:
+         from    to  target type
+            14    17    49   Class java/lang/ClassCastException
+      StackMapTable: number_of_entries = 6
+        frame_type = 255 /* full_frame */
+          offset_delta = 4
+          locals = [ class java/lang/Object ]
+          stack = [ class java/lang/Object, class java/lang/Object ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 12
+          locals = [ class java/lang/Object, class java/lang/Object, class java/lang/Object ]
+          stack = [ class java/lang/Number ]
+        frame_type = 5 /* same */
+        frame_type = 3 /* same */
+        frame_type = 84 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Object ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 0
+          locals = [ class java/lang/Object, class java/lang/Object, class java/lang/Object, class java/lang/Object ]
+          stack = [ class java/lang/ClassCastException ]
+      LineNumberTable:
+        line 5: 0
+        line 6: 0
+        line 7: 0
+        line 6: 0
+        line 11: 0
+        line 7: 4
+        line 8: 6
+        line 10: 27
+        line 8: 49
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      48     0     n   Ljava/lang/Object;
+            6      42     1     n   Ljava/lang/Object;
+            6      42     2   acc   Ljava/lang/Object;
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: invokestatic  #75                 // Method kawa/standard/Scheme.registerEnvironment:()V
+         3: iconst_1
+         4: invokestatic  #95                 // Method gnu/math/IntNum.valueOf:(I)Lgnu/math/IntNum;
+         7: putstatic     #27                 // Field Lit1:Lgnu/math/IntNum;
+        10: sipush        10000
+        13: invokestatic  #95                 // Method gnu/math/IntNum.valueOf:(I)Lgnu/math/IntNum;
+        16: putstatic     #12                 // Field Lit0:Lgnu/math/IntNum;
+        19: new           #2                  // class factorial
+        22: dup
+        23: invokespecial #85                 // Method "<init>":()V
+        26: putstatic     #89                 // Field $instance:Lfactorial;
+        29: return
+
+  public factorial();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #79                 // Method gnu/expr/ModuleBody."<init>":()V
+         4: aload_0
+         5: invokestatic  #84                 // Method gnu/expr/ModuleInfo.register:(Ljava/lang/Object;)V
+         8: return
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #103                // Method gnu/expr/ApplicationMainSupport.processArgs:([Ljava/lang/String;)V
+         4: getstatic     #89                 // Field $instance:Lfactorial;
+         7: invokestatic  #107                // Method gnu/expr/ModuleBody.runAsMain:(Lgnu/expr/RunnableModule;)V
+        10: return
+}
+SourceFile: "factorial.scm"
+SourceDebugExtension:
+  SMAP
+  factorial.scm
+  Scheme
+  *S Scheme
+  *F
+  1 factorial.scm
+  *L
+  4#1,10:4
+  *E

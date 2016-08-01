@@ -1,0 +1,158 @@
+Classfile /Users/tuuli/school/thesis_examples/ex3_mutual_recursion/temp$_39916801/mutual_recursion$is_odd.class
+  Last modified Feb 29, 2016; size 1169 bytes
+  MD5 checksum 6e9624d7ddb827f2b1b29542303fc660
+  Compiled from "mutual_recursion.clj"
+public final class mutual_recursion$is_odd extends clojure.lang.AFunction
+  minor version: 0
+  major version: 49
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               mutual_recursion$is_odd
+   #2 = Class              #1             // mutual_recursion$is_odd
+   #3 = Utf8               clojure/lang/AFunction
+   #4 = Class              #3             // clojure/lang/AFunction
+   #5 = Utf8               mutual_recursion.clj
+   #6 = Utf8               <init>
+   #7 = Utf8               ()V
+   #8 = NameAndType        #6:#7          // "<init>":()V
+   #9 = Methodref          #4.#8          // clojure/lang/AFunction."<init>":()V
+  #10 = Utf8               invokeStatic
+  #11 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #12 = Utf8               clojure/lang/Numbers
+  #13 = Class              #12            // clojure/lang/Numbers
+  #14 = Utf8               isZero
+  #15 = Utf8               (Ljava/lang/Object;)Z
+  #16 = NameAndType        #14:#15        // isZero:(Ljava/lang/Object;)Z
+  #17 = Methodref          #13.#16        // clojure/lang/Numbers.isZero:(Ljava/lang/Object;)Z
+  #18 = Utf8               java/lang/Boolean
+  #19 = Class              #18            // java/lang/Boolean
+  #20 = Utf8               FALSE
+  #21 = Utf8               Ljava/lang/Boolean;
+  #22 = NameAndType        #20:#21        // FALSE:Ljava/lang/Boolean;
+  #23 = Fieldref           #19.#22        // java/lang/Boolean.FALSE:Ljava/lang/Boolean;
+  #24 = Utf8               const__1
+  #25 = Utf8               Lclojure/lang/Var;
+  #26 = NameAndType        #24:#25        // const__1:Lclojure/lang/Var;
+  #27 = Fieldref           #2.#26         // mutual_recursion$is_odd.const__1:Lclojure/lang/Var;
+  #28 = Utf8               clojure/lang/Var
+  #29 = Class              #28            // clojure/lang/Var
+  #30 = Utf8               getRawRoot
+  #31 = Utf8               ()Ljava/lang/Object;
+  #32 = NameAndType        #30:#31        // getRawRoot:()Ljava/lang/Object;
+  #33 = Methodref          #29.#32        // clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+  #34 = Utf8               clojure/lang/IFn
+  #35 = Class              #34            // clojure/lang/IFn
+  #36 = Utf8               minus
+  #37 = Utf8               (Ljava/lang/Object;J)Ljava/lang/Number;
+  #38 = NameAndType        #36:#37        // minus:(Ljava/lang/Object;J)Ljava/lang/Number;
+  #39 = Methodref          #13.#38        // clojure/lang/Numbers.minus:(Ljava/lang/Object;J)Ljava/lang/Number;
+  #40 = Utf8               invoke
+  #41 = NameAndType        #40:#11        // invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+  #42 = InterfaceMethodref #35.#41        // clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+  #43 = Utf8               n
+  #44 = Utf8               Ljava/lang/Object;
+  #45 = NameAndType        #10:#11        // invokeStatic:(Ljava/lang/Object;)Ljava/lang/Object;
+  #46 = Methodref          #2.#45         // mutual_recursion$is_odd.invokeStatic:(Ljava/lang/Object;)Ljava/lang/Object;
+  #47 = Utf8               <clinit>
+  #48 = Utf8               mutual-recursion
+  #49 = String             #48            // mutual-recursion
+  #50 = Utf8               is-even
+  #51 = String             #50            // is-even
+  #52 = Utf8               clojure/lang/RT
+  #53 = Class              #52            // clojure/lang/RT
+  #54 = Utf8               var
+  #55 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+  #56 = NameAndType        #54:#55        // var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+  #57 = Methodref          #53.#56        // clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+  #58 = Utf8               Code
+  #59 = Utf8               LineNumberTable
+  #60 = Utf8               LocalVariableTable
+  #61 = Utf8               SourceFile
+  #62 = Utf8               SourceDebugExtension
+{
+  public static final clojure.lang.Var const__1;
+    descriptor: Lclojure/lang/Var;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public mutual_recursion$is_odd();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #9                  // Method clojure/lang/AFunction."<init>":()V
+         4: return
+      LineNumberTable:
+        line 7: 0
+
+  public static java.lang.Object invokeStatic(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #17                 // Method clojure/lang/Numbers.isZero:(Ljava/lang/Object;)Z
+         4: ifeq          14
+         7: getstatic     #23                 // Field java/lang/Boolean.FALSE:Ljava/lang/Boolean;
+        10: goto          35
+        13: pop
+        14: getstatic     #27                 // Field const__1:Lclojure/lang/Var;
+        17: invokevirtual #33                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+        20: checkcast     #35                 // class clojure/lang/IFn
+        23: aload_0
+        24: aconst_null
+        25: astore_0
+        26: lconst_1
+        27: invokestatic  #39                 // Method clojure/lang/Numbers.minus:(Ljava/lang/Object;J)Ljava/lang/Number;
+        30: invokeinterface #42,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+        35: areturn
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      35     0     n   Ljava/lang/Object;
+      LineNumberTable:
+        line 7: 0
+        line 9: 0
+        line 9: 1
+        line 11: 20
+        line 11: 27
+        line 11: 30
+
+  public java.lang.Object invoke(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_1
+         1: aconst_null
+         2: astore_1
+         3: invokestatic  #46                 // Method invokeStatic:(Ljava/lang/Object;)Ljava/lang/Object;
+         6: areturn
+      LineNumberTable:
+        line 7: 3
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: ldc           #49                 // String mutual-recursion
+         2: ldc           #51                 // String is-even
+         4: invokestatic  #57                 // Method clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+         7: checkcast     #29                 // class clojure/lang/Var
+        10: putstatic     #27                 // Field const__1:Lclojure/lang/Var;
+        13: return
+      LineNumberTable:
+        line 7: 0
+}
+SourceFile: "mutual_recursion.clj"
+SourceDebugExtension:
+  SMAP
+  mutual_recursion.java
+  Clojure
+  *S Clojure
+  *F
+  + 1 mutual_recursion.clj
+  mutual_recursion.clj
+  *L
+  5#1,7:5
+  *E

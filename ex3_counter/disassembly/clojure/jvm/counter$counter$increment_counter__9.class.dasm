@@ -1,0 +1,159 @@
+Classfile /Users/tuuli/school/thesis_examples/ex4_shared_closure/temp$_39916801/counter$counter$increment_counter__9.class
+  Last modified Mar 1, 2016; size 1144 bytes
+  MD5 checksum 5ced37c1f094043f302419829c02f6e0
+  Compiled from "counter.clj"
+public final class counter$counter$increment_counter__9 extends clojure.lang.AFunction
+  minor version: 0
+  major version: 49
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               counter$counter$increment_counter__9
+   #2 = Class              #1             // counter$counter$increment_counter__9
+   #3 = Utf8               clojure/lang/AFunction
+   #4 = Class              #3             // clojure/lang/AFunction
+   #5 = Utf8               counter.clj
+   #6 = Utf8               c
+   #7 = Utf8               Ljava/lang/Object;
+   #8 = Utf8               <init>
+   #9 = Utf8               (Ljava/lang/Object;)V
+  #10 = Utf8               ()V
+  #11 = NameAndType        #8:#10         // "<init>":()V
+  #12 = Methodref          #4.#11         // clojure/lang/AFunction."<init>":()V
+  #13 = NameAndType        #6:#7          // c:Ljava/lang/Object;
+  #14 = Fieldref           #2.#13         // counter$counter$increment_counter__9.c:Ljava/lang/Object;
+  #15 = Utf8               invoke
+  #16 = Utf8               ()Ljava/lang/Object;
+  #17 = Utf8               const__0
+  #18 = Utf8               Lclojure/lang/Var;
+  #19 = NameAndType        #17:#18        // const__0:Lclojure/lang/Var;
+  #20 = Fieldref           #2.#19         // counter$counter$increment_counter__9.const__0:Lclojure/lang/Var;
+  #21 = Utf8               clojure/lang/Var
+  #22 = Class              #21            // clojure/lang/Var
+  #23 = Utf8               getRawRoot
+  #24 = NameAndType        #23:#16        // getRawRoot:()Ljava/lang/Object;
+  #25 = Methodref          #22.#24        // clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+  #26 = Utf8               clojure/lang/IFn
+  #27 = Class              #26            // clojure/lang/IFn
+  #28 = Utf8               const__2
+  #29 = NameAndType        #28:#18        // const__2:Lclojure/lang/Var;
+  #30 = Fieldref           #2.#29         // counter$counter$increment_counter__9.const__2:Lclojure/lang/Var;
+  #31 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #32 = NameAndType        #15:#31        // invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+  #33 = InterfaceMethodref #27.#32        // clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+  #34 = Utf8               clojure/lang/Numbers
+  #35 = Class              #34            // clojure/lang/Numbers
+  #36 = Utf8               add
+  #37 = Utf8               (Ljava/lang/Object;J)Ljava/lang/Number;
+  #38 = NameAndType        #36:#37        // add:(Ljava/lang/Object;J)Ljava/lang/Number;
+  #39 = Methodref          #35.#38        // clojure/lang/Numbers.add:(Ljava/lang/Object;J)Ljava/lang/Number;
+  #40 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #41 = NameAndType        #15:#40        // invoke:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #42 = InterfaceMethodref #27.#41        // clojure/lang/IFn.invoke:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #43 = Utf8               this
+  #44 = Utf8               <clinit>
+  #45 = Utf8               clojure.core
+  #46 = String             #45            // clojure.core
+  #47 = Utf8               reset!
+  #48 = String             #47            // reset!
+  #49 = Utf8               clojure/lang/RT
+  #50 = Class              #49            // clojure/lang/RT
+  #51 = Utf8               var
+  #52 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+  #53 = NameAndType        #51:#52        // var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+  #54 = Methodref          #50.#53        // clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+  #55 = Utf8               deref
+  #56 = String             #55            // deref
+  #57 = Utf8               Code
+  #58 = Utf8               LineNumberTable
+  #59 = Utf8               LocalVariableTable
+  #60 = Utf8               SourceFile
+  #61 = Utf8               SourceDebugExtension
+{
+  java.lang.Object c;
+    descriptor: Ljava/lang/Object;
+    flags:
+
+  public static final clojure.lang.Var const__0;
+    descriptor: Lclojure/lang/Var;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static final clojure.lang.Var const__2;
+    descriptor: Lclojure/lang/Var;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public counter$counter$increment_counter__9(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: invokespecial #12                 // Method clojure/lang/AFunction."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #14                 // Field c:Ljava/lang/Object;
+         9: return
+      LineNumberTable:
+        line 6: 0
+
+  public java.lang.Object invoke();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=5, locals=1, args_size=1
+         0: getstatic     #20                 // Field const__0:Lclojure/lang/Var;
+         3: invokevirtual #25                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+         6: checkcast     #27                 // class clojure/lang/IFn
+         9: aload_0
+        10: getfield      #14                 // Field c:Ljava/lang/Object;
+        13: getstatic     #30                 // Field const__2:Lclojure/lang/Var;
+        16: invokevirtual #25                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+        19: checkcast     #27                 // class clojure/lang/IFn
+        22: aload_0
+        23: getfield      #14                 // Field c:Ljava/lang/Object;
+        26: invokeinterface #33,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+        31: lconst_1
+        32: invokestatic  #39                 // Method clojure/lang/Numbers.add:(Ljava/lang/Object;J)Ljava/lang/Number;
+        35: invokeinterface #42,  3           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        40: areturn
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      40     0  this   Ljava/lang/Object;
+      LineNumberTable:
+        line 6: 0
+        line 6: 6
+        line 6: 19
+        line 6: 26
+        line 6: 32
+        line 6: 35
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: ldc           #46                 // String clojure.core
+         2: ldc           #48                 // String reset!
+         4: invokestatic  #54                 // Method clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+         7: checkcast     #22                 // class clojure/lang/Var
+        10: putstatic     #20                 // Field const__0:Lclojure/lang/Var;
+        13: ldc           #46                 // String clojure.core
+        15: ldc           #56                 // String deref
+        17: invokestatic  #54                 // Method clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+        20: checkcast     #22                 // class clojure/lang/Var
+        23: putstatic     #30                 // Field const__2:Lclojure/lang/Var;
+        26: return
+      LineNumberTable:
+        line 6: 0
+}
+SourceFile: "counter.clj"
+SourceDebugExtension:
+  SMAP
+  counter.java
+  Clojure
+  *S Clojure
+  *F
+  + 1 counter.clj
+  counter.clj
+  *L
+  2#1,8:2
+  *E

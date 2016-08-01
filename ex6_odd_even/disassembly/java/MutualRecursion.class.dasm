@@ -1,0 +1,133 @@
+Classfile /Users/tuuli/school/thesis_examples/ex3_mutual_recursion/temp$_39916801/MutualRecursion.class
+  Last modified Feb 29, 2016; size 665 bytes
+  MD5 checksum 09d60ec6dc2e38125f4ac290ab91ce1a
+  Compiled from "MutualRecursion.java"
+class MutualRecursion
+  minor version: 0
+  major version: 52
+  flags: ACC_SUPER
+Constant pool:
+   #1 = Methodref          #8.#21         // java/lang/Object."<init>":()V
+   #2 = Methodref          #7.#22         // MutualRecursion.isEven:(I)Z
+   #3 = Methodref          #7.#23         // MutualRecursion.isOdd:(I)Z
+   #4 = Fieldref           #24.#25        // java/lang/System.out:Ljava/io/PrintStream;
+   #5 = Methodref          #26.#27        // java/io/PrintStream.println:(Z)V
+   #6 = Integer            2147483647
+   #7 = Class              #28            // MutualRecursion
+   #8 = Class              #29            // java/lang/Object
+   #9 = Utf8               <init>
+  #10 = Utf8               ()V
+  #11 = Utf8               Code
+  #12 = Utf8               LineNumberTable
+  #13 = Utf8               isOdd
+  #14 = Utf8               (I)Z
+  #15 = Utf8               StackMapTable
+  #16 = Utf8               isEven
+  #17 = Utf8               main
+  #18 = Utf8               ([Ljava/lang/String;)V
+  #19 = Utf8               SourceFile
+  #20 = Utf8               MutualRecursion.java
+  #21 = NameAndType        #9:#10         // "<init>":()V
+  #22 = NameAndType        #16:#14        // isEven:(I)Z
+  #23 = NameAndType        #13:#14        // isOdd:(I)Z
+  #24 = Class              #30            // java/lang/System
+  #25 = NameAndType        #31:#32        // out:Ljava/io/PrintStream;
+  #26 = Class              #33            // java/io/PrintStream
+  #27 = NameAndType        #34:#35        // println:(Z)V
+  #28 = Utf8               MutualRecursion
+  #29 = Utf8               java/lang/Object
+  #30 = Utf8               java/lang/System
+  #31 = Utf8               out
+  #32 = Utf8               Ljava/io/PrintStream;
+  #33 = Utf8               java/io/PrintStream
+  #34 = Utf8               println
+  #35 = Utf8               (Z)V
+{
+  MutualRecursion();
+    descriptor: ()V
+    flags:
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 1: 0
+
+  private static boolean isOdd(int);
+    descriptor: (I)Z
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: iload_0
+         1: ifne          6
+         4: iconst_0
+         5: ireturn
+         6: iload_0
+         7: iconst_1
+         8: isub
+         9: invokestatic  #2                  // Method isEven:(I)Z
+        12: ireturn
+      LineNumberTable:
+        line 3: 0
+        line 4: 4
+        line 5: 6
+      StackMapTable: number_of_entries = 1
+        frame_type = 6 /* same */
+
+  private static boolean isEven(int);
+    descriptor: (I)Z
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: iload_0
+         1: ifne          6
+         4: iconst_1
+         5: ireturn
+         6: iload_0
+         7: iconst_1
+         8: isub
+         9: invokestatic  #3                  // Method isOdd:(I)Z
+        12: ireturn
+      LineNumberTable:
+        line 9: 0
+        line 10: 4
+        line 11: 6
+      StackMapTable: number_of_entries = 1
+        frame_type = 6 /* same */
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: bipush        10
+         5: invokestatic  #3                  // Method isOdd:(I)Z
+         8: invokevirtual #5                  // Method java/io/PrintStream.println:(Z)V
+        11: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        14: bipush        10
+        16: invokestatic  #2                  // Method isEven:(I)Z
+        19: invokevirtual #5                  // Method java/io/PrintStream.println:(Z)V
+        22: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        25: bipush        9
+        27: invokestatic  #3                  // Method isOdd:(I)Z
+        30: invokevirtual #5                  // Method java/io/PrintStream.println:(Z)V
+        33: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        36: bipush        9
+        38: invokestatic  #2                  // Method isEven:(I)Z
+        41: invokevirtual #5                  // Method java/io/PrintStream.println:(Z)V
+        44: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        47: ldc           #6                  // int 2147483647
+        49: invokestatic  #3                  // Method isOdd:(I)Z
+        52: invokevirtual #5                  // Method java/io/PrintStream.println:(Z)V
+        55: return
+      LineNumberTable:
+        line 15: 0
+        line 16: 11
+        line 17: 22
+        line 18: 33
+        line 19: 44
+        line 20: 55
+}
+SourceFile: "MutualRecursion.java"

@@ -1,0 +1,138 @@
+.assembly extern mscorlib
+{
+  .ver 4:0:0:0
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 ) // .z\V.4..
+}
+.assembly 'Counter'
+{
+  .custom instance void class [mscorlib]System.Runtime.CompilerServices.RuntimeCompatibilityAttribute::'.ctor'() =  (
+		01 00 01 00 54 02 16 57 72 61 70 4E 6F 6E 45 78   // ....T..WrapNonEx
+		63 65 70 74 69 6F 6E 54 68 72 6F 77 73 01       ) // ceptionThrows.
+
+  .hash algorithm 0x00008004
+  .ver  0:0:0:0
+}
+.module Counter.exe // GUID = {7274F298-60C0-4FAA-B810-48FA646E9855}
+
+
+  .class public auto ansi beforefieldinit Counter
+  	extends [mscorlib]System.Object
+  {
+    .field  public static  class [mscorlib]System.Func`1<int32> getCounter
+    .field  public static  class [mscorlib]System.Action incrementCounter
+
+    // method line 1
+    .method public hidebysig specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x2050
+	// Code size 7 (0x7)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void object::'.ctor'()
+	IL_0006:  ret 
+    } // end of method Counter::.ctor
+
+    // method line 2
+    .method public static hidebysig 
+           default void initCounter ()  cil managed 
+    {
+        // Method begins at RVA 0x2058
+	// Code size 48 (0x30)
+	.maxstack 2
+	.locals init (
+		class Counter/'<initCounter>c__AnonStorey0'	V_0)
+	IL_0000:  newobj instance void class Counter/'<initCounter>c__AnonStorey0'::'.ctor'()
+	IL_0005:  stloc.0 
+	IL_0006:  ldloc.0 
+	IL_0007:  ldc.i4.0 
+	IL_0008:  stfld int32 Counter/'<initCounter>c__AnonStorey0'::c
+	IL_000d:  ldloc.0 
+	IL_000e:  ldftn instance int32 class Counter/'<initCounter>c__AnonStorey0'::'<>m__0'()
+	IL_0014:  newobj instance void class [mscorlib]System.Func`1<int32>::'.ctor'(object, native int)
+	IL_0019:  stsfld class [mscorlib]System.Func`1<int32> Counter::getCounter
+	IL_001e:  ldloc.0 
+	IL_001f:  ldftn instance void class Counter/'<initCounter>c__AnonStorey0'::'<>m__1'()
+	IL_0025:  newobj instance void class [mscorlib]System.Action::'.ctor'(object, native int)
+	IL_002a:  stsfld class [mscorlib]System.Action Counter::incrementCounter
+	IL_002f:  ret 
+    } // end of method Counter::initCounter
+
+    // method line 3
+    .method public static hidebysig 
+           default void Main ()  cil managed 
+    {
+        // Method begins at RVA 0x2094
+	.entrypoint
+	// Code size 81 (0x51)
+	.maxstack 1
+	IL_0000:  call void class Counter::initCounter()
+	IL_0005:  ldsfld class [mscorlib]System.Func`1<int32> Counter::getCounter
+	IL_000a:  callvirt instance !0 class [mscorlib]System.Func`1<int32>::Invoke()
+	IL_000f:  call void class [mscorlib]System.Console::WriteLine(int32)
+	IL_0014:  ldsfld class [mscorlib]System.Action Counter::incrementCounter
+	IL_0019:  callvirt instance void class [mscorlib]System.Action::Invoke()
+	IL_001e:  ldsfld class [mscorlib]System.Func`1<int32> Counter::getCounter
+	IL_0023:  callvirt instance !0 class [mscorlib]System.Func`1<int32>::Invoke()
+	IL_0028:  call void class [mscorlib]System.Console::WriteLine(int32)
+	IL_002d:  ldsfld class [mscorlib]System.Action Counter::incrementCounter
+	IL_0032:  callvirt instance void class [mscorlib]System.Action::Invoke()
+	IL_0037:  ldsfld class [mscorlib]System.Action Counter::incrementCounter
+	IL_003c:  callvirt instance void class [mscorlib]System.Action::Invoke()
+	IL_0041:  ldsfld class [mscorlib]System.Func`1<int32> Counter::getCounter
+	IL_0046:  callvirt instance !0 class [mscorlib]System.Func`1<int32>::Invoke()
+	IL_004b:  call void class [mscorlib]System.Console::WriteLine(int32)
+	IL_0050:  ret 
+    } // end of method Counter::Main
+
+  .class nested private auto ansi sealed beforefieldinit '<initCounter>c__AnonStorey0'
+  	extends [mscorlib]System.Object
+  {
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .field  assembly  int32 c
+
+    // method line 4
+    .method public hidebysig specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x20f1
+	// Code size 7 (0x7)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void object::'.ctor'()
+	IL_0006:  ret 
+    } // end of method <initCounter>c__AnonStorey0::.ctor
+
+    // method line 5
+    .method assembly hidebysig 
+           instance default int32 '<>m__0' ()  cil managed 
+    {
+        // Method begins at RVA 0x20f9
+	// Code size 7 (0x7)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld int32 Counter/'<initCounter>c__AnonStorey0'::c
+	IL_0006:  ret 
+    } // end of method <initCounter>c__AnonStorey0::<>m__0
+
+    // method line 6
+    .method assembly hidebysig 
+           instance default void '<>m__1' ()  cil managed 
+    {
+        // Method begins at RVA 0x2101
+	// Code size 15 (0xf)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.0 
+	IL_0002:  ldfld int32 Counter/'<initCounter>c__AnonStorey0'::c
+	IL_0007:  ldc.i4.1 
+	IL_0008:  add 
+	IL_0009:  stfld int32 Counter/'<initCounter>c__AnonStorey0'::c
+	IL_000e:  ret 
+    } // end of method <initCounter>c__AnonStorey0::<>m__1
+
+  } // end of class <initCounter>c__AnonStorey0
+
+  } // end of class Counter
+

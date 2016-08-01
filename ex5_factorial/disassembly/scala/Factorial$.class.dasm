@@ -1,0 +1,198 @@
+Classfile /Users/tuuli/school/thesis_examples/ex1_factorial/temp$_39916801/Factorial$.class
+  Last modified Feb 17, 2016; size 1294 bytes
+  MD5 checksum bd7d455c2236697556412f14b598c3ec
+  Compiled from "Factorial.scala"
+public final class Factorial$
+  minor version: 0
+  major version: 50
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               Factorial$
+   #2 = Class              #1             // Factorial$
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               Factorial.scala
+   #6 = Utf8               MODULE$
+   #7 = Utf8               LFactorial$;
+   #8 = Utf8               <clinit>
+   #9 = Utf8               ()V
+  #10 = Utf8               <init>
+  #11 = NameAndType        #10:#9         // "<init>":()V
+  #12 = Methodref          #2.#11         // Factorial$."<init>":()V
+  #13 = Utf8               main
+  #14 = Utf8               ([Ljava/lang/String;)V
+  #15 = Utf8               fact
+  #16 = Utf8               (I)Lscala/math/BigInt;
+  #17 = NameAndType        #15:#16        // fact:(I)Lscala/math/BigInt;
+  #18 = Methodref          #2.#17         // Factorial$.fact:(I)Lscala/math/BigInt;
+  #19 = Utf8               scala/Predef$
+  #20 = Class              #19            // scala/Predef$
+  #21 = Utf8               Lscala/Predef$;
+  #22 = NameAndType        #6:#21         // MODULE$:Lscala/Predef$;
+  #23 = Fieldref           #20.#22        // scala/Predef$.MODULE$:Lscala/Predef$;
+  #24 = Utf8               println
+  #25 = Utf8               (Ljava/lang/Object;)V
+  #26 = NameAndType        #24:#25        // println:(Ljava/lang/Object;)V
+  #27 = Methodref          #20.#26        // scala/Predef$.println:(Ljava/lang/Object;)V
+  #28 = Utf8               this
+  #29 = Utf8               args
+  #30 = Utf8               [Ljava/lang/String;
+  #31 = Utf8               res
+  #32 = Utf8               Lscala/math/BigInt;
+  #33 = Utf8               scala/package$
+  #34 = Class              #33            // scala/package$
+  #35 = Utf8               Lscala/package$;
+  #36 = NameAndType        #6:#35         // MODULE$:Lscala/package$;
+  #37 = Fieldref           #34.#36        // scala/package$.MODULE$:Lscala/package$;
+  #38 = Utf8               BigInt
+  #39 = Utf8               ()Lscala/math/BigInt$;
+  #40 = NameAndType        #38:#39        // BigInt:()Lscala/math/BigInt$;
+  #41 = Methodref          #34.#40        // scala/package$.BigInt:()Lscala/math/BigInt$;
+  #42 = Utf8               scala/math/BigInt$
+  #43 = Class              #42            // scala/math/BigInt$
+  #44 = Utf8               apply
+  #45 = NameAndType        #44:#16        // apply:(I)Lscala/math/BigInt;
+  #46 = Methodref          #43.#45        // scala/math/BigInt$.apply:(I)Lscala/math/BigInt;
+  #47 = Utf8               fact_helper$1
+  #48 = Utf8               (ILscala/math/BigInt;)Lscala/math/BigInt;
+  #49 = NameAndType        #47:#48        // fact_helper$1:(ILscala/math/BigInt;)Lscala/math/BigInt;
+  #50 = Methodref          #2.#49         // Factorial$.fact_helper$1:(ILscala/math/BigInt;)Lscala/math/BigInt;
+  #51 = Utf8               n
+  #52 = Utf8               I
+  #53 = Utf8               Lscala/math/BigInt$;
+  #54 = NameAndType        #6:#53         // MODULE$:Lscala/math/BigInt$;
+  #55 = Fieldref           #43.#54        // scala/math/BigInt$.MODULE$:Lscala/math/BigInt$;
+  #56 = Utf8               int2bigInt
+  #57 = NameAndType        #56:#16        // int2bigInt:(I)Lscala/math/BigInt;
+  #58 = Methodref          #43.#57        // scala/math/BigInt$.int2bigInt:(I)Lscala/math/BigInt;
+  #59 = Utf8               scala/math/BigInt
+  #60 = Class              #59            // scala/math/BigInt
+  #61 = Utf8               $times
+  #62 = Utf8               (Lscala/math/BigInt;)Lscala/math/BigInt;
+  #63 = NameAndType        #61:#62        // $times:(Lscala/math/BigInt;)Lscala/math/BigInt;
+  #64 = Methodref          #60.#63        // scala/math/BigInt.$times:(Lscala/math/BigInt;)Lscala/math/BigInt;
+  #65 = Utf8               acc
+  #66 = Methodref          #4.#11         // java/lang/Object."<init>":()V
+  #67 = NameAndType        #6:#7          // MODULE$:LFactorial$;
+  #68 = Fieldref           #2.#67         // Factorial$.MODULE$:LFactorial$;
+  #69 = Utf8               Code
+  #70 = Utf8               LocalVariableTable
+  #71 = Utf8               LineNumberTable
+  #72 = Utf8               StackMapTable
+  #73 = Utf8               SourceFile
+  #74 = Utf8               ScalaInlineInfo
+  #75 = Utf8               Scala
+{
+  public static final Factorial$ MODULE$;
+    descriptor: LFactorial$;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: new           #2                  // class Factorial$
+         3: invokespecial #12                 // Method "<init>":()V
+         6: return
+
+  public void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=2
+         0: aload_0
+         1: sipush        10000
+         4: invokevirtual #18                 // Method fact:(I)Lscala/math/BigInt;
+         7: astore_2
+         8: getstatic     #23                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+        11: aload_2
+        12: invokevirtual #27                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+        15: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      16     0  this   LFactorial$;
+            0      16     1  args   [Ljava/lang/String;
+            8       7     2   res   Lscala/math/BigInt;
+      LineNumberTable:
+        line 5: 0
+        line 6: 8
+
+  public scala.math.BigInt fact(int);
+    descriptor: (I)Lscala/math/BigInt;
+    flags: ACC_PUBLIC
+    Code:
+      stack=4, locals=2, args_size=2
+         0: aload_0
+         1: iload_1
+         2: getstatic     #37                 // Field scala/package$.MODULE$:Lscala/package$;
+         5: invokevirtual #41                 // Method scala/package$.BigInt:()Lscala/math/BigInt$;
+         8: iconst_1
+         9: invokevirtual #46                 // Method scala/math/BigInt$.apply:(I)Lscala/math/BigInt;
+        12: invokespecial #50                 // Method fact_helper$1:(ILscala/math/BigInt;)Lscala/math/BigInt;
+        15: areturn
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      16     0  this   LFactorial$;
+            0      16     1     n   I
+      LineNumberTable:
+        line 14: 0
+
+  private final scala.math.BigInt fact_helper$1(int, scala.math.BigInt);
+    descriptor: (ILscala/math/BigInt;)Lscala/math/BigInt;
+    flags: ACC_PRIVATE, ACC_FINAL
+    Code:
+      stack=4, locals=3, args_size=3
+         0: iload_1
+         1: iconst_0
+         2: if_icmpne     7
+         5: aload_2
+         6: areturn
+         7: iload_1
+         8: iconst_1
+         9: isub
+        10: aload_2
+        11: getstatic     #55                 // Field scala/math/BigInt$.MODULE$:Lscala/math/BigInt$;
+        14: iload_1
+        15: invokevirtual #58                 // Method scala/math/BigInt$.int2bigInt:(I)Lscala/math/BigInt;
+        18: invokevirtual #64                 // Method scala/math/BigInt.$times:(Lscala/math/BigInt;)Lscala/math/BigInt;
+        21: astore_2
+        22: istore_1
+        23: goto          0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      26     0  this   LFactorial$;
+            0      26     1     n   I
+            0      26     2   acc   Lscala/math/BigInt;
+      LineNumberTable:
+        line 11: 0
+        line 10: 6
+        line 12: 7
+      StackMapTable: number_of_entries = 2
+        frame_type = 0 /* same */
+        frame_type = 6 /* same */
+
+  private Factorial$();
+    descriptor: ()V
+    flags: ACC_PRIVATE
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #66                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: putstatic     #68                 // Field MODULE$:LFactorial$;
+         8: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   LFactorial$;
+      LineNumberTable:
+        line 16: 0
+}
+SourceFile: "Factorial.scala"
+Error: unknown attribute
+  ScalaInlineInfo: length = 0x18
+   01 01 00 04 00 0A 00 09 01 00 0F 00 10 01 00 2F
+   00 30 01 00 0D 00 0E 01
+Error: unknown attribute
+  Scala: length = 0x0
+

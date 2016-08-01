@@ -1,0 +1,150 @@
+Classfile /Users/tuuli/school/thesis_examples/ex4_shared_closure/temp$_39916801/Counter$$anonfun$initCounter$1.class
+  Last modified Mar 1, 2016; size 1036 bytes
+  MD5 checksum f0d35c28f7bedd5048ee03afa744401b
+  Compiled from "Counter.scala"
+public final class Counter$$anonfun$initCounter$1 extends scala.runtime.AbstractFunction0$mcV$sp implements scala.Serializable
+  minor version: 0
+  major version: 50
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               Counter$$anonfun$initCounter$1
+   #2 = Class              #1             // Counter$$anonfun$initCounter$1
+   #3 = Utf8               scala/runtime/AbstractFunction0$mcV$sp
+   #4 = Class              #3             // scala/runtime/AbstractFunction0$mcV$sp
+   #5 = Utf8               scala/Serializable
+   #6 = Class              #5             // scala/Serializable
+   #7 = Utf8               Counter.scala
+   #8 = Utf8               Counter$
+   #9 = Class              #8             // Counter$
+  #10 = Utf8               initCounter
+  #11 = Utf8               ()V
+  #12 = NameAndType        #10:#11        // initCounter:()V
+  #13 = Utf8               serialVersionUID
+  #14 = Utf8               J
+  #15 = Long               0l
+  #17 = Utf8               c$1
+  #18 = Utf8               Lscala/runtime/IntRef;
+  #19 = Utf8               apply
+  #20 = Utf8               apply$mcV$sp
+  #21 = NameAndType        #20:#11        // apply$mcV$sp:()V
+  #22 = Methodref          #2.#21         // Counter$$anonfun$initCounter$1.apply$mcV$sp:()V
+  #23 = Utf8               this
+  #24 = Utf8               LCounter$$anonfun$initCounter$1;
+  #25 = NameAndType        #17:#18        // c$1:Lscala/runtime/IntRef;
+  #26 = Fieldref           #2.#25         // Counter$$anonfun$initCounter$1.c$1:Lscala/runtime/IntRef;
+  #27 = Utf8               scala/runtime/IntRef
+  #28 = Class              #27            // scala/runtime/IntRef
+  #29 = Utf8               elem
+  #30 = Utf8               I
+  #31 = NameAndType        #29:#30        // elem:I
+  #32 = Fieldref           #28.#31        // scala/runtime/IntRef.elem:I
+  #33 = Utf8               ()Ljava/lang/Object;
+  #34 = NameAndType        #19:#11        // apply:()V
+  #35 = Methodref          #2.#34         // Counter$$anonfun$initCounter$1.apply:()V
+  #36 = Utf8               scala/runtime/BoxedUnit
+  #37 = Class              #36            // scala/runtime/BoxedUnit
+  #38 = Utf8               UNIT
+  #39 = Utf8               Lscala/runtime/BoxedUnit;
+  #40 = NameAndType        #38:#39        // UNIT:Lscala/runtime/BoxedUnit;
+  #41 = Fieldref           #37.#40        // scala/runtime/BoxedUnit.UNIT:Lscala/runtime/BoxedUnit;
+  #42 = Utf8               <init>
+  #43 = Utf8               (Lscala/runtime/IntRef;)V
+  #44 = NameAndType        #42:#11        // "<init>":()V
+  #45 = Methodref          #4.#44         // scala/runtime/AbstractFunction0$mcV$sp."<init>":()V
+  #46 = Utf8               ConstantValue
+  #47 = Utf8               Code
+  #48 = Utf8               LocalVariableTable
+  #49 = Utf8               LineNumberTable
+  #50 = Utf8               SourceFile
+  #51 = Utf8               EnclosingMethod
+  #52 = Utf8               InnerClasses
+  #53 = Utf8               ScalaInlineInfo
+  #54 = Utf8               Scala
+{
+  public static final long serialVersionUID;
+    descriptor: J
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: long 0l
+
+  private final scala.runtime.IntRef c$1;
+    descriptor: Lscala/runtime/IntRef;
+    flags: ACC_PRIVATE, ACC_FINAL
+
+  public final void apply();
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #22                 // Method apply$mcV$sp:()V
+         4: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LCounter$$anonfun$initCounter$1;
+      LineNumberTable:
+        line 17: 0
+
+  public void apply$mcV$sp();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #26                 // Field c$1:Lscala/runtime/IntRef;
+         4: aload_0
+         5: getfield      #26                 // Field c$1:Lscala/runtime/IntRef;
+         8: getfield      #32                 // Field scala/runtime/IntRef.elem:I
+        11: iconst_1
+        12: iadd
+        13: putfield      #32                 // Field scala/runtime/IntRef.elem:I
+        16: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      17     0  this   LCounter$$anonfun$initCounter$1;
+      LineNumberTable:
+        line 17: 0
+
+  public final java.lang.Object apply();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PUBLIC, ACC_FINAL, ACC_BRIDGE, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #35                 // Method apply:()V
+         4: getstatic     #41                 // Field scala/runtime/BoxedUnit.UNIT:Lscala/runtime/BoxedUnit;
+         7: areturn
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       8     0  this   LCounter$$anonfun$initCounter$1;
+      LineNumberTable:
+        line 17: 0
+
+  public Counter$$anonfun$initCounter$1(scala.runtime.IntRef);
+    descriptor: (Lscala/runtime/IntRef;)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: putfield      #26                 // Field c$1:Lscala/runtime/IntRef;
+         5: aload_0
+         6: invokespecial #45                 // Method scala/runtime/AbstractFunction0$mcV$sp."<init>":()V
+         9: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      10     0  this   LCounter$$anonfun$initCounter$1;
+            0      10     1   c$1   Lscala/runtime/IntRef;
+      LineNumberTable:
+        line 17: 0
+}
+SourceFile: "Counter.scala"
+EnclosingMethod: #9.#12                 // Counter$.initCounter
+InnerClasses:
+     public final #2; //class Counter$$anonfun$initCounter$1
+Error: unknown attribute
+  ScalaInlineInfo: length = 0x18
+   01 01 00 04 00 2A 00 2B 01 00 14 00 0B 01 00 13
+   00 21 01 00 13 00 0B 01
+Error: unknown attribute
+  Scala: length = 0x0
+

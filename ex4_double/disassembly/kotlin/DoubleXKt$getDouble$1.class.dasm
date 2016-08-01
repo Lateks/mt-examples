@@ -1,0 +1,181 @@
+Classfile /Users/tuuli/school/thesis_examples/ex8_top_level_first_class_functions/temp$_39916801/DoubleXKt$getDouble$1.class
+  Last modified Jun 2, 2016; size 1657 bytes
+  MD5 checksum 3dc7450b58ff5a97ee6251fb6b455307
+  Compiled from "DoubleX.kt"
+final class DoubleXKt$getDouble$1 extends kotlin.jvm.internal.FunctionReference implements kotlin.jvm.functions.Function1<java.lang.Integer, java.lang.Integer>
+  minor version: 0
+  major version: 50
+  flags: ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               DoubleXKt$getDouble$1
+   #2 = Class              #1             // DoubleXKt$getDouble$1
+   #3 = Utf8               Lkotlin/jvm/internal/FunctionReference;Lkotlin/jvm/functions/Function1<Ljava/lang/Integer;Ljava/lang/Integer;>;
+   #4 = Utf8               kotlin/jvm/internal/FunctionReference
+   #5 = Class              #4             // kotlin/jvm/internal/FunctionReference
+   #6 = Utf8               kotlin/jvm/functions/Function1
+   #7 = Class              #6             // kotlin/jvm/functions/Function1
+   #8 = Utf8               invoke
+   #9 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #10 = Utf8               java/lang/Number
+  #11 = Class              #10            // java/lang/Number
+  #12 = Utf8               intValue
+  #13 = Utf8               ()I
+  #14 = NameAndType        #12:#13        // intValue:()I
+  #15 = Methodref          #11.#14        // java/lang/Number.intValue:()I
+  #16 = Utf8               (I)I
+  #17 = NameAndType        #8:#16         // invoke:(I)I
+  #18 = Methodref          #2.#17         // DoubleXKt$getDouble$1.invoke:(I)I
+  #19 = Utf8               java/lang/Integer
+  #20 = Class              #19            // java/lang/Integer
+  #21 = Utf8               valueOf
+  #22 = Utf8               (I)Ljava/lang/Integer;
+  #23 = NameAndType        #21:#22        // valueOf:(I)Ljava/lang/Integer;
+  #24 = Methodref          #20.#23        // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+  #25 = Utf8               DoubleXKt
+  #26 = Class              #25            // DoubleXKt
+  #27 = Utf8               double
+  #28 = NameAndType        #27:#16        // double:(I)I
+  #29 = Methodref          #26.#28        // DoubleXKt.double:(I)I
+  #30 = Utf8               this
+  #31 = Utf8               LDoubleXKt$getDouble$1;
+  #32 = Utf8               p1
+  #33 = Utf8               I
+  #34 = Utf8               getOwner
+  #35 = Utf8               ()Lkotlin/reflect/KDeclarationContainer;
+  #36 = Utf8               main
+  #37 = String             #36            // main
+  #38 = Utf8               kotlin/jvm/internal/Reflection
+  #39 = Class              #38            // kotlin/jvm/internal/Reflection
+  #40 = Utf8               getOrCreateKotlinPackage
+  #41 = Utf8               (Ljava/lang/Class;Ljava/lang/String;)Lkotlin/reflect/KDeclarationContainer;
+  #42 = NameAndType        #40:#41        // getOrCreateKotlinPackage:(Ljava/lang/Class;Ljava/lang/String;)Lkotlin/reflect/KDeclarationContainer;
+  #43 = Methodref          #39.#42        // kotlin/jvm/internal/Reflection.getOrCreateKotlinPackage:(Ljava/lang/Class;Ljava/lang/String;)Lkotlin/reflect/KDeclarationContainer;
+  #44 = Utf8               getName
+  #45 = Utf8               ()Ljava/lang/String;
+  #46 = String             #27            // double
+  #47 = Utf8               getSignature
+  #48 = Utf8               double(I)I
+  #49 = String             #48            // double(I)I
+  #50 = Utf8               <init>
+  #51 = Utf8               ()V
+  #52 = Utf8               (I)V
+  #53 = NameAndType        #50:#52        // "<init>":(I)V
+  #54 = Methodref          #5.#53         // kotlin/jvm/internal/FunctionReference."<init>":(I)V
+  #55 = Utf8               INSTANCE
+  #56 = Utf8               <clinit>
+  #57 = Utf8               Lkotlin/jvm/internal/KotlinSyntheticClass;
+  #58 = Utf8               version
+  #59 = Integer            1
+  #60 = Integer            0
+  #61 = Utf8               abiVersion
+  #62 = Integer            32
+  #63 = Utf8               Lkotlin/jvm/internal/KotlinFunction;
+  #64 = Utf8               data
+  #65 = Utf8               Q!!adA\n!U\t
+  #66 = Utf8               strings
+  #67 = Utf8               <anonymous>
+  #68 = Utf8
+  #69 = Utf8               getDouble
+  #70 = Utf8               ()Lkotlin/jvm/functions/Function1;
+  #71 = NameAndType        #69:#70        // getDouble:()Lkotlin/jvm/functions/Function1;
+  #72 = NameAndType        #50:#51        // "<init>":()V
+  #73 = Methodref          #2.#72         // DoubleXKt$getDouble$1."<init>":()V
+  #74 = NameAndType        #55:#31        // INSTANCE:LDoubleXKt$getDouble$1;
+  #75 = Fieldref           #2.#74         // DoubleXKt$getDouble$1.INSTANCE:LDoubleXKt$getDouble$1;
+  #76 = Utf8               DoubleX.kt
+  #77 = Utf8               Code
+  #78 = Utf8               LocalVariableTable
+  #79 = Utf8               LineNumberTable
+  #80 = Utf8               Signature
+  #81 = Utf8               SourceFile
+  #82 = Utf8               EnclosingMethod
+  #83 = Utf8               InnerClasses
+  #84 = Utf8               RuntimeVisibleAnnotations
+{
+  public static final DoubleXKt$getDouble$1 INSTANCE;
+    descriptor: LDoubleXKt$getDouble$1;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public java.lang.Object invoke(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PUBLIC, ACC_BRIDGE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: checkcast     #11                 // class java/lang/Number
+         5: invokevirtual #15                 // Method java/lang/Number.intValue:()I
+         8: invokevirtual #18                 // Method invoke:(I)I
+        11: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        14: areturn
+
+  public final int invoke(int);
+    descriptor: (I)I
+    flags: ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=1, locals=2, args_size=2
+         0: iload_1
+         1: invokestatic  #29                 // Method DoubleXKt.double:(I)I
+         4: ireturn
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LDoubleXKt$getDouble$1;
+            0       5     1    p1   I
+      LineNumberTable:
+        line 9: 1
+
+  public final kotlin.reflect.KDeclarationContainer getOwner();
+    descriptor: ()Lkotlin/reflect/KDeclarationContainer;
+    flags: ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=2, locals=1, args_size=1
+         0: ldc           #26                 // class DoubleXKt
+         2: ldc           #37                 // String main
+         4: invokestatic  #43                 // Method kotlin/jvm/internal/Reflection.getOrCreateKotlinPackage:(Ljava/lang/Class;Ljava/lang/String;)Lkotlin/reflect/KDeclarationContainer;
+         7: areturn
+
+  public final java.lang.String getName();
+    descriptor: ()Ljava/lang/String;
+    flags: ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=1, locals=1, args_size=1
+         0: ldc           #46                 // String double
+         2: areturn
+
+  public final java.lang.String getSignature();
+    descriptor: ()Ljava/lang/String;
+    flags: ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=1, locals=1, args_size=1
+         0: ldc           #49                 // String double(I)I
+         2: areturn
+
+  DoubleXKt$getDouble$1();
+    descriptor: ()V
+    flags:
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: iconst_1
+         2: invokespecial #54                 // Method kotlin/jvm/internal/FunctionReference."<init>":(I)V
+         5: return
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: new           #2                  // class DoubleXKt$getDouble$1
+         3: dup
+         4: invokespecial #73                 // Method "<init>":()V
+         7: putstatic     #75                 // Field INSTANCE:LDoubleXKt$getDouble$1;
+        10: return
+}
+Signature: #3                           // Lkotlin/jvm/internal/FunctionReference;Lkotlin/jvm/functions/Function1<Ljava/lang/Integer;Ljava/lang/Integer;>;
+SourceFile: "DoubleX.kt"
+EnclosingMethod: #26.#71                // DoubleXKt.getDouble
+InnerClasses:
+     public static final #2; //class DoubleXKt$getDouble$1
+RuntimeVisibleAnnotations:
+  0: #57(#58=[I#59,I#60,I#59],#61=I#62)
+  1: #63(#58=[I#59,I#60,I#59],#61=I#62,#64=[s#65],#66=[s#67,s#68,s#32,s#8])

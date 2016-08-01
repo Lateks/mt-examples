@@ -1,0 +1,199 @@
+Classfile /Users/tuuli/school/thesis_examples/ex1_factorial/temp$_39916801/factorial_norecur$loading__5569__auto____5.class
+  Last modified Feb 17, 2016; size 1556 bytes
+  MD5 checksum d0dcde44ef61f66bcf3a649fd6d9e6a5
+  Compiled from "factorial_norecur.clj"
+public final class factorial_norecur$loading__5569__auto____5 extends clojure.lang.AFunction
+  minor version: 0
+  major version: 49
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               factorial_norecur$loading__5569__auto____5
+   #2 = Class              #1             // factorial_norecur$loading__5569__auto____5
+   #3 = Utf8               clojure/lang/AFunction
+   #4 = Class              #3             // clojure/lang/AFunction
+   #5 = Utf8               factorial_norecur.clj
+   #6 = Utf8               <init>
+   #7 = Utf8               ()V
+   #8 = NameAndType        #6:#7          // "<init>":()V
+   #9 = Methodref          #4.#8          // clojure/lang/AFunction."<init>":()V
+  #10 = Utf8               invoke
+  #11 = Utf8               ()Ljava/lang/Object;
+  #12 = Utf8               java/lang/Object
+  #13 = Class              #12            // java/lang/Object
+  #14 = Utf8               clojure/lang/Compiler
+  #15 = Class              #14            // clojure/lang/Compiler
+  #16 = Utf8               LOADER
+  #17 = Utf8               Lclojure/lang/Var;
+  #18 = NameAndType        #16:#17        // LOADER:Lclojure/lang/Var;
+  #19 = Fieldref           #15.#18        // clojure/lang/Compiler.LOADER:Lclojure/lang/Var;
+  #20 = Utf8               getClass
+  #21 = Utf8               ()Ljava/lang/Class;
+  #22 = NameAndType        #20:#21        // getClass:()Ljava/lang/Class;
+  #23 = Methodref          #13.#22        // java/lang/Object.getClass:()Ljava/lang/Class;
+  #24 = Utf8               java/lang/Class
+  #25 = Class              #24            // java/lang/Class
+  #26 = Utf8               getClassLoader
+  #27 = Utf8               ()Ljava/lang/ClassLoader;
+  #28 = NameAndType        #26:#27        // getClassLoader:()Ljava/lang/ClassLoader;
+  #29 = Methodref          #25.#28        // java/lang/Class.getClassLoader:()Ljava/lang/ClassLoader;
+  #30 = Utf8               clojure/lang/RT
+  #31 = Class              #30            // clojure/lang/RT
+  #32 = Utf8               mapUniqueKeys
+  #33 = Utf8               ([Ljava/lang/Object;)Lclojure/lang/IPersistentMap;
+  #34 = NameAndType        #32:#33        // mapUniqueKeys:([Ljava/lang/Object;)Lclojure/lang/IPersistentMap;
+  #35 = Methodref          #31.#34        // clojure/lang/RT.mapUniqueKeys:([Ljava/lang/Object;)Lclojure/lang/IPersistentMap;
+  #36 = Utf8               clojure/lang/Associative
+  #37 = Class              #36            // clojure/lang/Associative
+  #38 = Utf8               clojure/lang/Var
+  #39 = Class              #38            // clojure/lang/Var
+  #40 = Utf8               pushThreadBindings
+  #41 = Utf8               (Lclojure/lang/Associative;)V
+  #42 = NameAndType        #40:#41        // pushThreadBindings:(Lclojure/lang/Associative;)V
+  #43 = Methodref          #39.#42        // clojure/lang/Var.pushThreadBindings:(Lclojure/lang/Associative;)V
+  #44 = Utf8               const__0
+  #45 = NameAndType        #44:#17        // const__0:Lclojure/lang/Var;
+  #46 = Fieldref           #2.#45         // factorial_norecur$loading__5569__auto____5.const__0:Lclojure/lang/Var;
+  #47 = Utf8               getRawRoot
+  #48 = NameAndType        #47:#11        // getRawRoot:()Ljava/lang/Object;
+  #49 = Methodref          #39.#48        // clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+  #50 = Utf8               clojure/lang/IFn
+  #51 = Class              #50            // clojure/lang/IFn
+  #52 = Utf8               const__1
+  #53 = Utf8               Lclojure/lang/AFn;
+  #54 = NameAndType        #52:#53        // const__1:Lclojure/lang/AFn;
+  #55 = Fieldref           #2.#54         // factorial_norecur$loading__5569__auto____5.const__1:Lclojure/lang/AFn;
+  #56 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #57 = NameAndType        #10:#56        // invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+  #58 = InterfaceMethodref #51.#57        // clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+  #59 = Utf8               popThreadBindings
+  #60 = NameAndType        #59:#7         // popThreadBindings:()V
+  #61 = Methodref          #39.#60        // clojure/lang/Var.popThreadBindings:()V
+  #62 = Utf8               this
+  #63 = Utf8               Ljava/lang/Object;
+  #64 = Utf8               <clinit>
+  #65 = Utf8               clojure.core
+  #66 = String             #65            // clojure.core
+  #67 = Utf8               refer
+  #68 = String             #67            // refer
+  #69 = Utf8               var
+  #70 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+  #71 = NameAndType        #69:#70        // var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+  #72 = Methodref          #31.#71        // clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+  #73 = Utf8               clojure/lang/Symbol
+  #74 = Class              #73            // clojure/lang/Symbol
+  #75 = Utf8               intern
+  #76 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Symbol;
+  #77 = NameAndType        #75:#76        // intern:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Symbol;
+  #78 = Methodref          #74.#77        // clojure/lang/Symbol.intern:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Symbol;
+  #79 = Utf8               clojure/lang/AFn
+  #80 = Class              #79            // clojure/lang/AFn
+  #81 = Utf8               Code
+  #82 = Utf8               LineNumberTable
+  #83 = Utf8               LocalVariableTable
+  #84 = Utf8               SourceFile
+  #85 = Utf8               SourceDebugExtension
+{
+  public static final clojure.lang.Var const__0;
+    descriptor: Lclojure/lang/Var;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static final clojure.lang.AFn const__1;
+    descriptor: Lclojure/lang/AFn;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public factorial_norecur$loading__5569__auto____5();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #9                  // Method clojure/lang/AFunction."<init>":()V
+         4: return
+      LineNumberTable:
+        line 5: 0
+
+  public java.lang.Object invoke();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=4, locals=3, args_size=1
+         0: iconst_2
+         1: anewarray     #13                 // class java/lang/Object
+         4: dup
+         5: iconst_0
+         6: getstatic     #19                 // Field clojure/lang/Compiler.LOADER:Lclojure/lang/Var;
+         9: aastore
+        10: dup
+        11: iconst_1
+        12: aload_0
+        13: invokevirtual #23                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+        16: checkcast     #25                 // class java/lang/Class
+        19: invokevirtual #29                 // Method java/lang/Class.getClassLoader:()Ljava/lang/ClassLoader;
+        22: aastore
+        23: invokestatic  #35                 // Method clojure/lang/RT.mapUniqueKeys:([Ljava/lang/Object;)Lclojure/lang/IPersistentMap;
+        26: checkcast     #37                 // class clojure/lang/Associative
+        29: invokestatic  #43                 // Method clojure/lang/Var.pushThreadBindings:(Lclojure/lang/Associative;)V
+        32: aconst_null
+        33: pop
+        34: getstatic     #46                 // Field const__0:Lclojure/lang/Var;
+        37: invokevirtual #49                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+        40: checkcast     #51                 // class clojure/lang/IFn
+        43: getstatic     #55                 // Field const__1:Lclojure/lang/AFn;
+        46: invokeinterface #58,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+        51: astore_1
+        52: invokestatic  #61                 // Method clojure/lang/Var.popThreadBindings:()V
+        55: goto          64
+        58: astore_2
+        59: invokestatic  #61                 // Method clojure/lang/Var.popThreadBindings:()V
+        62: aload_2
+        63: athrow
+        64: aload_1
+        65: areturn
+      Exception table:
+         from    to  target type
+            32    52    58   any
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      65     0  this   Ljava/lang/Object;
+      LineNumberTable:
+        line 5: 0
+        line 5: 6
+        line 5: 13
+        line 5: 19
+        line 5: 29
+        line 5: 40
+        line 5: 46
+        line 5: 52
+        line 5: 59
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: ldc           #66                 // String clojure.core
+         2: ldc           #68                 // String refer
+         4: invokestatic  #72                 // Method clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+         7: checkcast     #39                 // class clojure/lang/Var
+        10: putstatic     #46                 // Field const__0:Lclojure/lang/Var;
+        13: aconst_null
+        14: ldc           #66                 // String clojure.core
+        16: invokestatic  #78                 // Method clojure/lang/Symbol.intern:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Symbol;
+        19: checkcast     #80                 // class clojure/lang/AFn
+        22: putstatic     #55                 // Field const__1:Lclojure/lang/AFn;
+        25: return
+      LineNumberTable:
+        line 5: 0
+}
+SourceFile: "factorial_norecur.clj"
+SourceDebugExtension:
+  SMAP
+  factorial_norecur.java
+  Clojure
+  *S Clojure
+  *F
+  + 1 factorial_norecur.clj
+  factorial_norecur.clj
+  *L
+  1#1,6:1
+  *E

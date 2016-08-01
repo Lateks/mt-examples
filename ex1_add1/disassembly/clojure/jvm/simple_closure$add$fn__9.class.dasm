@@ -1,0 +1,99 @@
+Classfile /Users/tuuli/school/thesis_examples/ex2_closure/temp$_39916801/simple_closure$add$fn__9.class
+  Last modified Feb 18, 2016; size 734 bytes
+  MD5 checksum 4bd517f8a7719bcb1f4440b7cd6a1f2f
+  Compiled from "simple_closure.clj"
+public final class simple_closure$add$fn__9 extends clojure.lang.AFunction
+  minor version: 0
+  major version: 49
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               simple_closure$add$fn__9
+   #2 = Class              #1             // simple_closure$add$fn__9
+   #3 = Utf8               clojure/lang/AFunction
+   #4 = Class              #3             // clojure/lang/AFunction
+   #5 = Utf8               simple_closure.clj
+   #6 = Utf8               x
+   #7 = Utf8               Ljava/lang/Object;
+   #8 = Utf8               <init>
+   #9 = Utf8               (Ljava/lang/Object;)V
+  #10 = Utf8               ()V
+  #11 = NameAndType        #8:#10         // "<init>":()V
+  #12 = Methodref          #4.#11         // clojure/lang/AFunction."<init>":()V
+  #13 = NameAndType        #6:#7          // x:Ljava/lang/Object;
+  #14 = Fieldref           #2.#13         // simple_closure$add$fn__9.x:Ljava/lang/Object;
+  #15 = Utf8               invoke
+  #16 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #17 = Utf8               clojure/lang/Numbers
+  #18 = Class              #17            // clojure/lang/Numbers
+  #19 = Utf8               add
+  #20 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Number;
+  #21 = NameAndType        #19:#20        // add:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Number;
+  #22 = Methodref          #18.#21        // clojure/lang/Numbers.add:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Number;
+  #23 = Utf8               this
+  #24 = Utf8               y
+  #25 = Utf8               <clinit>
+  #26 = Utf8               Code
+  #27 = Utf8               LineNumberTable
+  #28 = Utf8               LocalVariableTable
+  #29 = Utf8               SourceFile
+  #30 = Utf8               SourceDebugExtension
+{
+  java.lang.Object x;
+    descriptor: Ljava/lang/Object;
+    flags:
+
+  public simple_closure$add$fn__9(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: invokespecial #12                 // Method clojure/lang/AFunction."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #14                 // Field x:Ljava/lang/Object;
+         9: return
+      LineNumberTable:
+        line 5: 0
+
+  public java.lang.Object invoke(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=2, args_size=2
+         0: aload_0
+         1: getfield      #14                 // Field x:Ljava/lang/Object;
+         4: aload_1
+         5: aconst_null
+         6: astore_1
+         7: invokestatic  #22                 // Method clojure/lang/Numbers.add:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Number;
+        10: areturn
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      10     0  this   Ljava/lang/Object;
+            0      10     1     y   Ljava/lang/Object;
+      LineNumberTable:
+        line 5: 0
+        line 6: 7
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=0, locals=0, args_size=0
+         0: return
+      LineNumberTable:
+        line 5: 0
+}
+SourceFile: "simple_closure.clj"
+SourceDebugExtension:
+  SMAP
+  simple_closure.java
+  Clojure
+  *S Clojure
+  *F
+  + 1 simple_closure.clj
+  simple_closure.clj
+  *L
+  2#1,5:2
+  *E

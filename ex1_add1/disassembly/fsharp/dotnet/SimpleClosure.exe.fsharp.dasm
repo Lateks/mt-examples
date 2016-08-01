@@ -1,0 +1,138 @@
+// Input: .\SimpleClosure.exe
+// Image type: EXE
+// Native code present: No
+// 32-bit only: No
+// Length of IL data: 4096
+
+.assembly extern mscorlib
+{
+	.ver 4:0:0:0
+	.publickeytoken = (B7 7A 5C 56 19 34 E0 89)   // .z\V.4..
+}
+.assembly extern FSharp.Core
+{
+	.ver 4:4:0:0
+	.publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A)   // .?_....:
+}
+.assembly SimpleClosure
+{
+	.hash algorithm 0x00008004
+	.ver 0:0:0:0
+	.custom instance void [FSharp.Core]Microsoft.FSharp.Core.FSharpInterfaceDataVersionAttribute::.ctor(int32, int32, int32) = (01 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00)   // ................
+	// FSharpInterfaceDataVersion(2 /*0x00000002*/, 0 /*0x00000000*/, 0 /*0x00000000*/)
+}
+.mresource public FSharpSignatureData.SimpleClosure
+{
+}
+.mresource public FSharpOptimizationData.SimpleClosure
+{
+}
+.module SimpleClosure.exe
+// MVID: {56C7035F-BCB2-F0A0-A745-03835F03C756}
+.class public auto abstract sealed ansi SimpleClosure extends [mscorlib]System.Object
+{
+	.custom instance void [FSharp.Core]Microsoft.FSharp.Core.CompilationMappingAttribute::.ctor(valuetype [FSharp.Core]Microsoft.FSharp.Core.SourceConstructFlags) = (01 00 07 00 00 00 00 00)   // ........
+	// CompilationMapping(7 /*0x00000007*/)
+.class nested assembly auto serializable ansi beforefieldinit 'add@3' extends class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, int32>
+{
+	.field public int32 x
+	.method assembly specialname rtspecialname instance void .ctor(int32 x) cil managed 
+	{
+		// Start of method header: 210c
+		.maxstack  8
+	?L210d:
+		ldarg.0
+		call       instance void class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, int32>::.ctor()
+		ldarg.0
+		ldarg.1
+		stfld      int32 SimpleClosure/'add@3'::x
+		ret
+	}
+	.method public virtual /* unknown_bits: 0x0200 */ instance int32 Invoke(int32 y) cil managed 
+	{
+		// Start of method header: 211c
+		.maxstack  8
+	?L211d:
+		ldarg.0
+		ldfld      int32 SimpleClosure/'add@3'::x
+		ldarg.1
+		add
+		ret
+	}
+}
+	.method public static class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, int32> add(int32 x) cil managed 
+	{
+		// Start of method header: 2050
+		.maxstack  4
+		.locals    init (class [FSharp.Core]Microsoft.FSharp.Core.'PrintfFormat`4'<class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, class [FSharp.Core]Microsoft.FSharp.Core.Unit>, class [mscorlib]System.IO.TextWriter, class [FSharp.Core]Microsoft.FSharp.Core.Unit, class [FSharp.Core]Microsoft.FSharp.Core.Unit>)
+	?L205c:
+		ldstr      "Creating closure add(%d)"
+		newobj     instance void class [FSharp.Core]Microsoft.FSharp.Core.'PrintfFormat`5'<class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, class [FSharp.Core]Microsoft.FSharp.Core.Unit>, class [mscorlib]System.IO.TextWriter, class [FSharp.Core]Microsoft.FSharp.Core.Unit, class [FSharp.Core]Microsoft.FSharp.Core.Unit, int32>::.ctor(class System.String)
+		stloc.0
+		call       class [mscorlib]System.IO.TextWriter [mscorlib]System.Console::get_Out()
+		ldloc.0
+		call       !!0 [FSharp.Core]Microsoft.FSharp.Core.PrintfModule::PrintFormatLineToTextWriter<class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, class [FSharp.Core]Microsoft.FSharp.Core.Unit>>(class [mscorlib]System.IO.TextWriter, class [FSharp.Core]Microsoft.FSharp.Core.'PrintfFormat`4'<!!0, class [mscorlib]System.IO.TextWriter, class [FSharp.Core]Microsoft.FSharp.Core.Unit, class [FSharp.Core]Microsoft.FSharp.Core.Unit>)
+		ldarg.0
+		callvirt   instance !1 class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, class [FSharp.Core]Microsoft.FSharp.Core.Unit>::Invoke(!0)
+		pop
+		ldarg.0
+		newobj     instance void SimpleClosure/'add@3'::.ctor(int32)
+		ret
+	}
+	.method public static int32 main(class System.String[] argv) cil managed 
+	{
+		.custom instance void [FSharp.Core]Microsoft.FSharp.Core.EntryPointAttribute::.ctor() = (01 00 00 00)   // ....
+		// EntryPoint()
+		// Start of method header: 2080
+		.entrypoint
+		.maxstack  5
+		.locals    init (class [FSharp.Core]Microsoft.FSharp.Core.'PrintfFormat`4'<class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, class [FSharp.Core]Microsoft.FSharp.Core.Unit>, class [mscorlib]System.IO.TextWriter, class [FSharp.Core]Microsoft.FSharp.Core.Unit, class [FSharp.Core]Microsoft.FSharp.Core.Unit>,
+		            class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, int32>)
+	?L208c:
+		ldstr      "%d"
+		newobj     instance void class [FSharp.Core]Microsoft.FSharp.Core.'PrintfFormat`5'<class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, class [FSharp.Core]Microsoft.FSharp.Core.Unit>, class [mscorlib]System.IO.TextWriter, class [FSharp.Core]Microsoft.FSharp.Core.Unit, class [FSharp.Core]Microsoft.FSharp.Core.Unit, int32>::.ctor(class System.String)
+		stloc.0
+		call       class [mscorlib]System.IO.TextWriter [mscorlib]System.Console::get_Out()
+		ldloc.0
+		call       !!0 [FSharp.Core]Microsoft.FSharp.Core.PrintfModule::PrintFormatLineToTextWriter<class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, class [FSharp.Core]Microsoft.FSharp.Core.Unit>>(class [mscorlib]System.IO.TextWriter, class [FSharp.Core]Microsoft.FSharp.Core.'PrintfFormat`4'<!!0, class [mscorlib]System.IO.TextWriter, class [FSharp.Core]Microsoft.FSharp.Core.Unit, class [FSharp.Core]Microsoft.FSharp.Core.Unit>)
+		ldc.i4.5
+		call       class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, int32> SimpleClosure::add(int32)
+		ldc.i4.4
+		callvirt   instance !1 class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, int32>::Invoke(!0)
+		callvirt   instance !1 class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, class [FSharp.Core]Microsoft.FSharp.Core.Unit>::Invoke(!0)
+		pop
+		ldc.i4.s   10
+		call       class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, int32> SimpleClosure::add(int32)
+		stloc.1
+		ldstr      "%d"
+		newobj     instance void class [FSharp.Core]Microsoft.FSharp.Core.'PrintfFormat`5'<class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, class [FSharp.Core]Microsoft.FSharp.Core.Unit>, class [mscorlib]System.IO.TextWriter, class [FSharp.Core]Microsoft.FSharp.Core.Unit, class [FSharp.Core]Microsoft.FSharp.Core.Unit, int32>::.ctor(class System.String)
+		stloc.0
+		call       class [mscorlib]System.IO.TextWriter [mscorlib]System.Console::get_Out()
+		ldloc.0
+		call       !!0 [FSharp.Core]Microsoft.FSharp.Core.PrintfModule::PrintFormatLineToTextWriter<class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, class [FSharp.Core]Microsoft.FSharp.Core.Unit>>(class [mscorlib]System.IO.TextWriter, class [FSharp.Core]Microsoft.FSharp.Core.'PrintfFormat`4'<!!0, class [mscorlib]System.IO.TextWriter, class [FSharp.Core]Microsoft.FSharp.Core.Unit, class [FSharp.Core]Microsoft.FSharp.Core.Unit>)
+		ldloc.1
+		ldc.i4.s   90
+		callvirt   instance !1 class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, int32>::Invoke(!0)
+		callvirt   instance !1 class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, class [FSharp.Core]Microsoft.FSharp.Core.Unit>::Invoke(!0)
+		pop
+		ldstr      "%d"
+		newobj     instance void class [FSharp.Core]Microsoft.FSharp.Core.'PrintfFormat`5'<class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, class [FSharp.Core]Microsoft.FSharp.Core.Unit>, class [mscorlib]System.IO.TextWriter, class [FSharp.Core]Microsoft.FSharp.Core.Unit, class [FSharp.Core]Microsoft.FSharp.Core.Unit, int32>::.ctor(class System.String)
+		stloc.0
+		call       class [mscorlib]System.IO.TextWriter [mscorlib]System.Console::get_Out()
+		ldloc.0
+		call       !!0 [FSharp.Core]Microsoft.FSharp.Core.PrintfModule::PrintFormatLineToTextWriter<class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, class [FSharp.Core]Microsoft.FSharp.Core.Unit>>(class [mscorlib]System.IO.TextWriter, class [FSharp.Core]Microsoft.FSharp.Core.'PrintfFormat`4'<!!0, class [mscorlib]System.IO.TextWriter, class [FSharp.Core]Microsoft.FSharp.Core.Unit, class [FSharp.Core]Microsoft.FSharp.Core.Unit>)
+		ldloc.1
+		ldc.i4     999
+		callvirt   instance !1 class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, int32>::Invoke(!0)
+		callvirt   instance !1 class [FSharp.Core]Microsoft.FSharp.Core.'FSharpFunc`2'<int32, class [FSharp.Core]Microsoft.FSharp.Core.Unit>::Invoke(!0)
+		pop
+		ldc.i4.0
+		ret
+	}
+}
+.namespace '<StartupCode$SimpleClosure>'
+{
+.class private auto abstract sealed ansi $SimpleClosure extends [mscorlib]System.Object
+{
+}
+}

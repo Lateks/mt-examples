@@ -1,0 +1,633 @@
+// Input: factorial.clj.dll
+// Image type: DLL
+// Native code present: No
+// 32-bit only: No
+// Length of IL data: 6144
+
+// VS_VERSION_INFO:
+//    dwStrucVersion            : 1.0
+//    dwFileVersion             : 0.0.0.0
+//    dwProductVersion          : 0.0.0.0
+//    dwFileFlagsMask           : 0x0000003F
+//    dwFileFlags               : 0x00000000
+//    dwFileOS                  : 0x00000004
+//    dwFileType                : 0x00000002
+//    dwFileSubtype             : 0x00000000
+//    dwFileDate                : 0x0000000000000000
+//    Translation               : 0x04B0007F
+//    Comments                  : " "
+//    CompanyName               : " "
+//    FileDescription           : " "
+//    FileVersion               : "0.0.0.0"
+//    InternalName              : "factorial.clj.dll"
+//    LegalCopyright            : " "
+//    LegalTrademarks           : " "
+//    OriginalFilename          : "factorial.clj.dll"
+//    ProductName               : " "
+//    ProductVersion            : " "
+
+.assembly extern mscorlib
+{
+	.ver 4:0:0:0
+	.publickeytoken = (B7 7A 5C 56 19 34 E0 89)   // .z\V.4..
+}
+.assembly extern Clojure
+{
+	.ver 1:7:0:0
+	.publickeytoken = (CF 3C AE CD 32 7A 2F A9)   // .<..2z/.
+}
+.assembly extern System
+{
+	.ver 4:0:0:0
+	.publickeytoken = (B7 7A 5C 56 19 34 E0 89)   // .z\V.4..
+}
+.assembly factorial.clj
+{
+	.hash algorithm 0x00008004
+	.ver 0:0:0:0
+	.custom instance void [mscorlib]System.Security.SecurityTransparentAttribute::.ctor() = (01 00 00 00)   // ....
+	// SecurityTransparent()
+	.custom instance void [mscorlib]System.Security.SecurityRulesAttribute::.ctor(valuetype [mscorlib]System.Security.SecurityRuleSet) = (01 00 01 00 00)   // .....
+	// SecurityRules(?)
+}
+.module factorial.clj
+// MVID: {82B8F559-354D-43F6-801E-93426F85549E}
+.class public auto ansi __Init__$factorial extends [mscorlib]System.Object
+{
+	.custom instance void [System]System.ComponentModel.DescriptionAttribute::.ctor(class System.String) =
+		(01 00 1E 7B 3A 63 6C 6F 6A 75 72 65 2D 6E 61 6D   // ...{:clojure-nam
+		 65 73 70 61 63 65 20 66 61 63 74 6F 72 69 61 6C   // espace factorial
+		 7D 00 00)  // }..
+	// Description("{:clojure-namespace factorial}")
+	.field famorassem static class [Clojure]clojure.lang.Var const__0
+	.field famorassem static class [Clojure]clojure.lang.AFn const__1
+	.field famorassem static class [Clojure]clojure.lang.AFn const__2
+	.field famorassem static class [Clojure]clojure.lang.Var const__3
+	.field famorassem static class [Clojure]clojure.lang.Keyword const__4
+	.field famorassem static class System.Object const__5
+	.field famorassem static class [Clojure]clojure.lang.Keyword const__6
+	.field famorassem static class System.Object const__7
+	.field famorassem static class [Clojure]clojure.lang.Keyword const__8
+	.field famorassem static class System.Object const__9
+	.field famorassem static class [Clojure]clojure.lang.Keyword const__10
+	.field famorassem static class [Clojure]clojure.lang.Var const__11
+	.field famorassem static class System.Object const__12
+	.field famorassem static class System.Object const__13
+	.field famorassem static class System.Object const__14
+	.method public static void Initialize() cil managed 
+	{
+		// Start of method header: 23d4
+		.maxstack  8
+		.locals    init ()
+	?L23e0:
+		ldsfld     class [Clojure]clojure.lang.Var __Init__$factorial::const__0
+		call       instance class System.Object [Clojure]clojure.lang.Var::getRawRoot()
+		castclass  class [Clojure]clojure.lang.IFn
+		ldsfld     class [Clojure]clojure.lang.AFn __Init__$factorial::const__1
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		pop
+		newobj     instance void factorial$loading__5679__auto____17569__17573::.ctor()
+		castclass  class [Clojure]clojure.lang.IFn
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke()
+		pop
+		ldsfld     class [Clojure]clojure.lang.AFn __Init__$factorial::const__1
+		castclass  class [Clojure]clojure.lang.Symbol
+		ldsfld     class [Clojure]clojure.lang.AFn __Init__$factorial::const__2
+		castclass  class [mscorlib]System.Object
+		callvirt   instance bool [Clojure]clojure.lang.Symbol::Equals(class System.Object)
+		brfalse    ?L242e
+		ldnull
+		br         ?L243f
+	?L242e:
+		newobj     instance void factorial$fn__17576__17580::.ctor()
+		castclass  class [Clojure]clojure.lang.IFn
+		call       class System.Object [Clojure]clojure.lang.LockingTransaction::runInTransaction(class [Clojure]clojure.lang.IFn)
+		pop
+		ldnull
+	?L243f:
+		pop
+		ldsfld     class [Clojure]clojure.lang.Var __Init__$factorial::const__3
+		dup
+		ldc.i4.8
+		newarr     class [mscorlib]System.Object
+		dup
+		ldc.i4.0
+		ldsfld     class [Clojure]clojure.lang.Keyword __Init__$factorial::const__4
+		stelem.ref
+		dup
+		ldc.i4.1
+		ldsfld     class System.Object __Init__$factorial::const__5
+		stelem.ref
+		dup
+		ldc.i4.2
+		ldsfld     class [Clojure]clojure.lang.Keyword __Init__$factorial::const__6
+		stelem.ref
+		dup
+		ldc.i4.3
+		ldsfld     class System.Object __Init__$factorial::const__7
+		stelem.ref
+		dup
+		ldc.i4.4
+		ldsfld     class [Clojure]clojure.lang.Keyword __Init__$factorial::const__8
+		stelem.ref
+		dup
+		ldc.i4.5
+		ldsfld     class System.Object __Init__$factorial::const__9
+		stelem.ref
+		dup
+		ldc.i4.6
+		ldsfld     class [Clojure]clojure.lang.Keyword __Init__$factorial::const__10
+		stelem.ref
+		dup
+		ldc.i4.7
+		ldstr      "factorial.clj"
+		stelem.ref
+		call       class [Clojure]clojure.lang.IPersistentMap [Clojure]clojure.lang.RT::mapUniqueKeys(class System.Object[])
+		castclass  class [Clojure]clojure.lang.IPersistentMap
+		call       instance void [Clojure]clojure.lang.Var::setMeta(class [Clojure]clojure.lang.IPersistentMap)
+		dup
+		newobj     instance void factorial$fact__17586::.ctor()
+		call       instance void [Clojure]clojure.lang.Var::bindRoot(class System.Object)
+		pop
+		ldsfld     class [Clojure]clojure.lang.Var __Init__$factorial::const__11
+		dup
+		ldc.i4.8
+		newarr     class [mscorlib]System.Object
+		dup
+		ldc.i4.0
+		ldsfld     class [Clojure]clojure.lang.Keyword __Init__$factorial::const__4
+		stelem.ref
+		dup
+		ldc.i4.1
+		ldsfld     class System.Object __Init__$factorial::const__12
+		stelem.ref
+		dup
+		ldc.i4.2
+		ldsfld     class [Clojure]clojure.lang.Keyword __Init__$factorial::const__6
+		stelem.ref
+		dup
+		ldc.i4.3
+		ldsfld     class System.Object __Init__$factorial::const__13
+		stelem.ref
+		dup
+		ldc.i4.4
+		ldsfld     class [Clojure]clojure.lang.Keyword __Init__$factorial::const__8
+		stelem.ref
+		dup
+		ldc.i4.5
+		ldsfld     class System.Object __Init__$factorial::const__14
+		stelem.ref
+		dup
+		ldc.i4.6
+		ldsfld     class [Clojure]clojure.lang.Keyword __Init__$factorial::const__10
+		stelem.ref
+		dup
+		ldc.i4.7
+		ldstr      "factorial.clj"
+		stelem.ref
+		call       class [Clojure]clojure.lang.IPersistentMap [Clojure]clojure.lang.RT::mapUniqueKeys(class System.Object[])
+		castclass  class [Clojure]clojure.lang.IPersistentMap
+		call       instance void [Clojure]clojure.lang.Var::setMeta(class [Clojure]clojure.lang.IPersistentMap)
+		dup
+		newobj     instance void factorial$_main__17592::.ctor()
+		call       instance void [Clojure]clojure.lang.Var::bindRoot(class System.Object)
+		pop
+		ret
+	}
+	.method private static void __static_ctor_helper_constants() cil managed 
+	{
+		// Start of method header: 2510
+		.maxstack  8
+		.locals    init ()
+	?L251c:
+		ldstr      "clojure.core"
+		ldstr      "in-ns"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var __Init__$factorial::const__0
+		ldnull
+		ldstr      "factorial"
+		call       class [Clojure]clojure.lang.Symbol [Clojure]clojure.lang.Symbol::intern(class System.String, class System.String)
+		castclass  class [Clojure]clojure.lang.AFn
+		stsfld     class [Clojure]clojure.lang.AFn __Init__$factorial::const__1
+		ldnull
+		ldstr      "clojure.core"
+		call       class [Clojure]clojure.lang.Symbol [Clojure]clojure.lang.Symbol::intern(class System.String, class System.String)
+		castclass  class [Clojure]clojure.lang.AFn
+		stsfld     class [Clojure]clojure.lang.AFn __Init__$factorial::const__2
+		ldstr      "factorial"
+		ldstr      "fact"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var __Init__$factorial::const__3
+		ldnull
+		ldstr      "arglists"
+		call       class [Clojure]clojure.lang.Keyword [Clojure]clojure.lang.RT::keyword(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Keyword __Init__$factorial::const__4
+		ldc.i4.1
+		newarr     class [mscorlib]System.Object
+		dup
+		ldc.i4.0
+		ldc.i4.1
+		newarr     class [mscorlib]System.Object
+		dup
+		ldc.i4.0
+		ldnull
+		ldstr      "n"
+		call       class [Clojure]clojure.lang.Symbol [Clojure]clojure.lang.Symbol::intern(class System.String, class System.String)
+		stelem.ref
+		call       class [Clojure]clojure.lang.IPersistentVector [Clojure]clojure.lang.RT::vector(class System.Object[])
+		stelem.ref
+		call       class [Clojure]clojure.lang.IPersistentList [Clojure]clojure.lang.PersistentList::create(class [mscorlib]System.Collections.IList)
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object __Init__$factorial::const__5
+		ldnull
+		ldstr      "line"
+		call       class [Clojure]clojure.lang.Keyword [Clojure]clojure.lang.RT::keyword(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Keyword __Init__$factorial::const__6
+		ldc.i4.s   25
+		box        class [mscorlib]System.Int32
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object __Init__$factorial::const__7
+		ldnull
+		ldstr      "column"
+		call       class [Clojure]clojure.lang.Keyword [Clojure]clojure.lang.RT::keyword(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Keyword __Init__$factorial::const__8
+		ldc.i4.2
+		box        class [mscorlib]System.Int32
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object __Init__$factorial::const__9
+		ldnull
+		ldstr      "file"
+		call       class [Clojure]clojure.lang.Keyword [Clojure]clojure.lang.RT::keyword(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Keyword __Init__$factorial::const__10
+		ldstr      "factorial"
+		ldstr      "-main"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var __Init__$factorial::const__11
+		ldc.i4.1
+		newarr     class [mscorlib]System.Object
+		dup
+		ldc.i4.0
+		ldc.i4.0
+		newarr     class [mscorlib]System.Object
+		call       class [Clojure]clojure.lang.IPersistentVector [Clojure]clojure.lang.RT::vector(class System.Object[])
+		stelem.ref
+		call       class [Clojure]clojure.lang.IPersistentList [Clojure]clojure.lang.PersistentList::create(class [mscorlib]System.Collections.IList)
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object __Init__$factorial::const__12
+		ldc.i4.s   31
+		box        class [mscorlib]System.Int32
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object __Init__$factorial::const__13
+		ldc.i4.2
+		box        class [mscorlib]System.Int32
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object __Init__$factorial::const__14
+		ret
+	}
+	.method compilercontrolled static specialname rtspecialname void .cctor() cil managed 
+	{
+		// Start of method header: 265c
+		.maxstack  2
+		.locals    init ()
+	?L2668:
+		call       void [Clojure]clojure.lang.Compiler::PushNS()
+		call       void __Init__$factorial::__static_ctor_helper_constants()
+		leave      ?L267d
+	?L2677:
+		call       void [Clojure]clojure.lang.Var::popThreadBindings()
+		endfinally
+	?L267d:
+		ret
+		.try ?L2668 to ?L2677 finally handler ?L2677 to ?L267d
+	}
+}
+.class public auto serializable ansi factorial$loading__5679__auto____17569__17573 extends [Clojure]clojure.lang.AFunction
+{
+	.field famorassem static class System.Object const__0
+	.field famorassem static class [Clojure]clojure.lang.Var const__1
+	.field famorassem static class [Clojure]clojure.lang.AFn const__2
+	.method compilercontrolled static specialname rtspecialname void .cctor() cil managed 
+	{
+		// Start of method header: 2050
+		.maxstack  2
+		.locals    init ()
+	?L205c:
+		ldstr      "factorial"
+		call       class [mscorlib]System.Type [Clojure]clojure.lang.RT::classForName(class System.String)
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object factorial$loading__5679__auto____17569__17573::const__0
+		ldstr      "clojure.core"
+		ldstr      "refer"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var factorial$loading__5679__auto____17569__17573::const__1
+		ldnull
+		ldstr      "clojure.core"
+		call       class [Clojure]clojure.lang.Symbol [Clojure]clojure.lang.Symbol::intern(class System.String, class System.String)
+		castclass  class [Clojure]clojure.lang.AFn
+		stsfld     class [Clojure]clojure.lang.AFn factorial$loading__5679__auto____17569__17573::const__2
+		ret
+	}
+	.method public specialname rtspecialname instance void .ctor() cil managed 
+	{
+		// Start of method header: 209c
+		.maxstack  2
+		.locals    init ()
+	?L20a8:
+		ldarg.0
+		call       instance void [Clojure]clojure.lang.AFunction::.ctor()
+		ret
+	}
+	.method public virtual instance class System.Object invoke() cil managed 
+	{
+		// Start of method header: 20b0
+		.maxstack  5
+		.locals    init (class System.Object)
+	?L20bc:
+		ldsfld     class [Clojure]clojure.lang.PersistentArrayMap [Clojure]clojure.lang.PersistentArrayMap::EMPTY
+		castclass  class [Clojure]clojure.lang.Associative
+		call       void [Clojure]clojure.lang.Var::pushThreadBindings(class [Clojure]clojure.lang.Associative)
+		ldnull
+		pop
+	?L20cd:
+		ldsfld     class System.Object factorial$loading__5679__auto____17569__17573::const__0
+		pop
+		ldsfld     class [Clojure]clojure.lang.Var factorial$loading__5679__auto____17569__17573::const__1
+		call       instance class System.Object [Clojure]clojure.lang.Var::getRawRoot()
+		castclass  class [Clojure]clojure.lang.IFn
+		ldsfld     class [Clojure]clojure.lang.AFn factorial$loading__5679__auto____17569__17573::const__2
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		stloc.0
+		leave      ?L20fa
+	?L20f2:
+		call       void [Clojure]clojure.lang.Var::popThreadBindings()
+		ldnull
+		pop
+		endfinally
+	?L20fa:
+		ldloc.0
+		ret
+		.try ?L20cd to ?L20f2 finally handler ?L20f2 to ?L20fa
+	}
+	.method public virtual instance bool HasArity(int32) cil managed 
+	{
+		// Start of method header: 210c
+		.maxstack  3
+		.locals    init ()
+	?L2118:
+		ldarg.1
+		ldc.i4.0
+		beq        ?L2121
+		ldc.i4.0
+		ret
+	?L2121:
+		ldc.i4.1
+		ret
+	}
+}
+.class public auto serializable ansi factorial$fn__17576__17580 extends [Clojure]clojure.lang.AFunction
+{
+	.field famorassem static class [Clojure]clojure.lang.Var const__0
+	.field famorassem static class [Clojure]clojure.lang.Var const__1
+	.field famorassem static class [Clojure]clojure.lang.Var const__2
+	.field famorassem static class [Clojure]clojure.lang.Var const__3
+	.field famorassem static class [Clojure]clojure.lang.AFn const__4
+	.method compilercontrolled static specialname rtspecialname void .cctor() cil managed 
+	{
+		// Start of method header: 2124
+		.maxstack  2
+		.locals    init ()
+	?L2130:
+		ldstr      "clojure.core"
+		ldstr      "commute"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var factorial$fn__17576__17580::const__0
+		ldstr      "clojure.core"
+		ldstr      "deref"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var factorial$fn__17576__17580::const__1
+		ldstr      "clojure.core"
+		ldstr      "*loaded-libs*"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var factorial$fn__17576__17580::const__2
+		ldstr      "clojure.core"
+		ldstr      "conj"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var factorial$fn__17576__17580::const__3
+		ldnull
+		ldstr      "factorial"
+		call       class [Clojure]clojure.lang.Symbol [Clojure]clojure.lang.Symbol::intern(class System.String, class System.String)
+		castclass  class [Clojure]clojure.lang.AFn
+		stsfld     class [Clojure]clojure.lang.AFn factorial$fn__17576__17580::const__4
+		ret
+	}
+	.method public specialname rtspecialname instance void .ctor() cil managed 
+	{
+		// Start of method header: 2198
+		.maxstack  2
+		.locals    init ()
+	?L21a4:
+		ldarg.0
+		call       instance void [Clojure]clojure.lang.AFunction::.ctor()
+		ret
+	}
+	.method public virtual instance class System.Object invoke() cil managed 
+	{
+		// Start of method header: 21ac
+		.maxstack  4
+		.locals    init ()
+	?L21b8:
+		ldsfld     class [Clojure]clojure.lang.Var factorial$fn__17576__17580::const__0
+		call       instance class System.Object [Clojure]clojure.lang.Var::getRawRoot()
+		castclass  class [Clojure]clojure.lang.IFn
+		ldsfld     class [Clojure]clojure.lang.Var factorial$fn__17576__17580::const__1
+		call       instance class System.Object [Clojure]clojure.lang.Var::getRawRoot()
+		castclass  class [Clojure]clojure.lang.IFn
+		ldsfld     class [Clojure]clojure.lang.Var factorial$fn__17576__17580::const__2
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		ldsfld     class [Clojure]clojure.lang.Var factorial$fn__17576__17580::const__3
+		call       instance class System.Object [Clojure]clojure.lang.Var::getRawRoot()
+		ldsfld     class [Clojure]clojure.lang.AFn factorial$fn__17576__17580::const__4
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object, class System.Object, class System.Object)
+		ret
+	}
+	.method public virtual instance bool HasArity(int32) cil managed 
+	{
+		// Start of method header: 21f8
+		.maxstack  3
+		.locals    init ()
+	?L2204:
+		ldarg.1
+		ldc.i4.0
+		beq        ?L220d
+		ldc.i4.0
+		ret
+	?L220d:
+		ldc.i4.1
+		ret
+	}
+}
+.class public auto serializable ansi factorial$fact__17586 extends [Clojure]clojure.lang.AFunction
+{
+	.field famorassem static class System.Object const__0
+	.field famorassem static class [Clojure]clojure.lang.Var const__1
+	.field famorassem static class [Clojure]clojure.lang.Var const__2
+	.field famorassem static class System.Object const__3
+	.field famorassem static class [Clojure]clojure.lang.Var const__4
+	.method compilercontrolled static specialname rtspecialname void .cctor() cil managed 
+	{
+		// Start of method header: 2210
+		.maxstack  2
+		.locals    init ()
+	?L221c:
+		ldc.i8     0x0000000000000001
+		box        class [mscorlib]System.Int64
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object factorial$fact__17586::const__0
+		ldstr      "clojure.core"
+		ldstr      "zero?"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var factorial$fact__17586::const__1
+		ldstr      "clojure.core"
+		ldstr      "-"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var factorial$fact__17586::const__2
+		ldc.i8     0x0000000000000001
+		box        class [mscorlib]System.Int64
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object factorial$fact__17586::const__3
+		ldstr      "clojure.core"
+		ldstr      "*'"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var factorial$fact__17586::const__4
+		ret
+	}
+	.method public specialname rtspecialname instance void .ctor() cil managed 
+	{
+		// Start of method header: 228c
+		.maxstack  2
+		.locals    init ()
+	?L2298:
+		ldarg.0
+		call       instance void [Clojure]clojure.lang.AFunction::.ctor()
+		ret
+	}
+	.method public virtual instance class System.Object invoke(class System.Object) cil managed 
+	{
+		// Start of method header: 22a0
+		.maxstack  4
+		.locals    init (class System.Object,
+		            class System.Object)
+	?L22ac:
+		ldarg.1
+		stloc.0
+		ldsfld     class System.Object factorial$fact__17586::const__0
+		castclass  class [mscorlib]System.Object
+		call       class System.Object [Clojure]clojure.lang.RT::box(class System.Object)
+		stloc.1
+	?L22be:
+		ldloc.0
+		castclass  class [mscorlib]System.Object
+		call       bool [Clojure]clojure.lang.Numbers::isZero(class System.Object)
+		brfalse    ?L22d4
+		ldloc.1
+		br         ?L2300
+	?L22d4:
+		ldloc.0
+		castclass  class [mscorlib]System.Object
+		ldc.i8     0x0000000000000001
+		call       class System.Object [Clojure]clojure.lang.Numbers::minus(class System.Object, int64)
+		ldloc.1
+		castclass  class [mscorlib]System.Object
+		ldloc.0
+		castclass  class [mscorlib]System.Object
+		call       class System.Object [Clojure]clojure.lang.Numbers::multiplyP(class System.Object, class System.Object)
+		stloc.1
+		stloc.0
+		br         ?L22be
+	?L2300:
+		ret
+	}
+	.method public virtual instance bool HasArity(int32) cil managed 
+	{
+		// Start of method header: 2304
+		.maxstack  3
+		.locals    init ()
+	?L2310:
+		ldarg.1
+		ldc.i4.1
+		beq        ?L2319
+		ldc.i4.0
+		ret
+	?L2319:
+		ldc.i4.1
+		ret
+	}
+}
+.class public auto serializable ansi factorial$_main__17592 extends [Clojure]clojure.lang.AFunction
+{
+	.field famorassem static class [Clojure]clojure.lang.Var const__0
+	.field famorassem static class [Clojure]clojure.lang.Var const__1
+	.field famorassem static class System.Object const__2
+	.method compilercontrolled static specialname rtspecialname void .cctor() cil managed 
+	{
+		// Start of method header: 231c
+		.maxstack  2
+		.locals    init ()
+	?L2328:
+		ldstr      "clojure.core"
+		ldstr      "println"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var factorial$_main__17592::const__0
+		ldstr      "factorial"
+		ldstr      "fact"
+		call       class [Clojure]clojure.lang.Var [Clojure]clojure.lang.RT::var(class System.String, class System.String)
+		stsfld     class [Clojure]clojure.lang.Var factorial$_main__17592::const__1
+		ldc.i8     0x0000000000002710
+		box        class [mscorlib]System.Int64
+		castclass  class [mscorlib]System.Object
+		stsfld     class System.Object factorial$_main__17592::const__2
+		ret
+	}
+	.method public specialname rtspecialname instance void .ctor() cil managed 
+	{
+		// Start of method header: 236c
+		.maxstack  2
+		.locals    init ()
+	?L2378:
+		ldarg.0
+		call       instance void [Clojure]clojure.lang.AFunction::.ctor()
+		ret
+	}
+	.method public virtual instance class System.Object invoke() cil managed 
+	{
+		// Start of method header: 2380
+		.maxstack  3
+		.locals    init ()
+	?L238c:
+		ldsfld     class [Clojure]clojure.lang.Var factorial$_main__17592::const__0
+		call       instance class System.Object [Clojure]clojure.lang.Var::getRawRoot()
+		castclass  class [Clojure]clojure.lang.IFn
+		ldsfld     class [Clojure]clojure.lang.Var factorial$_main__17592::const__1
+		call       instance class System.Object [Clojure]clojure.lang.Var::getRawRoot()
+		castclass  class [Clojure]clojure.lang.IFn
+		ldsfld     class System.Object factorial$_main__17592::const__2
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		callvirt   instance class System.Object [Clojure]clojure.lang.IFn::invoke(class System.Object)
+		ret
+	}
+	.method public virtual instance bool HasArity(int32) cil managed 
+	{
+		// Start of method header: 23bc
+		.maxstack  3
+		.locals    init ()
+	?L23c8:
+		ldarg.1
+		ldc.i4.0
+		beq        ?L23d1
+		ldc.i4.0
+		ret
+	?L23d1:
+		ldc.i4.1
+		ret
+	}
+}

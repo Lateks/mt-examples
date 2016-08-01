@@ -1,0 +1,500 @@
+// Input: .\a.exe
+// Image type: EXE
+// Native code present: No
+// 32-bit only: No
+// Length of IL data: 4608
+
+.assembly extern 'bigloo_s-2.8c'
+{
+	.ver 2:8:3:0
+	.publickeytoken = (04 2D B6 68 01 A6 62 F9)   // .-.h..b.
+}
+.assembly extern mscorlib
+{
+	.ver 2:0:0:0
+	.publickeytoken = (B7 7A 5C 56 19 34 E0 89)   // .z\V.4..
+}
+.assembly a
+{
+	.hash algorithm 0x00008004
+	.ver 0:0:0:0
+}
+.module a.exe
+// MVID: {05F629C1-95B3-4469-1657-516E8B065AF3}
+.class public auto ansi simple_closure_bigloo extends ['bigloo_s-2.8c']bigloo.procedure
+{
+	.field public static class ['bigloo_s-2.8c']bigloo.procedure BgL_mainzd2envzd2
+	.field private static unsigned int8[] string1706
+	.field private static unsigned int8[] string1705
+	.field private static unsigned int8[] string1704
+	.field private static unsigned int8[] string1703
+	.field private static class System.Object BGl_requirezd2initializa7ationz75zzsimple_closurez00
+	.field private static class System.Object[] __cnst
+	.method public static void Main(class System.String[] A_1) cil managed 
+	{
+		// Start of method header: 2050
+		.entrypoint
+		.maxstack  1
+	?L205c:
+		call       void ['bigloo_s-2.8c']bigloo.realcallback::init()
+	?L2061:
+		ldarg.0
+		call       class System.Object ['bigloo_s-2.8c']bigloo.foreign::listargv(class System.String[])
+		call       class System.Object simple_closure_bigloo::bigloo_main(class System.Object)
+		pop
+		leave.s    ?L2076
+	?L206f:
+		call       void ['bigloo_s-2.8c']bigloo.foreign::internalerror(class [mscorlib]System.Exception)
+		leave.s    ?L2076
+	?L2076:
+		ret
+		.try ?L2061 to ?L206f catch [mscorlib]System.Exception handler ?L206f to ?L2076
+	}
+	.method public static class System.Object bigloo_main(class System.Object A_1) cil managed 
+	{
+		// Start of method header: 2088
+		.maxstack  8
+	?L2089:
+		ldc.i4.0
+		ldstr      "simple_closure"
+		call       unsigned int8[] ['bigloo_s-2.8c']bigloo.foreign::getbytes(class System.String)
+		call       class System.Object simple_closure_bigloo::BgL_modulezd2initializa7ationz75(int32, unsigned int8[])
+		pop
+		call       class System.Object ['bigloo_s-2.8c']bigloo.runtime.Llib.param::BgL_bigloozd2initializa7edz12z67()
+		pop
+		ldarg.0
+		castclass  class ['bigloo_s-2.8c']bigloo.pair
+		call       class System.Object simple_closure_bigloo::main(class ['bigloo_s-2.8c']bigloo.pair)
+		call       class System.Object ['bigloo_s-2.8c']bigloo.foreign::BIGLOO_EXIT(class System.Object)
+		ret
+	}
+	.method public static class System.Object BgL_modulezd2initializa7ationz75(int32 A_1, unsigned int8[] A_2) cil managed 
+	{
+		// Start of method header: 2258
+		.maxstack  2
+	?L2264:
+		ldarg.0
+		ldc.i4     473772182
+		call       int32 ['bigloo_s-2.8c']bigloo.runtime.Llib.bit::BgL_bitzd2andzd2(int32, int32)
+		call       class ['bigloo_s-2.8c']bigloo.bint ['bigloo_s-2.8c']bigloo.foreign::BINT(int32)
+		ldfld      int32 ['bigloo_s-2.8c']bigloo.bint::value
+		ldarg.0
+		call       bool ['bigloo_s-2.8c']bigloo.runtime.Ieee.fixnum::BgL_zd3fxzd3(int32, int32)
+		brtrue.s   ?L22b9
+		ldstr      "simple_closure"
+		call       unsigned int8[] ['bigloo_s-2.8c']bigloo.foreign::getbytes(class System.String)
+		call       unsigned int8[] ['bigloo_s-2.8c']bigloo.foreign::BSTRING_TO_STRING(unsigned int8[])
+		ldarg.1
+		call       class System.Object ['bigloo_s-2.8c']bigloo.runtime.Llib.error::BgL_modulezd2initzd2errorz00(unsigned int8[], unsigned int8[])
+		ret
+	?L2297:
+		ldsfld     class ['bigloo_s-2.8c']bigloo.bbool ['bigloo_s-2.8c']bigloo.bbool::faux
+		stsfld     class System.Object simple_closure_bigloo::BGl_requirezd2initializa7ationz75zzsimple_closurez00
+		call       class System.Object simple_closure_bigloo::BgL_libraryzd2moduleszd2initz00()
+		pop
+		call       class System.Object simple_closure_bigloo::BgL_cnstzd2initzd2()
+		pop
+		call       class System.Object simple_closure_bigloo::BgL_methodzd2initzd2()
+		pop
+		ldsfld     class ['bigloo_s-2.8c']bigloo.unspecified ['bigloo_s-2.8c']bigloo.unspecified::_unspecified
+		ret
+	?L22b9:
+		ldsfld     class System.Object simple_closure_bigloo::BGl_requirezd2initializa7ationz75zzsimple_closurez00
+		ldsfld     class ['bigloo_s-2.8c']bigloo.bbool ['bigloo_s-2.8c']bigloo.bbool::faux
+		bne.un.s   ?L2297
+		ldsfld     class ['bigloo_s-2.8c']bigloo.unspecified ['bigloo_s-2.8c']bigloo.unspecified::_unspecified
+		ret
+	}
+	.method public static class System.Object main(class ['bigloo_s-2.8c']bigloo.pair A_1) cil managed 
+	{
+		// Start of method header: 236c
+		.maxstack  3
+		.locals    (class System.Object,
+		            class ['bigloo_s-2.8c']bigloo.procedure,
+		            class System.Object,
+		            class ['bigloo_s-2.8c']bigloo.procedure,
+		            class System.Object,
+		            class ['bigloo_s-2.8c']bigloo.procedure,
+		            unsigned int8[],
+		            class System.Object,
+		            unsigned int8[],
+		            class System.Object,
+		            unsigned int8[])
+	?L2378:
+		ldsfld     class ['bigloo_s-2.8c']bigloo.unspecified ['bigloo_s-2.8c']bigloo.unspecified::_unspecified
+		stloc.0
+		ldc.i4.s   10
+		call       class ['bigloo_s-2.8c']bigloo.procedure simple_closure_bigloo::add(int32)
+		stloc.0
+		ldc.i4.5
+		call       class ['bigloo_s-2.8c']bigloo.procedure simple_closure_bigloo::add(int32)
+		stloc.1
+		ldloc.1
+		ldc.i4.1
+		call       bool ['bigloo_s-2.8c']bigloo.foreign::PROCEDURE_CORRECT_ARITYP(class ['bigloo_s-2.8c']bigloo.procedure, int32)
+		brfalse    ?L24c3
+		ldloc.1
+		ldc.i4.4
+		call       class ['bigloo_s-2.8c']bigloo.bint ['bigloo_s-2.8c']bigloo.foreign::BINT(int32)
+		callvirt   instance class System.Object ['bigloo_s-2.8c']bigloo.procedure::funcall1(class System.Object)
+		ldsfld     class ['bigloo_s-2.8c']bigloo.nil ['bigloo_s-2.8c']bigloo.nil::_nil
+		newobj     instance void ['bigloo_s-2.8c']bigloo.pair::.ctor(class System.Object, class System.Object)
+		call       class System.Object ['bigloo_s-2.8c']bigloo.runtime.Ieee.output::print(class System.Object)
+		pop
+		ldloc.0
+		stloc.2
+		ldloc.2
+		isinst     class ['bigloo_s-2.8c']bigloo.procedure
+		brfalse    ?L2497
+		ldloc.2
+		castclass  class ['bigloo_s-2.8c']bigloo.procedure
+		stloc.3
+		ldloc.3
+		ldc.i4.1
+		call       bool ['bigloo_s-2.8c']bigloo.foreign::PROCEDURE_CORRECT_ARITYP(class ['bigloo_s-2.8c']bigloo.procedure, int32)
+		brfalse    ?L2480
+		ldloc.0
+		castclass  class ['bigloo_s-2.8c']bigloo.procedure
+		ldc.i4.s   90
+		call       class ['bigloo_s-2.8c']bigloo.bint ['bigloo_s-2.8c']bigloo.foreign::BINT(int32)
+		callvirt   instance class System.Object ['bigloo_s-2.8c']bigloo.procedure::funcall1(class System.Object)
+		ldsfld     class ['bigloo_s-2.8c']bigloo.nil ['bigloo_s-2.8c']bigloo.nil::_nil
+		newobj     instance void ['bigloo_s-2.8c']bigloo.pair::.ctor(class System.Object, class System.Object)
+		call       class System.Object ['bigloo_s-2.8c']bigloo.runtime.Ieee.output::print(class System.Object)
+		pop
+		ldloc.0
+		stloc.s    4
+		ldloc.s    4
+		isinst     class ['bigloo_s-2.8c']bigloo.procedure
+		brfalse.s  ?L2453
+		ldloc.s    4
+		castclass  class ['bigloo_s-2.8c']bigloo.procedure
+		stloc.s    5
+		ldloc.s    5
+		ldc.i4.1
+		call       bool ['bigloo_s-2.8c']bigloo.foreign::PROCEDURE_CORRECT_ARITYP(class ['bigloo_s-2.8c']bigloo.procedure, int32)
+		brfalse.s  ?L243b
+		ldloc.0
+		castclass  class ['bigloo_s-2.8c']bigloo.procedure
+		ldc.i4     999
+		call       class ['bigloo_s-2.8c']bigloo.bint ['bigloo_s-2.8c']bigloo.foreign::BINT(int32)
+		callvirt   instance class System.Object ['bigloo_s-2.8c']bigloo.procedure::funcall1(class System.Object)
+		ldsfld     class ['bigloo_s-2.8c']bigloo.nil ['bigloo_s-2.8c']bigloo.nil::_nil
+		newobj     instance void ['bigloo_s-2.8c']bigloo.pair::.ctor(class System.Object, class System.Object)
+		call       class System.Object ['bigloo_s-2.8c']bigloo.runtime.Ieee.output::print(class System.Object)
+		ret
+	?L243b:
+		ldsfld     unsigned int8[] simple_closure_bigloo::string1703
+		stloc.s    6
+		ldloc.s    6
+		ldsfld     class System.Object[] simple_closure_bigloo::__cnst
+		ldc.i4.3
+		ldelem.ref
+		ldloc.s    5
+		call       class [mscorlib]System.Exception ['bigloo_s-2.8c']bigloo.foreign::fail(class System.Object, class System.Object, class System.Object)
+		throw
+	?L2453:
+		ldsfld     class System.Object[] simple_closure_bigloo::__cnst
+		ldc.i4.1
+		ldelem.ref
+		stloc.s    7
+		ldloc.s    7
+		ldsfld     unsigned int8[] simple_closure_bigloo::string1704
+		ldloc.s    4
+		call       class System.Object ['bigloo_s-2.8c']bigloo.runtime.Llib.error::BgL_bigloozd2typezd2errorz00(class System.Object, class System.Object, class System.Object)
+		pop
+		ldsfld     class ['bigloo_s-2.8c']bigloo.bbool ['bigloo_s-2.8c']bigloo.foreign::BFALSE
+		ldsfld     class ['bigloo_s-2.8c']bigloo.bbool ['bigloo_s-2.8c']bigloo.foreign::BFALSE
+		ldsfld     class ['bigloo_s-2.8c']bigloo.bbool ['bigloo_s-2.8c']bigloo.foreign::BFALSE
+		call       class [mscorlib]System.Exception ['bigloo_s-2.8c']bigloo.foreign::fail(class System.Object, class System.Object, class System.Object)
+		throw
+	?L2480:
+		ldsfld     unsigned int8[] simple_closure_bigloo::string1703
+		stloc.s    8
+		ldloc.s    8
+		ldsfld     class System.Object[] simple_closure_bigloo::__cnst
+		ldc.i4.2
+		ldelem.ref
+		ldloc.3
+		call       class [mscorlib]System.Exception ['bigloo_s-2.8c']bigloo.foreign::fail(class System.Object, class System.Object, class System.Object)
+		throw
+	?L2497:
+		ldsfld     class System.Object[] simple_closure_bigloo::__cnst
+		ldc.i4.1
+		ldelem.ref
+		stloc.s    9
+		ldloc.s    9
+		ldsfld     unsigned int8[] simple_closure_bigloo::string1704
+		ldloc.2
+		call       class System.Object ['bigloo_s-2.8c']bigloo.runtime.Llib.error::BgL_bigloozd2typezd2errorz00(class System.Object, class System.Object, class System.Object)
+		pop
+		ldsfld     class ['bigloo_s-2.8c']bigloo.bbool ['bigloo_s-2.8c']bigloo.foreign::BFALSE
+		ldsfld     class ['bigloo_s-2.8c']bigloo.bbool ['bigloo_s-2.8c']bigloo.foreign::BFALSE
+		ldsfld     class ['bigloo_s-2.8c']bigloo.bbool ['bigloo_s-2.8c']bigloo.foreign::BFALSE
+		call       class [mscorlib]System.Exception ['bigloo_s-2.8c']bigloo.foreign::fail(class System.Object, class System.Object, class System.Object)
+		throw
+	?L24c3:
+		ldsfld     unsigned int8[] simple_closure_bigloo::string1703
+		stloc.s    10
+		ldloc.s    10
+		ldsfld     class System.Object[] simple_closure_bigloo::__cnst
+		ldc.i4.0
+		ldelem.ref
+		ldloc.1
+		call       class [mscorlib]System.Exception ['bigloo_s-2.8c']bigloo.foreign::fail(class System.Object, class System.Object, class System.Object)
+		throw
+	}
+	.method public hidebysig specialname rtspecialname instance void .ctor() cil managed 
+	{
+		// Start of method header: 20b4
+		.maxstack  8
+	?L20b5:
+		ldarg.0
+		call       instance void ['bigloo_s-2.8c']bigloo.procedure::.ctor()
+		ret
+	}
+	.method public hidebysig specialname rtspecialname instance void .ctor(int32 A_1, int32 A_2) cil managed 
+	{
+		// Start of method header: 20bc
+		.maxstack  3
+	?L20c8:
+		ldarg.0
+		ldarg.1
+		ldarg.2
+		call       instance void ['bigloo_s-2.8c']bigloo.procedure::.ctor(int32, int32)
+		ret
+	}
+	.method public hidebysig specialname rtspecialname instance void .ctor(int32 A_1, int32 A_2, int32 A_3) cil managed 
+	{
+		// Start of method header: 20d4
+		.maxstack  4
+	?L20e0:
+		ldarg.0
+		ldarg.1
+		ldarg.2
+		ldarg.3
+		call       instance void ['bigloo_s-2.8c']bigloo.procedure::.ctor(int32, int32, int32)
+		ret
+	}
+	.method public virtual hidebysig instance class System.Object funcall1(class System.Object A_1) cil managed 
+	{
+		// Start of method header: 20ec
+		.maxstack  3
+	?L20f8:
+		ldarg.0
+		ldfld      int32 ['bigloo_s-2.8c']bigloo.procedure::index
+		switch     (?L210d, ?L210f)
+		br.s       ?L2111
+	?L210d:
+		br.s       ?L2119
+	?L210f:
+		br.s       ?L2121
+	?L2111:
+		ldarg.0
+		ldarg.1
+		call       instance class System.Object ['bigloo_s-2.8c']bigloo.procedure::funcall1(class System.Object)
+		ret
+	?L2119:
+		ldarg.0
+		ldarg.1
+		call       class System.Object simple_closure_bigloo::BgL_zc3anonymousza31632ze3z83(class ['bigloo_s-2.8c']bigloo.procedure, class System.Object)
+		ret
+	?L2121:
+		ldarg.0
+		ldarg.1
+		call       class System.Object simple_closure_bigloo::_main(class ['bigloo_s-2.8c']bigloo.procedure, class System.Object)
+		ret
+	}
+	.method private static class System.Object BgL_zc3anonymousza31632ze3z83(class ['bigloo_s-2.8c']bigloo.procedure A_1, class System.Object A_2) cil managed 
+	{
+		// Start of method header: 212c
+		.maxstack  3
+	?L2138:
+		ldarg.0
+		ldfld      class System.Object[] ['bigloo_s-2.8c']bigloo.procedure::env
+		ldc.i4.0
+		ldelem.ref
+		ldarg.1
+		ldsfld     class ['bigloo_s-2.8c']bigloo.nil ['bigloo_s-2.8c']bigloo.nil::_nil
+		newobj     instance void ['bigloo_s-2.8c']bigloo.pair::.ctor(class System.Object, class System.Object)
+		newobj     instance void ['bigloo_s-2.8c']bigloo.pair::.ctor(class System.Object, class System.Object)
+		call       class System.Object ['bigloo_s-2.8c']bigloo.runtime.Ieee.number::BgL_zb2zb2(class System.Object)
+		ret
+	}
+	.method private static class System.Object _main(class ['bigloo_s-2.8c']bigloo.procedure A_1, class System.Object A_2) cil managed 
+	{
+		// Start of method header: 2158
+		.maxstack  3
+		.locals    (class System.Object)
+	?L2164:
+		ldarg.1
+		isinst     class ['bigloo_s-2.8c']bigloo.pair
+		brfalse.s  ?L2178
+		ldarg.1
+		castclass  class ['bigloo_s-2.8c']bigloo.pair
+		call       class System.Object simple_closure_bigloo::main(class ['bigloo_s-2.8c']bigloo.pair)
+		ret
+	?L2178:
+		ldsfld     class System.Object[] simple_closure_bigloo::__cnst
+		ldc.i4.4
+		ldelem.ref
+		stloc.0
+		ldloc.0
+		ldsfld     unsigned int8[] simple_closure_bigloo::string1705
+		ldarg.1
+		call       class System.Object ['bigloo_s-2.8c']bigloo.runtime.Llib.error::BgL_bigloozd2typezd2errorz00(class System.Object, class System.Object, class System.Object)
+		pop
+		ldsfld     class ['bigloo_s-2.8c']bigloo.bbool ['bigloo_s-2.8c']bigloo.foreign::BFALSE
+		ldsfld     class ['bigloo_s-2.8c']bigloo.bbool ['bigloo_s-2.8c']bigloo.foreign::BFALSE
+		ldsfld     class ['bigloo_s-2.8c']bigloo.bbool ['bigloo_s-2.8c']bigloo.foreign::BFALSE
+		call       class [mscorlib]System.Exception ['bigloo_s-2.8c']bigloo.foreign::fail(class System.Object, class System.Object, class System.Object)
+		throw
+	}
+	.method public virtual hidebysig instance class System.Object apply(class System.Object A_1) cil managed 
+	{
+		// Start of method header: 21a4
+		.maxstack  2
+	?L21b0:
+		ldarg.0
+		ldfld      int32 ['bigloo_s-2.8c']bigloo.procedure::index
+		switch     (?L21c5, ?L21c7)
+		br.s       ?L21c9
+	?L21c5:
+		br.s       ?L21d1
+	?L21c7:
+		br.s       ?L21e3
+	?L21c9:
+		ldarg.0
+		ldarg.1
+		call       instance class System.Object ['bigloo_s-2.8c']bigloo.procedure::apply(class System.Object)
+		ret
+	?L21d1:
+		ldarg.0
+		ldarg.1
+		castclass  class ['bigloo_s-2.8c']bigloo.pair
+		ldfld      class System.Object ['bigloo_s-2.8c']bigloo.pair::car
+		call       class System.Object simple_closure_bigloo::BgL_zc3anonymousza31632ze3z83(class ['bigloo_s-2.8c']bigloo.procedure, class System.Object)
+		ret
+	?L21e3:
+		ldarg.0
+		ldarg.1
+		castclass  class ['bigloo_s-2.8c']bigloo.pair
+		ldfld      class System.Object ['bigloo_s-2.8c']bigloo.pair::car
+		call       class System.Object simple_closure_bigloo::_main(class ['bigloo_s-2.8c']bigloo.procedure, class System.Object)
+		ret
+	}
+	.method public static hidebysig specialname rtspecialname void .cctor() cil managed 
+	{
+		// Start of method header: 21f8
+		.maxstack  4
+	?L2204:
+		ldc.i4.5
+		newarr     class [mscorlib]System.Object
+		stsfld     class System.Object[] simple_closure_bigloo::__cnst
+		ldc.i4.1
+		ldc.i4.1
+		newobj     instance void simple_closure_bigloo::.ctor(int32, int32)
+		stsfld     class ['bigloo_s-2.8c']bigloo.procedure simple_closure_bigloo::BgL_mainzd2envzd2
+		ldstr      "_main (funcall add10 add10 999) (funcall add10 add10 90) main (funcall fun1648 fun1648 arg1647) "
+		call       unsigned int8[] ['bigloo_s-2.8c']bigloo.foreign::getbytes(class System.String)
+		stsfld     unsigned int8[] simple_closure_bigloo::string1706
+		ldstr      "pair"
+		call       unsigned int8[] ['bigloo_s-2.8c']bigloo.foreign::getbytes(class System.String)
+		stsfld     unsigned int8[] simple_closure_bigloo::string1705
+		ldstr      "procedure"
+		call       unsigned int8[] ['bigloo_s-2.8c']bigloo.foreign::getbytes(class System.String)
+		stsfld     unsigned int8[] simple_closure_bigloo::string1704
+		ldstr      "main:Wrong number of arguments"
+		call       unsigned int8[] ['bigloo_s-2.8c']bigloo.foreign::getbytes(class System.String)
+		stsfld     unsigned int8[] simple_closure_bigloo::string1703
+		ret
+	}
+	.method private static class System.Object BgL_libraryzd2moduleszd2initz00() cil managed 
+	{
+		// Start of method header: 22cc
+		.maxstack  2
+	?L22d8:
+		ldc.i4.0
+		ldstr      "simple_closure"
+		call       unsigned int8[] ['bigloo_s-2.8c']bigloo.foreign::getbytes(class System.String)
+		call       class System.Object ['bigloo_s-2.8c']bigloo.runtime.Ieee.number::BgL_modulezd2initializa7ationz75(int32, unsigned int8[])
+		pop
+		ldc.i4.0
+		ldstr      "simple_closure"
+		call       unsigned int8[] ['bigloo_s-2.8c']bigloo.foreign::getbytes(class System.String)
+		call       class System.Object ['bigloo_s-2.8c']bigloo.runtime.Llib.error::BgL_modulezd2initializa7ationz75(int32, unsigned int8[])
+		pop
+		ldc.i4.0
+		ldstr      "simple_closure"
+		call       unsigned int8[] ['bigloo_s-2.8c']bigloo.foreign::getbytes(class System.String)
+		call       class System.Object ['bigloo_s-2.8c']bigloo.runtime.Read.reader::BgL_modulezd2initializa7ationz75(int32, unsigned int8[])
+		pop
+		ldc.i4.0
+		ldstr      "simple_closure"
+		call       unsigned int8[] ['bigloo_s-2.8c']bigloo.foreign::getbytes(class System.String)
+		call       class System.Object ['bigloo_s-2.8c']bigloo.runtime.Ieee.output::BgL_modulezd2initializa7ationz75(int32, unsigned int8[])
+		pop
+		ldsfld     class ['bigloo_s-2.8c']bigloo.unspecified ['bigloo_s-2.8c']bigloo.unspecified::_unspecified
+		ret
+	}
+	.method private static class System.Object BgL_cnstzd2initzd2() cil managed 
+	{
+		// Start of method header: 2324
+		.maxstack  4
+		.locals    (class ['bigloo_s-2.8c']bigloo.input_port,
+		            int32)
+	?L2330:
+		ldsfld     unsigned int8[] simple_closure_bigloo::string1706
+		call       class System.Object ['bigloo_s-2.8c']bigloo.foreign::open_input_string(unsigned int8[])
+		castclass  class ['bigloo_s-2.8c']bigloo.input_port
+		stloc.0
+		ldc.i4.4
+		stloc.1
+		br.s       ?L235a
+	?L2344:
+		ldsfld     class System.Object[] simple_closure_bigloo::__cnst
+		ldloc.1
+		ldloc.0
+		ldsfld     class ['bigloo_s-2.8c']bigloo.bbool ['bigloo_s-2.8c']bigloo.bbool::faux
+		call       class System.Object ['bigloo_s-2.8c']bigloo.runtime.Read.reader::read(class ['bigloo_s-2.8c']bigloo.input_port, class System.Object)
+		stelem.ref
+		ldloc.1
+		ldc.i4.1
+		sub
+		stloc.1
+	?L235a:
+		ldloc.1
+		ldc.i4.m1
+		bne.un.s   ?L2344
+		ldsfld     class ['bigloo_s-2.8c']bigloo.unspecified ['bigloo_s-2.8c']bigloo.unspecified::_unspecified
+		ret
+	}
+	.method private static class System.Object BgL_methodzd2initzd2() cil managed 
+	{
+		// Start of method header: 2364
+		.maxstack  8
+	?L2365:
+		ldsfld     class ['bigloo_s-2.8c']bigloo.unspecified ['bigloo_s-2.8c']bigloo.unspecified::_unspecified
+		ret
+	}
+	.method private static class ['bigloo_s-2.8c']bigloo.procedure add(int32 A_1) cil managed 
+	{
+		// Start of method header: 24dc
+		.maxstack  3
+		.locals    (class ['bigloo_s-2.8c']bigloo.procedure)
+	?L24e8:
+		ldc.i4.0
+		ldc.i4.1
+		ldc.i4.1
+		newobj     instance void simple_closure_bigloo::.ctor(int32, int32, int32)
+		stloc.0
+		ldloc.0
+		ldfld      class System.Object[] ['bigloo_s-2.8c']bigloo.procedure::env
+		ldc.i4.0
+		ldarg.0
+		call       class ['bigloo_s-2.8c']bigloo.bint ['bigloo_s-2.8c']bigloo.foreign::BINT(int32)
+		stelem.ref
+		ldloc.0
+		ret
+	}
+}

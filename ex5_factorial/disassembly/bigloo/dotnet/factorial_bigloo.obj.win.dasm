@@ -1,0 +1,338 @@
+// Input: .\factorial_bigloo.obj
+// Image type: OBJ
+// Native code present: No
+// 32-bit only: No
+// Length of IL data: 2976
+
+.assembly factorial_bigloo.obj
+{
+	.ver 0:0:0:0
+}
+.module factorial_bigloo.obj
+// MVID: {7F07C9C2-4CB0-ABDE-F2C2-B825AF624335}
+.class public auto ansi factorial_bigloo extends bigloo.procedure
+{
+	.field public static class bigloo.procedure BgL_mainzd2envzd2
+	.field private static unsigned int8[] string1668
+	.field private static unsigned int8[] string1667
+	.field private static class System.Object BGl_requirezd2initializa7ationz75zzexamplesz00
+	.field private static class System.Object[] __cnst
+	.method public static void Main(class System.String[] A_1) cil managed 
+	{
+		// Start of method header: 2048
+		.entrypoint
+		.maxstack  1
+	?L2054:
+		call       void bigloo.realcallback::init()
+	?L2059:
+		ldarg.0
+		call       class System.Object bigloo.foreign::listargv(class System.String[])
+		call       class System.Object factorial_bigloo::bigloo_main(class System.Object)
+		pop
+		leave.s    ?L206e
+	?L2067:
+		call       void bigloo.foreign::internalerror(class System.Exception)
+		leave.s    ?L206e
+	?L206e:
+		ret
+		.try ?L2059 to ?L2067 catch System.Exception handler ?L2067 to ?L206e
+	}
+	.method public static class System.Object bigloo_main(class System.Object A_1) cil managed 
+	{
+		// Start of method header: 21d0
+		.maxstack  8
+	?L21d1:
+		ldc.i4.0
+		ldstr      "examples"
+		call       unsigned int8[] bigloo.foreign::getbytes(class System.String)
+		call       class System.Object factorial_bigloo::BgL_modulezd2initializa7ationz75(int32, unsigned int8[])
+		pop
+		call       class System.Object bigloo.runtime.Llib.param::BgL_bigloozd2initializa7edz12z67()
+		pop
+		ldarg.0
+		castclass  class bigloo.pair
+		call       class System.Object factorial_bigloo::main(class bigloo.pair)
+		call       class System.Object bigloo.foreign::BIGLOO_EXIT(class System.Object)
+		ret
+	}
+	.method public hidebysig specialname rtspecialname instance void .ctor() cil managed 
+	{
+		// Start of method header: 2080
+		.maxstack  8
+	?L2081:
+		ldarg.0
+		call       instance void bigloo.procedure::.ctor()
+		ret
+	}
+	.method public hidebysig specialname rtspecialname instance void .ctor(int32 A_1, int32 A_2) cil managed 
+	{
+		// Start of method header: 2088
+		.maxstack  3
+	?L2094:
+		ldarg.0
+		ldarg.1
+		ldarg.2
+		call       instance void bigloo.procedure::.ctor(int32, int32)
+		ret
+	}
+	.method public hidebysig specialname rtspecialname instance void .ctor(int32 A_1, int32 A_2, int32 A_3) cil managed 
+	{
+		// Start of method header: 20a0
+		.maxstack  4
+	?L20ac:
+		ldarg.0
+		ldarg.1
+		ldarg.2
+		ldarg.3
+		call       instance void bigloo.procedure::.ctor(int32, int32, int32)
+		ret
+	}
+	.method public virtual hidebysig instance class System.Object funcall1(class System.Object A_1) cil managed 
+	{
+		// Start of method header: 20b8
+		.maxstack  3
+	?L20c4:
+		ldarg.0
+		ldfld      int32 bigloo.procedure::index
+		switch     (?L20d5)
+		br.s       ?L20d7
+	?L20d5:
+		br.s       ?L20df
+	?L20d7:
+		ldarg.0
+		ldarg.1
+		call       instance class System.Object bigloo.procedure::funcall1(class System.Object)
+		ret
+	?L20df:
+		ldarg.0
+		ldarg.1
+		call       class System.Object factorial_bigloo::_main(class bigloo.procedure, class System.Object)
+		ret
+	}
+	.method private static class System.Object _main(class bigloo.procedure A_1, class System.Object A_2) cil managed 
+	{
+		// Start of method header: 2304
+		.maxstack  3
+		.locals    (class System.Object)
+	?L2310:
+		ldarg.1
+		isinst     class bigloo.pair
+		brfalse.s  ?L2324
+		ldarg.1
+		castclass  class bigloo.pair
+		call       class System.Object factorial_bigloo::main(class bigloo.pair)
+		ret
+	?L2324:
+		ldsfld     class System.Object[] factorial_bigloo::__cnst
+		ldc.i4.0
+		ldelem.ref
+		stloc.0
+		ldloc.0
+		ldsfld     unsigned int8[] factorial_bigloo::string1667
+		ldarg.1
+		call       class System.Object bigloo.runtime.Llib.error::BgL_bigloozd2typezd2errorz00(class System.Object, class System.Object, class System.Object)
+		pop
+		ldsfld     class bigloo.bbool bigloo.foreign::BFALSE
+		ldsfld     class bigloo.bbool bigloo.foreign::BFALSE
+		ldsfld     class bigloo.bbool bigloo.foreign::BFALSE
+		call       class System.Exception bigloo.foreign::fail(class System.Object, class System.Object, class System.Object)
+		throw
+	}
+	.method public virtual hidebysig instance class System.Object apply(class System.Object A_1) cil managed 
+	{
+		// Start of method header: 20e8
+		.maxstack  8
+	?L20e9:
+		ldarg.0
+		ldfld      int32 bigloo.procedure::index
+		switch     (?L20fa)
+		br.s       ?L20fc
+	?L20fa:
+		br.s       ?L2104
+	?L20fc:
+		ldarg.0
+		ldarg.1
+		call       instance class System.Object bigloo.procedure::apply(class System.Object)
+		ret
+	?L2104:
+		ldarg.0
+		ldarg.1
+		castclass  class bigloo.pair
+		ldfld      class System.Object bigloo.pair::car
+		call       class System.Object factorial_bigloo::_main(class bigloo.procedure, class System.Object)
+		ret
+	}
+	.method public static hidebysig specialname rtspecialname void .cctor() cil managed 
+	{
+		// Start of method header: 2118
+		.maxstack  4
+	?L2124:
+		ldc.i4.1
+		newarr     class System.Object
+		stsfld     class System.Object[] factorial_bigloo::__cnst
+		ldc.i4.0
+		ldc.i4.1
+		newobj     instance void factorial_bigloo::.ctor(int32, int32)
+		stsfld     class bigloo.procedure factorial_bigloo::BgL_mainzd2envzd2
+		ldstr      "_main "
+		call       unsigned int8[] bigloo.foreign::getbytes(class System.String)
+		stsfld     unsigned int8[] factorial_bigloo::string1668
+		ldstr      "pair"
+		call       unsigned int8[] bigloo.foreign::getbytes(class System.String)
+		stsfld     unsigned int8[] factorial_bigloo::string1667
+		ret
+	}
+	.method public static class System.Object BgL_modulezd2initializa7ationz75(int32 A_1, unsigned int8[] A_2) cil managed 
+	{
+		// Start of method header: 215c
+		.maxstack  2
+	?L2168:
+		ldarg.0
+		ldc.i4     16516199
+		call       int32 bigloo.runtime.Llib.bit::BgL_bitzd2andzd2(int32, int32)
+		call       class bigloo.bint bigloo.foreign::BINT(int32)
+		ldfld      int32 bigloo.bint::value
+		ldarg.0
+		call       bool bigloo.runtime.Ieee.fixnum::BgL_zd3fxzd3(int32, int32)
+		brtrue.s   ?L21bd
+		ldstr      "examples"
+		call       unsigned int8[] bigloo.foreign::getbytes(class System.String)
+		call       unsigned int8[] bigloo.foreign::BSTRING_TO_STRING(unsigned int8[])
+		ldarg.1
+		call       class System.Object bigloo.runtime.Llib.error::BgL_modulezd2initzd2errorz00(unsigned int8[], unsigned int8[])
+		ret
+	?L219b:
+		ldsfld     class bigloo.bbool bigloo.bbool::faux
+		stsfld     class System.Object factorial_bigloo::BGl_requirezd2initializa7ationz75zzexamplesz00
+		call       class System.Object factorial_bigloo::BgL_libraryzd2moduleszd2initz00()
+		pop
+		call       class System.Object factorial_bigloo::BgL_cnstzd2initzd2()
+		pop
+		call       class System.Object factorial_bigloo::BgL_methodzd2initzd2()
+		pop
+		ldsfld     class bigloo.unspecified bigloo.unspecified::_unspecified
+		ret
+	?L21bd:
+		ldsfld     class System.Object factorial_bigloo::BGl_requirezd2initializa7ationz75zzexamplesz00
+		ldsfld     class bigloo.bbool bigloo.bbool::faux
+		bne.un.s   ?L219b
+		ldsfld     class bigloo.unspecified bigloo.unspecified::_unspecified
+		ret
+	}
+	.method private static class System.Object BgL_libraryzd2moduleszd2initz00() cil managed 
+	{
+		// Start of method header: 21fc
+		.maxstack  2
+	?L2208:
+		ldc.i4.0
+		ldstr      "examples"
+		call       unsigned int8[] bigloo.foreign::getbytes(class System.String)
+		call       class System.Object bigloo.runtime.Ieee.number::BgL_modulezd2initializa7ationz75(int32, unsigned int8[])
+		pop
+		ldc.i4.0
+		ldstr      "examples"
+		call       unsigned int8[] bigloo.foreign::getbytes(class System.String)
+		call       class System.Object bigloo.runtime.Llib.error::BgL_modulezd2initializa7ationz75(int32, unsigned int8[])
+		pop
+		ldc.i4.0
+		ldstr      "examples"
+		call       unsigned int8[] bigloo.foreign::getbytes(class System.String)
+		call       class System.Object bigloo.runtime.Read.reader::BgL_modulezd2initializa7ationz75(int32, unsigned int8[])
+		pop
+		ldc.i4.0
+		ldstr      "examples"
+		call       unsigned int8[] bigloo.foreign::getbytes(class System.String)
+		call       class System.Object bigloo.runtime.Ieee.output::BgL_modulezd2initializa7ationz75(int32, unsigned int8[])
+		pop
+		ldsfld     class bigloo.unspecified bigloo.unspecified::_unspecified
+		ret
+	}
+	.method private static class System.Object BgL_cnstzd2initzd2() cil managed 
+	{
+		// Start of method header: 2254
+		.maxstack  4
+		.locals    (class bigloo.input_port,
+		            int32)
+	?L2260:
+		ldsfld     unsigned int8[] factorial_bigloo::string1668
+		call       class System.Object bigloo.foreign::open_input_string(unsigned int8[])
+		castclass  class bigloo.input_port
+		stloc.0
+		ldc.i4.0
+		stloc.1
+		br.s       ?L228a
+	?L2274:
+		ldsfld     class System.Object[] factorial_bigloo::__cnst
+		ldloc.1
+		ldloc.0
+		ldsfld     class bigloo.bbool bigloo.bbool::faux
+		call       class System.Object bigloo.runtime.Read.reader::read(class bigloo.input_port, class System.Object)
+		stelem.ref
+		ldloc.1
+		ldc.i4.1
+		sub
+		stloc.1
+	?L228a:
+		ldloc.1
+		ldc.i4.m1
+		bne.un.s   ?L2274
+		ldsfld     class bigloo.unspecified bigloo.unspecified::_unspecified
+		ret
+	}
+	.method private static class System.Object BgL_methodzd2initzd2() cil managed 
+	{
+		// Start of method header: 2350
+		.maxstack  8
+	?L2351:
+		ldsfld     class bigloo.unspecified bigloo.unspecified::_unspecified
+		ret
+	}
+	.method public static class System.Object main(class bigloo.pair A_1) cil managed 
+	{
+		// Start of method header: 22e8
+		.maxstack  8
+	?L22e9:
+		ldc.i4     10000
+		call       class System.Object factorial_bigloo::fact(int32)
+		ldsfld     class bigloo.nil bigloo.nil::_nil
+		newobj     instance void bigloo.pair::.ctor(class System.Object, class System.Object)
+		call       class System.Object bigloo.runtime.Ieee.output::print(class System.Object)
+		ret
+	}
+	.method private static class System.Object fact(int32 A_1) cil managed 
+	{
+		// Start of method header: 2294
+		.maxstack  3
+		.locals    (class System.Object,
+		            class System.Object)
+	?L22a0:
+		ldc.i4.1
+		call       class bigloo.bint bigloo.foreign::BINT(int32)
+		stloc.0
+		ldarg.0
+		call       class bigloo.bint bigloo.foreign::BINT(int32)
+		stloc.1
+		br.s       ?L22de
+	?L22b0:
+		ldloc.0
+		ldloc.1
+		ldsfld     class bigloo.nil bigloo.nil::_nil
+		newobj     instance void bigloo.pair::.ctor(class System.Object, class System.Object)
+		newobj     instance void bigloo.pair::.ctor(class System.Object, class System.Object)
+		call       class System.Object bigloo.runtime.Ieee.number::BgL_za2za2(class System.Object)
+		stloc.0
+		ldloc.1
+		ldc.i4.1
+		call       class bigloo.bint bigloo.foreign::BINT(int32)
+		ldsfld     class bigloo.nil bigloo.nil::_nil
+		newobj     instance void bigloo.pair::.ctor(class System.Object, class System.Object)
+		call       class System.Object bigloo.runtime.Ieee.number::BgL_zd2zd2(class System.Object, class System.Object)
+		stloc.1
+	?L22de:
+		ldloc.1
+		call       bool bigloo.runtime.Ieee.number::BgL_za7erozf3z54(class System.Object)
+		brfalse.s  ?L22b0
+		ldloc.0
+		ret
+	}
+}

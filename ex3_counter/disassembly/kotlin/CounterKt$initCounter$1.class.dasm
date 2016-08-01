@@ -1,0 +1,125 @@
+Classfile /Users/tuuli/school/thesis_examples/ex4_shared_closure/temp$_39916801/CounterKt$initCounter$1.class
+  Last modified Mar 1, 2016; size 1146 bytes
+  MD5 checksum f918e31b721e9daa86640689b97ab415
+  Compiled from "Counter.kt"
+final class CounterKt$initCounter$1 extends kotlin.jvm.internal.Lambda implements kotlin.jvm.functions.Function0<kotlin.Unit>
+  minor version: 0
+  major version: 50
+  flags: ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               CounterKt$initCounter$1
+   #2 = Class              #1             // CounterKt$initCounter$1
+   #3 = Utf8               Lkotlin/jvm/internal/Lambda;Lkotlin/jvm/functions/Function0<Lkotlin/Unit;>;
+   #4 = Utf8               kotlin/jvm/internal/Lambda
+   #5 = Class              #4             // kotlin/jvm/internal/Lambda
+   #6 = Utf8               kotlin/jvm/functions/Function0
+   #7 = Class              #6             // kotlin/jvm/functions/Function0
+   #8 = Utf8               invoke
+   #9 = Utf8               ()Ljava/lang/Object;
+  #10 = Utf8               ()V
+  #11 = NameAndType        #8:#10         // invoke:()V
+  #12 = Methodref          #2.#11         // CounterKt$initCounter$1.invoke:()V
+  #13 = Utf8               kotlin/Unit
+  #14 = Class              #13            // kotlin/Unit
+  #15 = Utf8               INSTANCE
+  #16 = Utf8               Lkotlin/Unit;
+  #17 = NameAndType        #15:#16        // INSTANCE:Lkotlin/Unit;
+  #18 = Fieldref           #14.#17        // kotlin/Unit.INSTANCE:Lkotlin/Unit;
+  #19 = Utf8               $c
+  #20 = Utf8               Lkotlin/jvm/internal/Ref$IntRef;
+  #21 = NameAndType        #19:#20        // $c:Lkotlin/jvm/internal/Ref$IntRef;
+  #22 = Fieldref           #2.#21         // CounterKt$initCounter$1.$c:Lkotlin/jvm/internal/Ref$IntRef;
+  #23 = Utf8               kotlin/jvm/internal/Ref$IntRef
+  #24 = Class              #23            // kotlin/jvm/internal/Ref$IntRef
+  #25 = Utf8               element
+  #26 = Utf8               I
+  #27 = NameAndType        #25:#26        // element:I
+  #28 = Fieldref           #24.#27        // kotlin/jvm/internal/Ref$IntRef.element:I
+  #29 = Utf8               this
+  #30 = Utf8               LCounterKt$initCounter$1;
+  #31 = Utf8               <init>
+  #32 = Utf8               (Lkotlin/jvm/internal/Ref$IntRef;)V
+  #33 = Utf8               (I)V
+  #34 = NameAndType        #31:#33        // "<init>":(I)V
+  #35 = Methodref          #5.#34         // kotlin/jvm/internal/Lambda."<init>":(I)V
+  #36 = Utf8               Lkotlin/jvm/internal/KotlinSyntheticClass;
+  #37 = Utf8               version
+  #38 = Integer            1
+  #39 = Integer            0
+  #40 = Utf8               abiVersion
+  #41 = Integer            32
+  #42 = Utf8               Lkotlin/jvm/internal/KotlinFunction;
+  #43 = Utf8               data
+  #44 = Utf8               \tQ!!QakA
+  #45 = Utf8               strings
+  #46 = Utf8               <anonymous>
+  #47 = Utf8
+  #48 = Utf8               CounterKt
+  #49 = Class              #48            // CounterKt
+  #50 = Utf8               initCounter
+  #51 = NameAndType        #50:#10        // initCounter:()V
+  #52 = Utf8               Counter.kt
+  #53 = Utf8               Code
+  #54 = Utf8               LocalVariableTable
+  #55 = Utf8               LineNumberTable
+  #56 = Utf8               Signature
+  #57 = Utf8               SourceFile
+  #58 = Utf8               EnclosingMethod
+  #59 = Utf8               InnerClasses
+  #60 = Utf8               RuntimeVisibleAnnotations
+{
+  final kotlin.jvm.internal.Ref$IntRef $c;
+    descriptor: Lkotlin/jvm/internal/Ref$IntRef;
+    flags: ACC_FINAL, ACC_SYNTHETIC
+
+  public java.lang.Object invoke();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PUBLIC, ACC_BRIDGE, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #12                 // Method invoke:()V
+         4: getstatic     #18                 // Field kotlin/Unit.INSTANCE:Lkotlin/Unit;
+         7: areturn
+
+  public final void invoke();
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #22                 // Field $c:Lkotlin/jvm/internal/Ref$IntRef;
+         4: aload_0
+         5: getfield      #22                 // Field $c:Lkotlin/jvm/internal/Ref$IntRef;
+         8: getfield      #28                 // Field kotlin/jvm/internal/Ref$IntRef.element:I
+        11: iconst_1
+        12: iadd
+        13: putfield      #28                 // Field kotlin/jvm/internal/Ref$IntRef.element:I
+        16: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      17     0  this   LCounterKt$initCounter$1;
+      LineNumberTable:
+        line 6: 0
+
+  CounterKt$initCounter$1(kotlin.jvm.internal.Ref$IntRef);
+    descriptor: (Lkotlin/jvm/internal/Ref$IntRef;)V
+    flags:
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: putfield      #22                 // Field $c:Lkotlin/jvm/internal/Ref$IntRef;
+         5: aload_0
+         6: iconst_0
+         7: invokespecial #35                 // Method kotlin/jvm/internal/Lambda."<init>":(I)V
+        10: return
+}
+Signature: #3                           // Lkotlin/jvm/internal/Lambda;Lkotlin/jvm/functions/Function0<Lkotlin/Unit;>;
+SourceFile: "Counter.kt"
+EnclosingMethod: #49.#51                // CounterKt.initCounter
+InnerClasses:
+     public static final #2; //class CounterKt$initCounter$1
+RuntimeVisibleAnnotations:
+  0: #36(#37=[I#38,I#39,I#38],#40=I#41)
+  1: #42(#37=[I#38,I#39,I#38],#40=I#41,#43=[s#44],#45=[s#46,s#47,s#8])

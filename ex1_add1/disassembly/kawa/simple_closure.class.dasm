@@ -1,0 +1,273 @@
+Classfile /Users/tuuli/school/thesis_examples/ex2_closure/temp$_39916801/simple_closure.class
+  Last modified Feb 18, 2016; size 1901 bytes
+  MD5 checksum 229a4a69745998c0ec72daef0e6ba2cc
+  Compiled from "simple_closure.scm"
+public class simple_closure extends gnu.expr.ModuleBody implements java.lang.Runnable,gnu.expr.RunnableModule
+  minor version: 0
+  major version: 51
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+    #1 = Utf8               simple_closure
+    #2 = Class              #1            // simple_closure
+    #3 = Utf8               gnu/mapping/CallContext
+    #4 = Class              #3            // gnu/mapping/CallContext
+    #5 = Utf8               consumer
+    #6 = Utf8               Lgnu/lists/Consumer;
+    #7 = NameAndType        #5:#6         // consumer:Lgnu/lists/Consumer;
+    #8 = Fieldref           #4.#7         // gnu/mapping/CallContext.consumer:Lgnu/lists/Consumer;
+    #9 = Utf8               Lit0
+   #10 = Utf8               Lgnu/math/IntNum;
+   #11 = NameAndType        #9:#10        // Lit0:Lgnu/math/IntNum;
+   #12 = Fieldref           #2.#11        // simple_closure.Lit0:Lgnu/math/IntNum;
+   #13 = Utf8               add
+   #14 = Utf8               (Ljava/lang/Object;)Lgnu/mapping/Procedure;
+   #15 = NameAndType        #13:#14       // add:(Ljava/lang/Object;)Lgnu/mapping/Procedure;
+   #16 = Methodref          #2.#15        // simple_closure.add:(Ljava/lang/Object;)Lgnu/mapping/Procedure;
+   #17 = Utf8               Lit1
+   #18 = NameAndType        #17:#10       // Lit1:Lgnu/math/IntNum;
+   #19 = Fieldref           #2.#18        // simple_closure.Lit1:Lgnu/math/IntNum;
+   #20 = Utf8               gnu/mapping/Procedure
+   #21 = Class              #20           // gnu/mapping/Procedure
+   #22 = Utf8               apply1
+   #23 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+   #24 = NameAndType        #22:#23       // apply1:(Ljava/lang/Object;)Ljava/lang/Object;
+   #25 = Methodref          #21.#24       // gnu/mapping/Procedure.apply1:(Ljava/lang/Object;)Ljava/lang/Object;
+   #26 = Utf8               kawa/lib/ports
+   #27 = Class              #26           // kawa/lib/ports
+   #28 = Utf8               display
+   #29 = Utf8               (Ljava/lang/Object;)V
+   #30 = NameAndType        #28:#29       // display:(Ljava/lang/Object;)V
+   #31 = Methodref          #27.#30       // kawa/lib/ports.display:(Ljava/lang/Object;)V
+   #32 = Utf8               Lit2
+   #33 = NameAndType        #32:#10       // Lit2:Lgnu/math/IntNum;
+   #34 = Fieldref           #2.#33        // simple_closure.Lit2:Lgnu/math/IntNum;
+   #35 = Utf8               Lit3
+   #36 = NameAndType        #35:#10       // Lit3:Lgnu/math/IntNum;
+   #37 = Fieldref           #2.#36        // simple_closure.Lit3:Lgnu/math/IntNum;
+   #38 = Utf8               Lit4
+   #39 = NameAndType        #38:#10       // Lit4:Lgnu/math/IntNum;
+   #40 = Fieldref           #2.#39        // simple_closure.Lit4:Lgnu/math/IntNum;
+   #41 = Utf8               java/lang/Object
+   #42 = Class              #41           // java/lang/Object
+   #43 = Utf8               simple_closure$frame
+   #44 = Class              #43           // simple_closure$frame
+   #45 = Utf8               <init>
+   #46 = Utf8               ()V
+   #47 = NameAndType        #45:#46       // "<init>":()V
+   #48 = Methodref          #44.#47       // simple_closure$frame."<init>":()V
+   #49 = Utf8               x
+   #50 = Utf8               Ljava/lang/Object;
+   #51 = NameAndType        #49:#50       // x:Ljava/lang/Object;
+   #52 = Fieldref           #44.#51       // simple_closure$frame.x:Ljava/lang/Object;
+   #53 = Utf8               lambda$Fn1
+   #54 = Utf8               Lgnu/expr/ModuleMethod;
+   #55 = NameAndType        #53:#54       // lambda$Fn1:Lgnu/expr/ModuleMethod;
+   #56 = Fieldref           #44.#55       // simple_closure$frame.lambda$Fn1:Lgnu/expr/ModuleMethod;
+   #57 = Utf8               kawa/standard/Scheme
+   #58 = Class              #57           // kawa/standard/Scheme
+   #59 = Utf8               registerEnvironment
+   #60 = NameAndType        #59:#46       // registerEnvironment:()V
+   #61 = Methodref          #58.#60       // kawa/standard/Scheme.registerEnvironment:()V
+   #62 = Utf8               gnu/expr/ModuleBody
+   #63 = Class              #62           // gnu/expr/ModuleBody
+   #64 = Methodref          #63.#47       // gnu/expr/ModuleBody."<init>":()V
+   #65 = Utf8               gnu/expr/ModuleInfo
+   #66 = Class              #65           // gnu/expr/ModuleInfo
+   #67 = Utf8               register
+   #68 = NameAndType        #67:#29       // register:(Ljava/lang/Object;)V
+   #69 = Methodref          #66.#68       // gnu/expr/ModuleInfo.register:(Ljava/lang/Object;)V
+   #70 = Methodref          #2.#47        // simple_closure."<init>":()V
+   #71 = Utf8               $instance
+   #72 = Utf8               Lsimple_closure;
+   #73 = NameAndType        #71:#72       // $instance:Lsimple_closure;
+   #74 = Fieldref           #2.#73        // simple_closure.$instance:Lsimple_closure;
+   #75 = Utf8               gnu/math/IntNum
+   #76 = Class              #75           // gnu/math/IntNum
+   #77 = Utf8               valueOf
+   #78 = Utf8               (I)Lgnu/math/IntNum;
+   #79 = NameAndType        #77:#78       // valueOf:(I)Lgnu/math/IntNum;
+   #80 = Methodref          #76.#79       // gnu/math/IntNum.valueOf:(I)Lgnu/math/IntNum;
+   #81 = Utf8               [Ljava/lang/String;
+   #82 = Class              #81           // "[Ljava/lang/String;"
+   #83 = Utf8               gnu/expr/ApplicationMainSupport
+   #84 = Class              #83           // gnu/expr/ApplicationMainSupport
+   #85 = Utf8               processArgs
+   #86 = Utf8               ([Ljava/lang/String;)V
+   #87 = NameAndType        #85:#86       // processArgs:([Ljava/lang/String;)V
+   #88 = Methodref          #84.#87       // gnu/expr/ApplicationMainSupport.processArgs:([Ljava/lang/String;)V
+   #89 = Utf8               runAsMain
+   #90 = Utf8               (Lgnu/expr/RunnableModule;)V
+   #91 = NameAndType        #89:#90       // runAsMain:(Lgnu/expr/RunnableModule;)V
+   #92 = Methodref          #63.#91       // gnu/expr/ModuleBody.runAsMain:(Lgnu/expr/RunnableModule;)V
+   #93 = Utf8               java/lang/Runnable
+   #94 = Class              #93           // java/lang/Runnable
+   #95 = Utf8               gnu/expr/RunnableModule
+   #96 = Class              #95           // gnu/expr/RunnableModule
+   #97 = Utf8               run
+   #98 = Utf8               (Lgnu/mapping/CallContext;)V
+   #99 = Utf8               Code
+  #100 = Utf8               LineNumberTable
+  #101 = Utf8               LocalVariableTable
+  #102 = Utf8               this
+  #103 = Utf8               $ctx
+  #104 = Utf8               Lgnu/mapping/CallContext;
+  #105 = Utf8               $result
+  #106 = Utf8               add10
+  #107 = Utf8               Lgnu/mapping/Procedure;
+  #108 = Utf8               $heapFrame
+  #109 = Utf8               Lsimple_closure$frame;
+  #110 = Utf8               <clinit>
+  #111 = Utf8               main
+  #112 = Utf8               SourceFile
+  #113 = Utf8               simple_closure.scm
+  #114 = Utf8               SourceDebugExtension
+  #115 = Utf8               InnerClasses
+{
+  static final gnu.math.IntNum Lit0;
+    descriptor: Lgnu/math/IntNum;
+    flags: ACC_STATIC, ACC_FINAL
+
+  static final gnu.math.IntNum Lit1;
+    descriptor: Lgnu/math/IntNum;
+    flags: ACC_STATIC, ACC_FINAL
+
+  static final gnu.math.IntNum Lit2;
+    descriptor: Lgnu/math/IntNum;
+    flags: ACC_STATIC, ACC_FINAL
+
+  static final gnu.math.IntNum Lit3;
+    descriptor: Lgnu/math/IntNum;
+    flags: ACC_STATIC, ACC_FINAL
+
+  static final gnu.math.IntNum Lit4;
+    descriptor: Lgnu/math/IntNum;
+    flags: ACC_STATIC, ACC_FINAL
+
+  public static simple_closure $instance;
+    descriptor: Lsimple_closure;
+    flags: ACC_PUBLIC, ACC_STATIC
+
+  public final void run(gnu.mapping.CallContext);
+    descriptor: (Lgnu/mapping/CallContext;)V
+    flags: ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=2, locals=4, args_size=2
+         0: aload_1
+         1: getfield      #8                  // Field gnu/mapping/CallContext.consumer:Lgnu/lists/Consumer;
+         4: astore_2
+         5: getstatic     #12                 // Field Lit0:Lgnu/math/IntNum;
+         8: invokestatic  #16                 // Method add:(Ljava/lang/Object;)Lgnu/mapping/Procedure;
+        11: getstatic     #19                 // Field Lit1:Lgnu/math/IntNum;
+        14: invokevirtual #25                 // Method gnu/mapping/Procedure.apply1:(Ljava/lang/Object;)Ljava/lang/Object;
+        17: invokestatic  #31                 // Method kawa/lib/ports.display:(Ljava/lang/Object;)V
+        20: getstatic     #34                 // Field Lit2:Lgnu/math/IntNum;
+        23: invokestatic  #16                 // Method add:(Ljava/lang/Object;)Lgnu/mapping/Procedure;
+        26: astore_3
+        27: aload_3
+        28: getstatic     #37                 // Field Lit3:Lgnu/math/IntNum;
+        31: invokevirtual #25                 // Method gnu/mapping/Procedure.apply1:(Ljava/lang/Object;)Ljava/lang/Object;
+        34: invokestatic  #31                 // Method kawa/lib/ports.display:(Ljava/lang/Object;)V
+        37: aload_3
+        38: getstatic     #40                 // Field Lit4:Lgnu/math/IntNum;
+        41: invokevirtual #25                 // Method gnu/mapping/Procedure.apply1:(Ljava/lang/Object;)Ljava/lang/Object;
+        44: invokestatic  #31                 // Method kawa/lib/ports.display:(Ljava/lang/Object;)V
+        47: return
+      LineNumberTable:
+        line 1: 0
+        line 6: 5
+        line 8: 20
+        line 10: 27
+        line 11: 37
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      47     0  this   Lsimple_closure;
+            0      47     1  $ctx   Lgnu/mapping/CallContext;
+            0      47     2 $result   Lgnu/lists/Consumer;
+           20      27     3 add10   Lgnu/mapping/Procedure;
+
+  static gnu.mapping.Procedure add(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Lgnu/mapping/Procedure;
+    flags: ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: new           #44                 // class simple_closure$frame
+         3: dup
+         4: invokespecial #48                 // Method simple_closure$frame."<init>":()V
+         7: astore_1
+         8: aload_1
+         9: aload_0
+        10: putfield      #52                 // Field simple_closure$frame.x:Ljava/lang/Object;
+        13: aload_1
+         // Palauttaa sulkeumaolion lambda$Fn1-kentän
+        14: getfield      #56                 // Field simple_closure$frame.lambda$Fn1:Lgnu/expr/ModuleMethod;
+        17: areturn
+      LineNumberTable:
+        line 2: 0
+        line 3: 13
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      17     0     x   Ljava/lang/Object;
+            8       9     1 $heapFrame   Lsimple_closure$frame;
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: invokestatic  #61                 // Method kawa/standard/Scheme.registerEnvironment:()V
+         3: sipush        999
+         6: invokestatic  #80                 // Method gnu/math/IntNum.valueOf:(I)Lgnu/math/IntNum;
+         9: putstatic     #40                 // Field Lit4:Lgnu/math/IntNum;
+        12: bipush        90
+        14: invokestatic  #80                 // Method gnu/math/IntNum.valueOf:(I)Lgnu/math/IntNum;
+        17: putstatic     #37                 // Field Lit3:Lgnu/math/IntNum;
+        20: bipush        10
+        22: invokestatic  #80                 // Method gnu/math/IntNum.valueOf:(I)Lgnu/math/IntNum;
+        25: putstatic     #34                 // Field Lit2:Lgnu/math/IntNum;
+        28: iconst_4
+        29: invokestatic  #80                 // Method gnu/math/IntNum.valueOf:(I)Lgnu/math/IntNum;
+        32: putstatic     #19                 // Field Lit1:Lgnu/math/IntNum;
+        35: iconst_5
+        36: invokestatic  #80                 // Method gnu/math/IntNum.valueOf:(I)Lgnu/math/IntNum;
+        39: putstatic     #12                 // Field Lit0:Lgnu/math/IntNum;
+        42: new           #2                  // class simple_closure
+        45: dup
+        46: invokespecial #70                 // Method "<init>":()V
+        49: putstatic     #74                 // Field $instance:Lsimple_closure;
+        52: return
+
+  public simple_closure();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #64                 // Method gnu/expr/ModuleBody."<init>":()V
+         4: aload_0
+         5: invokestatic  #69                 // Method gnu/expr/ModuleInfo.register:(Ljava/lang/Object;)V
+         8: return
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #88                 // Method gnu/expr/ApplicationMainSupport.processArgs:([Ljava/lang/String;)V
+         4: getstatic     #74                 // Field $instance:Lsimple_closure;
+         7: invokestatic  #92                 // Method gnu/expr/ModuleBody.runAsMain:(Lgnu/expr/RunnableModule;)V
+        10: return
+}
+InnerClasses:
+     public #43= #44; //simple_closure$frame=class simple_closure$frame
+SourceFile: "simple_closure.scm"
+SourceDebugExtension:
+  SMAP
+  simple_closure.scm
+  Scheme
+  *S Scheme
+  *F
+  1 simple_closure.scm
+  *L
+  1#1,11:1
+  *E

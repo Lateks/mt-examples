@@ -1,0 +1,8 @@
+*.class
+*.jar
+*.out
+*.o
+*.exe
+*.pyc
+*~
+META-INF

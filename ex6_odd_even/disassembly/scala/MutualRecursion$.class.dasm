@@ -1,0 +1,200 @@
+Classfile /Users/tuuli/school/thesis_examples/ex3_mutual_recursion/temp$_39916801/MutualRecursion$.class
+  Last modified Feb 29, 2016; size 1077 bytes
+  MD5 checksum ad12c2e64547bd3a91e1f92db42155dd
+  Compiled from "MutualRecursion.scala"
+public final class MutualRecursion$
+  minor version: 0
+  major version: 50
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               MutualRecursion$
+   #2 = Class              #1             // MutualRecursion$
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               MutualRecursion.scala
+   #6 = Utf8               MODULE$
+   #7 = Utf8               LMutualRecursion$;
+   #8 = Utf8               <clinit>
+   #9 = Utf8               ()V
+  #10 = Utf8               <init>
+  #11 = NameAndType        #10:#9         // "<init>":()V
+  #12 = Methodref          #2.#11         // MutualRecursion$."<init>":()V
+  #13 = Utf8               main
+  #14 = Utf8               ([Ljava/lang/String;)V
+  #15 = Utf8               scala/Predef$
+  #16 = Class              #15            // scala/Predef$
+  #17 = Utf8               Lscala/Predef$;
+  #18 = NameAndType        #6:#17         // MODULE$:Lscala/Predef$;
+  #19 = Fieldref           #16.#18        // scala/Predef$.MODULE$:Lscala/Predef$;
+  #20 = Utf8               isOdd
+  #21 = Utf8               (I)Z
+  #22 = NameAndType        #20:#21        // isOdd:(I)Z
+  #23 = Methodref          #2.#22         // MutualRecursion$.isOdd:(I)Z
+  #24 = Utf8               scala/runtime/BoxesRunTime
+  #25 = Class              #24            // scala/runtime/BoxesRunTime
+  #26 = Utf8               boxToBoolean
+  #27 = Utf8               (Z)Ljava/lang/Boolean;
+  #28 = NameAndType        #26:#27        // boxToBoolean:(Z)Ljava/lang/Boolean;
+  #29 = Methodref          #25.#28        // scala/runtime/BoxesRunTime.boxToBoolean:(Z)Ljava/lang/Boolean;
+  #30 = Utf8               println
+  #31 = Utf8               (Ljava/lang/Object;)V
+  #32 = NameAndType        #30:#31        // println:(Ljava/lang/Object;)V
+  #33 = Methodref          #16.#32        // scala/Predef$.println:(Ljava/lang/Object;)V
+  #34 = Utf8               isEven
+  #35 = NameAndType        #34:#21        // isEven:(I)Z
+  #36 = Methodref          #2.#35         // MutualRecursion$.isEven:(I)Z
+  #37 = Integer            2147483647
+  #38 = Utf8               this
+  #39 = Utf8               args
+  #40 = Utf8               [Ljava/lang/String;
+  #41 = Utf8               n
+  #42 = Utf8               I
+  #43 = Methodref          #4.#11         // java/lang/Object."<init>":()V
+  #44 = NameAndType        #6:#7          // MODULE$:LMutualRecursion$;
+  #45 = Fieldref           #2.#44         // MutualRecursion$.MODULE$:LMutualRecursion$;
+  #46 = Utf8               Code
+  #47 = Utf8               LocalVariableTable
+  #48 = Utf8               LineNumberTable
+  #49 = Utf8               StackMapTable
+  #50 = Utf8               SourceFile
+  #51 = Utf8               ScalaInlineInfo
+  #52 = Utf8               Scala
+{
+  public static final MutualRecursion$ MODULE$;
+    descriptor: LMutualRecursion$;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: new           #2                  // class MutualRecursion$
+         3: invokespecial #12                 // Method "<init>":()V
+         6: return
+
+  public void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=2, args_size=2
+         0: getstatic     #19                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+         3: aload_0
+         4: bipush        10
+         6: invokevirtual #23                 // Method isOdd:(I)Z
+         9: invokestatic  #29                 // Method scala/runtime/BoxesRunTime.boxToBoolean:(Z)Ljava/lang/Boolean;
+        12: invokevirtual #33                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+        15: getstatic     #19                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+        18: aload_0
+        19: bipush        10
+        21: invokevirtual #36                 // Method isEven:(I)Z
+        24: invokestatic  #29                 // Method scala/runtime/BoxesRunTime.boxToBoolean:(Z)Ljava/lang/Boolean;
+        27: invokevirtual #33                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+        30: getstatic     #19                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+        33: aload_0
+        34: bipush        9
+        36: invokevirtual #23                 // Method isOdd:(I)Z
+        39: invokestatic  #29                 // Method scala/runtime/BoxesRunTime.boxToBoolean:(Z)Ljava/lang/Boolean;
+        42: invokevirtual #33                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+        45: getstatic     #19                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+        48: aload_0
+        49: bipush        9
+        51: invokevirtual #36                 // Method isEven:(I)Z
+        54: invokestatic  #29                 // Method scala/runtime/BoxesRunTime.boxToBoolean:(Z)Ljava/lang/Boolean;
+        57: invokevirtual #33                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+        60: getstatic     #19                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+        63: aload_0
+        64: ldc           #37                 // int 2147483647
+        66: invokevirtual #23                 // Method isOdd:(I)Z
+        69: invokestatic  #29                 // Method scala/runtime/BoxesRunTime.boxToBoolean:(Z)Ljava/lang/Boolean;
+        72: invokevirtual #33                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+        75: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      76     0  this   LMutualRecursion$;
+            0      76     1  args   [Ljava/lang/String;
+      LineNumberTable:
+        line 3: 0
+        line 4: 15
+        line 5: 30
+        line 6: 45
+        line 7: 60
+
+  public boolean isOdd(int);
+    descriptor: (I)Z
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=2, args_size=2
+         0: iload_1
+         1: iconst_0
+         2: if_icmpne     7
+         5: iconst_0
+         6: ireturn
+         7: aload_0
+         8: iload_1
+         9: iconst_1
+        10: isub
+        11: invokevirtual #36                 // Method isEven:(I)Z
+        14: ireturn
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      15     0  this   LMutualRecursion$;
+            0      15     1     n   I
+      LineNumberTable:
+        line 11: 0
+        line 12: 5
+        line 13: 7
+      StackMapTable: number_of_entries = 1
+        frame_type = 7 /* same */
+
+  public boolean isEven(int);
+    descriptor: (I)Z
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=2, args_size=2
+         0: iload_1
+         1: iconst_0
+         2: if_icmpne     7
+         5: iconst_1
+         6: ireturn
+         7: aload_0
+         8: iload_1
+         9: iconst_1
+        10: isub
+        11: invokevirtual #23                 // Method isOdd:(I)Z
+        14: ireturn
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      15     0  this   LMutualRecursion$;
+            0      15     1     n   I
+      LineNumberTable:
+        line 17: 0
+        line 18: 5
+        line 19: 7
+      StackMapTable: number_of_entries = 1
+        frame_type = 7 /* same */
+
+  private MutualRecursion$();
+    descriptor: ()V
+    flags: ACC_PRIVATE
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #43                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: putstatic     #45                 // Field MODULE$:LMutualRecursion$;
+         8: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   LMutualRecursion$;
+      LineNumberTable:
+        line 21: 0
+}
+SourceFile: "MutualRecursion.scala"
+Error: unknown attribute
+  ScalaInlineInfo: length = 0x18
+   01 01 00 04 00 0A 00 09 01 00 22 00 15 01 00 14
+   00 15 01 00 0D 00 0E 01
+Error: unknown attribute
+  Scala: length = 0x0
+
