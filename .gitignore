@@ -3,6 +3,7 @@
 *.out
 *.o
 *.exe
+*.dll
 *.pyc
 *~
 META-INF

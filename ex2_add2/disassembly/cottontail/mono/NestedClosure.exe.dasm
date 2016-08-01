@@ -1,0 +1,637 @@
+.assembly extern CottontailSchemeLib
+{
+  .ver 1:0:0:0
+}
+.assembly extern mscorlib
+{
+  .ver 4:0:0:0
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 ) // .z\V.4..
+}
+.assembly 'NestedClosure'
+{
+  .hash algorithm 0x00008004
+  .ver  0:0:0:0
+}
+.module NestedClosure // GUID = {264B1B90-9A55-43FE-8B6E-CF51F86898F8}
+
+
+  .class public auto ansi CTTailCallProcedureHandle
+  	extends [CottontailSchemeLib]CottontailSchemeLib.CTProcedure
+  {
+    .field  assembly  int32 index
+    .field  assembly  class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame frame
+
+    // method line 1
+    .method public specialname rtspecialname 
+           instance default void '.ctor' (class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame A_1, int32 A_2, int32 A_3, string A_4)  cil managed 
+    {
+        // Method begins at RVA 0x20ec
+	// Code size 24 (0x18)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.3 
+	IL_0002:  ldarg.s 4
+	IL_0004:  call instance void class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::'.ctor'(int32, string)
+	IL_0009:  ldarg.0 
+	IL_000a:  ldarg.1 
+	IL_000b:  stfld class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame CTTailCallProcedureHandle::frame
+	IL_0010:  ldarg.0 
+	IL_0011:  ldarg.2 
+	IL_0012:  stfld int32 CTTailCallProcedureHandle::index
+	IL_0017:  ret 
+    } // end of method CTTailCallProcedureHandle::.ctor
+
+    // method line 2
+    .method public specialname rtspecialname 
+           instance default void '.ctor' (class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame A_1, int32 A_2, string A_3)  cil managed 
+    {
+        // Method begins at RVA 0x2108
+	// Code size 22 (0x16)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.3 
+	IL_0002:  call instance void class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::'.ctor'(string)
+	IL_0007:  ldarg.0 
+	IL_0008:  ldarg.1 
+	IL_0009:  stfld class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame CTTailCallProcedureHandle::frame
+	IL_000e:  ldarg.0 
+	IL_000f:  ldarg.2 
+	IL_0010:  stfld int32 CTTailCallProcedureHandle::index
+	IL_0015:  ret 
+    } // end of method CTTailCallProcedureHandle::.ctor
+
+    // method line 3
+    .method public specialname rtspecialname 
+           instance default void '.ctor' (class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame A_1, int32 A_2, int32 A_3)  cil managed 
+    {
+        // Method begins at RVA 0x2120
+	// Code size 22 (0x16)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.3 
+	IL_0002:  call instance void class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::'.ctor'(int32)
+	IL_0007:  ldarg.0 
+	IL_0008:  ldarg.1 
+	IL_0009:  stfld class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame CTTailCallProcedureHandle::frame
+	IL_000e:  ldarg.0 
+	IL_000f:  ldarg.2 
+	IL_0010:  stfld int32 CTTailCallProcedureHandle::index
+	IL_0015:  ret 
+    } // end of method CTTailCallProcedureHandle::.ctor
+
+    // method line 4
+    .method public specialname rtspecialname 
+           instance default void '.ctor' (class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame A_1, int32 A_2)  cil managed 
+    {
+        // Method begins at RVA 0x2138
+	// Code size 21 (0x15)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::'.ctor'()
+	IL_0006:  ldarg.0 
+	IL_0007:  ldarg.1 
+	IL_0008:  stfld class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame CTTailCallProcedureHandle::frame
+	IL_000d:  ldarg.0 
+	IL_000e:  ldarg.2 
+	IL_000f:  stfld int32 CTTailCallProcedureHandle::index
+	IL_0014:  ret 
+    } // end of method CTTailCallProcedureHandle::.ctor
+
+    // method line 5
+    .method public virtual 
+           instance default class [CottontailSchemeLib]CottontailSchemeLib.CTObject apply0 ()  cil managed 
+    {
+        // Method begins at RVA 0x2150
+	.override class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::apply0
+	// Code size 74 (0x4a)
+	.maxstack 12
+	IL_0000:  ldarg.0 
+	IL_0001:  callvirt instance bool class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::get_isVarargs()
+	IL_0006:  brtrue IL_0027
+
+	IL_000b:  ldarg.0 
+	IL_000c:  ldc.i4.s 0x00
+	IL_000e:  call instance void class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::matchNumArgs(int32)
+	IL_0013:  ldarg.0 
+	IL_0014:  ldfld class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame CTTailCallProcedureHandle::frame
+	IL_0019:  ldarg.0 
+	IL_001a:  ldfld int32 CTTailCallProcedureHandle::index
+	IL_001f:  tail. 
+	IL_0021:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcall0(int32)
+	IL_0026:  ret 
+	IL_0027:  ldarg.0 
+	IL_0028:  ldfld class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame CTTailCallProcedureHandle::frame
+	IL_002d:  ldarg.0 
+	IL_002e:  ldfld int32 CTTailCallProcedureHandle::index
+	IL_0033:  ldc.i4 0
+	IL_0038:  newarr [CottontailSchemeLib]CottontailSchemeLib.CTObject
+	IL_003d:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [CottontailSchemeLib]CottontailSchemeLib.CTObject[])
+	IL_0042:  tail. 
+	IL_0044:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcallVarargs(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	IL_0049:  ret 
+    } // end of method CTTailCallProcedureHandle::apply0
+
+    // method line 6
+    .method public virtual 
+           instance default class [CottontailSchemeLib]CottontailSchemeLib.CTObject apply1 (class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_1)  cil managed 
+    {
+        // Method begins at RVA 0x21a8
+	.override class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::apply1
+	// Code size 85 (0x55)
+	.maxstack 13
+	IL_0000:  ldarg.0 
+	IL_0001:  callvirt instance bool class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::get_isVarargs()
+	IL_0006:  brtrue IL_0029
+
+	IL_000b:  ldarg.0 
+	IL_000c:  ldc.i4.s 0x01
+	IL_000e:  call instance void class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::matchNumArgs(int32)
+	IL_0013:  ldarg.0 
+	IL_0014:  ldfld class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame CTTailCallProcedureHandle::frame
+	IL_0019:  ldarg.0 
+	IL_001a:  ldfld int32 CTTailCallProcedureHandle::index
+	IL_001f:  ldarg.s 1
+	IL_0021:  tail. 
+	IL_0023:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcall1(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	IL_0028:  ret 
+	IL_0029:  ldarg.0 
+	IL_002a:  ldfld class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame CTTailCallProcedureHandle::frame
+	IL_002f:  ldarg.0 
+	IL_0030:  ldfld int32 CTTailCallProcedureHandle::index
+	IL_0035:  ldc.i4 1
+	IL_003a:  newarr [CottontailSchemeLib]CottontailSchemeLib.CTObject
+	IL_003f:  dup 
+	IL_0040:  ldc.i4 0
+	IL_0045:  ldarg.s 1
+	IL_0047:  stelem.ref 
+	IL_0048:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [CottontailSchemeLib]CottontailSchemeLib.CTObject[])
+	IL_004d:  tail. 
+	IL_004f:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcallVarargs(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	IL_0054:  ret 
+    } // end of method CTTailCallProcedureHandle::apply1
+
+    // method line 7
+    .method public virtual 
+           instance default class [CottontailSchemeLib]CottontailSchemeLib.CTObject apply2 (class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_1, class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_2)  cil managed 
+    {
+        // Method begins at RVA 0x220c
+	.override class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::apply2
+	// Code size 96 (0x60)
+	.maxstack 13
+	IL_0000:  ldarg.0 
+	IL_0001:  callvirt instance bool class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::get_isVarargs()
+	IL_0006:  brtrue IL_002b
+
+	IL_000b:  ldarg.0 
+	IL_000c:  ldc.i4.s 0x02
+	IL_000e:  call instance void class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::matchNumArgs(int32)
+	IL_0013:  ldarg.0 
+	IL_0014:  ldfld class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame CTTailCallProcedureHandle::frame
+	IL_0019:  ldarg.0 
+	IL_001a:  ldfld int32 CTTailCallProcedureHandle::index
+	IL_001f:  ldarg.s 1
+	IL_0021:  ldarg.s 2
+	IL_0023:  tail. 
+	IL_0025:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcall2(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	IL_002a:  ret 
+	IL_002b:  ldarg.0 
+	IL_002c:  ldfld class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame CTTailCallProcedureHandle::frame
+	IL_0031:  ldarg.0 
+	IL_0032:  ldfld int32 CTTailCallProcedureHandle::index
+	IL_0037:  ldc.i4 2
+	IL_003c:  newarr [CottontailSchemeLib]CottontailSchemeLib.CTObject
+	IL_0041:  dup 
+	IL_0042:  ldc.i4 0
+	IL_0047:  ldarg.s 1
+	IL_0049:  stelem.ref 
+	IL_004a:  dup 
+	IL_004b:  ldc.i4 1
+	IL_0050:  ldarg.s 2
+	IL_0052:  stelem.ref 
+	IL_0053:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [CottontailSchemeLib]CottontailSchemeLib.CTObject[])
+	IL_0058:  tail. 
+	IL_005a:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcallVarargs(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	IL_005f:  ret 
+    } // end of method CTTailCallProcedureHandle::apply2
+
+    // method line 8
+    .method public virtual 
+           instance default class [CottontailSchemeLib]CottontailSchemeLib.CTObject apply3 (class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_1, class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_2, class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_3)  cil managed 
+    {
+        // Method begins at RVA 0x2278
+	.override class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::apply3
+	// Code size 107 (0x6b)
+	.maxstack 13
+	IL_0000:  ldarg.0 
+	IL_0001:  callvirt instance bool class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::get_isVarargs()
+	IL_0006:  brtrue IL_002d
+
+	IL_000b:  ldarg.0 
+	IL_000c:  ldc.i4.s 0x03
+	IL_000e:  call instance void class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::matchNumArgs(int32)
+	IL_0013:  ldarg.0 
+	IL_0014:  ldfld class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame CTTailCallProcedureHandle::frame
+	IL_0019:  ldarg.0 
+	IL_001a:  ldfld int32 CTTailCallProcedureHandle::index
+	IL_001f:  ldarg.s 1
+	IL_0021:  ldarg.s 2
+	IL_0023:  ldarg.s 3
+	IL_0025:  tail. 
+	IL_0027:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcall3(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject, class [CottontailSchemeLib]CottontailSchemeLib.CTObject, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	IL_002c:  ret 
+	IL_002d:  ldarg.0 
+	IL_002e:  ldfld class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame CTTailCallProcedureHandle::frame
+	IL_0033:  ldarg.0 
+	IL_0034:  ldfld int32 CTTailCallProcedureHandle::index
+	IL_0039:  ldc.i4 3
+	IL_003e:  newarr [CottontailSchemeLib]CottontailSchemeLib.CTObject
+	IL_0043:  dup 
+	IL_0044:  ldc.i4 0
+	IL_0049:  ldarg.s 1
+	IL_004b:  stelem.ref 
+	IL_004c:  dup 
+	IL_004d:  ldc.i4 1
+	IL_0052:  ldarg.s 2
+	IL_0054:  stelem.ref 
+	IL_0055:  dup 
+	IL_0056:  ldc.i4 2
+	IL_005b:  ldarg.s 3
+	IL_005d:  stelem.ref 
+	IL_005e:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [CottontailSchemeLib]CottontailSchemeLib.CTObject[])
+	IL_0063:  tail. 
+	IL_0065:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcallVarargs(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	IL_006a:  ret 
+    } // end of method CTTailCallProcedureHandle::apply3
+
+    // method line 9
+    .method public virtual 
+           instance default class [CottontailSchemeLib]CottontailSchemeLib.CTObject apply4 (class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_1, class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_2, class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_3, class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_4)  cil managed 
+    {
+        // Method begins at RVA 0x22f0
+	.override class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::apply4
+	// Code size 118 (0x76)
+	.maxstack 13
+	IL_0000:  ldarg.0 
+	IL_0001:  callvirt instance bool class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::get_isVarargs()
+	IL_0006:  brtrue IL_002f
+
+	IL_000b:  ldarg.0 
+	IL_000c:  ldc.i4.s 0x04
+	IL_000e:  call instance void class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::matchNumArgs(int32)
+	IL_0013:  ldarg.0 
+	IL_0014:  ldfld class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame CTTailCallProcedureHandle::frame
+	IL_0019:  ldarg.0 
+	IL_001a:  ldfld int32 CTTailCallProcedureHandle::index
+	IL_001f:  ldarg.s 1
+	IL_0021:  ldarg.s 2
+	IL_0023:  ldarg.s 3
+	IL_0025:  ldarg.s 4
+	IL_0027:  tail. 
+	IL_0029:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcall4(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject, class [CottontailSchemeLib]CottontailSchemeLib.CTObject, class [CottontailSchemeLib]CottontailSchemeLib.CTObject, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	IL_002e:  ret 
+	IL_002f:  ldarg.0 
+	IL_0030:  ldfld class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame CTTailCallProcedureHandle::frame
+	IL_0035:  ldarg.0 
+	IL_0036:  ldfld int32 CTTailCallProcedureHandle::index
+	IL_003b:  ldc.i4 4
+	IL_0040:  newarr [CottontailSchemeLib]CottontailSchemeLib.CTObject
+	IL_0045:  dup 
+	IL_0046:  ldc.i4 0
+	IL_004b:  ldarg.s 1
+	IL_004d:  stelem.ref 
+	IL_004e:  dup 
+	IL_004f:  ldc.i4 1
+	IL_0054:  ldarg.s 2
+	IL_0056:  stelem.ref 
+	IL_0057:  dup 
+	IL_0058:  ldc.i4 2
+	IL_005d:  ldarg.s 3
+	IL_005f:  stelem.ref 
+	IL_0060:  dup 
+	IL_0061:  ldc.i4 3
+	IL_0066:  ldarg.s 4
+	IL_0068:  stelem.ref 
+	IL_0069:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [CottontailSchemeLib]CottontailSchemeLib.CTObject[])
+	IL_006e:  tail. 
+	IL_0070:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcallVarargs(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	IL_0075:  ret 
+    } // end of method CTTailCallProcedureHandle::apply4
+
+    // method line 10
+    .method public virtual 
+           instance default class [CottontailSchemeLib]CottontailSchemeLib.CTObject apply5 (class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_1, class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_2, class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_3, class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_4, class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_5)  cil managed 
+    {
+        // Method begins at RVA 0x2374
+	.override class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::apply5
+	// Code size 129 (0x81)
+	.maxstack 13
+	IL_0000:  ldarg.0 
+	IL_0001:  callvirt instance bool class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::get_isVarargs()
+	IL_0006:  brtrue IL_0031
+
+	IL_000b:  ldarg.0 
+	IL_000c:  ldc.i4.s 0x05
+	IL_000e:  call instance void class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::matchNumArgs(int32)
+	IL_0013:  ldarg.0 
+	IL_0014:  ldfld class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame CTTailCallProcedureHandle::frame
+	IL_0019:  ldarg.0 
+	IL_001a:  ldfld int32 CTTailCallProcedureHandle::index
+	IL_001f:  ldarg.s 1
+	IL_0021:  ldarg.s 2
+	IL_0023:  ldarg.s 3
+	IL_0025:  ldarg.s 4
+	IL_0027:  ldarg.s 5
+	IL_0029:  tail. 
+	IL_002b:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcall5(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject, class [CottontailSchemeLib]CottontailSchemeLib.CTObject, class [CottontailSchemeLib]CottontailSchemeLib.CTObject, class [CottontailSchemeLib]CottontailSchemeLib.CTObject, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	IL_0030:  ret 
+	IL_0031:  ldarg.0 
+	IL_0032:  ldfld class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame CTTailCallProcedureHandle::frame
+	IL_0037:  ldarg.0 
+	IL_0038:  ldfld int32 CTTailCallProcedureHandle::index
+	IL_003d:  ldc.i4 5
+	IL_0042:  newarr [CottontailSchemeLib]CottontailSchemeLib.CTObject
+	IL_0047:  dup 
+	IL_0048:  ldc.i4 0
+	IL_004d:  ldarg.s 1
+	IL_004f:  stelem.ref 
+	IL_0050:  dup 
+	IL_0051:  ldc.i4 1
+	IL_0056:  ldarg.s 2
+	IL_0058:  stelem.ref 
+	IL_0059:  dup 
+	IL_005a:  ldc.i4 2
+	IL_005f:  ldarg.s 3
+	IL_0061:  stelem.ref 
+	IL_0062:  dup 
+	IL_0063:  ldc.i4 3
+	IL_0068:  ldarg.s 4
+	IL_006a:  stelem.ref 
+	IL_006b:  dup 
+	IL_006c:  ldc.i4 4
+	IL_0071:  ldarg.s 5
+	IL_0073:  stelem.ref 
+	IL_0074:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [CottontailSchemeLib]CottontailSchemeLib.CTObject[])
+	IL_0079:  tail. 
+	IL_007b:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcallVarargs(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	IL_0080:  ret 
+    } // end of method CTTailCallProcedureHandle::apply5
+
+    // method line 11
+    .method public virtual 
+           instance default class [CottontailSchemeLib]CottontailSchemeLib.CTObject applyN (class [CottontailSchemeLib]CottontailSchemeLib.CTObject[] A_1)  cil managed 
+    {
+        // Method begins at RVA 0x2404
+	.override class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::applyN
+	// Code size 55 (0x37)
+	.maxstack 11
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame CTTailCallProcedureHandle::frame
+	IL_0006:  ldarg.0 
+	IL_0007:  ldfld int32 CTTailCallProcedureHandle::index
+	IL_000c:  ldarg.1 
+	IL_000d:  ldarg.0 
+	IL_000e:  callvirt instance bool class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::get_isVarargs()
+	IL_0013:  brtrue IL_002a
+
+	IL_0018:  ldarg.0 
+	IL_0019:  ldarg.1 
+	IL_001a:  callvirt instance int32 class [mscorlib]System.Array::get_Length()
+	IL_001f:  call instance void class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::matchNumArgs(int32)
+	IL_0024:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcallN(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject[])
+	IL_0029:  ret 
+	IL_002a:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [CottontailSchemeLib]CottontailSchemeLib.CTObject[])
+	IL_002f:  tail. 
+	IL_0031:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcallVarargs(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	IL_0036:  ret 
+    } // end of method CTTailCallProcedureHandle::applyN
+
+  } // end of class CTTailCallProcedureHandle
+
+  .class public auto ansi NestedClosure
+  	extends [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame
+  {
+    .field  assembly static  class NestedClosure _instance
+
+    // method line 12
+    .method public static specialname rtspecialname 
+           default void '.cctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x2448
+	// Code size 11 (0xb)
+	.maxstack 8
+	IL_0000:  newobj instance void class NestedClosure::'.ctor'()
+	IL_0005:  stsfld class NestedClosure NestedClosure::_instance
+	IL_000a:  ret 
+    } // end of method NestedClosure::.cctor
+
+    // method line 13
+    .method public specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x2454
+	// Code size 7 (0x7)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::'.ctor'()
+	IL_0006:  ret 
+    } // end of method NestedClosure::.ctor
+
+    // method line 14
+    .method public static 
+           default int32 Main (string[] A_0)  cil managed 
+    {
+        // Method begins at RVA 0x245c
+	.entrypoint
+	// Code size 95 (0x5f)
+	.maxstack 7
+	.try { // 0
+	  IL_0000:  ldc.r8 5.
+	  IL_0009:  newobj instance void class [CottontailSchemeLib]CottontailSchemeLib.CTNumber::'.ctor'(float64)
+	  IL_000e:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class NestedClosure::Add$1(class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	  IL_0013:  ldc.r8 4.
+	  IL_001c:  newobj instance void class [CottontailSchemeLib]CottontailSchemeLib.CTNumber::'.ctor'(float64)
+	  IL_0021:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.CTObject::apply1(class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	  IL_0026:  ldc.r8 3.
+	  IL_002f:  newobj instance void class [CottontailSchemeLib]CottontailSchemeLib.CTNumber::'.ctor'(float64)
+	  IL_0034:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.CTObject::apply1(class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	  IL_0039:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::Display(class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	  IL_003e:  pop 
+	  IL_003f:  leave IL_005d
+
+	} // end .try 0
+	catch class [CottontailSchemeLib]CottontailSchemeLib.CottontailSchemeException { // 0
+	  IL_0044:  ldstr "\nError:"
+	  IL_0049:  call void class [mscorlib]System.Console::WriteLine(string)
+	  IL_004e:  callvirt instance string class [mscorlib]System.Exception::get_Message()
+	  IL_0053:  call void class [mscorlib]System.Console::WriteLine(string)
+	  IL_0058:  leave IL_005d
+
+	} // end handler 0
+	IL_005d:  ldc.i4.0 
+	IL_005e:  ret 
+    } // end of method NestedClosure::Main
+
+    // method line 15
+    .method private static 
+           default class [CottontailSchemeLib]CottontailSchemeLib.CTObject Add$1 (class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_0)  cil managed 
+    {
+        // Method begins at RVA 0x24e4
+	// Code size 27 (0x1b)
+	.maxstack 4
+	.locals init (
+		class NestedClosure/Add$1$frame	V_0)
+	IL_0000:  newobj instance void class NestedClosure/Add$1$frame::'.ctor'()
+	IL_0005:  dup 
+	IL_0006:  ldarg.0 
+	IL_0007:  stfld class [CottontailSchemeLib]CottontailSchemeLib.CTObject NestedClosure/Add$1$frame::X$1
+	IL_000c:  stloc.0 
+	IL_000d:  ldloc.0 
+	IL_000e:  ldc.i4 0
+	IL_0013:  ldc.i4.s 0x01
+	IL_0015:  newobj instance void class CTTailCallProcedureHandle::'.ctor'(class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame, int32, int32)
+	IL_001a:  ret 
+    } // end of method NestedClosure::Add$1
+
+  .class nested assembly auto ansi Add$1$frame
+  	extends [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame
+  {
+    .field  assembly  class [CottontailSchemeLib]CottontailSchemeLib.CTObject X$1
+
+    // method line 16
+    .method public specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x250c
+	// Code size 7 (0x7)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::'.ctor'()
+	IL_0006:  ret 
+    } // end of method Add$1$frame::.ctor
+
+    // method line 17
+    .method public 
+           instance default class [CottontailSchemeLib]CottontailSchemeLib.CTObject Lambda$2 (class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_1)  cil managed 
+    {
+        // Method begins at RVA 0x2514
+	// Code size 34 (0x22)
+	.maxstack 4
+	.locals init (
+		class NestedClosure/Lambda$2$frame	V_0)
+	IL_0000:  newobj instance void class NestedClosure/Lambda$2$frame::'.ctor'()
+	IL_0005:  dup 
+	IL_0006:  ldarg.1 
+	IL_0007:  stfld class [CottontailSchemeLib]CottontailSchemeLib.CTObject NestedClosure/Lambda$2$frame::Y$1
+	IL_000c:  dup 
+	IL_000d:  ldarg.0 
+	IL_000e:  stfld class NestedClosure/Add$1$frame NestedClosure/Lambda$2$frame::staticLink
+	IL_0013:  stloc.0 
+	IL_0014:  ldloc.0 
+	IL_0015:  ldc.i4 0
+	IL_001a:  ldc.i4.s 0x01
+	IL_001c:  newobj instance void class CTTailCallProcedureHandle::'.ctor'(class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame, int32, int32)
+	IL_0021:  ret 
+    } // end of method Add$1$frame::Lambda$2
+
+    // method line 18
+    .method public virtual 
+           instance default class [CottontailSchemeLib]CottontailSchemeLib.CTObject funcall1 (int32 A_1, class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_2)  cil managed 
+    {
+        // Method begins at RVA 0x2544
+	.override class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcall1
+	// Code size 36 (0x24)
+	.maxstack 8
+	IL_0000:  ldarg.1 
+	IL_0001:  switch (
+	  IL_000f)
+	IL_000a:  br IL_001a
+
+	IL_000f:  ldarg.0 
+	IL_0010:  ldarg.s 2
+	IL_0012:  tail. 
+	IL_0014:  call instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class NestedClosure/Add$1$frame::Lambda$2(class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	IL_0019:  ret 
+	IL_001a:  ldarg.0 
+	IL_001b:  ldarg.1 
+	IL_001c:  ldarg.s 2
+	IL_001e:  call instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcall1(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	IL_0023:  ret 
+    } // end of method Add$1$frame::funcall1
+
+  } // end of class Add$1$frame
+
+  .class nested assembly auto ansi Lambda$2$frame
+  	extends [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame
+  {
+    .field  assembly  class [CottontailSchemeLib]CottontailSchemeLib.CTObject Y$1
+    .field  assembly  class NestedClosure/Add$1$frame staticLink
+
+    // method line 19
+    .method public specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x256c
+	// Code size 7 (0x7)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::'.ctor'()
+	IL_0006:  ret 
+    } // end of method Lambda$2$frame::.ctor
+
+    // method line 20
+    .method public 
+           instance default class [CottontailSchemeLib]CottontailSchemeLib.CTObject Lambda$1 (class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_1)  cil managed 
+    {
+        // Method begins at RVA 0x2574
+	// Code size 55 (0x37)
+	.maxstack 5
+	IL_0000:  ldc.i4 3
+	IL_0005:  newarr [CottontailSchemeLib]CottontailSchemeLib.CTObject
+	IL_000a:  dup 
+	IL_000b:  ldc.i4 0
+	IL_0010:  ldarg.0 
+	IL_0011:  ldfld class NestedClosure/Add$1$frame NestedClosure/Lambda$2$frame::staticLink
+	IL_0016:  ldfld class [CottontailSchemeLib]CottontailSchemeLib.CTObject NestedClosure/Add$1$frame::X$1
+	IL_001b:  stelem.ref 
+	IL_001c:  dup 
+	IL_001d:  ldc.i4 1
+	IL_0022:  ldarg.0 
+	IL_0023:  ldfld class [CottontailSchemeLib]CottontailSchemeLib.CTObject NestedClosure/Lambda$2$frame::Y$1
+	IL_0028:  stelem.ref 
+	IL_0029:  dup 
+	IL_002a:  ldc.i4 2
+	IL_002f:  ldarg.1 
+	IL_0030:  stelem.ref 
+	IL_0031:  call class [CottontailSchemeLib]CottontailSchemeLib.CTNumber class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::Plus(class [CottontailSchemeLib]CottontailSchemeLib.CTObject[])
+	IL_0036:  ret 
+    } // end of method Lambda$2$frame::Lambda$1
+
+    // method line 21
+    .method public virtual 
+           instance default class [CottontailSchemeLib]CottontailSchemeLib.CTObject funcall1 (int32 A_1, class [CottontailSchemeLib]CottontailSchemeLib.CTObject A_2)  cil managed 
+    {
+        // Method begins at RVA 0x25b8
+	.override class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcall1
+	// Code size 36 (0x24)
+	.maxstack 8
+	IL_0000:  ldarg.1 
+	IL_0001:  switch (
+	  IL_000f)
+	IL_000a:  br IL_001a
+
+	IL_000f:  ldarg.0 
+	IL_0010:  ldarg.s 2
+	IL_0012:  tail. 
+	IL_0014:  call instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class NestedClosure/Lambda$2$frame::Lambda$1(class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	IL_0019:  ret 
+	IL_001a:  ldarg.0 
+	IL_001b:  ldarg.1 
+	IL_001c:  ldarg.s 2
+	IL_001e:  call instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcall1(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
+	IL_0023:  ret 
+    } // end of method Lambda$2$frame::funcall1
+
+  } // end of class Lambda$2$frame
+
+  } // end of class NestedClosure
+
