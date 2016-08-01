@@ -1,0 +1,259 @@
+Classfile /Users/tuuli/school/thesis_examples_clean/ex3_counter/Counter.class
+  Last modified Aug 1, 2016; size 1834 bytes
+  MD5 checksum fd057a010554bea845dcd0c155a99f7c
+public class Counter
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC
+Constant pool:
+    #1 = Utf8               Counter
+    #2 = Class              #1            // Counter
+    #3 = Utf8               java/lang/Object
+    #4 = Class              #3            // java/lang/Object
+    #5 = Utf8               IncrementCounter$1
+    #6 = Utf8               Ljava/lang/Object;
+    #7 = Utf8               GetCounter$1
+    #8 = Utf8               InitCounter$1
+    #9 = Utf8               ()Ljava/lang/Object;
+   #10 = Utf8               Lambda$1
+   #11 = Utf8               (Llib/CTReferenceCell;)Ljava/lang/Object;
+   #12 = Utf8               Lambda$2
+   #13 = Integer            2
+   #14 = Integer            0
+   #15 = Utf8               lib/CTReferenceCell
+   #16 = Class              #15           // lib/CTReferenceCell
+   #17 = Utf8               get
+   #18 = NameAndType        #17:#9        // get:()Ljava/lang/Object;
+   #19 = Methodref          #16.#18       // lib/CTReferenceCell.get:()Ljava/lang/Object;
+   #20 = Integer            1
+   #21 = Utf8               lib/CTNumber
+   #22 = Class              #21           // lib/CTNumber
+   #23 = Double             1.0d
+   #25 = Utf8               <init>
+   #26 = Utf8               (D)V
+   #27 = NameAndType        #25:#26       // "<init>":(D)V
+   #28 = Methodref          #22.#27       // lib/CTNumber."<init>":(D)V
+   #29 = Utf8               lib/BuiltIns
+   #30 = Class              #29           // lib/BuiltIns
+   #31 = Utf8               plus
+   #32 = Utf8               ([Ljava/lang/Object;)Ljava/lang/Object;
+   #33 = NameAndType        #31:#32       // plus:([Ljava/lang/Object;)Ljava/lang/Object;
+   #34 = Methodref          #30.#33       // lib/BuiltIns.plus:([Ljava/lang/Object;)Ljava/lang/Object;
+   #35 = Utf8               set
+   #36 = Utf8               (Ljava/lang/Object;)V
+   #37 = NameAndType        #35:#36       // set:(Ljava/lang/Object;)V
+   #38 = Methodref          #16.#37       // lib/CTReferenceCell.set:(Ljava/lang/Object;)V
+   #39 = Utf8               lib/CTUndefined
+   #40 = Class              #39           // lib/CTUndefined
+   #41 = Utf8               instance
+   #42 = Utf8               Llib/CTObject;
+   #43 = NameAndType        #41:#42       // instance:Llib/CTObject;
+   #44 = Fieldref           #40.#43       // lib/CTUndefined.instance:Llib/CTObject;
+   #45 = Utf8               ()V
+   #46 = NameAndType        #25:#45       // "<init>":()V
+   #47 = Methodref          #16.#46       // lib/CTReferenceCell."<init>":()V
+   #48 = Double             0.0d
+   #50 = Utf8               java/lang/invoke/LambdaMetafactory
+   #51 = Class              #50           // java/lang/invoke/LambdaMetafactory
+   #52 = Utf8               metafactory
+   #53 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #54 = NameAndType        #52:#53       // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #55 = Methodref          #51.#54       // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #56 = MethodHandle       #6:#55        // invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #57 = MethodType         #9            //  ()Ljava/lang/Object;
+   #58 = NameAndType        #10:#11       // Lambda$1:(Llib/CTReferenceCell;)Ljava/lang/Object;
+   #59 = Methodref          #2.#58        // Counter.Lambda$1:(Llib/CTReferenceCell;)Ljava/lang/Object;
+   #60 = MethodHandle       #6:#59        // invokestatic Counter.Lambda$1:(Llib/CTReferenceCell;)Ljava/lang/Object;
+   #61 = Utf8               apply
+   #62 = Utf8               (Llib/CTReferenceCell;)Llib/CTProcedure0;
+   #63 = NameAndType        #61:#62       // apply:(Llib/CTReferenceCell;)Llib/CTProcedure0;
+   #64 = InvokeDynamic      #0:#63        // #0:apply:(Llib/CTReferenceCell;)Llib/CTProcedure0;
+   #65 = String             #10           // Lambda$1
+   #66 = Utf8               lib/ProcedureHelpers
+   #67 = Class              #66           // lib/ProcedureHelpers
+   #68 = Utf8               match0
+   #69 = Utf8               (Llib/CTProcedure0;Ljava/lang/String;)Llib/CTProcedure;
+   #70 = NameAndType        #68:#69       // match0:(Llib/CTProcedure0;Ljava/lang/String;)Llib/CTProcedure;
+   #71 = Methodref          #67.#70       // lib/ProcedureHelpers.match0:(Llib/CTProcedure0;Ljava/lang/String;)Llib/CTProcedure;
+   #72 = NameAndType        #5:#6         // IncrementCounter$1:Ljava/lang/Object;
+   #73 = Fieldref           #2.#72        // Counter.IncrementCounter$1:Ljava/lang/Object;
+   #74 = NameAndType        #12:#11       // Lambda$2:(Llib/CTReferenceCell;)Ljava/lang/Object;
+   #75 = Methodref          #2.#74        // Counter.Lambda$2:(Llib/CTReferenceCell;)Ljava/lang/Object;
+   #76 = MethodHandle       #6:#75        // invokestatic Counter.Lambda$2:(Llib/CTReferenceCell;)Ljava/lang/Object;
+   #77 = InvokeDynamic      #1:#63        // #1:apply:(Llib/CTReferenceCell;)Llib/CTProcedure0;
+   #78 = String             #12           // Lambda$2
+   #79 = NameAndType        #7:#6         // GetCounter$1:Ljava/lang/Object;
+   #80 = Fieldref           #2.#79        // Counter.GetCounter$1:Ljava/lang/Object;
+   #81 = Utf8               main
+   #82 = Utf8               ([Ljava/lang/String;)V
+   #83 = Utf8               java/lang/invoke/MethodHandles$Lookup
+   #84 = Class              #83           // java/lang/invoke/MethodHandles$Lookup
+   #85 = Utf8               java/lang/invoke/MethodHandles
+   #86 = Class              #85           // java/lang/invoke/MethodHandles
+   #87 = Utf8               Lookup
+   #88 = Utf8               lib/CTBool
+   #89 = Class              #88           // lib/CTBool
+   #90 = Utf8               falseInstance
+   #91 = NameAndType        #90:#42       // falseInstance:Llib/CTObject;
+   #92 = Fieldref           #89.#91       // lib/CTBool.falseInstance:Llib/CTObject;
+   #93 = NameAndType        #8:#9         // InitCounter$1:()Ljava/lang/Object;
+   #94 = Methodref          #2.#93        // Counter.InitCounter$1:()Ljava/lang/Object;
+   #95 = Utf8               trampoline
+   #96 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+   #97 = NameAndType        #95:#96       // trampoline:(Ljava/lang/Object;)Ljava/lang/Object;
+   #98 = Methodref          #67.#97       // lib/ProcedureHelpers.trampoline:(Ljava/lang/Object;)Ljava/lang/Object;
+   #99 = Utf8               callProcedure
+  #100 = Utf8               (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+  #101 = NameAndType        #99:#100      // callProcedure:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+  #102 = Methodref          #67.#101      // lib/ProcedureHelpers.callProcedure:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+  #103 = Utf8               display
+  #104 = NameAndType        #103:#96      // display:(Ljava/lang/Object;)Ljava/lang/Object;
+  #105 = Methodref          #30.#104      // lib/BuiltIns.display:(Ljava/lang/Object;)Ljava/lang/Object;
+  #106 = Utf8               <clinit>
+  #107 = Utf8               Code
+  #108 = Utf8               BootstrapMethods
+  #109 = Utf8               InnerClasses
+{
+  private static java.lang.Object IncrementCounter$1;
+    descriptor: Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+
+  private static java.lang.Object GetCounter$1;
+    descriptor: Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+
+  private static java.lang.Object InitCounter$1();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=5, locals=1, args_size=0
+         0: new           #16                 // class lib/CTReferenceCell
+         3: dup
+         4: invokespecial #47                 // Method lib/CTReferenceCell."<init>":()V
+         7: astore_0
+         8: aload_0
+         9: new           #22                 // class lib/CTNumber
+        12: dup
+        13: ldc2_w        #48                 // double 0.0d
+        16: invokespecial #28                 // Method lib/CTNumber."<init>":(D)V
+        19: invokevirtual #38                 // Method lib/CTReferenceCell.set:(Ljava/lang/Object;)V
+        22: aload_0
+        23: invokedynamic #64,  0             // InvokeDynamic #0:apply:(Llib/CTReferenceCell;)Llib/CTProcedure0;
+        28: ldc           #65                 // String Lambda$1
+        30: invokestatic  #71                 // Method lib/ProcedureHelpers.match0:(Llib/CTProcedure0;Ljava/lang/String;)Llib/CTProcedure;
+        33: putstatic     #73                 // Field IncrementCounter$1:Ljava/lang/Object;
+        36: aload_0
+        37: invokedynamic #77,  0             // InvokeDynamic #1:apply:(Llib/CTReferenceCell;)Llib/CTProcedure0;
+        42: ldc           #78                 // String Lambda$2
+        44: invokestatic  #71                 // Method lib/ProcedureHelpers.match0:(Llib/CTProcedure0;Ljava/lang/String;)Llib/CTProcedure;
+        47: putstatic     #80                 // Field GetCounter$1:Ljava/lang/Object;
+        50: getstatic     #44                 // Field lib/CTUndefined.instance:Llib/CTObject;
+        53: areturn
+
+  private static java.lang.Object Lambda$1(lib.CTReferenceCell);
+    descriptor: (Llib/CTReferenceCell;)Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=8, locals=1, args_size=1
+         0: aload_0
+         1: ldc           #13                 // int 2
+         3: anewarray     #4                  // class java/lang/Object
+         6: dup
+         7: ldc           #14                 // int 0
+         9: aload_0
+        10: invokevirtual #19                 // Method lib/CTReferenceCell.get:()Ljava/lang/Object;
+        13: aastore
+        14: dup
+        15: ldc           #20                 // int 1
+        17: new           #22                 // class lib/CTNumber
+        20: dup
+        21: ldc2_w        #23                 // double 1.0d
+        24: invokespecial #28                 // Method lib/CTNumber."<init>":(D)V
+        27: aastore
+        28: invokestatic  #34                 // Method lib/BuiltIns.plus:([Ljava/lang/Object;)Ljava/lang/Object;
+        31: invokevirtual #38                 // Method lib/CTReferenceCell.set:(Ljava/lang/Object;)V
+        34: getstatic     #44                 // Field lib/CTUndefined.instance:Llib/CTObject;
+        37: areturn
+
+  private static java.lang.Object Lambda$2(lib.CTReferenceCell);
+    descriptor: (Llib/CTReferenceCell;)Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #19                 // Method lib/CTReferenceCell.get:()Ljava/lang/Object;
+         4: areturn
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #92                 // Field lib/CTBool.falseInstance:Llib/CTObject;
+         3: putstatic     #73                 // Field IncrementCounter$1:Ljava/lang/Object;
+         6: getstatic     #92                 // Field lib/CTBool.falseInstance:Llib/CTObject;
+         9: putstatic     #80                 // Field GetCounter$1:Ljava/lang/Object;
+        12: invokestatic  #94                 // Method InitCounter$1:()Ljava/lang/Object;
+        15: invokestatic  #98                 // Method lib/ProcedureHelpers.trampoline:(Ljava/lang/Object;)Ljava/lang/Object;
+        18: pop
+        19: getstatic     #80                 // Field GetCounter$1:Ljava/lang/Object;
+        22: ldc           #14                 // int 0
+        24: anewarray     #4                  // class java/lang/Object
+        27: invokestatic  #102                // Method lib/ProcedureHelpers.callProcedure:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+        30: invokestatic  #98                 // Method lib/ProcedureHelpers.trampoline:(Ljava/lang/Object;)Ljava/lang/Object;
+        33: invokestatic  #105                // Method lib/BuiltIns.display:(Ljava/lang/Object;)Ljava/lang/Object;
+        36: pop
+        37: getstatic     #73                 // Field IncrementCounter$1:Ljava/lang/Object;
+        40: ldc           #14                 // int 0
+        42: anewarray     #4                  // class java/lang/Object
+        45: invokestatic  #102                // Method lib/ProcedureHelpers.callProcedure:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+        48: invokestatic  #98                 // Method lib/ProcedureHelpers.trampoline:(Ljava/lang/Object;)Ljava/lang/Object;
+        51: pop
+        52: getstatic     #80                 // Field GetCounter$1:Ljava/lang/Object;
+        55: ldc           #14                 // int 0
+        57: anewarray     #4                  // class java/lang/Object
+        60: invokestatic  #102                // Method lib/ProcedureHelpers.callProcedure:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+        63: invokestatic  #98                 // Method lib/ProcedureHelpers.trampoline:(Ljava/lang/Object;)Ljava/lang/Object;
+        66: invokestatic  #105                // Method lib/BuiltIns.display:(Ljava/lang/Object;)Ljava/lang/Object;
+        69: pop
+        70: getstatic     #73                 // Field IncrementCounter$1:Ljava/lang/Object;
+        73: ldc           #14                 // int 0
+        75: anewarray     #4                  // class java/lang/Object
+        78: invokestatic  #102                // Method lib/ProcedureHelpers.callProcedure:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+        81: invokestatic  #98                 // Method lib/ProcedureHelpers.trampoline:(Ljava/lang/Object;)Ljava/lang/Object;
+        84: pop
+        85: getstatic     #73                 // Field IncrementCounter$1:Ljava/lang/Object;
+        88: ldc           #14                 // int 0
+        90: anewarray     #4                  // class java/lang/Object
+        93: invokestatic  #102                // Method lib/ProcedureHelpers.callProcedure:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+        96: invokestatic  #98                 // Method lib/ProcedureHelpers.trampoline:(Ljava/lang/Object;)Ljava/lang/Object;
+        99: pop
+       100: getstatic     #80                 // Field GetCounter$1:Ljava/lang/Object;
+       103: ldc           #14                 // int 0
+       105: anewarray     #4                  // class java/lang/Object
+       108: invokestatic  #102                // Method lib/ProcedureHelpers.callProcedure:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+       111: invokestatic  #98                 // Method lib/ProcedureHelpers.trampoline:(Ljava/lang/Object;)Ljava/lang/Object;
+       114: invokestatic  #105                // Method lib/BuiltIns.display:(Ljava/lang/Object;)Ljava/lang/Object;
+       117: pop
+       118: return
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=0, locals=0, args_size=0
+         0: return
+}
+BootstrapMethods:
+  0: #56 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #57 ()Ljava/lang/Object;
+      #60 invokestatic Counter.Lambda$1:(Llib/CTReferenceCell;)Ljava/lang/Object;
+      #57 ()Ljava/lang/Object;
+  1: #56 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #57 ()Ljava/lang/Object;
+      #76 invokestatic Counter.Lambda$2:(Llib/CTReferenceCell;)Ljava/lang/Object;
+      #57 ()Ljava/lang/Object;
+InnerClasses:
+     public static final #87= #84 of #86; //Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

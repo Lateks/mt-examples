@@ -1,0 +1,233 @@
+Classfile /Users/tuuli/school/thesis_examples_clean/ex5_factorial/FactorialCottontail.class
+  Last modified Aug 1, 2016; size 1814 bytes
+  MD5 checksum 89e26c65d1b00b182b5191c1d3d2a997
+public class FactorialCottontail
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC
+Constant pool:
+    #1 = Utf8               FactorialCottontail
+    #2 = Class              #1            // FactorialCottontail
+    #3 = Utf8               java/lang/Object
+    #4 = Class              #3            // java/lang/Object
+    #5 = Utf8               Fact$1
+    #6 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+    #7 = Utf8               FactHelper$1
+    #8 = Utf8               (Llib/CTReferenceCell;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    #9 = Utf8               lib/BuiltIns
+   #10 = Class              #9            // lib/BuiltIns
+   #11 = Utf8               isZero
+   #12 = NameAndType        #11:#6        // isZero:(Ljava/lang/Object;)Ljava/lang/Object;
+   #13 = Methodref          #10.#12       // lib/BuiltIns.isZero:(Ljava/lang/Object;)Ljava/lang/Object;
+   #14 = Utf8               toBoolean
+   #15 = Utf8               (Ljava/lang/Object;)Z
+   #16 = NameAndType        #14:#15       // toBoolean:(Ljava/lang/Object;)Z
+   #17 = Methodref          #10.#16       // lib/BuiltIns.toBoolean:(Ljava/lang/Object;)Z
+   #18 = Utf8               lib/CTTailContinuation
+   #19 = Class              #18           // lib/CTTailContinuation
+   #20 = Utf8               lib/CTReferenceCell
+   #21 = Class              #20           // lib/CTReferenceCell
+   #22 = Utf8               get
+   #23 = Utf8               ()Ljava/lang/Object;
+   #24 = NameAndType        #22:#23       // get:()Ljava/lang/Object;
+   #25 = Methodref          #21.#24       // lib/CTReferenceCell.get:()Ljava/lang/Object;
+   #26 = Integer            2
+   #27 = Integer            0
+   #28 = Integer            1
+   #29 = Utf8               lib/CTNumber
+   #30 = Class              #29           // lib/CTNumber
+   #31 = Double             1.0d
+   #33 = Utf8               <init>
+   #34 = Utf8               (D)V
+   #35 = NameAndType        #33:#34       // "<init>":(D)V
+   #36 = Methodref          #30.#35       // lib/CTNumber."<init>":(D)V
+   #37 = Utf8               minus
+   #38 = Utf8               ([Ljava/lang/Object;)Ljava/lang/Object;
+   #39 = NameAndType        #37:#38       // minus:([Ljava/lang/Object;)Ljava/lang/Object;
+   #40 = Methodref          #10.#39       // lib/BuiltIns.minus:([Ljava/lang/Object;)Ljava/lang/Object;
+   #41 = Utf8               mult
+   #42 = NameAndType        #41:#38       // mult:([Ljava/lang/Object;)Ljava/lang/Object;
+   #43 = Methodref          #10.#42       // lib/BuiltIns.mult:([Ljava/lang/Object;)Ljava/lang/Object;
+   #44 = Utf8               lib/ProcedureHelpers
+   #45 = Class              #44           // lib/ProcedureHelpers
+   #46 = Utf8               bindArgs
+   #47 = Utf8               (Ljava/lang/Object;[Ljava/lang/Object;)Llib/CTProcedure0;
+   #48 = NameAndType        #46:#47       // bindArgs:(Ljava/lang/Object;[Ljava/lang/Object;)Llib/CTProcedure0;
+   #49 = Methodref          #45.#48       // lib/ProcedureHelpers.bindArgs:(Ljava/lang/Object;[Ljava/lang/Object;)Llib/CTProcedure0;
+   #50 = Utf8               (Llib/CTProcedure0;)V
+   #51 = NameAndType        #33:#50       // "<init>":(Llib/CTProcedure0;)V
+   #52 = Methodref          #19.#51       // lib/CTTailContinuation."<init>":(Llib/CTProcedure0;)V
+   #53 = Utf8               ()V
+   #54 = NameAndType        #33:#53       // "<init>":()V
+   #55 = Methodref          #21.#54       // lib/CTReferenceCell."<init>":()V
+   #56 = Utf8               java/lang/invoke/LambdaMetafactory
+   #57 = Class              #56           // java/lang/invoke/LambdaMetafactory
+   #58 = Utf8               metafactory
+   #59 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #60 = NameAndType        #58:#59       // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #61 = Methodref          #57.#60       // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #62 = MethodHandle       #6:#61        // invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #63 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #64 = MethodType         #63           //  (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #65 = NameAndType        #7:#8         // FactHelper$1:(Llib/CTReferenceCell;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #66 = Methodref          #2.#65        // FactorialCottontail.FactHelper$1:(Llib/CTReferenceCell;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #67 = MethodHandle       #6:#66        // invokestatic FactorialCottontail.FactHelper$1:(Llib/CTReferenceCell;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #68 = Utf8               apply
+   #69 = Utf8               (Llib/CTReferenceCell;)Llib/CTProcedure2;
+   #70 = NameAndType        #68:#69       // apply:(Llib/CTReferenceCell;)Llib/CTProcedure2;
+   #71 = InvokeDynamic      #0:#70        // #0:apply:(Llib/CTReferenceCell;)Llib/CTProcedure2;
+   #72 = Utf8               fact-helper
+   #73 = String             #72           // fact-helper
+   #74 = Utf8               match2
+   #75 = Utf8               (Llib/CTProcedure2;Ljava/lang/String;)Llib/CTProcedure;
+   #76 = NameAndType        #74:#75       // match2:(Llib/CTProcedure2;Ljava/lang/String;)Llib/CTProcedure;
+   #77 = Methodref          #45.#76       // lib/ProcedureHelpers.match2:(Llib/CTProcedure2;Ljava/lang/String;)Llib/CTProcedure;
+   #78 = Utf8               set
+   #79 = Utf8               (Ljava/lang/Object;)V
+   #80 = NameAndType        #78:#79       // set:(Ljava/lang/Object;)V
+   #81 = Methodref          #21.#80       // lib/CTReferenceCell.set:(Ljava/lang/Object;)V
+   #82 = Utf8               main
+   #83 = Utf8               ([Ljava/lang/String;)V
+   #84 = Utf8               java/lang/invoke/MethodHandles$Lookup
+   #85 = Class              #84           // java/lang/invoke/MethodHandles$Lookup
+   #86 = Utf8               java/lang/invoke/MethodHandles
+   #87 = Class              #86           // java/lang/invoke/MethodHandles
+   #88 = Utf8               Lookup
+   #89 = Double             10.0d
+   #91 = NameAndType        #5:#6         // Fact$1:(Ljava/lang/Object;)Ljava/lang/Object;
+   #92 = Methodref          #2.#91        // FactorialCottontail.Fact$1:(Ljava/lang/Object;)Ljava/lang/Object;
+   #93 = Utf8               trampoline
+   #94 = NameAndType        #93:#6        // trampoline:(Ljava/lang/Object;)Ljava/lang/Object;
+   #95 = Methodref          #45.#94       // lib/ProcedureHelpers.trampoline:(Ljava/lang/Object;)Ljava/lang/Object;
+   #96 = Utf8               display
+   #97 = NameAndType        #96:#6        // display:(Ljava/lang/Object;)Ljava/lang/Object;
+   #98 = Methodref          #10.#97       // lib/BuiltIns.display:(Ljava/lang/Object;)Ljava/lang/Object;
+   #99 = Utf8               <clinit>
+  #100 = Utf8               Code
+  #101 = Utf8               StackMapTable
+  #102 = Utf8               BootstrapMethods
+  #103 = Utf8               InnerClasses
+{
+  private static java.lang.Object Fact$1(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=10, locals=2, args_size=1
+         0: new           #21                 // class lib/CTReferenceCell
+         3: dup
+         4: invokespecial #55                 // Method lib/CTReferenceCell."<init>":()V
+         7: astore_1
+         8: aload_1
+         9: aload_1
+        10: invokedynamic #71,  0             // InvokeDynamic #0:apply:(Llib/CTReferenceCell;)Llib/CTProcedure2;
+        15: ldc           #73                 // String fact-helper
+        17: invokestatic  #77                 // Method lib/ProcedureHelpers.match2:(Llib/CTProcedure2;Ljava/lang/String;)Llib/CTProcedure;
+        20: invokevirtual #81                 // Method lib/CTReferenceCell.set:(Ljava/lang/Object;)V
+        23: new           #19                 // class lib/CTTailContinuation
+        26: dup
+        27: aload_1
+        28: invokevirtual #25                 // Method lib/CTReferenceCell.get:()Ljava/lang/Object;
+        31: ldc           #26                 // int 2
+        33: anewarray     #4                  // class java/lang/Object
+        36: dup
+        37: ldc           #27                 // int 0
+        39: aload_0
+        40: aastore
+        41: dup
+        42: ldc           #28                 // int 1
+        44: new           #30                 // class lib/CTNumber
+        47: dup
+        48: ldc2_w        #31                 // double 1.0d
+        51: invokespecial #36                 // Method lib/CTNumber."<init>":(D)V
+        54: aastore
+        55: invokestatic  #49                 // Method lib/ProcedureHelpers.bindArgs:(Ljava/lang/Object;[Ljava/lang/Object;)Llib/CTProcedure0;
+        58: invokespecial #52                 // Method lib/CTTailContinuation."<init>":(Llib/CTProcedure0;)V
+        61: areturn
+
+  private static java.lang.Object FactHelper$1(lib.CTReferenceCell, java.lang.Object, java.lang.Object);
+    descriptor: (Llib/CTReferenceCell;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=13, locals=3, args_size=3
+         0: aload_1
+         1: invokestatic  #13                 // Method lib/BuiltIns.isZero:(Ljava/lang/Object;)Ljava/lang/Object;
+         4: invokestatic  #17                 // Method lib/BuiltIns.toBoolean:(Ljava/lang/Object;)Z
+         7: ifne          85
+        10: new           #19                 // class lib/CTTailContinuation
+        13: dup
+        14: aload_0
+        15: invokevirtual #25                 // Method lib/CTReferenceCell.get:()Ljava/lang/Object;
+        18: ldc           #26                 // int 2
+        20: anewarray     #4                  // class java/lang/Object
+        23: dup
+        24: ldc           #27                 // int 0
+        26: ldc           #26                 // int 2
+        28: anewarray     #4                  // class java/lang/Object
+        31: dup
+        32: ldc           #27                 // int 0
+        34: aload_1
+        35: aastore
+        36: dup
+        37: ldc           #28                 // int 1
+        39: new           #30                 // class lib/CTNumber
+        42: dup
+        43: ldc2_w        #31                 // double 1.0d
+        46: invokespecial #36                 // Method lib/CTNumber."<init>":(D)V
+        49: aastore
+        50: invokestatic  #40                 // Method lib/BuiltIns.minus:([Ljava/lang/Object;)Ljava/lang/Object;
+        53: aastore
+        54: dup
+        55: ldc           #28                 // int 1
+        57: ldc           #26                 // int 2
+        59: anewarray     #4                  // class java/lang/Object
+        62: dup
+        63: ldc           #27                 // int 0
+        65: aload_2
+        66: aastore
+        67: dup
+        68: ldc           #28                 // int 1
+        70: aload_1
+        71: aastore
+        72: invokestatic  #43                 // Method lib/BuiltIns.mult:([Ljava/lang/Object;)Ljava/lang/Object;
+        75: aastore
+        76: invokestatic  #49                 // Method lib/ProcedureHelpers.bindArgs:(Ljava/lang/Object;[Ljava/lang/Object;)Llib/CTProcedure0;
+        79: invokespecial #52                 // Method lib/CTTailContinuation."<init>":(Llib/CTProcedure0;)V
+        82: goto          86
+        85: aload_2
+        86: areturn
+      StackMapTable: number_of_entries = 2
+        frame_type = 251 /* same_frame_extended */
+          offset_delta = 85
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Object ]
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=1, args_size=1
+         0: new           #30                 // class lib/CTNumber
+         3: dup
+         4: ldc2_w        #89                 // double 10.0d
+         7: invokespecial #36                 // Method lib/CTNumber."<init>":(D)V
+        10: invokestatic  #92                 // Method Fact$1:(Ljava/lang/Object;)Ljava/lang/Object;
+        13: invokestatic  #95                 // Method lib/ProcedureHelpers.trampoline:(Ljava/lang/Object;)Ljava/lang/Object;
+        16: invokestatic  #98                 // Method lib/BuiltIns.display:(Ljava/lang/Object;)Ljava/lang/Object;
+        19: pop
+        20: return
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=0, locals=0, args_size=0
+         0: return
+}
+BootstrapMethods:
+  0: #62 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #64 (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      #67 invokestatic FactorialCottontail.FactHelper$1:(Llib/CTReferenceCell;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      #64 (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+InnerClasses:
+     public static final #88= #85 of #87; //Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

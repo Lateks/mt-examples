@@ -1,0 +1,234 @@
+Classfile /Users/tuuli/school/thesis_examples_clean/ex6_odd_even/MutualRecursion.class
+  Last modified Aug 1, 2016; size 1557 bytes
+  MD5 checksum 9fbe88c4cbea4d01890bdf1e26bd7779
+public class MutualRecursion
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC
+Constant pool:
+   #1 = Utf8               MutualRecursion
+   #2 = Class              #1             // MutualRecursion
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               IsOdd$1
+   #6 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+   #7 = Utf8               IsEven$1
+   #8 = Utf8               lib/BuiltIns
+   #9 = Class              #8             // lib/BuiltIns
+  #10 = Utf8               isZero
+  #11 = NameAndType        #10:#6         // isZero:(Ljava/lang/Object;)Ljava/lang/Object;
+  #12 = Methodref          #9.#11         // lib/BuiltIns.isZero:(Ljava/lang/Object;)Ljava/lang/Object;
+  #13 = Utf8               toBoolean
+  #14 = Utf8               (Ljava/lang/Object;)Z
+  #15 = NameAndType        #13:#14        // toBoolean:(Ljava/lang/Object;)Z
+  #16 = Methodref          #9.#15         // lib/BuiltIns.toBoolean:(Ljava/lang/Object;)Z
+  #17 = Utf8               lib/CTTailContinuation
+  #18 = Class              #17            // lib/CTTailContinuation
+  #19 = Integer            2
+  #20 = Integer            0
+  #21 = Integer            1
+  #22 = Utf8               lib/CTNumber
+  #23 = Class              #22            // lib/CTNumber
+  #24 = Double             1.0d
+  #26 = Utf8               <init>
+  #27 = Utf8               (D)V
+  #28 = NameAndType        #26:#27        // "<init>":(D)V
+  #29 = Methodref          #23.#28        // lib/CTNumber."<init>":(D)V
+  #30 = Utf8               minus
+  #31 = Utf8               ([Ljava/lang/Object;)Ljava/lang/Object;
+  #32 = NameAndType        #30:#31        // minus:([Ljava/lang/Object;)Ljava/lang/Object;
+  #33 = Methodref          #9.#32         // lib/BuiltIns.minus:([Ljava/lang/Object;)Ljava/lang/Object;
+  #34 = Utf8               java/lang/invoke/LambdaMetafactory
+  #35 = Class              #34            // java/lang/invoke/LambdaMetafactory
+  #36 = Utf8               metafactory
+  #37 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #38 = NameAndType        #36:#37        // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #39 = Methodref          #35.#38        // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #40 = MethodHandle       #6:#39         // invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #41 = Utf8               ()Ljava/lang/Object;
+  #42 = MethodType         #41            //  ()Ljava/lang/Object;
+  #43 = NameAndType        #7:#6          // IsEven$1:(Ljava/lang/Object;)Ljava/lang/Object;
+  #44 = Methodref          #2.#43         // MutualRecursion.IsEven$1:(Ljava/lang/Object;)Ljava/lang/Object;
+  #45 = MethodHandle       #6:#44         // invokestatic MutualRecursion.IsEven$1:(Ljava/lang/Object;)Ljava/lang/Object;
+  #46 = Utf8               apply
+  #47 = Utf8               (Ljava/lang/Object;)Llib/CTProcedure0;
+  #48 = NameAndType        #46:#47        // apply:(Ljava/lang/Object;)Llib/CTProcedure0;
+  #49 = InvokeDynamic      #0:#48         // #0:apply:(Ljava/lang/Object;)Llib/CTProcedure0;
+  #50 = Utf8               (Llib/CTProcedure0;)V
+  #51 = NameAndType        #26:#50        // "<init>":(Llib/CTProcedure0;)V
+  #52 = Methodref          #18.#51        // lib/CTTailContinuation."<init>":(Llib/CTProcedure0;)V
+  #53 = Utf8               lib/CTBool
+  #54 = Class              #53            // lib/CTBool
+  #55 = Utf8               falseInstance
+  #56 = Utf8               Llib/CTObject;
+  #57 = NameAndType        #55:#56        // falseInstance:Llib/CTObject;
+  #58 = Fieldref           #54.#57        // lib/CTBool.falseInstance:Llib/CTObject;
+  #59 = NameAndType        #5:#6          // IsOdd$1:(Ljava/lang/Object;)Ljava/lang/Object;
+  #60 = Methodref          #2.#59         // MutualRecursion.IsOdd$1:(Ljava/lang/Object;)Ljava/lang/Object;
+  #61 = MethodHandle       #6:#60         // invokestatic MutualRecursion.IsOdd$1:(Ljava/lang/Object;)Ljava/lang/Object;
+  #62 = InvokeDynamic      #1:#48         // #1:apply:(Ljava/lang/Object;)Llib/CTProcedure0;
+  #63 = Utf8               trueInstance
+  #64 = NameAndType        #63:#56        // trueInstance:Llib/CTObject;
+  #65 = Fieldref           #54.#64        // lib/CTBool.trueInstance:Llib/CTObject;
+  #66 = Utf8               main
+  #67 = Utf8               ([Ljava/lang/String;)V
+  #68 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #69 = Class              #68            // java/lang/invoke/MethodHandles$Lookup
+  #70 = Utf8               java/lang/invoke/MethodHandles
+  #71 = Class              #70            // java/lang/invoke/MethodHandles
+  #72 = Utf8               Lookup
+  #73 = Double             10.0d
+  #75 = Utf8               lib/ProcedureHelpers
+  #76 = Class              #75            // lib/ProcedureHelpers
+  #77 = Utf8               trampoline
+  #78 = NameAndType        #77:#6         // trampoline:(Ljava/lang/Object;)Ljava/lang/Object;
+  #79 = Methodref          #76.#78        // lib/ProcedureHelpers.trampoline:(Ljava/lang/Object;)Ljava/lang/Object;
+  #80 = Utf8               display
+  #81 = NameAndType        #80:#6         // display:(Ljava/lang/Object;)Ljava/lang/Object;
+  #82 = Methodref          #9.#81         // lib/BuiltIns.display:(Ljava/lang/Object;)Ljava/lang/Object;
+  #83 = Double             9.0d
+  #85 = Double             2.147483647E9d
+  #87 = Utf8               <clinit>
+  #88 = Utf8               ()V
+  #89 = Utf8               Code
+  #90 = Utf8               StackMapTable
+  #91 = Utf8               BootstrapMethods
+  #92 = Utf8               InnerClasses
+{
+  private static java.lang.Object IsOdd$1(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=9, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #12                 // Method lib/BuiltIns.isZero:(Ljava/lang/Object;)Ljava/lang/Object;
+         4: invokestatic  #16                 // Method lib/BuiltIns.toBoolean:(Ljava/lang/Object;)Z
+         7: ifne          52
+        10: new           #18                 // class lib/CTTailContinuation
+        13: dup
+        14: ldc           #19                 // int 2
+        16: anewarray     #4                  // class java/lang/Object
+        19: dup
+        20: ldc           #20                 // int 0
+        22: aload_0
+        23: aastore
+        24: dup
+        25: ldc           #21                 // int 1
+        27: new           #23                 // class lib/CTNumber
+        30: dup
+        31: ldc2_w        #24                 // double 1.0d
+        34: invokespecial #29                 // Method lib/CTNumber."<init>":(D)V
+        37: aastore
+        38: invokestatic  #33                 // Method lib/BuiltIns.minus:([Ljava/lang/Object;)Ljava/lang/Object;
+        41: invokedynamic #49,  0             // InvokeDynamic #0:apply:(Ljava/lang/Object;)Llib/CTProcedure0;
+        46: invokespecial #52                 // Method lib/CTTailContinuation."<init>":(Llib/CTProcedure0;)V
+        49: goto          55
+        52: getstatic     #58                 // Field lib/CTBool.falseInstance:Llib/CTObject;
+        55: areturn
+      StackMapTable: number_of_entries = 2
+        frame_type = 52 /* same */
+        frame_type = 66 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Object ]
+
+  private static java.lang.Object IsEven$1(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=9, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #12                 // Method lib/BuiltIns.isZero:(Ljava/lang/Object;)Ljava/lang/Object;
+         4: invokestatic  #16                 // Method lib/BuiltIns.toBoolean:(Ljava/lang/Object;)Z
+         7: ifne          52
+        10: new           #18                 // class lib/CTTailContinuation
+        13: dup
+        14: ldc           #19                 // int 2
+        16: anewarray     #4                  // class java/lang/Object
+        19: dup
+        20: ldc           #20                 // int 0
+        22: aload_0
+        23: aastore
+        24: dup
+        25: ldc           #21                 // int 1
+        27: new           #23                 // class lib/CTNumber
+        30: dup
+        31: ldc2_w        #24                 // double 1.0d
+        34: invokespecial #29                 // Method lib/CTNumber."<init>":(D)V
+        37: aastore
+        38: invokestatic  #33                 // Method lib/BuiltIns.minus:([Ljava/lang/Object;)Ljava/lang/Object;
+        41: invokedynamic #62,  0             // InvokeDynamic #1:apply:(Ljava/lang/Object;)Llib/CTProcedure0;
+        46: invokespecial #52                 // Method lib/CTTailContinuation."<init>":(Llib/CTProcedure0;)V
+        49: goto          55
+        52: getstatic     #65                 // Field lib/CTBool.trueInstance:Llib/CTObject;
+        55: areturn
+      StackMapTable: number_of_entries = 2
+        frame_type = 52 /* same */
+        frame_type = 66 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Object ]
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=1, args_size=1
+         0: new           #23                 // class lib/CTNumber
+         3: dup
+         4: ldc2_w        #73                 // double 10.0d
+         7: invokespecial #29                 // Method lib/CTNumber."<init>":(D)V
+        10: invokestatic  #60                 // Method IsOdd$1:(Ljava/lang/Object;)Ljava/lang/Object;
+        13: invokestatic  #79                 // Method lib/ProcedureHelpers.trampoline:(Ljava/lang/Object;)Ljava/lang/Object;
+        16: invokestatic  #82                 // Method lib/BuiltIns.display:(Ljava/lang/Object;)Ljava/lang/Object;
+        19: pop
+        20: new           #23                 // class lib/CTNumber
+        23: dup
+        24: ldc2_w        #73                 // double 10.0d
+        27: invokespecial #29                 // Method lib/CTNumber."<init>":(D)V
+        30: invokestatic  #44                 // Method IsEven$1:(Ljava/lang/Object;)Ljava/lang/Object;
+        33: invokestatic  #79                 // Method lib/ProcedureHelpers.trampoline:(Ljava/lang/Object;)Ljava/lang/Object;
+        36: invokestatic  #82                 // Method lib/BuiltIns.display:(Ljava/lang/Object;)Ljava/lang/Object;
+        39: pop
+        40: new           #23                 // class lib/CTNumber
+        43: dup
+        44: ldc2_w        #83                 // double 9.0d
+        47: invokespecial #29                 // Method lib/CTNumber."<init>":(D)V
+        50: invokestatic  #60                 // Method IsOdd$1:(Ljava/lang/Object;)Ljava/lang/Object;
+        53: invokestatic  #79                 // Method lib/ProcedureHelpers.trampoline:(Ljava/lang/Object;)Ljava/lang/Object;
+        56: invokestatic  #82                 // Method lib/BuiltIns.display:(Ljava/lang/Object;)Ljava/lang/Object;
+        59: pop
+        60: new           #23                 // class lib/CTNumber
+        63: dup
+        64: ldc2_w        #83                 // double 9.0d
+        67: invokespecial #29                 // Method lib/CTNumber."<init>":(D)V
+        70: invokestatic  #44                 // Method IsEven$1:(Ljava/lang/Object;)Ljava/lang/Object;
+        73: invokestatic  #79                 // Method lib/ProcedureHelpers.trampoline:(Ljava/lang/Object;)Ljava/lang/Object;
+        76: invokestatic  #82                 // Method lib/BuiltIns.display:(Ljava/lang/Object;)Ljava/lang/Object;
+        79: pop
+        80: new           #23                 // class lib/CTNumber
+        83: dup
+        84: ldc2_w        #85                 // double 2.147483647E9d
+        87: invokespecial #29                 // Method lib/CTNumber."<init>":(D)V
+        90: invokestatic  #60                 // Method IsOdd$1:(Ljava/lang/Object;)Ljava/lang/Object;
+        93: invokestatic  #79                 // Method lib/ProcedureHelpers.trampoline:(Ljava/lang/Object;)Ljava/lang/Object;
+        96: invokestatic  #82                 // Method lib/BuiltIns.display:(Ljava/lang/Object;)Ljava/lang/Object;
+        99: pop
+       100: return
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=0, locals=0, args_size=0
+         0: return
+}
+BootstrapMethods:
+  0: #40 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #42 ()Ljava/lang/Object;
+      #45 invokestatic MutualRecursion.IsEven$1:(Ljava/lang/Object;)Ljava/lang/Object;
+      #42 ()Ljava/lang/Object;
+  1: #40 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #42 ()Ljava/lang/Object;
+      #61 invokestatic MutualRecursion.IsOdd$1:(Ljava/lang/Object;)Ljava/lang/Object;
+      #42 ()Ljava/lang/Object;
+InnerClasses:
+     public static final #72= #69 of #71; //Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
