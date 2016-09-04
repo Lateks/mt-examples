@@ -1,8 +1,3 @@
-// Factorial example in Kotlin
-// Compile with `kotlinc factorial.kt`.
-// Run with `kotlin FactorialKt`.
-//
-// Note use of the tailrec keyword.
 import java.math.BigInteger
 
 fun factorial(n: Int): BigInteger {

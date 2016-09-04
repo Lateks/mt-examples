@@ -1,5 +1,3 @@
-// Compile with `scalac Factorial.scala`.
-// Run with `scala Factorial`.
 object Factorial {
     def main(args: Array[String]): Unit = {
       val res = fact(10000)

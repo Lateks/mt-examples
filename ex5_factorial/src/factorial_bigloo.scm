@@ -1,13 +1,3 @@
-; OS X:
-; Käännä: bigloo -jvm factorial_bigloo.scm
-; Aja tuloksena syntyvä a.out.
-;
-; Windows:
-; bigloo -dotnet factorial_bigloo.scm
-; Aja tuloksena syntyvä a.exe.
-;
-; Huom: Bigloolla on .NET-alustalla erinäisiä käännösvipuja,
-; jotka säätelevät häntärekursion optimointistrategiaa.
 (module examples (main main))
 
 (define fact

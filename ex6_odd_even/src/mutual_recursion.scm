@@ -1,9 +1,3 @@
-; Ilman --full-tailcalls-vipua tulee StackOverflowError
-; jos käyttää isoa lukua (Huom. Kawa näyttää vaativan
-; että kokonaislukuliteraali mahtuu 32-bittiseen
-; kokonaislukuarvoon.)
-;
-
 (define odd?
   (lambda (x)
     (if (zero? x)

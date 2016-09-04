@@ -1,7 +1,3 @@
-; JVM: StackOverflowError
-; -fglobal-tailc ei vaikuta tekevän mitään (ehkä toimii
-; vain C-takaosan kanssa?)
-
 (module odd-even (main main))
 
 (define odd?

@@ -1,5 +1,3 @@
-// Compile with `javac Factorial.java`
-// Run with `java Factorial`
 import java.math.BigInteger;
 
 class Factorial {
@@ -14,7 +12,6 @@ class Factorial {
         return factHelper(BigInteger.valueOf(n), BigInteger.ONE);
     }
 
-    // fact(10000) is not enough to blow the stack on my machine.
     public static void main(String[] args) {
         System.out.println(fact(100000));
     }

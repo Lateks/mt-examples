@@ -1,4 +1,3 @@
-; Ilman häntäkutsuoptimointia
 (ns mutual-recursion
   (:gen-class))
 

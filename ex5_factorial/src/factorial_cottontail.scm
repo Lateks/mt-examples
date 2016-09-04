@@ -8,5 +8,7 @@
     (fact-helper n 1)))
 
 ; Tässä käytetään pienempää syötettä koska Cottontail-toteutus
-; ei tällä hetkellä tue tarpeeksi suuria lukuja.
+; ei tällä hetkellä tue tarpeeksi suuria lukuja tuloksen esittämiseen
+; merkittävästi suuremmilla syötteillä.
 (display (fact 10))
+

@@ -1,6 +1,3 @@
-; Tämä Scheme-ohjelma kääntyy esim. Kawalla, mutta ei
-; Bigloolla, joka vaatii moduulimäärittelyn.
-
 (define fact
   (lambda (n)
     (define fact-helper
@@ -12,6 +9,3 @@
 
 (display (fact 10000))
 
-; Tulostus erotettuna laskennasta:
-; (define res (fact 10000))
-; (display res)

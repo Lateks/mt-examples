@@ -12,7 +12,7 @@
   .hash algorithm 0x00008004
   .ver  0:0:0:0
 }
-.module NestedClosure // GUID = {264B1B90-9A55-43FE-8B6E-CF51F86898F8}
+.module NestedClosure // GUID = {6230C3B9-6CFF-4697-B459-AC080794DFF6}
 
 
   .class public auto ansi CTTailCallProcedureHandle
@@ -125,7 +125,7 @@
 	IL_002e:  ldfld int32 CTTailCallProcedureHandle::index
 	IL_0033:  ldc.i4 0
 	IL_0038:  newarr [CottontailSchemeLib]CottontailSchemeLib.CTObject
-	IL_003d:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [CottontailSchemeLib]CottontailSchemeLib.CTObject[])
+	IL_003d:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [mscorlib]System.Collections.Generic.IEnumerable`1<class [CottontailSchemeLib]CottontailSchemeLib.CTObject>)
 	IL_0042:  tail. 
 	IL_0044:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcallVarargs(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
 	IL_0049:  ret 
@@ -164,7 +164,7 @@
 	IL_0040:  ldc.i4 0
 	IL_0045:  ldarg.s 1
 	IL_0047:  stelem.ref 
-	IL_0048:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [CottontailSchemeLib]CottontailSchemeLib.CTObject[])
+	IL_0048:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [mscorlib]System.Collections.Generic.IEnumerable`1<class [CottontailSchemeLib]CottontailSchemeLib.CTObject>)
 	IL_004d:  tail. 
 	IL_004f:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcallVarargs(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
 	IL_0054:  ret 
@@ -208,7 +208,7 @@
 	IL_004b:  ldc.i4 1
 	IL_0050:  ldarg.s 2
 	IL_0052:  stelem.ref 
-	IL_0053:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [CottontailSchemeLib]CottontailSchemeLib.CTObject[])
+	IL_0053:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [mscorlib]System.Collections.Generic.IEnumerable`1<class [CottontailSchemeLib]CottontailSchemeLib.CTObject>)
 	IL_0058:  tail. 
 	IL_005a:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcallVarargs(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
 	IL_005f:  ret 
@@ -257,7 +257,7 @@
 	IL_0056:  ldc.i4 2
 	IL_005b:  ldarg.s 3
 	IL_005d:  stelem.ref 
-	IL_005e:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [CottontailSchemeLib]CottontailSchemeLib.CTObject[])
+	IL_005e:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [mscorlib]System.Collections.Generic.IEnumerable`1<class [CottontailSchemeLib]CottontailSchemeLib.CTObject>)
 	IL_0063:  tail. 
 	IL_0065:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcallVarargs(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
 	IL_006a:  ret 
@@ -311,7 +311,7 @@
 	IL_0061:  ldc.i4 3
 	IL_0066:  ldarg.s 4
 	IL_0068:  stelem.ref 
-	IL_0069:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [CottontailSchemeLib]CottontailSchemeLib.CTObject[])
+	IL_0069:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [mscorlib]System.Collections.Generic.IEnumerable`1<class [CottontailSchemeLib]CottontailSchemeLib.CTObject>)
 	IL_006e:  tail. 
 	IL_0070:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcallVarargs(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
 	IL_0075:  ret 
@@ -370,7 +370,7 @@
 	IL_006c:  ldc.i4 4
 	IL_0071:  ldarg.s 5
 	IL_0073:  stelem.ref 
-	IL_0074:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [CottontailSchemeLib]CottontailSchemeLib.CTObject[])
+	IL_0074:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [mscorlib]System.Collections.Generic.IEnumerable`1<class [CottontailSchemeLib]CottontailSchemeLib.CTObject>)
 	IL_0079:  tail. 
 	IL_007b:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcallVarargs(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
 	IL_0080:  ret 
@@ -399,7 +399,7 @@
 	IL_001f:  call instance void class [CottontailSchemeLib]CottontailSchemeLib.CTProcedure::matchNumArgs(int32)
 	IL_0024:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcallN(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject[])
 	IL_0029:  ret 
-	IL_002a:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [CottontailSchemeLib]CottontailSchemeLib.CTObject[])
+	IL_002a:  call class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.BuiltIns::List(class [mscorlib]System.Collections.Generic.IEnumerable`1<class [CottontailSchemeLib]CottontailSchemeLib.CTObject>)
 	IL_002f:  tail. 
 	IL_0031:  callvirt instance class [CottontailSchemeLib]CottontailSchemeLib.CTObject class [CottontailSchemeLib]CottontailSchemeLib.ProcedureFrame::funcallVarargs(int32, class [CottontailSchemeLib]CottontailSchemeLib.CTObject)
 	IL_0036:  ret 
